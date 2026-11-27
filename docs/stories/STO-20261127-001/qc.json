@@ -1,0 +1,1285 @@
+{
+ "statut": "a_revoir",
+ "score_global": 97.0,
+ "bloquants": 0,
+ "alertes": 2,
+ "categories": {
+  "factuel": {
+   "bloquants": [],
+   "alertes": [
+    {
+     "severite": "alerte",
+     "code": "recherche_alerte",
+     "message": "faits non utilisables comme faits dans le script (à vérifier ou contradictoires) : F13",
+     "ou": "recherche",
+     "section": "recherche"
+    }
+   ],
+   "score": 94.0
+  },
+  "narratif": {
+   "bloquants": [],
+   "alertes": [
+    {
+     "severite": "alerte",
+     "code": "surenchere",
+     "message": "vocabulaire de surenchère : personne ne",
+     "ou": "hook H2",
+     "section": "hooks"
+    }
+   ],
+   "score": 94.0
+  },
+  "script": {
+   "bloquants": [],
+   "alertes": [],
+   "score": 100.0
+  },
+  "visuel": {
+   "bloquants": [],
+   "alertes": [],
+   "score": 100.0
+  },
+  "duree": {
+   "bloquants": [],
+   "alertes": [],
+   "score": 100.0
+  }
+ },
+ "suggestions": [],
+ "versions": {
+  "research": 2,
+  "hooks": 2,
+  "structure": 2,
+  "script": 9,
+  "storyboard": 2,
+  "visual": 1
+ },
+ "indicateurs": {
+  "hook_choisi": "H1",
+  "hook_recommande": "H1",
+  "hook_score": 91.5,
+  "script_mots": 1056,
+  "script_duree_s": 427.8,
+  "sequences": 10,
+  "scenes": 58,
+  "storyboard_duree_s": 423.4,
+  "types_visuels": 14
+ },
+ "details": {
+  "hooks": {
+   "resultats": [
+    {
+     "id": "H1",
+     "type": "paradoxal",
+     "mots": 38,
+     "duree_s": 15.2,
+     "score": 91.5,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Paradoxe immédiatement compréhensible."
+      },
+      "clarte": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Quatre phrases simples, une seule idée."
+      },
+      "originalite": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Peu connu du grand public francophone."
+      },
+      "tension": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Contradiction intention/usage."
+      },
+      "pertinence": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "C'est exactement l'angle retenu."
+      },
+      "coherence_preuves": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "F8 et F9 confirmés par une source primaire."
+      },
+      "potentiel_visuel": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Le texte barré est simple et fort."
+      },
+      "honnetete_promesse": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Aucune promesse que la suite ne tient pas."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H3",
+     "type": "narratif",
+     "mots": 39,
+     "duree_s": 15.6,
+     "score": 85.5,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Mystère concret : où part l'argent ?"
+      },
+      "clarte": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Lisible, un peu plus long."
+      },
+      "originalite": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Entrée par le terrain."
+      },
+      "tension": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Écart entre plan et réalité."
+      },
+      "pertinence": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Cœur de l'angle."
+      },
+      "coherence_preuves": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "F8 confirmé."
+      },
+      "potentiel_visuel": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Carte et tracés très parlants."
+      },
+      "honnetete_promesse": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Fidèle aux sources."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H7",
+     "type": "revelation",
+     "mots": 33,
+     "duree_s": 13.2,
+     "score": 79.0,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Chiffre fort et question honnête."
+      },
+      "clarte": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Clair."
+      },
+      "originalite": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Ouverture critique rare."
+      },
+      "tension": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Doute méthodique."
+      },
+      "pertinence": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Le récit porte d'abord sur l'origine."
+      },
+      "coherence_preuves": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Attribué à l'étude, estimation signalée."
+      },
+      "potentiel_visuel": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Typographie animée."
+      },
+      "honnetete_promesse": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Annonce elle-même la nuance."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H6",
+     "type": "question",
+     "mots": 34,
+     "duree_s": 13.6,
+     "score": 77.5,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Question concrète."
+      },
+      "clarte": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Très clair."
+      },
+      "originalite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Ouverture par le problème, attendue."
+      },
+      "tension": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Tension faible."
+      },
+      "pertinence": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Bon point d'entrée."
+      },
+      "coherence_preuves": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "F61 confirmé (source A)."
+      },
+      "potentiel_visuel": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Images d'ambiance fortes."
+      },
+      "honnetete_promesse": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Aucune exagération."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H8",
+     "type": "cinematographique",
+     "mots": 37,
+     "duree_s": 14.8,
+     "score": 68.0,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Image forte, enjeu flou."
+      },
+      "clarte": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Clair."
+      },
+      "originalite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Ouverture d'ambiance classique."
+      },
+      "tension": {
+       "note": 2,
+       "retenue": 2,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Peu de tension."
+      },
+      "pertinence": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Montre le mécanisme."
+      },
+      "coherence_preuves": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "F43, F44 confirmés."
+      },
+      "potentiel_visuel": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Très cinématographique."
+      },
+      "honnetete_promesse": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Aucune promesse excessive."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H5",
+     "type": "consequence",
+     "mots": 31,
+     "duree_s": 12.4,
+     "score": 65.0,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Chiffres contre-intuitifs."
+      },
+      "clarte": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Deux unités différentes à comprendre."
+      },
+      "originalite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Ouverture chiffrée classique."
+      },
+      "tension": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Contraste plus que tension."
+      },
+      "pertinence": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Lié à l'accès aux services financiers."
+      },
+      "coherence_preuves": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Source unique, attribuée."
+      },
+      "potentiel_visuel": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Graphique simple."
+      },
+      "honnetete_promesse": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Comparaison à expliciter."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H4",
+     "type": "tension",
+     "mots": 33,
+     "duree_s": 13.2,
+     "score": 62.5,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Conflit intéressant mais abstrait."
+      },
+      "clarte": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Clair."
+      },
+      "originalite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Angle réglementaire."
+      },
+      "tension": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Conflit explicite."
+      },
+      "pertinence": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Secondaire par rapport à l'angle."
+      },
+      "coherence_preuves": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "F45 confirmé, F46 attribué."
+      },
+      "potentiel_visuel": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Images symboliques nécessaires."
+      },
+      "honnetete_promesse": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.1,
+       "justification": "Attribution correcte."
+      }
+     },
+     "problemes": []
+    },
+    {
+     "id": "H2",
+     "type": "historique",
+     "mots": 27,
+     "duree_s": 10.8,
+     "score": 51.0,
+     "elimine": false,
+     "criteres": {
+      "curiosite": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.18,
+       "justification": "Date précise mais ouverture classique."
+      },
+      "clarte": {
+       "note": 5,
+       "retenue": 5,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Très clair."
+      },
+      "originalite": {
+       "note": 2,
+       "retenue": 2,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Ouverture de documentaire très répandue."
+      },
+      "tension": {
+       "note": 2,
+       "retenue": 2,
+       "plafond_auto": null,
+       "poids": 0.14,
+       "justification": "Tension artificielle."
+      },
+      "pertinence": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Ne porte pas l'angle du détournement d'usage."
+      },
+      "coherence_preuves": {
+       "note": 4,
+       "retenue": 4,
+       "plafond_auto": null,
+       "poids": 0.12,
+       "justification": "Date confirmée (F42) ; la fin n'est pas un fait."
+      },
+      "potentiel_visuel": {
+       "note": 3,
+       "retenue": 3,
+       "plafond_auto": null,
+       "poids": 0.08,
+       "justification": "Typographie seule."
+      },
+      "honnetete_promesse": {
+       "note": 3,
+       "retenue": 2,
+       "plafond_auto": 2,
+       "poids": 0.1,
+       "justification": "Formule de suspense creuse."
+      }
+     },
+     "problemes": [
+      {
+       "severite": "alerte",
+       "code": "surenchere",
+       "message": "vocabulaire de surenchère : personne ne",
+       "ou": "hook H2"
+      }
+     ]
+    }
+   ],
+   "choix": {
+    "recommande": "H1",
+    "choisi": "H1",
+    "justification": "H1 porte directement l'angle corrigé (le détournement d'usage), repose sur deux faits confirmés par une source primaire et ne promet rien que le film ne démontre. H3 est très proche et sera utilisé comme séquence suivante."
+   },
+   "problemes": [
+    {
+     "severite": "alerte",
+     "code": "surenchere",
+     "message": "vocabulaire de surenchère : personne ne",
+     "ou": "hook H2"
+    }
+   ]
+  },
+  "structure": {
+   "type": "transformation",
+   "label": "Transformation",
+   "etapes": 10,
+   "duree_cible_s": 450.0,
+   "roles": [
+    "hook",
+    "contexte",
+    "origine",
+    "tournant",
+    "developpement",
+    "obstacles",
+    "developpement",
+    "consequences",
+    "limites",
+    "conclusion"
+   ],
+   "problemes": []
+  },
+  "script": {
+   "sequences": [
+    {
+     "id": "SEQ-01",
+     "etape": "E1",
+     "titre": "Le paradoxe d'origine",
+     "mots": 71,
+     "duree_s": 28.4,
+     "faits": [
+      "F8",
+      "F9"
+     ],
+     "sources": [
+      "S6"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-02",
+     "etape": "E2",
+     "titre": "L'argent sous le matelas",
+     "mots": 106,
+     "duree_s": 42.4,
+     "faits": [
+      "F61",
+      "F38",
+      "F39"
+     ],
+     "sources": [
+      "S6",
+      "S33"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-03",
+     "etape": "E3",
+     "titre": "Une subvention et un prototype",
+     "mots": 79,
+     "duree_s": 31.6,
+     "faits": [
+      "F41",
+      "F42",
+      "F8"
+     ],
+     "sources": [
+      "S6",
+      "S32",
+      "S29"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-04",
+     "etape": "E4",
+     "titre": "Le détournement",
+     "mots": 98,
+     "duree_s": 39.2,
+     "faits": [
+      "F8",
+      "F9",
+      "F40"
+     ],
+     "sources": [
+      "S6",
+      "S33"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-05",
+     "etape": "E5",
+     "titre": "Une banque sans agences",
+     "mots": 108,
+     "duree_s": 43.2,
+     "faits": [
+      "F43",
+      "F44",
+      "F47"
+     ],
+     "sources": [
+      "S6",
+      "S24"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-06",
+     "etape": "E6",
+     "titre": "Banques inquiètes, régulateur exigeant",
+     "mots": 81,
+     "duree_s": 32.4,
+     "faits": [
+      "F46",
+      "F45"
+     ],
+     "sources": [
+      "S24",
+      "S6"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-07",
+     "etape": "E7",
+     "titre": "La croissance, selon l'entreprise",
+     "mots": 107,
+     "duree_s": 42.8,
+     "faits": [
+      "F42",
+      "F10",
+      "F48",
+      "F49"
+     ],
+     "sources": [
+      "S32",
+      "S29",
+      "S6",
+      "S31"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-08",
+     "etape": "E8",
+     "titre": "Ce que mesurent les chercheurs",
+     "mots": 139,
+     "duree_s": 55.6,
+     "faits": [
+      "F51",
+      "F11",
+      "F12",
+      "F52"
+     ],
+     "sources": [
+      "S27",
+      "S7"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-09",
+     "etape": "E9",
+     "titre": "Le revers du succès",
+     "mots": 155,
+     "duree_s": 62.0,
+     "faits": [
+      "F55",
+      "F54",
+      "F53",
+      "F56",
+      "F57",
+      "F58",
+      "F59"
+     ],
+     "sources": [
+      "S25",
+      "S8",
+      "S30",
+      "S26",
+      "S28",
+      "S27",
+      "S34"
+     ],
+     "problemes": []
+    },
+    {
+     "id": "SEQ-10",
+     "etape": "E10",
+     "titre": "Suivre l'usage, encadrer la puissance",
+     "mots": 112,
+     "duree_s": 44.8,
+     "faits": [
+      "F49"
+     ],
+     "sources": [
+      "S32"
+     ],
+     "problemes": []
+    }
+   ],
+   "mots": 1056,
+   "duree_s": 427.8,
+   "debit_mpm": 150,
+   "repetitions": [],
+   "problemes": []
+  },
+  "direction": {
+   "couleurs": [
+    "#0B0B0B",
+    "#F6F6F3",
+    "#FF8A00",
+    "#FFD23F"
+   ],
+   "similarite_max_autres_projets": 0.0,
+   "problemes": []
+  },
+  "storyboard": {
+   "scenes": [
+    {
+     "id": "SC-001",
+     "sequence": "SEQ-01",
+     "duree_s": 5.2,
+     "type": "reconstitution",
+     "authenticite": "reconstitution"
+    },
+    {
+     "id": "SC-002",
+     "sequence": "SEQ-01",
+     "duree_s": 6.0,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-003",
+     "sequence": "SEQ-01",
+     "duree_s": 4.0,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-004",
+     "sequence": "SEQ-01",
+     "duree_s": 8.0,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-005",
+     "sequence": "SEQ-01",
+     "duree_s": 5.2,
+     "type": "photo_lieu",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-006",
+     "sequence": "SEQ-02",
+     "duree_s": 7.2,
+     "type": "archive_photo",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-007",
+     "sequence": "SEQ-02",
+     "duree_s": 6.4,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-008",
+     "sequence": "SEQ-02",
+     "duree_s": 11.6,
+     "type": "image_symbolique",
+     "authenticite": "symbolique"
+    },
+    {
+     "id": "SC-009",
+     "sequence": "SEQ-02",
+     "duree_s": 3.6,
+     "type": "photo_lieu",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-010",
+     "sequence": "SEQ-02",
+     "duree_s": 7.2,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-011",
+     "sequence": "SEQ-02",
+     "duree_s": 6.4,
+     "type": "image_symbolique",
+     "authenticite": "symbolique"
+    },
+    {
+     "id": "SC-012",
+     "sequence": "SEQ-03",
+     "duree_s": 10.4,
+     "type": "document",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-013",
+     "sequence": "SEQ-03",
+     "duree_s": 6.4,
+     "type": "infographie",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-014",
+     "sequence": "SEQ-03",
+     "duree_s": 10.8,
+     "type": "animation",
+     "authenticite": "illustration"
+    },
+    {
+     "id": "SC-015",
+     "sequence": "SEQ-03",
+     "duree_s": 4.0,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-016",
+     "sequence": "SEQ-04",
+     "duree_s": 8.0,
+     "type": "reconstitution",
+     "authenticite": "reconstitution"
+    },
+    {
+     "id": "SC-017",
+     "sequence": "SEQ-04",
+     "duree_s": 6.0,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-018",
+     "sequence": "SEQ-04",
+     "duree_s": 6.4,
+     "type": "illustration",
+     "authenticite": "illustration"
+    },
+    {
+     "id": "SC-019",
+     "sequence": "SEQ-04",
+     "duree_s": 7.2,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-020",
+     "sequence": "SEQ-04",
+     "duree_s": 11.6,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-021",
+     "sequence": "SEQ-05",
+     "duree_s": 6.8,
+     "type": "photo_lieu",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-022",
+     "sequence": "SEQ-05",
+     "duree_s": 10.4,
+     "type": "animation",
+     "authenticite": "illustration"
+    },
+    {
+     "id": "SC-023",
+     "sequence": "SEQ-05",
+     "duree_s": 8.4,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-024",
+     "sequence": "SEQ-05",
+     "duree_s": 8.0,
+     "type": "reconstitution",
+     "authenticite": "reconstitution"
+    },
+    {
+     "id": "SC-025",
+     "sequence": "SEQ-05",
+     "duree_s": 9.6,
+     "type": "comparaison",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-026",
+     "sequence": "SEQ-06",
+     "duree_s": 4.4,
+     "type": "plan_ambiance",
+     "authenticite": "symbolique"
+    },
+    {
+     "id": "SC-027",
+     "sequence": "SEQ-06",
+     "duree_s": 10.0,
+     "type": "document",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-028",
+     "sequence": "SEQ-06",
+     "duree_s": 5.6,
+     "type": "photo_lieu",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-029",
+     "sequence": "SEQ-06",
+     "duree_s": 8.4,
+     "type": "infographie",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-030",
+     "sequence": "SEQ-06",
+     "duree_s": 4.0,
+     "type": "zoom_detail",
+     "authenticite": "illustration"
+    },
+    {
+     "id": "SC-031",
+     "sequence": "SEQ-07",
+     "duree_s": 3.6,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-032",
+     "sequence": "SEQ-07",
+     "duree_s": 6.0,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-033",
+     "sequence": "SEQ-07",
+     "duree_s": 11.2,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-034",
+     "sequence": "SEQ-07",
+     "duree_s": 2.8,
+     "type": "zoom_detail",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-035",
+     "sequence": "SEQ-07",
+     "duree_s": 8.8,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-036",
+     "sequence": "SEQ-07",
+     "duree_s": 10.4,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-037",
+     "sequence": "SEQ-08",
+     "duree_s": 7.6,
+     "type": "document",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-038",
+     "sequence": "SEQ-08",
+     "duree_s": 8.4,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-039",
+     "sequence": "SEQ-08",
+     "duree_s": 4.4,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-040",
+     "sequence": "SEQ-08",
+     "duree_s": 6.4,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-041",
+     "sequence": "SEQ-08",
+     "duree_s": 3.6,
+     "type": "document",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-042",
+     "sequence": "SEQ-08",
+     "duree_s": 10.8,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-043",
+     "sequence": "SEQ-08",
+     "duree_s": 10.4,
+     "type": "archive_photo",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-044",
+     "sequence": "SEQ-08",
+     "duree_s": 4.0,
+     "type": "typographie_animee",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-045",
+     "sequence": "SEQ-09",
+     "duree_s": 3.0,
+     "type": "plan_ambiance",
+     "authenticite": "symbolique"
+    },
+    {
+     "id": "SC-046",
+     "sequence": "SEQ-09",
+     "duree_s": 4.8,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-047",
+     "sequence": "SEQ-09",
+     "duree_s": 9.6,
+     "type": "infographie",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-048",
+     "sequence": "SEQ-09",
+     "duree_s": 11.2,
+     "type": "graphique",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-049",
+     "sequence": "SEQ-09",
+     "duree_s": 6.0,
+     "type": "infographie",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-050",
+     "sequence": "SEQ-09",
+     "duree_s": 7.6,
+     "type": "document",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-051",
+     "sequence": "SEQ-09",
+     "duree_s": 6.4,
+     "type": "image_symbolique",
+     "authenticite": "symbolique"
+    },
+    {
+     "id": "SC-052",
+     "sequence": "SEQ-09",
+     "duree_s": 5.6,
+     "type": "plan_ambiance",
+     "authenticite": "symbolique"
+    },
+    {
+     "id": "SC-053",
+     "sequence": "SEQ-09",
+     "duree_s": 8.8,
+     "type": "document",
+     "authenticite": "authentique"
+    },
+    {
+     "id": "SC-054",
+     "sequence": "SEQ-10",
+     "duree_s": 8.4,
+     "type": "comparaison",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-055",
+     "sequence": "SEQ-10",
+     "duree_s": 9.2,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-056",
+     "sequence": "SEQ-10",
+     "duree_s": 12.4,
+     "type": "infographie",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-057",
+     "sequence": "SEQ-10",
+     "duree_s": 4.4,
+     "type": "carte",
+     "authenticite": "graphique_explicatif"
+    },
+    {
+     "id": "SC-058",
+     "sequence": "SEQ-10",
+     "duree_s": 10.4,
+     "type": "plan_ambiance",
+     "authenticite": "symbolique"
+    }
+   ],
+   "nb_scenes": 58,
+   "duree_s": 423.4,
+   "types_distincts": 14,
+   "repartition_types": {
+    "animation": 2,
+    "archive_photo": 2,
+    "carte": 9,
+    "comparaison": 2,
+    "document": 6,
+    "graphique": 7,
+    "illustration": 1,
+    "image_symbolique": 3,
+    "infographie": 5,
+    "photo_lieu": 4,
+    "plan_ambiance": 4,
+    "reconstitution": 3,
+    "typographie_animee": 8,
+    "zoom_detail": 2
+   },
+   "repartition_authenticite": {
+    "authentique": 12,
+    "graphique_explicatif": 32,
+    "illustration": 4,
+    "reconstitution": 3,
+    "symbolique": 7
+   },
+   "part_zoom_lent": 0.02,
+   "problemes": []
+  }
+ }
+}

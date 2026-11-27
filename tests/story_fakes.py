@@ -11,7 +11,7 @@ def notes(n=4):
 
 def hooks(refs):
     """refs : faits confirmés du dossier simulé (ex. F1, F2)."""
-    a, b = refs
+    a = refs[0]
     hs = []
     for i, t in enumerate(TYPES, start=1):
         hs.append({"id": f"H{i}", "type": t,

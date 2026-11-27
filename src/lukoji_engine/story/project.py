@@ -73,12 +73,12 @@ def create_project(db: Database, subject_uid: str, fmt: str = "documentaire_long
     subj = get_subject(db, subject_uid)
     if not subj:
         raise StoryError(f"sujet inconnu : {subject_uid}")
-    if subj["status"] != "valide":
-        raise StoryError(f"le sujet {subject_uid} doit être « valide » (statut actuel : {subj['status']}) : "
-                         "aucun projet narratif sans validation éditoriale")
     existing = db.conn.execute("SELECT sid FROM story_projects WHERE subject_id = ?", (subj["id"],)).fetchone()
     if existing:
         raise StoryError(f"un projet existe déjà pour ce sujet : {existing[0]} (reprendre ce projet)")
+    if subj["status"] != "valide":
+        raise StoryError(f"le sujet {subject_uid} doit être « valide » (statut actuel : {subj['status']}) : "
+                         "aucun projet narratif sans validation éditoriale")
     day = now()[:10].replace("-", "")
     n = db.conn.execute("SELECT COUNT(*) FROM story_projects WHERE sid LIKE ?", (f"STO-{day}-%",)).fetchone()[0]
     sid = f"STO-{day}-{n + 1:03d}"

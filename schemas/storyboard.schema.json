@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "lukoji.storyboard/1.0",
+  "title": "LUKOJI — storyboard exporté pour le Video Engine (phase 3)",
+  "type": "object",
+  "required": ["schema", "genere_le", "projet", "rythme", "direction_artistique", "sequences", "scenes", "faits", "sources"],
+  "properties": {
+    "schema": {"const": "lukoji.storyboard/1.0"},
+    "genere_le": {"type": "string", "description": "horodatage UTC ISO 8601"},
+    "projet": {
+      "type": "object",
+      "required": ["id", "titre", "sujet", "format", "profil_rendu", "statut", "versions"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^STO-\\d{8}-\\d{3}$"},
+        "statut": {"type": "string", "description": "le Video Engine ne doit consommer que « ready_for_phase3 »"},
+        "profil_rendu": {"type": "string", "description": "profil de config/platforms.toml (ex. youtube_16x9)"},
+        "versions": {"type": "object", "additionalProperties": {"type": "integer"}}
+      }
+    },
+    "rythme": {
+      "type": "object",
+      "required": ["mots_par_minute", "pause_entre_sequences_s", "duree_totale_s"],
+      "properties": {"duree_totale_s": {"type": "number", "minimum": 0}}
+    },
+    "direction_artistique": {"type": "object"},
+    "sequences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "titre", "etape", "voix_off", "debut_s", "fin_s", "duree_voix_s", "faits", "sources"],
+        "properties": {"faits": {"type": "array", "items": {"type": "string", "pattern": "^F\\d+$"}},
+                       "sources": {"type": "array", "items": {"type": "string", "pattern": "^S\\d+$"}}}
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "sequence", "ordre", "debut_s", "fin_s", "duree_s", "voix_off", "visuel", "mouvement", "animation",
+                     "texte_ecran", "sources_visuelles", "recherche", "transition", "son", "risques_representation",
+                     "instructions_montage", "raison_narrative"],
+        "properties": {
+          "debut_s": {"type": "number", "minimum": 0},
+          "fin_s": {"type": "number"},
+          "duree_s": {"type": "number", "exclusiveMinimum": 0},
+          "visuel": {"type": "object", "required": ["type", "authenticite", "description", "sujet", "composition", "cadrage"],
+                     "properties": {"authenticite": {"enum": ["authentique", "illustration", "reconstitution", "graphique_explicatif", "image_generee", "symbolique"]},
+                                    "mention_ecran": {"type": ["string", "null"], "description": "obligatoire si illustration, reconstitution, image_generee, symbolique"}}},
+          "mouvement": {"type": "object", "required": ["camera", "graphique"]},
+          "son": {"type": "object", "required": ["ambiance", "effets"]},
+          "texte_ecran": {"type": "array", "items": {"type": "string"}},
+          "animation": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "faits": {"type": "array", "items": {"type": "object", "required": ["ref", "texte", "statut", "usage"]}},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["ref", "organisation", "categorie", "titre", "url"]}}
+  }
+}
