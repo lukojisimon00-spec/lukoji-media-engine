@@ -1,0 +1,1300 @@
+M-PESA - Wikipedia
+
+Jump to content
+
+Main menu
+
+Main menu
+ move to sidebar
+ hide
+
+ Navigation
+
+Main page
+Contents
+Current events
+Random article
+About Wikipedia
+Contact us
+
+ Contribute
+
+Help
+Learn to edit
+Community portal
+Recent changes
+Upload file
+Special pages
+
+Search
+
+ Search
+
+Appearance
+
+Donate
+
+Create account
+
+Log in
+
+Personal tools
+
+Donate
+
+Create account
+
+Log in
+
+Contents
+ move to sidebar
+ hide
+
+(Top)
+
+ 1
+ History
+
+ Toggle History subsection
+
+ 1.1
+ Concept
+
+ 2
+ Services
+
+ 3
+ Cost, transaction charges, statistics
+
+ 4
+ Effect on poverty in Kenya
+
+ 5
+ Markets
+
+ Toggle Markets subsection
+
+ 5.1
+ Kenya
+
+ 5.2
+ Tanzania
+
+ 5.3
+ Afghanistan
+
+ 5.4
+ South Africa
+
+ 5.5
+ India
+
+ 5.6
+ Europe
+
+ 5.7
+ Other markets
+
+ 6
+ Regulation and KYC rules
+
+ 7
+ Third-party integration
+
+ 8
+ Criticism
+
+ 9
+ See also
+
+ 10
+ References
+
+ 11
+ Bibliography
+
+ 12
+ External links
+
+Toggle the table of contents
+
+M-PESA
+
+16 languages
+
+Català
+Deutsch
+Español
+Français
+Հայերեն
+Italiano
+日本語
+Gĩkũyũ
+한국어
+Polski
+Português
+Русский
+Svenska
+Kiswahili
+Українська
+中文
+
+Edit links
+
+Article
+
+Talk
+
+ English
+
+Read
+
+Edit
+
+View history
+
+Save
+
+Tools
+
+Tools
+ move to sidebar
+ hide
+
+ Actions
+
+Read
+
+Edit
+
+View history
+
+Save
+
+ General
+
+What links here
+Related changes
+Upload file
+Permanent link
+Page information
+Cite this page
+Get shortened URL
+Switch to legacy parser
+
+ Print/export
+
+Download as PDF
+Printable version
+
+ In other projects
+
+Wikimedia Commons
+Wikidata item
+
+Appearance
+ move to sidebar
+ hide
+
+From Wikipedia, the free encyclopedia
+
+(Redirected from M-Pesa)
+
+Mobile banking service owned by Safaricom
+
+M-PESA
+
+Operating areaKenya, Tanzania, Lesotho, DRC, Ghana, Mozambique, Egypt, Ethiopia.
+MembersSafaricom
+Founded2007
+OwnerSafaricom
+Websitewww.m-pesa.africa
+
+M-PESA ('M' for 'mobile', pesa is Swahili for 'money') is a mobile phone-based money transfer service, payments and micro-financing service, launched in 2007 by Vodafone and Safaricom, the largest mobile network operator in Kenya.[1] It has since expanded to Tanzania, Mozambique, Democratic Republic of the Congo (DRC), Lesotho, Ghana, Egypt, and Ethiopia. The rollouts in India, Romania, and Albania were terminated amid low market uptake. M-PESA allows users to deposit, withdraw, transfer money, pay for goods and services (Lipa na M-PESA, Swahili for "Pay with M-PESA"), access credit and savings, all with a mobile device.[2]
+
+The service allows users to deposit money into an account stored on their cell phones, to send balances using PIN-secured SMS text messages to other users, including sellers of goods and services, and to redeem deposits for regular money. Users are charged a fee for sending and withdrawing money using the service.[3]
+
+M-PESA is a branchless banking service; M-PESA customers can deposit and withdraw money from a network of agents that includes airtime resellers and retail outlets acting as banking agents.
+
+M-PESA spread quickly, and by 2010 had become the most successful mobile-phone-based financial service in the developing world.[4] By 2012, a stock of about 17 million M-PESA accounts had been registered in Kenya. By June 2016, a total of 7 million M-PESA accounts had been opened in Tanzania by Vodacom. The service has been lauded for giving millions of people access to the formal financial system and for reducing crime in otherwise largely cash-based societies.[5] However, the near-monopolistic providers of the M-PESA service are sometimes criticized for the high cost that the service imposes on its often poor users. For instance, M-PESA charges KES 29 to withdraw KES 300, translating to about 10% withdrawal fees.
+
+History[edit]
+An M-PESA agent shop in Nairobi, Kenya. In such shops, customers can access most M-PESA services
+
+Safaricom and Vodafone launched M-PESA, a mobile-based payment service targeting the un-banked, pre-pay mobile subscribers in Kenya on a pilot basis in October 2005.[6] It was started as a public/private sector initiative after Vodafone was successful in winning funds from the Financial Deepening Challenge Fund competition established by the UK government's Department for International Development to encourage private sector companies to engage in innovative projects so as to deepen the provision of financial services in emerging economies.[7]
+
+The initial obstacle in the pilot was gaining the agent's trust and encouraging them to process cash withdrawals and agent training.[8] However, once Vodafone introduced the ability to buy airtime using M-PESA, the transaction volume increased rapidly. A 5% discount was offered on any airtime purchased through M-PESA and this served as an effective incentive. By 1 March 2006, KSh50.7 million had been transferred through the system. The successful operation of the pilot was a key component in Vodafone and Safaricom's decision to take the product full scale. The learning from the pilot helped to confirm the market need for the service and although it mainly revolved around facilitating loan repayments and disbursements for Faulu customers, it also tested features such as airtime purchase and national remittance. The full commercial launch was initiated in March 2007.
+
+A snapshot of the market then depicted that only a small percentage of people in Kenya used traditional banking services. There were low levels of bank income, high bank fees incurred and charged; most of the services were out of geographical reach to the rural Kenyan.[9] Notably, a high level of mobile penetration was evident throughout the country making the adoption of mobile payments a viable alternative to the traditional banking channels. According to a survey done by CBS in 2005, Kenya then had over 5,970,600 people employed in the informal sector.
+
+In 2002, researchers at Gamos and the Commonwealth Telecommunications Organisation, funded by the UK's Department for International Development (DFID), documented that in Uganda, Botswana and Ghana, people were using airtime as a proxy for money transfer.[10] Kenyans were transferring airtime to their relatives or friends who were then using it or reselling it. Gamos researchers approached MCel in Mozambique, and in 2004 MCel introduced the first authorised airtime credit swapping – a precursor step towards M-PESA.[11] The idea was discussed by the Commission for Africa[12] and DFID introduced the researchers to Vodafone who had been discussing supporting microfinance and back office banking with mobile phones. S. Batchelor (Gamos) and N. Hughes (Vodafone CSR) discussed how a system of money transfer could be created in Kenya. DFID amended the terms of reference for its grant to Vodafone, and piloting began in 2005. Safaricom launched a new mobile phone-based payment and money transfer service, known as M-PESA.[4]
+
+The initial work of developing the product was given to a product and technology development company known as Sagentia. Development and second line support responsibilities were transferred to IBM in September 2009, where most of the original Sagentia team transferred to.[13] Following a three-year migration project to a new technology stack, as of 26 February 2017, IBM's responsibilities have been transferred to Huawei in all markets.[14]
+
+Concept[edit]
+Image showing an individual using the M-PESA mobile money transfer.
+
+The initial concept of M-PESA was to create a service which would allow microfinance borrowers to conveniently receive and repay loans using the network of Safaricom airtime resellers.[15] This would enable microfinance institutions (MFIs) to offer more competitive loan rates to their users, as costs are lower than when dealing in cash. The users of the service would gain through being able to track their finances more easily. When the service was piloted, customers adopted the service for a variety of alternative uses and complications arose with Faulu, the partnering MFI. In discussion with other parties, M-PESA was re-focused and launched with a different value proposition: sending remittances home across the country and making payments.[15]
+
+Services[edit]
+Safaricom's M-PESA service screen on a Nokia feature phone.
+
+M-PESA is operated by Safaricom and Vodacom, mobile network operators (MNO) not classed as deposit-taking institutions, such as a bank. M-PESA customers can deposit and withdraw currency from a network of agents that includes airtime resellers and retail outlets acting as banking agents. The service enables its users to:
+
+deposit and withdraw local currency
+
+transfer currencies to other users
+
+pay bills
+
+purchase airtime
+
+save currency in a virtual account (Mshwari, Swahili for "calm")[16][17]
+
+transfer currencies between the service and, in some markets like Kenya, a bank account[18]
+
+borrow money to complete a transaction when short on cash (Fuliza, Swahili for "flush (with money)")[19]
+
+Mobile loans - Mshwari
+
+Partnerships with Kenyan banks offer expanded banking services like interest-bearing accounts, loans, and insurance.[20]
+
+The user interface technology of M-PESA differs between Safaricom of Kenya and Vodacom of Tanzania, although the underlying platform is the same. While Safaricom uses SIM toolkit (STK) to provide handset menus for accessing the service, Vodacom relies mostly on USSD to provide users with menus, but also supports STK.[21]
+
+Cost, transaction charges, statistics[edit]
+
+Transaction charges depend on the amount of money being transferred and whether the payee is a registered user of the service. The actual cost is a fixed amount for a given range of transaction sizes; for example Safaricom charges up to KSh66 (US$0.6) for a transaction to an unregistered user for transactions between KSh10 and KSh500 (US$0.92–US$4.56). For registered users the charge is KSh27 (US$0.25) or 5.4% to 27% for the same amount. At the highest transfer bracket of KSh50,001–70,000, the fee for a transfer to a registered user is KSh110 (US$1) or 0.16–0.22 %. The maximum amount that can be transferred to a non-registered user of the system is KSh35,000 (US$319.23), with a fee of KSh275 (US$2.51) or 0.8%. Cash withdrawal fees are also charged. With a charge of KSh10 (US$0.09) for a withdrawal of KSh50–100 or 10% to 20%, and up to KSh330 (US$3.01) for a withdrawal of KSh50,001–70,000 or 0.47% to 0.66%.[22][23]
+
+In an article published in 2015, Anja Bengelstorff cites the Central Bank of Kenya when she states that CHF 1 billion is moved in fiscal year 2014, with a profit of CHF 268 million, that is close to 27% of the moved money.[24] In 2016, M-PESA moved KSh15 billion (US$147776845.14) per day, with a revenue of KSh41 billion. In 2017 KSh6,869 billion were moved according to a figure in Safaricoms own annual report, with a revenue of KSh55 billion. This would put Safaricom's profit ratio at around <1 % of total money transferred.[25][26][full citation needed]
+
+Effect on poverty in Kenya[edit]
+
+With the support of Financial Sector Deepening Kenya and the Bill & Melinda Gates Foundation, Tavneet Suri from the Massachusetts Institute of Technology and William Jack from Georgetown University have produced a series of papers extolling the benefits of M-PESA. In particular, their 2016 article published in Science has been influential in the international development community. The much cited result of the paper was that "access to M-PESA increased per capita consumption levels and lifted 194,000 households, or 2 % of Kenyan households, out of poverty."[27] Global development institutions focusing on the development potential of financial technology frequently cite M-PESA as a major success story in this respect, citing the poverty-reduction claim and including a reference to Suri and Jack's 2016 signature article. In a report on "Financing for Development", the United Nations write: "The digitalization of finance offers new possibilities for greater financial inclusion and alignment with the 2030 Agenda for Sustainable Development and implementation of the Social Development Goals. In Kenya, the expansion of mobile money lifted two per cent of households in the country above the poverty line."[28]
+
+However, these findings on the role of M-PESA in reducing poverty have been contested in a 2019 paper, arguing that "Suri and Jack’s work contains so many serious errors, omissions, logical inconsistencies and flawed methodologies that it is actually correct to say that they have helped to catalyse into existence a largely false narrative surrounding the power of the fin-tech industry to advance the cause of poverty reduction and sustainable development in Africa (and elsewhere)".[29]
+
+Markets[edit]
+
+Kenya[edit]
+An M-PESA payment register at a Kenyan coffee shop
+
+M-PESA was first launched by the Kenyan mobile network operator Safaricom, where Vodafone is technically a minority shareholder (40%), in March 2007.[15] M-PESA quickly captured a significant market share for cash transfers, and grew to 17 million subscribers by December 2011 in Kenya alone.[1]
+
+The growth of the service forced formal banking institutions to take note of the new venture. In December 2008, a group of banks reportedly lobbied the Kenyan finance minister to audit M-PESA, in an effort to at least slow the growth of the service. This ploy failed, as the audit found that the service was robust.[30] At this time the Banking Act did not provide a basis to regulate products offered by non-banks, of which M-PESA was one such very successful product. As at November 2014, M-PESA transactions for the 11 months of 2014 were valued at KSh2.1 trillion, a 28% increase from 2013, and almost half the value of the country's GDP.[citation needed]
+
+On 19 November 2014, Safaricom launched a companion Android app, Safaricom M-Ledger[31][non-primary source needed] for its M-Pesa users. The application, currently[when?] available only on Android, but as of now it's supported by iOS devices. The app gives M-PESA users a historical view of all their transactions. Many other companies business models rely on the M-PESA system in Kenya, such as M-kopa and SportPesa.[32]
+
+On 23 February 2018, it was reported that the Google Play store started taking payments for apps via Kenya's M-PESA service.[33] On 8 January 2019, Safaricom launched Fuliza, an M-PESA overdraft facility.[34]
+
+Tanzania[edit]
+
+M-PESA was launched in Tanzania by Vodacom in 2008 but its initial ability to attract customers fell short of expectations. In 2010, the International Finance Corporation released a report which explored many of these issues in greater depth and analyzed the strategic changes that Vodacom has implemented to improve their market position.[35] As of May 2013, M-PESA in Tanzania had five million subscribers.[36]
+
+Afghanistan[edit]
+
+This section needs to be updated. Please help update this article to reflect recent events or newly available information. (July 2022)
+
+In 2008, Vodafone partnered with Roshan, Afghanistan's primary mobile operator, to provide M-PESA, the local brand of the service.[37] When the service was launched, it was initially used to pay policemen's salaries set to be competitive with what the Taliban were earning. Soon after the product was launched, the Afghan National Police found that under the previous cash model, 10% of their workforce were ghost police officers who did not exist; their salaries had been pocketed by others. When corrected in the new system, many police officers believed that they had received a raise or that there had been a mistake, as their salaries rose significantly. The National Police discovered that there was so much corruption when payments had been made using the previous model that the policemen did not know their true salary. The service was so successful that it was expanded to include limited merchant payments, peer-to-peer transfers, loan disbursements and payments.[38]
+
+South Africa[edit]
+
+In September 2010, Vodacom and Nedbank announced the launch of the service in South Africa, where there were estimated to be more than 13 million "economically active" people without a bank account.[39] M-PESA has been slow to gain a toehold in the South African market compared to Vodacom's projections that it would sign up 10 million users in the following three years. By May 2011, it had registered approximately 100,000 customers.[40] The gap between expectations for M-PESA's performance and its actual performance can be partly attributed to differences between the Kenyan and South African markets, including the banking regulations at the time of M-PESA's launch in each country.[41] 
+
+According to MoneyWeb,[42] a South African investment website, "A tough regulatory environment with regards to customer registration and the acquisition of outlets also compounded the company's troubles, as the local regulations are more stringent in comparison to our African counterparts. Lack of education and product understanding also hindered efforts in the initial roll out of the product." In June 2011, Vodacom and Nedbank launched a campaign to re-position M-PESA, targeting the product to potential customers who have a higher Living Standard Measures (LSM)[43] than were first targeted.[44]
+
+Despite efforts, as at March 2015, M-PESA still struggled to grow its customer base. South Africa lags behind Tanzania and Kenya with only ca. 1 million subscribers. This comes as no surprise as South Africa is well known for being ahead of financial institutions globally in terms of maturity and technological innovation. According to Genesis Analytics, 70% of South Africans are "banked", meaning that they have at least one bank account with an established financial institution which have their own banking products which directly compete with the M-PESA offering.[45]
+
+India[edit]
+
+M-PESA was launched in India[46] as a close partnership with ICICI bank in November 2011.[47] Development for the bank began as early as 2008. Vodafone India had partnered with both ICICI and ICICI bank,[48] ICICI launched M-Pesa on 18 April 2013.[49] Vodafone had planned to roll out this service throughout India.[50] The user needed to register for this service, registration was free and there were charges levied per M-PESA transaction for money transfer services and DTH and Prepaid recharges could be done through M-PESA for free.[51][52]
+
+M-PESA was shut down from 15 July 2019 due to regulatory curbs and stress in the sector,[53] with Vodafone surrendering their PPI licence on 1 October 2019.
+
+Europe[edit]
+
+In March 2014, M-PESA expanded into Romania, while mentioning that it may continue to expand elsewhere into Eastern Europe, as a number of individuals there possess mobile phones but do not possess traditional bank accounts. As of May 2014, however, it was considered unlikely that the service would expand into Western Europe anytime soon.[54] In December 2017, Vodafone closed its M-PESA product in Romania.[55]
+
+In May 2015, M-PESA was also launched in Albania. It was shut down on 14 July 2017.[56]
+
+Other markets[edit]
+
+M-PESA expanded into Mozambique, Lesotho, and Egypt in May, June, and July 2013, respectively. A full listing of countries in which M-PESA currently operates can be found on M-Pesa's website.[citation needed]
+
+Regulation and KYC rules[edit]
+
+M-PESA sought to engage Kenyan regulators and keep them updated on the development process. M-PESA also reached out to international regulators, such as the UK's Financial Conduct Authority (FCA) and the payment card industry to understand how best to protect client information and adhere to internationally recognized best practices.[57]
+
+Know your customer (KYC) requirements impose obligations on prospective clients and on banks to collect identification documents of clients and then to have those documents verified by banks.[58] The Kenyan government issues national identity cards that M-PESA leveraged in their business processes to satisfy their KYC requirements.[59]
+
+M-PESA obtained[when?] a "special"[clarification needed] license from regulators[who?], despite concerns by regulators about non-branch banking adding to the current state of financial instability.[citation needed]
+
+Third-party integration[edit]
+
+This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (December 2025) (Learn how and when to remove this message)
+
+Safaricom released[when?] the new M-PESA platform dubbed M-PESA G2 to offer versatile integration capabilities for development partners.
+
+Client-to-business and business-to-client disbursements are some of features available through the API.
+
+Criticism[edit]
+
+This "criticism" or "controversy" section may compromise the article's neutrality. Please help integrate negative information into other sections or remove undue focus on minor criticisms and controversies. (September 2026)
+
+The near-monopolistic providers of the M-PESA service are sometimes criticized for the high cost that the service imposes on its often poor users. The Bill and Melinda Gates Foundation warned in 2013 that lack of competition could drive up prices for customers of mobile money services and used M-PESA in Kenya as an example. According to the Foundation, a transfer of $1.50 cost $0.30 at the time, while the same provider charged only a tenth of this in neighboring Tanzania, where it was exposed to more competition.[60] 
+
+A study sponsored by USAID found that poor uneducated customers, who often had bad vision, were a target of unfair practices within M-PESA. They had expensive subscriptions for ring-tones and similar unnecessary services pushed on them, with opaque pricing, and thus did not understand why their M-PESA deposits depleted so quickly. If they did, they were often unable to unsubscribe from those services without help. The authors concluded that it is not the marginalized people in Kenya who benefit from M-PESA, but mostly Safaricom.[61] 
+
+A similar conclusion was reached by development economist Alan Gibson in a study commissioned by Financial Sector Deepening Trust Kenya (FSD Kenya) on the occasion of the 10th anniversary of FSD Kenya in 2016.[62] He wrote that credit to business did not improve due to M-PESA and that credit to the agricultural sector even declined. He concluded in his otherwise very friendly survey that the financial sector benefitted handsomely from the expansion of M-PESA, while the living conditions of the people were not noticeably improved.
+
+Milford Bateman et al. even conclude that M-PESA's expansion resulted in holding back economic development in Kenya. They diagnose serious weaknesses in the much cited paper by Suri and Jack, which had found positive effects on poverty, as M-PESA enabled female clients to move out of subsistence agriculture into micro-enterprise or small-scale trading activities. Alleged weaknesses include a failure to incorporate business failures and crowding out of competitors in the analysis. Bateman et al. call M-Pesa an extractive activity, by which large profits are created from taxing small-scale payments, which would be free if cash was used instead. As a large part of these profits are sent abroad to foreign shareholders of Safaricom, local spending power and demand are reduced, and with it the development potential for local enterprise.[63][64]
+
+Kenya does not have a data protection law, which enables Safaricom to use sensitive data of its subscribers rather freely. A data scandal surfaced in 2019 when Safaricom was sued in court for the alleged breach of data privacy of an estimated 11.5 million subscribers who had used their Safaricom numbers for sports betting. The data was allegedly offered on the black market.[65]
+
+See also[edit]
+
+Digital currency
+
+References[edit]
+
+1 2 "CCK releases 2nd quarter ICT sector statistics for 2011/2012". Communications Commission of Kenya. 17 April 2012. Archived from the original on 17 August 2012.
+
+↑ Saylor, Michael (2012). The Mobile Wave: How Mobile Intelligence Will Change Everything. Perseus Books/Vanguard Press. p. 202; 304. ISBN 978-1593157203.
+
+↑ "M-PESA Tariff". 29 May 2015. Archived from the original on 25 November 2014. Retrieved 4 June 2026.
+
+1 2 Jack, William; Suri, Tavneet (August 2010). "The Economics of M-PESA" (PDF). MIT. Archived from the original (PDF) on 14 December 2010. Retrieved 4 June 2026.
+
+↑ Mutiga, Murithi (20 January 2014). "Opinion | Kenya's Banking Revolution Lights a Fire". The New York Times. ISSN 0362-4331. Retrieved 3 June 2026.
+
+↑ "Safaricom : Premier Mobile, Data, & M-PESA Services". www.safaricom.co.ke. Retrieved 3 June 2026.
+
+↑ "Safaricom Annual Report 2019". www.safaricom.co.ke. Retrieved 3 June 2026.
+
+↑ "Safaricom Annual Report 2019" (PDF). www.safaricom.co.ke. Retrieved 4 June 2026.
+
+↑ "M-Pesa: Kenya's mobile wallet revolution". BBC News. 22 November 2010. Retrieved 20 January 2022.
+
+↑ Kevin McKemey; Nigel Scott; David Souter; Thomas Afullo; Richard Kibombo; O. Sakyi-Dawson (2003). "Innovative Demand Models for Telecommunications Services". FINAL TECHNICAL REPORT Contract Number R8069. Department for International Development (DFID). CiteSeerX 10.1.1.501.7811. {{cite journal}}: Cite uses deprecated parameter |citeseerx= (help)
+
+↑ Batchelor, S. (2012). "Changing the Financial Landscape of Africa: An Unusual Story of Evidence-informed Innovation, Intentional Policy Influence and Private Sector Engagement". IDS Bulletin. 43 (5): 84–90. doi:10.1111/j.1759-5436.2012.00367.x. Archived from the original on 16 August 2019. Retrieved 30 January 2019.
+
+↑ Scott N, Batchelor S, Ridley J, and Jorgensen B (2004). "The impact of mobile phones in. Africa". Background paper prepared for the Commission for Africa, London.
+
+↑ "M-pesa: A mobile-phone based money transfer service". innovafrica.org. Innovafrica. Archived from the original on 18 October 2019. Retrieved 15 August 2020.
+
+↑ "Huawei and Vodafone Achieve a Major M-PESA Milestone in Kenya". carrier.huawei.com. Retrieved 15 August 2020.
+
+1 2 3 Hughes, N., & Lonie, S. (2010). "M-PESA: Mobile Money for the 'Unbanked': Turning Cellphones into 24-Hour Tellers in Kenya". Innovations: Technology, Governance, Globalization, 2(1–2), 63–81.
+
+↑ "Send money by phone with Vodafone M-PESA". Vodacom. Archived from the original on 21 March 2009. Retrieved 19 February 2009.
+
+↑ "M-Paisa—The Hawala on Your Mobile!". Roshan.af. Archived from the original on 29 July 2010. Retrieved 19 February 2009.
+
+↑ "M-KESHO". Safari.com. Retrieved 4 June 2026.
+
+↑ "How to check your Fuliza limit on Safaricom". Citizentv.co.ke. 13 September 2019. Retrieved 20 February 2020.
+
+↑ "7.4 Kenya – Leveraging Remittances by Reforming the Mobile Money Transfer System" (PDF). Remittances in Africa. World Bank Group. March 2011. p. 55. Retrieved 4 June 2026.
+
+↑ Vaughan, P. (15 July 2008). "Providing the Unbanked with Access to Financial Services: The Case of M-PESA in Kenya". Presentation given during the Mobile Banking & Financial Services Africa conference in Johannesburg, South Africa.
+
+↑ "New MPESA tariffs released". February 2013. Retrieved 4 June 2026.
+
+↑ "M-PESA statistics". November 2013. Archived from the original on 27 March 2015. Retrieved 4 June 2026.
+
+↑ Bengelstorff, Anja (5 August 2015). "A Global Success from Kenya". Archived from the original on 7 September 2015. Retrieved 4 June 2026.
+
+↑ "Daily Nation article". 8 May 2016. Retrieved 4 June 2026.
+
+↑ "Safaricom 2017 annual report" (PDF). Retrieved 4 June 2026.
+
+↑ Tavneet Suri, and, William Jack (2016). "The Long-run Poverty and Gender Impacts of Mobile Money". Science. 354 (6317): 1288–1292. Bibcode:2016Sci...354.1288S. doi:10.1126/science.aah5309. PMID 27940873. S2CID 42992837.
+
+↑ "Financing for Development: Progress and Prospects 2018" (PDF). Archived from the original (PDF) on 3 April 2023. – Report of the Inter-Agency Task Force on Financing for Development. New York: United Nations. 2018.
+
+↑ Bateman, Milford; Duvendack, Maren; Loubere, Nicholas (3 July 2019). "Is fin-tech the new panacea for poverty alleviation and local development? Contesting Suri and Jack's M-Pesa findings published in Science". Review of African Political Economy. 46 (161): 480–495. doi:10.1080/03056244.2019.1614552. hdl:10.1080/03056244.2019.1614552. ISSN 0305-6244. S2CID 195518486.
+
+↑ "Mobile Cash Transfers Pose Threat to Banks". Philanthropy Action. 26 February 2009. Archived from the original on 7 April 2022. Retrieved 5 April 2009.
+
+↑ "Safaricom M-Ledger - Android Apps on Google Play". Google Play. Retrieved 23 August 2017.
+
+↑ Aglionby, John (17 March 2016). "Lightbulb moment for M-Kopa". Financial Times. Retrieved 13 August 2018.
+
+↑ "Google starts taking payments for apps via Kenya's M-Pesa service". Reuters. 23 February 2018. Retrieved 26 February 2018.
+
+↑ "Safaricom unveils Fuliza an overdraft facility for M-Pesa users". Alchemy Kenya. 9 January 2019. Archived from the original on 2 July 2019. Retrieved 9 January 2019.
+
+↑ "M-Money Channel Distribution Case - Tanzania Vodacom Tanzania M-PESA" (PDF). International Finance Corporation. 14 June 2010. Retrieved 13 August 2018.
+
+↑ "Vodacom Tanzania reports five million M-PESA subs; transactions top USD823m". telegeography.com. Archived from the original on 20 May 2013. Retrieved 7 May 2013.
+
+↑ "Vodafone and Roshan Launch First Mobile Money Transfer Service in Afghanistan". Vodafone. Archived from the original on 16 February 2008. Retrieved 13 August 2018.
+
+↑ Rice, Dan. "One Cell Phone at a Time: Countering Corruption in Afghanistan". Guy Filippelli. Small Wars Journal. Archived from the original on 7 January 2011. Retrieved 21 September 2010.
+
+↑ "M-PESA launched in South Africa". How We Made It in Africa. 31 August 2010. Retrieved 16 October 2010.
+
+↑ "M-Pesa disappoints for Vodacom SA". TechCentral. NewsCentral Media. 16 May 2011. Retrieved 4 June 2026.
+
+↑ "allAfrica.com: Kenya: Could Someone Please Start M-Pesa in South Africa". allafrica.com. Archived from the original on 21 June 2012. Retrieved 3 June 2026.
+
+↑ "About MoneyWeb". MoneyWeb. 4 May 2017. Retrieved 4 June 2026.
+
+↑ "Living Standards Measure". South African Advertising Research Foundation. Archived from the original on 7 February 2012. Retrieved 4 June 2026.
+
+↑ "Vodacom, Nedbank present a new game plan on M-pesa". MoneyWeb. 4 May 2017. Retrieved 4 June 2026.
+
+↑ Tshabalala, Sibusiso (3 August 2015). "Why South Africa's largest mobile network, Vodacom, failed to grow M-Pesa". Quartz. Retrieved 4 June 2026.
+
+↑ DFID - Department for International Development (9 May 2008), Mobile phone banking in Africa, archived from the original on 15 December 2021, retrieved 23 August 2017
+
+↑ Pahwa, Nikhil (28 November 2011). "Vodafone Launches M-Paisa With HDFC Bank; ICICI Bank? No Prepaid Wallet?". MEDIANAMA. Retrieved 3 June 2026.
+
+↑ Pahwa, Nikhil (13 January 2011). "ICICI Bank & Vodafone Essar In Mobile Banking Partnership; Future ATM's - All Banks, All Telcos". MEDIANAMA. Retrieved 3 June 2026.
+
+↑ Russell, Jon (17 April 2013). "Vodafone launches M-Pesa mobile banking service in India, targeting 700m 'unbanked' people". The Next Web. Retrieved 20 April 2013.
+
+↑ GANESH, VENKATESH (30 March 2014). "Vodafone to roll out M-Pesa services in AP, Kerala". The Hindu Business Line. Retrieved 23 August 2017.
+
+↑ "vodafone launches money transfer service mpesa in delhi". thehindubusinessline.com. Retrieved 4 June 2026.
+
+↑ "Ignore both airtel-money and m-pesa". Money Saver India. Archived from the original on 28 December 2014. Retrieved 15 April 2014.
+
+↑ Kurup, Rajesh (22 July 2019). "Voda's M-Pesa shuts shop in India". @businessline. Retrieved 8 October 2019.
+
+↑ Holton, Kate. "Vodafone brings Africa's M-Pesa mobile money to Europe". U.S. Archived from the original on 4 November 2023. Retrieved 3 June 2026.
+
+↑ "Grupul Vodafone pune capăt experimentului M-Pesa din România: serviciul de plăţi de pe telefonul mobil se închide la 1 decembrie". ZF.ro (in Romanian). Retrieved 4 June 2026.
+
+↑ "Vodafone to shut down M-Pesa in Albania". Capital Business. 5 July 2017. Retrieved 13 August 2018.
+
+↑ Makin. "Regulatory Issues Around Mobile Banking" (PDF). OECD. Retrieved 15 November 2011.
+
+↑ Mas, I. (2011). "Why Are Banks So Scarce in Developing Countries?" Critical Review: A Journal of Politics and Society, 23(1–2), 135–145.
+
+↑ Makin. "Regulatory Issues Around Mobile Banking". OECD, Consult Hyperion. Retrieved 15 November 2011.[permanent dead link]
+
+↑ Bill and Melinda Gates Foundation (2013). Fighting Poverty Profitably: Transforming the Economics of Payments to Build Sustainable, Inclusive Financial Systems (PDF) (Report). Retrieved 4 June 2026.
+
+↑ Wyche, Susan; Simiyu, Nightingale; Othieno, Martha (May 2016). "Mobile Phones as Amplifiers of Social Inequality Among Rural Kenyan Women". ACM Transactions on Computer-Human Interaction. 23 (3): 14. doi:10.1145/2911982. S2CID 8279070.
+
+↑ Gibson, Alan (10 August 2016). "FSD Kenya: Ten years of a market systems approach in the Kenyan finance market". Financial Sector Deepening Kenya. Retrieved 3 June 2026.
+
+↑ Bateman, Milford; Duvendack, Maren; Loubere, Nicholas (3 July 2019). "Is fin-tech the new panacea for poverty alleviation and local development? Contesting Suri and Jack's M-Pesa findings published in Science". Review of African Political Economy. 46 (161): 480. doi:10.1080/03056244.2019.1614552. hdl:10.1080/03056244.2019.1614552. ISSN 0305-6244.
+
+↑ Bateman, Milford; Duvendack, Maren; Loubere, Nicholas (11 June 2019). "Another False Messiah: The Rise and Rise of Fin-tech in Africa". ROAPE. Retrieved 4 June 2026.
+
+↑ Itimu, Kiruti (25 June 2019). "Safaricom Sued For Alleged Data Breach of its 11.5 Million Gambling Customers". Techweez. Retrieved 2 July 2019.
+
+Bibliography[edit]
+
+Mas, Ignacio; Morawczynski, Olga (2009). "Designing Mobile Money Services: Lessons from M-PESA". Innovations: Technology, Governance, Globalization. 4 (2): 77–91. doi:10.2139/ssrn.1552753. ISSN 1556-5068. S2CID 154328190.
+
+Morawczynski, Olga; Miscione, Gianluca (2008). "Examining trust in mobile banking transactions: The case of M-PESA in Kenya". Social Dimensions of Information and Communication Technology Policy. IFIP International Federation for Information Processing. Vol. 282. pp. 287–298. doi:10.1007/978-0-387-84822-8_19. ISBN 978-0-387-84821-1. ISSN 1571-5736.
+
+Morawczynski, O. (2008). "Surviving in the 'Dual System': How M-PESA is Fostering Urban-to-Rural Remittances in a Kenyan Slum" HCC8 Conference. Pretoria, South Africa.
+
+Omwansa, T. (2009). "M-Pesa: Progress and Prospects" innovations / Mobile World Congress 2009. Pg 107-123. (PDF)
+
+External links[edit]
+
+Wikimedia Commons has media related to M-Pesa.
+
+M-Pesa in Kenya
+
+Mpesa API Integration documentation
+
+v
+t
+e
+Digital payment providers
+Active
+
+2C2P
+
+Adyen
+
+Airtel Payments Bank
+
+Alipay
+
+Amazon Pay
+
+Ant Group
+
+Apple
+
+Card
+
+Pay
+
+Wallet
+
+Atlantic Money
+
+Bancomat Pay
+
+bKash
+
+BillDesk
+
+bit
+
+Bizum
+
+Blik
+
+Block
+
+Afterpay
+
+Square
+
+Cash App
+
+Boku, Inc.
+
+BPAY
+
+Bunq
+
+Carta Worldwide
+
+CDS Global
+
+Chase Paymentech
+
+WePay
+
+Circle
+
+Cred
+
+Dwolla
+
+Easypaisa
+
+Elavon
+
+EnStream
+
+Ensygnia
+
+EServGlobal
+
+Freecharge
+
+GCash
+
+Global Payments
+
+Google Pay
+
+Google Pay app
+
+Google Wallet
+
+iDEAL
+
+Ingenico
+
+Interac e-Transfer
+
+JazzCash
+
+Jumio
+
+KakaoPay
+
+Klarna
+
+Line Pay
+
+Maya
+
+Mir
+
+Mir Pay
+
+MobiKwik
+
+NTT Data Payment Services
+
+Mobile Suica
+
+MobilePay
+
+M-Pesa
+
+Mi-Pay
+
+MintChip
+
+MMQR
+
+Nagad
+
+RBI
+
+RTGS
+
+NPCI
+
+IMPS
+
+UPI
+
+BBPS
+
+BHIM
+
+IDRBT
+
+NEFT
+
+Naver Pay
+
+Nexi
+
+Nexgo
+
+Novalnet
+
+Nuvei
+
+Orange Money
+
+Osaifu-Keitai
+
+Passport
+
+PAX Technology
+
+Paya
+
+Payanywhere
+
+PayBox
+
+PayMate
+
+PayMe
+
+Paymentwall
+
+PayNow
+
+Payoneer
+
+PayPal
+
+Braintree
+
+Zettle
+
+Venmo
+
+Xoom
+
+PayPay
+
+PayPoint
+
+Paysafe
+
+Neteller
+
+Openbucks
+
+PaysafeCard
+
+Skrill
+
+Payzone
+
+Paytm
+
+PayU
+
+Paze
+
+Pepper
+
+PhonePe
+
+Pine Labs
+
+Pix
+
+POLi Payments
+
+QRIS
+
+Red Dot Payment
+
+Remita
+
+Revolut
+
+Samsung Pay
+
+Samsung Wallet
+
+Sarvatra Technologies
+
+SberPay
+
+SBPay
+
+Sezzle
+
+Shift4
+
+Shop Pay
+
+Skaleet
+
+Spice Money
+
+Stripe
+
+Swish
+
+Telebirr
+
+Tata Neu
+
+Tencent
+
+Touch 'n Go eWallet
+
+TWINT
+
+UnionPay app
+
+Veem
+
+Verifi
+
+Verifone
+
+Versapay
+
+Vipps
+
+VugaPay
+
+Wave Money
+
+WebMoney
+
+WeChat Pay
+
+Wero
+
+WiPay
+
+Wizzit
+
+Worldline SA
+
+Worldpay, Inc.
+
+Yandex Pay
+
+Yape
+
+YooMoney
+
+Zelle
+
+Zeta
+
+Ziina
+
+Defunct
+
+AirTag
+
+Bell ID
+
+Billpoint
+
+C2it
+
+Clinkle
+
+Flattr
+
+Fortumo
+
+Google Wallet (2011–2018)
+
+Kuapay
+
+Lemon Wallet
+
+LG Pay
+
+Merchant Customer Exchange
+
+Microsoft Pay
+
+Mozido
+
+PayDirect
+
+Paym
+
+Pingit
+
+Powa Technologies
+
+Qiwi
+
+Quahl
+
+Sage Pay
+
+Simpay
+
+Softcard
+
+Tez
+
+vcash
+
+Paydiant
+
+Ukash
+
+Wirecard
+
+Worldpay Group
+
+Zentoshin
+
+Zong
+
+Remittance
+
+CurrencyFair
+
+MoneyGram
+
+Nium
+
+OFX
+
+Remitly
+
+Rewire
+
+Ria Money Transfer
+
+Transfast
+
+TransferMate
+
+Travelex
+
+Western Union
+
+Wise
+
+WorldRemit
+
+XE
+
+Related
+
+Digital currency
+
+Digital wallet
+
+Mobile payment
+
+Payment service provider
+
+List of online payment service providers
+
+European Mobile Payment Systems Association
+
+European Payments Initiative
+
+ Category
+
+v
+t
+e
+Vodafone
+Subsidiaries 
+and divisions
+
+Albania
+
+Czech Republic
+
+Egypt
+
+Germany
+
+Greece
+
+Ireland
+
+Northern Cyprus
+
+Portugal
+
+Romania
+
+Turkey
+
+United Kingdom
+
+Vodafone Global Enterprise
+
+Vodafone Deutschland
+
+Vodafone Automotive
+
+Shareholdings
+
+Australia (23.98%)
+
+Vodafone Australia
+
+TPG
+
+iiNet
+
+Internode
+
+Felix Mobile
+
+India (45.2%)
+
+Netherlands (10%)
+
+Vodafone Netherlands
+
+Ziggo
+
+Ziggo Sport
+
+Ziggo Sport Totaal
+
+Ziggo TV
+
+Vantage Towers (89.32%)
+
+INWIT (37.513%)
+
+Vodacom (65.1%)
+
+South Africa
+
+Ethiopia
+
+DR Congo
+
+Kenya
+
+Lesotho
+
+Mozambique
+
+Nigeria
+
+Tanzania
+
+Partners
+
+Austria
+
+Azerbaijan
+
+Bahrain
+
+Belgium
+
+Bulgaria
+
+Canada
+
+Channel Islands
+
+Chile
+
+Cook Islands
+
+Croatia
+
+Cyprus
+
+Denmark
+
+Dominican Republic
+
+Estonia
+
+Fiji
+
+Finland
+
+France
+
+French Polynesia
+
+Georgia
+
+Ghana
+
+Hong Kong
+
+Hungary
+
+Iceland
+
+Italy
+
+Japan
+
+Kiribati
+
+Latvia
+
+Lithuania
+
+Luxembourg
+
+North Macedonia
+
+New Zealand
+
+Oman
+
+Papua New Guinea
+
+Peru
+
+Poland
+
+Qatar
+
+Samoa
+
+Serbia
+
+Singapore
+
+Slovenia
+
+Spain
+
+Sweden
+
+Switzerland
+
+Taiwan
+
+Ukraine
+
+United States
+
+Vanuatu
+
+Products and services
+
+M-Pesa
+
+Betavine
+
+Corporate directors
+
+Gerard Kleisterlee (Chairman)
+
+Vittorio Colao (CEO)
+
+Andy Halford (CFO)
+
+Steve Pusey (CTO)
+
+Michel Combes (CEO Europe Region)
+
+John Buchanan
+
+Alan Jebson
+
+Samuel Jonah
+
+Nick Land
+
+Anne Lauvergeon
+
+Simon Murray
+
+Nick Read
+
+Luc Vandevelde
+
+Tony Watson
+
+Philip Yea
+
+Sponsorships
+
+Al Ahly SC (2002–2009)(2016–2018)(2026–)
+
+Beşiktaş J.K. (2014–2020)
+
+England cricket team (1996–2010)
+
+Kaizer Chiefs (Vodacom) (2012–)
+
+Loftus Versfeld Stadium (Vodacom) (2005–)
+
+Orlando Pirates (Vodacom) (2012–)
+
+Manchester United F.C. (2000–2006)
+
+Shelby Can-Am (Vodacom) (2000–2005)
+
+South African Football Association (Vodacom) (2012–)
+
+South Africa national soccer team
+
+South Africa women's national soccer team
+
+South Africa national rugby union team (Vodacom) (1994–2017)
+
+Team Vodafone (2007–12)
+
+Vodacom Blue Bulls (Vodacom) (1998–)
+
+Vodacom Challenge (Vodacom) (1999–2011)
+
+Vodacom Championship (Vodacom) (2001–2010)
+
+Vodacom Cup (Vodacom) (1998–2015)
+
+Vodacom League (Vodacom) (1998–2012)
+
+Vodacom Players Championship (Vodacom) (1998–2002)
+
+Vodacom Soccer Spectacular (Vodacom Lesotho) (2008–2011)
+
+Vodacom Tower (Vodacom) (2009–)
+
+Vodafone McLaren Mercedes (2007–13)
+
+Al Ahly SC Stadium (2026–)
+
+Vodafone Ghana Music Awards (2000–)
+
+Vodafone Park (2013–2023)
+
+Vodafone Ski Resort (2005–)
+
+Vodafone Warriors (1999–)
+
+Other
+
+AirTouch
+
+Arcor
+
+Cable & Wireless Worldwide
+
+Cheeka
+
+ihug
+
+Mannesmann
+
+Vodafone live!
+
+ZooZoo
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=M-PESA&oldid=1387863815"
+
+Categories: 
+Vodafone
+Payment systems
+Economy of Kenya
+Telecommunications companies of Kenya
+Economy of Tanzania
+Communications in Tanzania
+Economy of Afghanistan
+Mobile payments
+Hidden categories: 
+Articles with short description
+Short description is different from Wikidata
+Use dmy dates from September 2020
+CS1 errors: deprecated parameters
+All articles with incomplete citations
+Articles with incomplete citations from July 2022
+All articles with unsourced statements
+Articles with unsourced statements from November 2015
+All pages needing factual verification
+Wikipedia articles needing factual verification from July 2022
+All articles with vague or ambiguous time
+Vague or ambiguous time from July 2022
+Wikipedia articles in need of updating from July 2022
+All Wikipedia articles in need of updating
+CS1 Romanian-language sources (ro)
+Articles with unsourced statements from July 2022
+All articles with dead external links
+Articles with dead external links from May 2017
+Articles with permanently dead external links
+Vague or ambiguous time from July 2025
+Wikipedia articles needing clarification from July 2025
+All articles with specifically marked weasel-worded phrases
+Articles with specifically marked weasel-worded phrases from July 2025
+Articles with unsourced statements from July 2025
+Articles needing additional references from December 2025
+All articles needing additional references
+Vague or ambiguous time from December 2025
+Articles with criticism or controversy sections from September 2026
+All articles with criticism or controversy sections
+Commons category link is on Wikidata
+
+ This page was last edited on 25 November 2026, at 20:08 (UTC).
+
+Page was rendered with Parsoid.
+
+Text is available under the Creative Commons Attribution-ShareAlike 4.0 License;
+additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+
+Privacy policy
+
+About Wikipedia
+
+Disclaimers
+
+Contact Wikipedia
+
+Legal & safety contacts
+
+Code of Conduct
+
+Developers
+
+Statistics
+
+Cookie statement
+
+Mobile view
+
+Search
+
+ Search
+
+Toggle the table of contents
+
+M-PESA
+
+16 languages
+
+Add topic

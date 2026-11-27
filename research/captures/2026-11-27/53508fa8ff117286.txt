@@ -1,0 +1,73 @@
+InkubaLM: A Small Language Model for Low-Resource African Languages | Lelapa AI
+
+VulavulaEnterprisePricing
+ResourcesAbout UsSign Up
+
+Back to Blog
+October 25, 2024·5 min read
+InkubaLM: A Small Language Model for Low-Resource African Languages
+By Nhlawulo Shikwambane
+
+Introduction
+
+Lelapa AI has introduced InkubaLM, a robust, compact model designed to serve African communities without requiring extensive resources. The name references the dung beetle's ability to move 250 times its weight, symbolizing the strength of smaller models. The initiative aims to democratize AI access for five African languages: isiZulu, Yoruba, Hausa, Swahili, and isiXhosa.
+
+The Model
+
+InkubaLM-0.4B is a 400-million parameter autoregressive language model trained from scratch using 2.4 billion total tokens. The training data includes 1.9 billion tokens from five African languages plus English and French. The model features a vocabulary size of 61,788 and employs architecture similar to MobileLLM.
+
+"Our model is the smallest in terms of size and has been trained using the smallest amount of data compared to other models" when compared to competing solutions.
+
+Datasets
+
+Two complementary datasets accompany the model:
+
+Inkuba-Mono Dataset: A monolingual collection sourced from Hugging Face, GitHub, and Zenodo, containing 1.9 billion tokens across five African languages for pretraining purposes.
+
+Inkuba-Instruct Dataset: An instruction-tuning dataset covering six tasks — Machine Translation, Sentiment Analysis, Named Entity Recognition, Parts of Speech Tagging, Question Answering, and Topic Classification. The dataset comprises 148 million training samples, 65 million validation samples, and 55 million test samples.
+
+Performance Results
+
+The model was evaluated against other open-source alternatives across three benchmarks:
+
+Sentiment Analysis: InkubaLM outperforms all models in sentiment analysis regardless of parameter and training data size except for MobiLlama in zero-shot evaluation on Swahili, Hausa, and Yoruba.
+
+AfriMMLU (Multi-Choice Knowledge QA): The model outperformed four of six comparison models on average, though larger models like Gemma-7B and LLaMA 3-8B showed superior performance.
+
+AfriXNLI (Natural Language Inference): InkubaLM outperformed SmolLM-1.7B and LLaMA 3-8B models on average in zero-shot evaluation across five African languages.
+
+Use Cases and Implementation
+
+InkubaLM functions as an autoregressive model capable of text generation and downstream task performance through zero-shot or few-shot learning. For improved results on specific tasks, fine-tuning with instruction datasets is recommended. The model supports CPU, GPU, and multi-GPU deployment, making it viable for resource-constrained environments including laptop computers.
+
+Conclusion
+
+Lelapa AI positions smaller models as solutions for equitable AI development. "Models like InkubaLM offer more practical and efficient solutions for developing and deploying NLP applications" in resource-constrained contexts. Future work will highlight additional advantages including energy efficiency and improved interpretability.
+
+The research was supported by compute credits from the Microsoft AI4Good lab.
+
+Back to all posts
+
+We build resource-efficient language AI designed to scale globally and work reliably across markets, infrastructure conditions, and cost constraints.
+
+Product
+Vulavula Transcribe
+Vulavula Translate
+
+Company
+About Us
+Team
+Careers
+Pricing
+Contact
+
+Resources
+Blog
+Publications
+Developer Docs
+
+Legal
+Privacy Notice
+Terms of Service
+
+© 2026 Lelapa AI. All rights reserved.

@@ -1,0 +1,293 @@
+Africa’s First Multilingual Small Language Model Gets Even Smaller - Thanks to Top African Innovator | Africanews
+
+Skip to main content
+
+Welcome to Africanews
+
+Please select your experience
+
+ En
+ Fr
+
+ News
+
+Join us
+
+ News
+
+ Business
+
+ Sport
+
+ Culture
+
+ Science & Technology
+
+ No Comment
+
+ Programmes
+
+ Podcast
+
+ Live
+
+ weather
+ Close
+
+ Watch Live
+
+ News
+
+ Business
+
+ Sport
+
+ Culture
+
+ Science & Technology
+
+ No Comment
+
+ Programmes
+
+ Podcast
+
+ Weather
+
+ Breaking
+ News
+
+ Close
+
+Just In
+
+Copy/paste the script below
+
+ OTHER WIDGETS
+
+November 27, 2026
+
+ 09:14
+
+ Egypt's President Sisi and Qatar's Sheikh Tamim discuss Palestine, regional stability
+
+ 09:08
+
+ Russia: Moscow's iconic Soviet-era expo park opens its 20,000-square-metre outdoor ice rink
+
+ 08:16
+
+ Italy not informed about Ukraine drone strike on Russian ships in Libya
+
+Advertising
+
+ 07:24
+
+ Algeria condemns 'spillover' of Ukraine war into Libya
+
+November 26, 2026
+
+ 23:05
+
+ Germany: Christmas markets open across the country amid tight security
+
+ 22:34
+
+ Mali top Group G as Côte d’Ivoire join them in U-17 World Cup knockouts
+
+ 22:18
+
+ Morocco and Senegal advance to U-17 World Cup knockout stage
+
+ 22:14
+
+ Nigeria: ISWAP turns to armed drones and global financing networks 
+
+ 21:37
+
+ UK: London's Gingerbread City returns with 50 edible architectural creations
+
+ 21:10
+
+ Belgium: Farmers and tractors descend on Brussels to defend EU subsidies
+
+ 20:51
+
+ Guinea-Bissau delays elections for two years to 2028
+
+ 18:47
+
+ Ebola: UN says outbreak driving spike in gender-based violence in Congo
+
+ 17:22
+
+ Extreme heat threatens pregnant women in South Africa’s informal settlements
+
+Advertising
+
+ View more
+
+ News
+
+Africa’s First Multilingual Small Language Model Gets Even Smaller - Thanks to Top African Innovator
+
+ People are reflected in a window of a hotel at the Davos Promenade in Davos, Switzerland, Jan. 15, 2024. 
+   -  
+
+ Copyright © africanews 
+ Markus Schreiber/Copyright 2024 The AP. All rights reserved 
+
+ By Agencies
+
+ Last updated:
+ 12/06/2025
+
+ Africa
+
+In a major leap for inclusive and accessible artificial intelligence, Africa’s first multilingual Small Language Model (SLM), InkubaLM, has been reduced in size by an impressive 75%, without compromising performance. This milestone was achieved through the Buzuzu-Mavi Challenge, a global AI competition hosted by Lelapa AI in partnership with Zindi.
+
+The challenge invited machine learning experts to compress InkubaLM, which is designed to support African languages, making it more efficient and easier to deploy in low-resource environments. Out of 490 participants from 61 countries, the top winners, all from Africa—demonstrated the continent’s growing strength in AI innovation.
+
+Yvan Carré from Cameroon took first place, applying a mix of adapter heads, quantisation, and knowledge distillation to dramatically slim down the model. South Africa’s Stefan Strydom secured second place by cutting the model to just 40 million parameters through vocabulary trimming and shared embeddings. The AI_Buzz team, Abdourahamane Ide Salifou, Mubarak Muhammad, and Victor Olufemi from Niger and Nigeria, won third, using blended datasets and model distillation to create an efficient student model.
+
+This development is especially significant for Africa, where only about 33% of the population has regular internet access and 70% rely on entry-level smartphones. Lean AI models like InkubaLM can operate on these devices without constant connectivity, powering practical solutions in sectors such as education, agriculture, translation, and customer service.
+
+“This challenge isn’t simply about technical progress, it reflects our mission to build AI that’s inclusive and grounded in African realities,” said Pelonomi Moiloa, CEO of Lelapa AI. “When African talent is trusted with meaningful challenges, the results are transformative.”
+
+Celina Lee, CEO of Zindi, added: “We’re proud to show the world that more can be done with less. These solutions showcase what African innovators can achieve in the language model space.”
+
+Looking ahead, the most promising models from the challenge will inform future versions of InkubaLM, which remains open-source and available to the global tech community. Lelapa AI and Zindi are inviting continued collaboration to make African AI even smaller, smarter, and more impactful.
+
+ Related articles
+
+ 01:42
+
+ Mali uses AI to teach school children in Bambara
+
+ 27/11 - 09:33
+
+ Share
+
+ More About
+
+ Africa
+
+ innovation
+
+ AI
+
+ Generative AI
+
+ Related articles
+
+ 01:42
+
+ Mali uses AI to teach school children in Bambara
+
+ 27/11 - 09:33
+
+ On the same subject
+
+ NEWS
+
+ Go to video
+
+ Forward7-ARSO Cooperation Agreement Delivers 45+ Standards to Support the Future of Clean Cooking in Africa
+
+ 19 hours ago
+
+ NEWS
+
+ 01:50
+
+ UN warns funding cuts threaten decades of gains in fight against AIDS
+
+ 25/11 - 16:34
+
+ NEWS
+
+ 01:45
+
+ In Abidjan, Africa wants to shape its own demographic future
+
+ 24/11 - 14:21
+
+ NEWS
+
+ 01:43
+
+ China’s used smartphone trade expands to South Asia and Africa
+
+ 21/11 - 09:48
+
+ NEWS
+
+ 01:32
+
+ African negotiators at COP31 demand concrete measures on climate justice
+
+ 20/11 - 17:23
+
+ SPORT
+
+ 01:48
+
+ Doha set for the Under-17 FIFA World Cup: Can Africa own the stage?
+
+ 18/11 - 14:47
+
+ More stories
+
+ 01:04
+
+ Presidential elections
+
+ Guinea-Bissau delays elections for two years to 2028
+
+ 12 hours ago
+
+ 01:37
+
+ Italy
+
+ Italy not informed about Ukraine drone strike on Russian ships in Libya
+
+ 1 hour ago
+
+ 01:08
+
+ Terrorism
+
+ Nigeria: ISWAP turns to armed drones and global financing networks 
+
+ 11 hours ago
+
+ By using this website, you agree with our use of cookies to improve its performance and enhance your user experience. More info in our Cookies policy page..
+ Ok
+
+Social Channels
+
+ About Africanews
+
+ Terms and Conditions
+
+ Contacts
+
+ Cookie policy
+
+ Distribution
+
+ Advertising
+
+ Jobs
+
+ Apps
+
+ Widgets
+
+ Euronews
+
+ Friday 27/11/2026
+
+ English
+ French

@@ -1,0 +1,9 @@
+INFO    lukoji.cli · commande démarrée
+INFO    lukoji.db · migration appliquée
+INFO    lukoji.db · migration appliquée
+WARNING lukoji.providers · collecteur en échec
+WARNING lukoji.providers · collecteur en échec
+[wikipedia] ÉCHEC (http) : 429 Too Many Requests (fr.wikipedia.org)
+[gdelt] ÉCHEC (inaccessible_environnement) : api.gdeltproject.org : <urlopen error [Errno 104] Connection reset by peer>
+Session 1 : echec · 0 piste(s) enregistrée(s) (niveau « resultat_recherche »)
+WARNING lukoji.cli · commande terminée

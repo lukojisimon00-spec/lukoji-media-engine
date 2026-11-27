@@ -1,0 +1,816 @@
+Marginalisation et dépendance aérienne de l’Afrique sub-saharienne
+
+Skip to navigation – Site map
+
+ Belgeo 
+
+ Revue belge de géographie 
+
+HomeNuméros2Marginalisation et dépendance aér...
+
+ Search
+
+Contents - Previous document - Next document
+
+2 | 2007
+Transport geography in Africa : legacies, constraints, and prospects
+
+Marginalisation et dépendance aérienne de l’Afrique sub-saharienne
+
+Marginalization and air dependence of sub-Saharan Africa
+
+ Frédéric Dobruszkes and Hugo Mwanza Wa Mwanza
+
+p. 203-226
+
+https://doi.org/10.4000/belgeo.11279
+
+Abstract | Index | Outline | Text | Bibliography | Notes | References | About the authors
+
+Abstracts 
+
+Français English 
+
+Cet article s’intéresse à la place de l’Afrique sub-saharienne dans le système aérien mondial et à la desserte intérieure de ce continent, analyse les difficultés y pesant sur l’exploitation aérienne et apporte des éléments au débat entre régulation et libéralisation.
+L’Afrique se situe clairement en marge du système aérien mondial. Sa desserte interne et externe pèse peu par rapport à l’offre des pays du centre. Ses compagnies ont à quelques exceptions près une envergure limitée et ne sont en position de “force” que sur le marché intra-africain. Les problèmes que connaît l’Afrique se répercutent bien entendu sur le transport aérien, limitant tout à la fois l’offre, la demande et les possibilités d’intervention des États, rendant très difficile l’exploitation d’une offre aérienne. Le cas d’Air Afrique, compagnie multinationale qui appartenait à onze États, en est une illustration très concrète. Sa faillite en 2002 s’est traduite par la disparition de liaisons tant intra- qu’extra-africaines, toutes n’ayant pas été reprises par d’autres compagnies.
+L’article s’interroge alors sur les contraintes de la régulation étatique et sur l’intérêt d’une libéralisation du transport aérien africain. Les “rigidités” de la régulation sont un fait, mais leur suppression conduirait sans doute à la faillite de compagnies africaines face au poids des compagnies occidentales. Les limitations d’usage de la 5e liberté de l’air ne semblent limiter que partiellement la connexité du réseau intra-africain. L’analyse de l’impact des accords open-sky signés entre les États-Unis et 59 autres États montre que ceux-ci ont rarement profité aux compagnies des pays de la périphérie. Enfin, la question d’une libéralisation du transport aérien intra-africain pour les seules compagnies africaines demeure ouverte.
+
+The place of sub-Saharan Africa in the world air system and the question of domestic flights in Africa are addressed in this paper, which analyzes the problems raised by air operation on that continent and fuels the discussion on regulation / liberalization.
+Africa is clearly on the fringes of the world air system. Its internal and external air traffic does not carry much weight compared with the supply from the centre. Most of African airlines have a limited scope and are in a position of strength on the intra-African market only. Africa’s problems inevitably affect air transport, limiting supply, demand and possible State interventions, and make the operation of air supply extremely difficult. This is very concretely reflected by the case of Air Afrique, a multinational company belonging to eleven States, whose bankruptcy in 2002 led to the disappearance of intra- and extra-African air links which were not taken over by other air companies.
+The article examines the constraints of State regulation and the interest of liberalizing air transport in Africa. If the “rigidity” of regulation is real, its abolition would probably result in the bankruptcy of African airlines in view of the weight of Western airlines. Restrictions on the use of the 5th air freedom seem to only partly limit the connexity of the intra-African network. An analysis of the impacts of open-sky agreements between the USA and 59 other States shows they have seldom benefited the airlines of peripheral countries.
+Finally, the liberalization of intra-African air transport for the sole African airlines remains open.
+ Top of page
+
+Index terms
+
+Mots-clés : géographie des transports, transport aérien, Afrique, Afrique sub-saharienne, libéralisation, centre-périphérie
+
+Keywords: transport geography, air transport, Africa, sub-Saharan Africa, liberalization, centre-peripheryTop of page
+
+Outline
+
+L’Afrique en marge du système aérien mondial
+
+Les difficultés du transport aérien en Afrique et l’échec d’Air Afrique
+
+Un contexte défavorable au transport aérien
+
+Une réponse collective : Air Afrique
+
+Le salut par la libéralisation ?
+
+Régulation versus libéralisation
+
+Les régulations bilatérales : le cas des relations Afrique-Belgique
+
+Limitation de la 5e liberté de l’air et desserte de l’Afrique
+
+La libéralisation intra-africaine : le processus de Yamoussoukro
+
+La libéralisation inéquitable : les accords de ciel ouvert états-uniens
+
+ConclusionsTop of page
+
+Full text
+
+PDF Share by e-mail
+
+Remerciements
+Nous tenons à remercier Madame S. Frederickx (Service Public Fédéral Mobilité et Transport) qui nous a patiemment aidés à examiner les accords bilatéraux belgo-africains.
+
+1C’est un lieu commun de rappeler que le développement économique et le niveau de vie sont très inégalement répartis à l’échelle mondiale. Les rapports annuels des institutions internationales (PNUD, CNUCED, Banque mondiale...) ne cessent de confirmer que le monde est hiérarchisé selon une structure centre-périphérie, au sens géo-économique du terme. Le centre dispose des richesses, du pouvoir (économique et politique), des secteurs productifs modernes, des capacités d’innovation... et de ce fait domine un monde dans lequel la libéralisation des échanges est croissante sous la pression et sous l’égide du centre qui agit soit directement soit par le biais des organismes internationaux qu’il contrôle (Banque mondiale, Fonds monétaire international [FMI], Organisation mondiale du commerce [OMC]). La périphérie subit la mondialisation plus qu’elle n’en profite (Amin et al., 2005 ; Coutrot et Husson, 1993 ; Vandermotten et Marissal, 2003), et la semi-périphérie est dans une position intermédiaire et ses intérêts rejoignent tantôt ceux du centre, tantôt ceux de la périphérie, ce qui ne va pas sans susciter quelques contradictions.
+
+2Le transport aérien s’inscrit pleinement dans ces tendances. L’offre se concentre sur les marchés solvables et est largement produite par les compagnies issues des pays formant le centre (Amérique du nord, Europe occidentale, Japon, quelques pays d’Asie du sud-est, Australie, Nouvelle-Zélande). De nombreux espaces sont dès lors peu ou pas connectés au système mondial, ce qui tend à les “périphériser” davantage.
+
+3Le présent article se focalise sur le cas spécifique de l’Afrique sub-saharienne, selon trois perspectives. Une première perspective, générale, présente l’offre aérienne mondiale et la part de l’Afrique sub-saharienne. Sont examinés dans ce cadre la dépendance et/ou l’abandon des pays africains par les compagnies des pays du centre, en particulier européennes. La seconde perspective est celle de la faiblesse et des difficultés de l’aviation intra-africaine, avec les questions d’enclavement (même s’il faut rester prudent avec cette notion (Steck, 2001)) et de non-intégration que cela suppose, discutées au travers du cas d’Air Afrique. Enfin, la troisième perspective porte sur le débat, non tranché à ce jour, entre les tenants de la régulation étatique ou ceux de la libéralisation, et ce tant dans le cadre de relations aériennes intra-africaines qu’Afrique-pays dits développés. Nous conclurons alors sous la forme d’une interrogation sur la place de l’Afrique dans le système monde.
+
+1 Official Airline Guide. Contrairement à ce que l’adjectif " Official " pourrait faire croire, OAG e (...)
+
+2 Le seul souci que pose les données OAG est la (nécessaire) décomposition des vols avec escales. Ain (...)
+
+4Nos analyses sont basées sur un examen de l’offre aérienne régulière voyageurs, mené grâce aux bases de données OAG1 décrivant de manière désagrégée et exhaustive l’offre aérienne à l’échelle des aéroports, des vols et des compagnies. L’utilisation de ces données à l’occasion de diverses recherches et d’une thèse de doctorat nous a permis de constater la fiabilité et l’exhaustivité de la source2.
+
+5L’offre non régulière (vols charters et, bien plus marginalement, privés) et l’offre cargo n’ont pas été considérées faute de disponibilité des données sur une base désagrégée. Quant à la demande réalisée (comportement des voyageurs), celle-ci n’est que partiellement disponible compte tenu de la concurrence croissante du secteur, qui rend les données commerciales très stratégiques. Ainsi, l’Organisation de l’aviation civile internationale (OACI) propose des données portant sur la demande régulière internationale mais à la stricte condition que minimum deux opérateurs opèrent une relation donnée). Les administrations nationales et Eurostat ne désagrègent pas non plus suffisamment les données qu’elles fournissent, et les compagnies pratiquent largement le secret.
+
+6Dans la suite de ce papier, sauf mention contraire, les termes “Afrique” et “africain” se rapporteront à la seule Afrique sub-saharienne.
+
+L’Afrique en marge du système aérien mondial
+
+7Que l’on analyse l’offre ou la demande, et quels que soient les indicateurs utilisés (nombre de vols opérés, de sièges offerts, de sièges-km, de passagers, de passagers-km...), l’Afrique est clairement en marge du système aérien mondial. Selon diverses données compilées par l’OMC, la part de l’Afrique dans l’offre internationale exprimée en sièges-km était de 6 % en 2001 ; sa contribution à la demande réalisée exprimée en passagers-km n’était que de 4,9  % en 2003 ; le trafic intra-africain représentait respectivement 0,6  % et 0,7  % (OMC, 2005). Ces chiffres sont d’autant plus marquants si l’on tient compte du fait qu’ils sont tirés vers le haut par l’Afrique du nord et la pondération par la distance. En 2000, l’Afrique est totalement à l’écart du top 100 des flux internationaux de passagers (Cattan, 2004). Sur base des données OAG, nous avons calculé que la contribution de l’Afrique sub-saharienne à l’offre internationale mondiale exprimée en sièges offerts est de 2,6 % en janvier 2005 ; la moitié correspond à de l’offre inter-continentale, ce qui traduit la faiblesse des échanges intra-africains (en comparaison, seuls 21 % de l’offre internationale de l’Europe occidentale et centrale n’est pas interne à ce bloc).
+
+8La cartographie de l’offre internationale à l’échelle mondiale de l’offre rend peut-être plus impressionnant encore le clivage existant de manière générale entre le centre et la périphérie, dont l’Afrique (figure 1). Cette inégalité vaut aussi aux échelles intra-nationales dans la mesure où, pour les pays périphériques dont ceux de l’Afrique, on ne compte généralement qu’un seul aéroport par pays connecté à l’étranger, en l’occurrence la capitale politique ou économique, au contraire des pays dits développés sous réserve de leur étendue.
+
+Figure 1. Offre internationale par pays.
+Zoom Original (jpeg, 564k)
+
+3 Dans le cas présent, il est plus logique de considérer le produit intérieur brut en monnaie courant (...)
+
+9La corrélation entre offre aérienne internationale et développement économique est une réalité et l’on ne s’étonne guère des très bonnes corrélations entre le volume de l’offre, que celle-ci soit exprimée en vols ou en sièges, et le produit intérieur brut, surtout si celui-ci n’est pas exprimé en parité de pouvoir d’achat (PPA)3 (tableau 1).
+
+Tableau 1. Corrélations linéaires entre l’offre aérienne internationale et le PIB (calcul pondéré par la population des pays).
+Zoom Original (jpeg, 236k)
+
+4 Selon les cas, nous utilisons le nombre de vols ou le nombre de sièges. Le nombre de vols permet de (...)
+
+5 Précisons que le classement de l’Europe tient en partie à son morcellement politique malgré l’intég (...)
+
+10Le fait de rapporter le volume de l’offre internationale à la population (figure 2) relativise à peine la carte précédente4. Même si la carte laisse apparaître une situation moins monolithique qu’il n’y paraissait, le clivage entre pays du centre et pays de la périphérie demeure globalement vrai5 et l’Afrique sub-saharienne apparaît particulièrement en marge, exceptés quelques pays relativement insérés dans l’économie mondiale et un peu plus développés (Afrique du sud, Gabon, Kenya) ou plus touristiques que la moyenne (Sénégal, Namibie...), sans parler de la demande post-migratoire (visites au pays d’origine).
+
+Figure 2. Offre internationale par habitant.
+Zoom Original (jpeg, 956k)
+
+6 Calculs personnels d’après les bases de données OAG (2005).
+
+11Le tableau 2 montre que l’offre intra-africaine est presque exclusivement due aux compagnies africaines, la faible part des autres compagnies correspondant aux vols inter-continentaux desservant deux aéroports africains ou plus. Sur les marchés extra-africains par contre, les compagnies africaines ne produisent que 34  % de l’offre, le solde étant largement opéré par les compagnies issues des pays du centre, européennes pour les trois-quarts des sièges offerts. Les compagnies africaines sont presque toutes des petites compagnies, et un classement des compagnies selon leur offre en sièges montre que la première compagnie africaine se classe 45e (South African Airways) et la seconde 134e (Kenya Airways) (49e et 90e selon la seule offre internationale). Au total, la contribution des compagnies africaines à l’offre internationale mondiale, en 2005, n’est que de 2,7 %, toujours selon le volume de sièges offerts6. Alors qu’une partie des compagnies européennes doivent leur essor à la colonisation et au monopole dont elles ont pu bénéficier pour la desserte de leurs colonies, la décolonisation n’a donc permis qu’un rééquilibrage partiel au profit des compagnies africaines, malgré les coopérations mises en place après les indépendances (Naveau, 2004).
+
+Tableau 2. Qui produit la desserte internationale de l’Afrique ?
+Zoom Original (jpeg, 396k)
+
+12Selon les pays, la part de l’offre produite par les compagnies nationales peut cependant fortement varier, comme l’illustre la figure 3. La diversité des situations découle de facteurs aussi variés que l’intérêt relatif que présentent les marchés pour les compagnies des pays du centre, la puissance économique des (éventuelles) compagnies nationales africaines et le degré d’ouverture – ou de protectionnisme, selon les points de vue – du marché aérien de chaque État.
+
+Figure 3. Parts de marché des compagnies africaines.
+Zoom Original (jpeg, 352k)
+
+13Ainsi, les compagnies du centre se battent sur l’important marché de l’Afrique du sud, qui concerne notamment les hommes d’affaires. Elles doivent cependant composer avec South African Airways, première compagnie africaine selon les critères d’offre, de trafic et de chiffre d’affaires (Bergonzi, 2006). Cette compagnie profite du meilleur niveau de développement de son pays et d’une africanisation de son offre depuis la fin de l’apartheid, qui lui a permis d’accroître sa desserte africaine (nombre destinations et surtout volume de l’offre) sans pour autant sacrifier l’offre intercontinentale (Pirie, 2006).
+
+7 UNESCO, UNICEF, OACI...
+
+14Le marché centre-Sénégal est également desservi par de nombreuses compagnies non-africaines (européennes en l’occurrence) intéressées par un marché alimenté par une immigration suffisamment marquée dans différents pays européens (France, Italie...) pour remplir des vols quotidiens ou pluri-hebdomadaires avec les immigrés rendant visite à la famille restée au pays. Ceux-ci sont complétés par les fonctionnaires internationaux (diverses institutions internationales ont un siège régional à Dakar7) et les hommes d’affaires ou commerçants attirés par un pays qui n’est certes pas riche, mais n’est pas non plus le plus pauvre et offre en outre une stabilité politique propice aux affaires. La part des compagnies nationales est plus faible qu’en Afrique du sud car Air Sénégal International est une petite compagnie (classée 192e selon l’offre internationale) dont les avions de moyenne capacité sont pour deux-tiers cantonnés au marché africain (le tiers restant correspondant au marché Afrique-Europe) alors que les compagnies européennes desservent généralement le Sénégal avec des avions de grande capacité.
+
+8 OMC, Organe d’examen des politiques commerciales (2002), Examen des politiques commerciales – Mauri (...)
+
+15L’Éthiopie fournit un exemple de développement de la compagnie nationale sous couvert d’une attitude protectionniste en matière de transport aérien (Bergonzi, 2006), si ce n’est un accord libéral signé avec les Émirats arabes unis. La Mauritanie est également réputée pour ses accords bilatéraux régissant strictement les capacités et tarifs8.
+
+16En outre, la part des compagnies nationales peut être faible par défaut d’existence de compagnies nationales (Somalie, République Centrafricaine, Ghana...) ou par leur faiblesse en cas d’existence (par exemple au Nigeria, où les compagnies sont des petites compagnies cantonnées au marché national et, très marginalement, vers quelques autres pays africains). Plusieurs autres pays (Zambie, Tanzanie, Mozambique...) voient leur compagnie nationale opérer des vols internationaux mais sans sortir d’Afrique.
+
+Les difficultés du transport aérien en Afrique et l’échec d’Air Afrique
+
+Un contexte défavorable au transport aérien
+
+9 Le fait d’augmenter l’utilisation des avions et/ou leur capacité dans le cadre d’un réseau de taill (...)
+
+17Pauvreté, conflits internationaux et nationaux, affaiblissement du pouvoir politique et financier des États notamment sous le poids des plans d’ajustement structurel imposés par le FMI, on comprend aisément que les difficultés du continent africain puissent lourdement peser sur l’organisation du transport aérien et sur l’existence même d’un marché suffisamment important pour rentabiliser les investissements. En effet, la faiblesse des monnaies locales face aux devises des pays du centre renchérit les investissements dans la flotte et l’achat de carburants, voire l’entretien si celui-ci est réalisé dans un pays “du nord”, ainsi que le coût de la dette si celle-ci n’est pas contractée localement. Les compagnies africaines ont plus difficilement accès au leasing (Goldstein, 2001) et voient leurs possibilités d’investissement brimées par le FMI et la Banque mondiale (Lombolou, 1992). Les avions volent peu (alors que les coûts variables liés au vol pèsent moins que les coûts fixes liés à la possession des avions), ce qui empêche les économies de densité9 pourtant indispensables pour limiter les coûts d’exploitation unitaires (Sorenson, 1991). Les flottes sont trop souvent composées de vieux avions surdimensionnés par rapport aux besoins locaux. Certains États régulent l’offre aérienne de manière disproportionnée par rapport à l’objectif traditionnel de protéger leur compagnie nationale.
+
+10 Parmi de nombreux autres, citons par exemple Dakar-Abidjan-Lagos-Douala ou Pointe Noire-Brazzaville (...)
+
+11 Calculs personnels à partir des bases de données OAG, janvier 2005.
+
+18Ces facteurs agissent en chaîne. Le coût d’achat prohibitif des avions bloque l’acquisition de matériel neuf, ce qui engendre des coûts d’exploitation pouvant atteindre le double de celui des avions modernes. Autre exemple, la faiblesse quantitative du marché intra-africain et les flottes limitées obligent les compagnies à prévoir diverses escales10 qui améliorent le taux de remplissage de leurs avions (figure 4), au détriment du temps de parcours et surtout du coût d’exploitation dans la mesure où les décollages consomment proportionnellement beaucoup plus de carburant que le vol proprement dit (Doganis, 2002). Alors qu’en Europe 90 % des villes reliées entre elles par des vols internationaux le sont sans correspondance, ce taux n’est que de 57 % en Afrique ; le même calcul sur base du nombre de vols donne respectivement 98 % et 78 %11.
+
+Figure 4. Comment aider au remplissage des avions.
+Zoom Original (jpeg, 96k)
+
+12 Dont la pratique est en outre altérée, dans certains pays, par d’incessants contrôles visant à ponc (...)
+
+19Or, même si le transport aérien demeure, en Afrique, largement réservé à une élite politique et économique, seul celui-ci est actuellement à même de compenser le faible maillage et l’état souvent insuffisant des réseaux routiers et ferroviaires12 (Torres, 2001 ; Chaléard et Chanson-Jabeur, 2006), qui aggravent l’enclavement des pays de l’intérieur, enclavement dont il faut rappeler qu’il ne prend son sens que dans le cadre d’une dépendance extérieure toujours plus importante des économies africaines à l’échelle mondiale, et qui marginalise les territoires éloignés des littoraux (Steck, 2001).
+
+Une réponse collective : Air Afrique
+
+13 Bénin, Burkina Faso, Cameroun, Rép. Centrafricaine, Congo Brazzaville, Côte d’Ivoire, Gabon, Maurit (...)
+
+20Billecard (1996) et Golstein (2001) résument l’histoire d’Air Afrique, fondée en 1961 par le traité de Yaoundé, signé par onze États de l’Afrique de l’ouest et centrale13. Le capital est alors partagé pour deux-tiers et à égalité entre ces États, le solde étant détenu par une filiale de la compagnie française UTA. Il a depuis évolué de sorte que dans les années 1990, les États en détiennent 70,4 %, le solde étant partagé entre la Caisse française de développement (13,7 %), Air France (12,2 %) qui a repris UTA, la Banque ouest-africaine (13,7 %) pour le développement et l’intégrateur mondial DHL (3,8 %).
+
+14 Fin 1988 : 25 milliards de Francs CFA de dettes cumulées et plusieurs dizaines de milliards en arri (...)
+
+21La compagnie a pu se développer dans le cadre d’une concession exclusive portant sur le transport international, à l’exception du transport de voisinage. C’était l’époque où un certain pan-africanisme était possible, et où les chefs d’État pouvaient accepter, au nom de l’intégration régionale, l’abandon d’une portion de leur souveraineté nationale. Malgré le développement d’un réseau conséquent et inhabituellement dense pour l’Afrique et malgré la maîtrise en Afrique même d’une partie importante des entretiens qui seraient bien plus coûteux en Europe, la situation financière de l’entreprise est catastrophique14. Un important plan de restructuration est mis en oeuvre fin des années 80 (licenciements, limitation des capacités allouées aux compagnies européennes, recapitalisation française...). Les bénéfices sont alors rapidement apparus, mais sur une courte durée. La compagnie souffre en effet :
+
+15 Même si par ailleurs elle rend les exportations africaines vers l’Europe plus compétitives.
+
+de la dévaluation de 50 % du franc CFA – unilatéralement imposée par la France – qui renchérit le coût de la dette, des investissements, du carburant, des dépenses en Europe (taxes aéroportuaires, représentations...) et oblige à relever les tarifs des billets vendus en francs CFA15 ;
+
+de la charge financière de l’acquisition de nouveaux avions livrés début des années 1990 ;
+
+de liaisons qualifiables de services publics mais n’étant pas compensées financièrement comme il le faudrait ;
+
+d’un personnel jugé pléthorique.
+
+16 Soit 364 millions d’euros selon le cours moyen de l’an 2000. Source : AllAfrica, 15 août 2001.
+
+22En 2000, les 11 chefs d’État concernés en sont réduits à solliciter la Banque mondiale, avec laquelle ils établissent un plan de stabilisation / restructuration / privatisation. Constatant une accumulation de plus de 400 millions de dollars de dettes16, la Banque mondiale et un consultant privé concluent qu’il faut licencier 2000 membres du personnel sur 4200. La France propose alors la création d’une nouvelle compagnie Air Afrique dont Air France apporterait 35 % du capital mais impose au préalable un fort dégraissage des effectifs. Après diverses tergiversations, Air Afrique est définitivement déclarée en faillite en février 2002.
+
+23La faillite d’une compagnie au réseau développé comme le fut celui d’Air Afrique pose bien entendu la question du devenir des dessertes africaines. En 2001, le réseau Air Afrique (figure 5) était composé d’une part de liaisons au sein de l’Afrique occidentale et centrale et, d’autre part, de liaisons avec l’Europe occidentale, en particulier la France. En Afrique, le réseau est centré sur Abidjan, qui fait office de plaque-tournante principale pour les correspondances, mais aussi sur Dakar et Bamako. En termes de capacité offerte, l’offre est essentiellement centrée sur Paris, matérialisant les liens de dépendance traditionnelle entre la France et ses anciennes colonies. La moitié du réseau est exploitée sans concurrents, donc est totalement dépendant d’Air Afrique (tableau 3).
+
+Figure 5. Air Afrique (2001).
+Zoom Original (jpeg, 1.1M)
+
+Tableau 3. Concurrents sur le réseau Air Afrique (2001).
+Zoom Original (jpeg, 224k)
+
+24Cette dépendance pose avec acuité la question de l’évolution de la desserte du territoire africain consécutivement à la faillite d’Air Afrique. En 2005, on constate que les 81 segments qui étaient également exploités par d’autres compagnies le sont toujours. Par contre, sur les 87 segments exploités par Air Afrique sans concurrent, 33 segments ont disparu du réseau africain (figure 6) tandis que les 54 autres sont dorénavant exploités par une ou plusieurs autres compagnies. Les relations rayées de la carte concernent aussi bien des liaisons moyens- et longs-courriers (vers l’Europe, l’Arabie saoudite et l’Afrique du sud) que des relations plus régionales.
+
+Figure 6. Impact de la faillite d’Air Afrique (I).
+Zoom Original (jpeg, 980k)
+
+25Il faut cependant également tenir compte du fait qu’Air Afrique opérait la plupart de ses vols avec une ou plusieurs escales. La perte de temps d’une escale était le prix à payer pour augmenter le nombre de villes liées les unes aux autres sans devoir ni imposer des correspondances ni démultiplier les vols (figue 4). Avec la disparition d’Air Afrique, certains segments ont été, on l’a dit, repris par d’autres compagnies, mais pas nécessairement avec les escales préexistantes. En comptant non plus les segments mais les liaisons qui ont disparu, on atteint le nombre de 54 sur 251 liaisons préexistantes en 2001 (1/5). La figure 7 illustre ces chiffres en présentant deux cas de figure : d’une part des liaisons devenues impossibles (Bissau - Conakry et Bissau - Abidjan) sauf à changer d’avion et de compagnie dans un aéroport situé hors du chemin “naturel” (Dakar ou Banjul) ; d’autre part une liaison imposant dorénavant un changement d’avion et de compagnie (Bamako-Johannesburg via Abidjan).
+
+Figure 7. Impact de la faillite d’Air Afrique (II).
+Zoom Original (jpeg, 328k)
+
+26La faillite d’Air Afrique a donc clairement dégradé l’intégration de l’ouest de l’Afrique par les transports aériens, compliquant les échanges entre certains pays. Compte-tenu de l’état de la plupart des compagnies africaines, il n’est pas certain que la région retrouve prochainement une desserte telle que celle qu’assumait Air Afrique.
+
+Le salut par la libéralisation ?
+
+Régulation versus libéralisation
+
+27Le transport aérien commercial a longtemps été un secteur jalousement contrôlé et régulé par les États. Pour faire simple, en droit aérien, ce qui n’est pas autorisé est interdit. Depuis les conventions de Paris (1920) et Chicago (1944), la base élémentaire du droit international du transport aérien est en effet la souveraineté totale des États sur leur ciel. Libre à eux d’organiser leur marché intérieur comme bon leur semble et d’accepter ou non l’accès au marché des compagnies issues de pays tiers. En l’absence d’accord multilatéral, les relations aériennes internationales sont traditionnellement régulées par des accords bilatéraux qui règlent les conditions d’accès au marché par l’échange de droits de trafic assortis de conditions en tous genres.
+
+28On exprime habituellement les droits de trafic sous le vocable de “libertés de l’air” (figure 8). Les deux premières libertés (dites techniques) sont échangées entre tous les signataires de la Convention de Chicago. Les 3e et 4e libertés, dites naturelles (débarquement et embarquement dans un pays tiers) sont l’objet habituel des accords bilatéraux et sont classiquement échangés entre les deux États concernés pour une ou plusieurs de leurs compagnies respectives. La 5e liberté de l’air (transport entre deux États tiers sur un vol entamé / terminant dans l’État de la compagnie) est parfois attribuée. Les 6e et 9e libertés de l’air sont très rarement envisagées et encore moins accordées.
+
+Figure 8. Les libertés de l’air.
+Zoom Original (jpeg, 556k)
+
+29Cependant, depuis le virage néo-libéral amorcé il y a un quart de siècle, la situation évolue progressivement vers une ouverture des marchés aériens, en particulier dans les pays dits développés. Le transport aérien s’est en effet vu libéralisé dans différents espaces. Précisons qu’une libéralisation est un assouplissement, voire un abolissement des restrictions de mise sur le marché (Eberlein, 1999). La libéralisation prévoit donc un libre accès au marché, quoique éventuellement avec certaines exceptions et généralement pour certaines catégories de producteurs seulement (typiquement en fonction de leur nationalité) ; elle offre généralement aussi la liberté tarifaire. Pour ne pas “fausser la concurrence”, pour que le marché soit “fluide” et “transparent”, la libéralisation s’accompagne généralement de l’interdiction des financements publics (recapitalisation, investissements, couverture des déficits...), ce qui impose la question de la rentabilité des réseaux à moins que des missions de service public puissent subsister à côté du marché libéralisé.
+
+30Géographiquement, les libéralisations du transport aérien concernent potentiellement trois types d’espaces :
+
+un espace domestique : par exemple transport intra-USA (pour les seules compagnies états-uniennes) ;
+
+17 Union Européenne + Norvège, Islande et Liechtenstein, bien que ce dernier soit dépourvu d’aéroport (...)
+
+un espace régional : par exemple intra-Espace économique européen17 (EEE) pour les seules compagnies communautaires) qui jouissent maintenant de toutes les libertés de l’air, quasiment sans aucune restriction possible ;
+
+deux pays dans le cadre d’un accord bilatéral classique mais de type libéral constituant un “open sky” [ciel ouvert] dont les États-Unis se sont faits les champions mais sans pour autant offrir une liberté totale aux compagnies ; dans ce cas, les deux pays s’échangent au minimum les cinq premières libertés de l’air
+
+31Selon les défenseurs de la libéralisation du transport aérien (ou d’autres secteurs), celle-ci est supposée susciter une concurrence devant engendrer une diminution des prix et une amélioration de la qualité des services. Telle est la théorie, mais dans la pratique les choses sont moins évidentes. Dans le cas américain, les compagnies ne sont guère ressorties renforcées de l’opération, certaines parmi les plus grandes ont disparu et d’autres ne doivent leur survie qu’à une législation spécifique les protégeant momentanément des créanciers ; le réseau s’y est largement concentré sur un certain nombre de hubs, au détriment de liaisons directes. Dans le cas européen, on a constaté une concurrence et une diminution des prix très sélectives selon les lignes, un renforcement des grandes compagnies et leur recentrage sur un nombre réduit d’aéroports et le développement d’une offre low-cost vivant pour partie sur l’exploitation de son personnel et, pour Ryanair, sur la recherche systématique auprès des pouvoirs publics et/ou gestionnaires d’aéroports d’avantages directs ou indirects (Dobruszkes, 2005 ; Lapautre, 2000).
+
+32Quoi qu’il en soit, le transport aérien demeure un secteur dont la libéralisation ne fait pas l’unanimité parmi les gouvernements du monde. Celui-ci n’a été que très partiellement inclus dans l’Accord général sur le commerce des services (AGCS) de 1994 – accord multilatéral phare de l’OMC organisant la libéralisation des échanges de services – dans la mesure où ne sont concernés par l’accord que les services de réparation et de maintenance des aéronefs, la vente ou la commercialisation des services de transport aérien et les services de systèmes informatisés de réservation. Les droits de trafic et les services directement liés à l’exercice des droits de trafic sont formellement exclus de l’AGCS tel qu’il existe actuellement. L’attribution de la liberté de voler demeure donc aux mains des États ou des communautés économiques compétentes en la matière.
+
+33Pour saisir les contraintes et enjeux pesant sur les compagnies et la définition de l’offre aérienne, passons en revue trois différents contextes de régulation.
+
+Les régulations bilatérales : le cas des relations Afrique-Belgique
+
+18 Source : consultation des dossiers auprès de l’administration belge de l’aéronautique.
+
+34Les relations aériennes entre la Belgique et les pays africains sont jusqu’à ce jour régulées par des accords bilatéraux entre États, complétés par des discussions et négociations entre délégations fixant les conditions précises d’exploitation. En voici quatre exemples18.
+
+35Régulation très forte : Belgique-Angola :
+Une seule compagnie belge et une seule compagnie angolaise sont autorisées à effectuer chacune une unique rotation hebdomadaire. Le volume est plafonné à 140 passagers et 4 tonnes de cargo, ce qui n’empêche pas l’utilisation d’avions de plus grande capacité pourvu que le solde de la capacité soit utilisé entre la Belgique et un autre pays (par exemple Bruxelles-Kinshasa sur un vol poursuivant ensuite vers Luanda). Cette limite de capacité peut être revue moyennant accord commercial entre les compagnies exploitantes. La 5e liberté de l’air est négociable entre les compagnies désignées et doit être approuvée par les administrations respectives ; elle concerne un pays tiers européen (pour la compagnie angolaise) ou tout aéroport non lié à Luanda par la compagnie angolaise désignée (pour la compagnie belge).
+
+36Régulation forte : Belgique-République démocratique du Congo :
+Sont autorisés 5 vols passagers et 3 vols cargo par sens et par semaine pour maximum deux compagnies belges et autant pour maximum deux compagnies congolaises, sans limite de capacité. Les compagnies congolaises peuvent partir de tout aéroport congolais pour Bruxelles. Inversement, les compagnies belges peuvent partir de tout aéroport belge pour Kinshasa. Les quatre premières libertés de l’air sont échangées, mais la 5e liberté demeure suspendue à des consultations entre autorités aéronautiques. Les avions doivent suivre une route avec possibilité d’escale intermédiaire et de desserte d’un point au-delà de Bruxelles (pour la compagnie congolaise) ou au-delà de Kinshasa (pour la compagnie belge), mais sans pour autant charger en ces points des voyageurs pour la Belgique ou la RDC, respectivement.
+
+37La compagnie belge désignée pourrait-elle, sur un vol entamé à Bruxelles, embarquer des voyageurs à Kinshasa et les débarquer à Luanda (5e liberté de l’air) ? Pour ce, il faut que la RDC et Angola accordent ce droit à la Belgique, et en outre qu’ils se l’accordent entre eux. Ces conditions ne sont pas réunies, malgré l’absence de concurrents locaux.
+
+38Régulation moyenne : Belgique – Sénégal :
+La Belgique et le Sénégal n’ont pas imposé de limite sur le nombre de compagnies désignées et se sont échangé des droits de 5e liberté de l’air sans condition. Le nombre de vols passagers est cependant limité à trois par semaine, au contraire des vols cargo.
+
+39Régulation faible : Belgique-Gambie :
+La Belgique et la Gambie se sont échangés des droits de 5e liberté de l’air sans condition. Il n’y a pas de limites ni sur les fréquences, ni sur les capacités, ni sur le nombre de compagnie désignées.
+
+40La compagnie belge désignée bénéficiant de droit de 5e liberté tant du Sénégal que de la Gambie, pourrait-elle, sur un vol entamé à Bruxelles, embarquer des voyageurs à Dakar pour les débarquer à Banjul (5e liberté de l’air) ? La réponse est négative, car il n’y a pas d’accord Sénégal-Gambie en la matière, ce qui leur permet de protéger leurs compagnies nationales exploitant la relation Dakar-Banjul.
+
+Limitation de la 5e liberté de l’air et desserte de l’Afrique
+
+41La restriction de l’usage de la 5e liberté de l’air en Afrique est-elle un facteur limitant de la desserte du continent africain ? Il faut envisager la question en termes de fréquences et en termes de réseau (tableau 4).
+
+Tableau 4. L’usage de la 5e liberté de l’air en Afrique sub-saharienne (janvier 2005).
+Zoom Original (jpeg, 264k)
+
+42En termes de fréquences, il est clair qu’à court terme l’interdiction de la 5e liberté de l’air restreint les opportunités offertes aux clients voulant se déplacer puisque des compagnies ne peuvent charger du trafic lors d’escales africaines. Selon nos calculs pour le mois de janvier 2005, 1190 vols sont concernés, soit un volume correspondant à un dixième de l’offre ouverte à la clientèle. Cependant, à supposer que les compagnies des pays dits développés soient autorisés à charger du trafic entre deux aéroports africains, elles pourraient concurrencer des compagnies africaines au point de les faire disparaître. Cela ferait alors rediminuer les fréquences à moyen terme.
+
+43En termes de réseau, l’interdiction de la 5e liberté de l’air porte préjudice à 105 couples d’aéroports qui sont de toute façon desservis par des vols avec escales. Cependant, deux tiers de ces couples sont exploités par d’autres compagnies, généralement les compagnies nationales dans le cadre d’accords bilatéraux classiques et seuls 33 couples sont totalement indisponibles aux clients potentiels faute d’autorisation de pratiquer la 5e liberté de l’air (figure 9).
+
+Figure 9. Afrique et 5e liberté de l’air.
+Zoom Original (jpeg, 244k)
+
+44En conclusion, on peut affirmer qu’en l’état actuel des réseaux aériens, la limitation des droits de 5e liberté par les États africains n’est pas le principal facteur limitant la desserte aérienne intra-africaine.
+
+La libéralisation intra-africaine : le processus de Yamoussoukro
+
+45Dans un contexte de libéralisation des cieux états-unien et européen, les ministres de l’aviation civile de 35 pays africains (Afrique du nord incluse) se réunissent en 1988 à Yamoussoukro (Côte d’Ivoire) pour tenter de mettre enfin sur pied une politique africaine du transport aérien. Il en ressort la déclaration de Yamoussoukro, texte flou, interprétable, de portée juridique incertaine, engageant peu les États et proposant des pistes classiques telle qu’une meilleure coopération entre pays (Dodelin-Jullien, 1989). L’objectif de la création de compagnies à l’échelle des sous-régions et, in fine, d’une compagnie africaine unique, avancé en 1984 par la déclaration de Mbabane, est remplacé par la possibilité de fusions entre compagnies (parmi deux autres pistes).
+
+19 Organisation de l’Unité Africaine, remplacée depuis 2002 par l’Union Africaine.
+
+46Malgré tout, les ministres africains ont décidé, en 1999, de libéraliser le transport aérien africain. Le processus a reçu une portée légale par la Décision de Yamoussoukro, ratifiée en 2000 par les chefs d’États de l’OUA19. Elle vise à éliminer progressivement les restrictions d’octroi des cinq premières libertés de l’air et à rendre libres capacités et tarifs.
+
+47Dans la pratique, le processus est très peu avancé car il souffre de la primauté des intérêts nationaux et de faiblesses propres à la Décision elle-même dont l’absence de règles de concurrence (Bergonzi, 2006) comme c’est normalement le cas dans un processus d’ouverture de marché.
+
+48Il est donc prématuré d’étudier les conséquences de la libéralisation intra-africaine.
+
+La libéralisation inéquitable : les accords de ciel ouvert états-uniens
+
+49La libéralisation du trafic aérien international des pays de la périphérie serait-elle à même d’améliorer leur desserte et d’offrir de nouvelles opportunités à leurs compagnies ? La question n’est pas anodine si l’on sait que pour les compagnies, les lignes long-courrier sont souvent rentables et compensent les déficits d’une partie des lignes court- ou moyen-courrier qui ont dans ce cadre pour intérêt d’apporter des voyageurs aux vols long-courrier. Les accords open-sky signés par les États-Unis avec 59 États (dont 58 entre 1995 et 2002) (figure 10) sont une opportunité d’apporter des éléments de réponse empiriques à cette question.
+
+Figure 10. La nébuleuse des accords open-sky états-uniens.
+Zoom Original (jpeg, 680k)
+
+50Si l’on considère globalement l’évolution de l’offre entre les pays signataires et les États-Unis, le tableau 5 montre que, tous pays confondus, l’offre avant / après les accords est restée étonnamment stable. Les compagnies états-uniennes n’ont pas profité des nouvelles libertés offertes pour augmenter leur offre et prendre des parts de marché. Les compagnies des pays partenaires ont par contre tiré quelques avantages des accords, au détriment des compagnies de pays tiers. La croissance du volume de sièges a alimenté une diversification du réseau dont témoigne l’augmentation du nombre de paires d’aéroports desservies. Ces évolutions doivent bien entendu être considérées comme des bilans et peuvent donc cacher des diminutions compensées par des augmentations. Ainsi, concernant les paires d’aéroports, le passage de 323 à 381 ne montre pas qu’en fait 199 paires existaient en 1995 et 2005, 124 ont disparu et 182 ont été créées.
+
+Tableau 5. Evolution du marché aérien international entre les USA et ses partenaires ayant signé un open-sky (2005 vs. 1995).
+Zoom Original (jpeg, 880k)
+
+51Ces résultats doivent cependant être fortement nuancés par le fait qu’ils diffèrent largement entre les pays du centre, dont certaines compagnies ont pu profiter des accords de ciel ouvert (Lufthansa, Air France et KLM), et ceux de la (semi-)périphérie. Huit pays africains signataires n’avaient pas de relations avec les États-Unis en 1995 et n’en ont toujours pas en 2005 (Burkina Faso, Bénin, Gambie, Namibie, Rwanda, Tanzanie et Ouganda). Deux autres avaient en 1995 des vols vers New York opérés par leur compagnie nationale mais ceux-ci ont depuis disparu (Ghana et Nigeria). Seul le Sénégal a vu son offre vers les États-Unis s’accroître, mais grâce à la compagnie sud-africaine qui fait escale à Dakar.
+
+52On constate donc qu’à ce stade, la libéralisation des relations USA-Afrique ne s’est traduite ni par une pénétration accrue des compagnies américaines, ni par une montée en puissance des compagnies africaines. Les raisons en sont multiples. Tout d’abord, le marché Amérique du nord-Afrique est un marché limité, surtout par rapport au marché Europe-Afrique, et ce malgré le regain d’intérêt des États-Unis pour l’Afrique. Ensuite, les accords ont pour la plupart été signés avec des pays parmi les plus pauvres et dotés de compagnies aériennes parmi les plus marginales. Ils incluent éventuellement des périodes de transition non encore arrivées à leur terme. Des pays plus riches et/ou dotés de compagnies relativement puissantes (Afrique du sud, Kenya, Ethiopie) n’ont à ce jour pas signé d’accord open-sky avec les États-Unis. Enfin, la signature d’accords open-sky entre différents pays et les États-Unis ne suffit pas à autoriser les compagnies américaines à pratiquer la 5e liberté, qui rendrait certains vols (plus) rentables (on pense en particulier à des vols États-Unis-Europe-Afrique) ; la mise en oeuvre de la 5e liberté implique en effet un accord entre les trois pays concernés. 
+
+53Si l’on étend l’analyse à l’ensemble des pays de la (semi-)périphérie ayant signé un accord open-sky avec les États-Unis, la figure 11, qui montre l’évolution du volume de l’offre des compagnies états-uniennes et des compagnies des pays concernés sur le marché à destination des États-Unis, présente des évolutions contrastées :
+
+pour plusieurs pays (Costa Rica, République Dominicaine, Pérou...), l’offre des compagnies états-uniennes progresse au détriment des compagnies nationales respectives ;
+
+à l’inverse, les cas où les compagnies nationales augmentent leur offre au détriment des compagnies états-uniennes sont plus rares (Taiwan, Panama, Jamaïque) ;
+
+dans quelques cas, les compagnies états-uniennes et nationales augmentent leur offre (El Salvador, Honduras) ;
+
+20 Pour fixer les choses, une augmentation de 10 000 sièges correspond à 323 sièges par jour, soit plu (...)
+
+plusieurs pays voient leur compagnie nationale augmenter leur offre vers les États-Unis sans changement de l’offre des compagnies états-uniennes ; il s’agit toujours de petits marchés et les évolutions sont de plus limitées à quelques milliers de sièges par mois20 ; mais surtout, un examen détaillé des chiffres, non reproduits ici, montre en fait que s’il n’y a pas d’évolution des compagnies états-uniennes, c’est tout simplement parce qu’elles sont absentes de ces marchés, laissant aux compagnies nationales correspondantes la possibilité d’agir sans la dure concurrence des majors états-uniennes.
+
+54En résumé, il n’est donc pas exagéré de dire que les accords open-sky signés entre les États-Unis et les pays de la (semi-)périphérie n’ont profité aux compagnies de ces derniers que de manière sélective et notamment en cas d’absence des compagnies états-uniennes.
+
+Figure 11. Libéralisation et évolution de l’offre.
+Zoom Original (jpeg, 122k)
+
+Conclusions
+
+55L’Afrique sub-saharienne est clairement en marge du système aérien mondial. Son offre est quantitativement limitée et largement tournée vers l’extérieur, traduisant la faiblesse du marché intra-africain. Sauf quelques exceptions, les compagnies africaines sont de faible poids et sont sous-représentées sur les marchés intercontinentaux.
+
+56La desserte intra-africaine souffre tout à la fois d’une demande limitée par le faible niveau de développement, de la faible intégration économique et politique des pays et de certaines contraintes de la régulation étatique. Ces facteurs sont renforcés par les crises que traversent de nombreux États et la limitation des dépenses publiques sous le poids des institutions internationales et du délabrement socio-économique, sans parler des guerres et crises politiques.
+
+57De ce fait, le transport aérien n’est que partiellement en mesure de contribuer au désenclavement des territoires intérieurs, en compensation de réseaux terrestres insuffisants et/ou en mauvais état. Des compagnies disparaissent faute de rentabilité et de soutien étatique, d’autres vivotent ou n’ont pu se maintenir qu’au prix d’une ouverture de capital aux investisseurs étrangers. Certes, quelques nouvelles liaisons ont pu voir le jour, mais il importe cependant de noter que diverses villes africaines n’ont plus de relations aériennes directes avec l’extérieur, l’offre se concentrant plus que par le passé sur les lignes financièrement rentables. Finalement, la situation actuelle semble plus dégradée encore que celle relevée, il y a 15 ans, par Lombolou (1992).
+
+58Désormais, la primauté des exigences financières par rapport à d’autres types de considérations (désenclavement, intégration régionale, insertion sur le marché international) dans le choix des destinations à desservir est évidente. De ce point de vue, le retour de balancier au profit du capital et au détriment de l’aménagement du territoire et de l’intégration régionale a probablement des effets plus néfastes en Afrique qu’en Europe. En effet, les liaisons rentables sont plus limitées en Afrique qu’en Europe. De plus, si l’on considère le fait que la mondialisation s’accompagne d’une réduction relative de la valeur des échanges entre les pays dits développés et les pays périphériques (Vandermotten et Marissal, 2003), il y a fort à parier que la crise du transport aérien en Afrique ne puisse s’accentuer dans cette dynamique économique internationale de plus en plus favorable à la promotion des échanges entre les pays développés. 
+
+59Au total, on peut sans doute affirmer que la tendance à la libéralisation de ce secteur n’est pas de nature à favoriser le développement d’un marché aérien susceptible de rentabiliser les investissements, et encore moins le recours au transport aérien dans le processus d’intégration régionale et de développement du continent. En effet, même si à court terme une meilleure connectivité aérienne des principales villes pouvait sous certaines conditions attirer à elles quelques miettes du capitalisme mondial, une telle optique serait peu durable et ne pourrait guère garantir un développement autonome du continent sur le moyen et long terme. Dans ces conditions, il serait souhaitable de reposer le problème de transport aérien dans le cadre global du développement, tout en remettant l’accent, en suivant Amin (2005), sur les termes antérieurs à l’événement du néo-libéralisme (développement auto-centré, nouvel ordre économique international, détérioration des termes de l’échange...) et son corollaire que fut la rupture du dialogue nord-sud. Sans cela, les transports aériens, en particulier sous leur forme intercontinentale, risquent bien de n’être qu’un instrument de domination (Bauchet, 1998).
+ Top of page
+
+Bibliography
+
+Amin S., Diouf M., Founou-Tchuigoua B., Zita L. & Ndiaye A. (2005), Afrique : exclusion programmée ou renaissance ?, Paris, Maisonneuve et Larose, 301 p.
+
+Bauchet P. (1998), Les transports mondiaux, instruments de domination, Paris, Economica, 1998.
+
+Bergonzi D. (2006), Le Transport Aérien en Afrique, rapport réalisé dans le cadre du “1er African Airlines Forum”. Disponible sur http://www.proinvest-eu.org.
+
+Billecard R. (1996), “Air Afrique, instrument d’intégration des économies africaines”, Revue Juridique et Politique – Indépendance et coopération, 50, pp. 10-22.
+
+Cattan N. (2004), “Le monde au prisme des réseaux aériens”, Flux, 58, pp. 32-43.
+
+Chaléard J.-L. & Chanson-Jabeur C. (2006), “Le chemin de fer en Afrique. De l’état des lieux aux perspectives”, in Chaléard J.-L., Chanson-Jabeur C. et Béranger C. (éd.), Le chemin de fer en Afrique, Paris, Karthala, PRODIG et SEDET, pp. 9-18.
+
+Coutrot T. et Husson M. (1993), Les destins du Tiers Monde : analyse, bilan, perspectives, Paris, Nathan, 207 p.
+
+Dobruszkes F. (2005), “Géographie de la concurrence aérienne et des services publics résiduels en Europe”, actes du colloque Les journées géographiques belges, tome II, Gand, 9 novembre 2005, pp. 189-194.
+
+Doddelin-Jullien J. (1989), “L’analyse juridique de la Déclaration de Yamoussoukro”, Revue Juridique et Politique – Indépendance et coopération, 1, pp. 40-44.
+
+Doganis R. (2002), Flying off course. The economics of international airlines, 3rd ed., Londres, Routledge, 349 p.
+
+Eberlin B. (1999), “L’État régulateur en Europe”. Revue française de science politique, 49 (2), pp. 205-230.
+
+Goldstein A. (2001), “Infrastructure Development and Regulatory Reform in Sub-Saharan Africa: The Case of Air Transport”, The World Economy, 24 (2), pp. 221-248.
+
+Lapautre R. (2000), “La libéralisation des transports aériens : quel bilan ?”, Problèmes économiques, 2650, pp. 10-13.
+
+Lombolou E. (1992), “Le transport aérien africain face aux changements de l’environnement politique international et aux mutations technologiques”, in Symoens J.-J. (dir.), Les transports et les communications en Afrique, actes du symposium tenu à Bruxelles en 1991.
+
+Naveau J. (2004), La décolonisation aéronautique du Congo : essai sur l’expérience Sabena-Air Congo dans la perspective des relations Europe-Afrique, Bruxelles, Bruylant, 166 p.
+
+OMC (2005), Rapport sur le commerce mondial 2005, (en particulier partie III.B, “Le commerce international des services de transport aérien, évolution récente et questions de politique”, pp. 235-290) (disponible sur http://www.wto.org).
+
+Pirie G. (2006), “’Africanisation’ of South Africa’s international air links, 1994–2003”, Journal of Transport Geography, 14, pp. 3-14.
+
+Sorenson N. (1991), “The impact of geographic scale and traffic density on airline production costs: the decline of the no-frills airlines”, Economic Geography, 67 (4), pp. 335-345.
+
+Steck B. (2001), “L’enclavement, réévaluation théorique et application à l’Afrique de l’Ouest”, L’Espace Géographique, 1, pp. 26-36.
+
+Torres A.J. (2001), “Road maintenance policies in Sub-Saharan Africa: unsolved problems and acting strategies”, Transport Policy, 8 (4), pp. 257-265
+
+Vandermotten C., Marissal P. (2003), La production des espaces économiques, tome II, Bruxelles, Éditions de l’Université de Bruxelles, 295 p.
+ Top of page
+
+Notes
+
+1 Official Airline Guide. Contrairement à ce que l’adjectif " Official " pourrait faire croire, OAG est une firme privée dont le métier est la récolte, auprès des compagnies, de leurs horaires détaillés, ainsi que de diverses informations connexes (type d’avion, nombre de sièges, partage de code...). OAG réunit l’information sous forme de bases de données qu’elle vend sous forme de CD ou de produits dérivés (analyses de marché, solutions pour les hommes d’affaires voyageant en avion...). Pour l’édition de janvier 2005 et en ne prenant en compte que les vols réguliers passagers, 770 compagnies ont alimenté OAG avec des informations concernant 99 066 numéros de vols.
+
+2 Le seul souci que pose les données OAG est la (nécessaire) décomposition des vols avec escales. Ainsi, un vol A-B-C sera présent trois fois (A-C, A-B et B-C). D’une part, il faut être prudent de ne pas procéder à des doubles comptages. D’autre part, la répartition des sièges entre A-B et A-C est totalement inconnue car est fonction, dans la mesure de ce que les régulations internationales permettent, des stratégies commerciales des compagnies, qui peuvent varier en temps réel afin d’optimiser le taux de remplissage et la recette de chaque avion.
+
+3 Dans le cas présent, il est plus logique de considérer le produit intérieur brut en monnaie courante et non en PPA dans la mesure où le prix des billets d’avions internationaux (et souvent nationaux y compris dans les pays pauvres) se structure généralement selon les niveaux de vie des pays riches.
+
+4 Selon les cas, nous utilisons le nombre de vols ou le nombre de sièges. Le nombre de vols permet de montrer les opportunités de se déplacer, tandis que le nombre de sièges permet de tenir compte du poids réel de l’offre (un vol Bruxelles-Dakar opéré avec un avion de 264 sièges n’a pas la même signification qu’un vol Bruxelles-Moscou opéré avec un avion de 132 sièges). En outre, le nombre de sièges est indicateur du volume du marché potentiel dans la mesure où la demande réalisée est par définition inférieure ou égale à l’offre.
+
+5 Précisons que le classement de l’Europe tient en partie à son morcellement politique malgré l’intégration économique. Si l’on n’avait considéré que les vols inter-continentaux, le classement de nombreux pays européens eût été plus modeste.
+
+6 Calculs personnels d’après les bases de données OAG (2005).
+
+7 UNESCO, UNICEF, OACI...
+
+8 OMC, Organe d’examen des politiques commerciales (2002), Examen des politiques commerciales – Mauritanie – Rapport du Secrétariat, document réf. WT/TPR/S/103.
+
+9 Le fait d’augmenter l’utilisation des avions et/ou leur capacité dans le cadre d’un réseau de taille donnée.
+
+10 Parmi de nombreux autres, citons par exemple Dakar-Abidjan-Lagos-Douala ou Pointe Noire-Brazzaville-Cotonou-Lomé-Abidjan-Bamako.
+
+11 Calculs personnels à partir des bases de données OAG, janvier 2005.
+
+12 Dont la pratique est en outre altérée, dans certains pays, par d’incessants contrôles visant à ponctionner financièrement les transporteurs et/voyageurs.
+
+13 Bénin, Burkina Faso, Cameroun, Rép. Centrafricaine, Congo Brazzaville, Côte d’Ivoire, Gabon, Mauritanie, Niger, Sénégal et Tchad. Dans les années 70, le Cameroun et le Gabon se sont retirés pour privilégier leur aviation nationale tandis que le Mali et le Togo sont entrés dans le capital de la compagnie.
+
+14 Fin 1988 : 25 milliards de Francs CFA de dettes cumulées et plusieurs dizaines de milliards en arriérés (Billercard, 1996).
+
+15 Même si par ailleurs elle rend les exportations africaines vers l’Europe plus compétitives.
+
+16 Soit 364 millions d’euros selon le cours moyen de l’an 2000. Source : AllAfrica, 15 août 2001.
+
+17 Union Européenne + Norvège, Islande et Liechtenstein, bien que ce dernier soit dépourvu d’aéroport et de compagnies aériennes. Rappelons que les DOM français (Guadeloupe, Guyane, Martinique et Réunion) font partie intégrante de l’UE.
+
+18 Source : consultation des dossiers auprès de l’administration belge de l’aéronautique.
+
+19 Organisation de l’Unité Africaine, remplacée depuis 2002 par l’Union Africaine.
+
+20 Pour fixer les choses, une augmentation de 10 000 sièges correspond à 323 sièges par jour, soit plus ou moins un avion long-courrier quotidien de type Airbus A330-300 ou A340-500.Top of page
+
+List of illustrations
+
+ Title
+ Figure 1. Offre internationale par pays.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-1.jpg
+
+ File
+ image/jpeg, 564k
+
+ Title
+ Tableau 1. Corrélations linéaires entre l’offre aérienne internationale et le PIB (calcul pondéré par la population des pays).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-2.jpg
+
+ File
+ image/jpeg, 236k
+
+ Title
+ Figure 2. Offre internationale par habitant.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-3.jpg
+
+ File
+ image/jpeg, 956k
+
+ Title
+ Tableau 2. Qui produit la desserte internationale de l’Afrique ?
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-4.jpg
+
+ File
+ image/jpeg, 396k
+
+ Title
+ Figure 3. Parts de marché des compagnies africaines.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-5.jpg
+
+ File
+ image/jpeg, 352k
+
+ Title
+ Figure 4. Comment aider au remplissage des avions.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-6.jpg
+
+ File
+ image/jpeg, 96k
+
+ Title
+ Figure 5. Air Afrique (2001).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-7.jpg
+
+ File
+ image/jpeg, 1.1M
+
+ Title
+ Tableau 3. Concurrents sur le réseau Air Afrique (2001).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-8.jpg
+
+ File
+ image/jpeg, 224k
+
+ Title
+ Figure 6. Impact de la faillite d’Air Afrique (I).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-9.jpg
+
+ File
+ image/jpeg, 980k
+
+ Title
+ Figure 7. Impact de la faillite d’Air Afrique (II).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-10.jpg
+
+ File
+ image/jpeg, 328k
+
+ Title
+ Figure 8. Les libertés de l’air.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-11.jpg
+
+ File
+ image/jpeg, 556k
+
+ Title
+ Tableau 4. L’usage de la 5e liberté de l’air en Afrique sub-saharienne (janvier 2005).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-12.jpg
+
+ File
+ image/jpeg, 264k
+
+ Title
+ Figure 9. Afrique et 5e liberté de l’air.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-13.jpg
+
+ File
+ image/jpeg, 244k
+
+ Title
+ Figure 10. La nébuleuse des accords open-sky états-uniens.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-14.jpg
+
+ File
+ image/jpeg, 680k
+
+ Title
+ Tableau 5. Evolution du marché aérien international entre les USA et ses partenaires ayant signé un open-sky (2005 vs. 1995).
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-15.jpg
+
+ File
+ image/jpeg, 880k
+
+ Title
+ Figure 11. Libéralisation et évolution de l’offre.
+
+ URL
+ https://journals.openedition.org/belgeo/docannexe/image/11279/img-16.jpg
+
+ File
+ image/jpeg, 122k
+
+ Top of page
+
+References
+
+Bibliographical reference
+
+ Frédéric Dobruszkes and Hugo Mwanza Wa Mwanza, “Marginalisation et dépendance aérienne de l’Afrique sub-saharienne”, Belgeo, 2 | 2007, 203-226.
+
+Electronic reference
+
+ Frédéric Dobruszkes and Hugo Mwanza Wa Mwanza, “Marginalisation et dépendance aérienne de l’Afrique sub-saharienne”, Belgeo [Online], 2 | 2007, Online since 10 December 2013, connection on 27 November 2026. URL: https://journals.openedition.org/belgeo/11279; DOI: https://doi.org/10.4000/belgeo.11279Top of page
+
+About the authors
+
+Frédéric Dobruszkes
+
+ IDREF : https://idref.fr/119922789
+
+ ORCID : https://orcid.org/0000-0001-9222-9467
+
+ VIAF : http://viaf.org/viaf/81025170
+
+ ISNI : https://isni.org/isni/0000000066690957
+
+ BNF : http://data.bnf.fr/ark:/12148/cb161157862
+
+Université Libre de Bruxelles, Laboratoire de Géographie, Bld du Triomphe CP 246, B - 1050 Bruxelles (Auteur correspondant), dobrusz@ulb.ac.be
+
+By this author
+
+Jean-Louis Migeot & Jean-Pierre Coyette, « Silence, on vole ! Comprendre la problématique des nuisances sonores aéroportuaires en Belgique » [Full text] 
+
+Published in Belgeo, 1 | 2017
+
+Editorial: Thinking beyond the cost-benefit analysis: the wider impact of high-speed rail on local development [Full text] 
+
+Published in Belgeo, 3 | 2016
+
+Editorial [Full text] 
+
+Published in Belgeo, 2 | 2007
+
+Bavoux j.j., Beaucire f., Chapelon I., Zembri P., Géographie des transports [Full text] 
+
+Coll. U, Paris, Armand Colin, 2005, 232 p.
+
+Published in Belgeo, 4 | 2006
+
+Conclusions : comme un reflet de la géographie des transports à la française [Full text] 
+
+Published in Belgeo, 1-2 | 2010
+
+Baptiser un grand équipement urbain : pratiques et enjeux autour du nom des stations de métro à Bruxelles [Full text] 
+
+Naming a large urban facility: practices and stakes regarding underground stations in Brussels
+
+Published in Belgeo, 1-2 | 2010
+
+All documents
+
+Hugo Mwanza Wa Mwanza
+
+ IDREF : https://idref.fr/035704519
+
+ VIAF : http://viaf.org/viaf/41986875
+
+ ISNI : https://isni.org/isni/0000000038396494
+
+ BNF : http://data.bnf.fr/ark:/12148/cb13330770t
+
+Université Pédagogique Nationale (Kinshasa)
+
+By this author
+
+Editorial [Full text] 
+
+Published in Belgeo, 2 | 2007
+
+ Top of page 
+
+Copyright
+
+The text only may be used under licence CC BY 4.0. All other elements (illustrations, imported files) may be subject to specific use terms.Top of page
+
+Contents - Previous document - Next document
+
+Browse 
+
+Index 
+
+Authors 
+
+Keywords 
+
+Open issues 
+
+20261 | 2 | 3 
+
+Full text issues 
+
+20251 | 2 | 3 | 4 
+
+20241 | 2 | 3 | 4 
+
+20231 | 2 | 3 | 4 
+
+20221 | 2 | 3 | 4 
+
+20211 | 2 | 3 | 4 
+
+20201 | 2 | 3 | 4 
+
+20191 | 2 | 3 | 4 
+
+20181 | 2 | 3 | 4 
+
+20171 | 2-3 | 4 
+
+20161 | 2 | 3 | 4 
+
+20151 | 2 | 3 | 4 
+
+20141 | 2 | 3 | 4 
+
+20131 | 2 | 3 | 4 
+
+20121-2 | 3 | 4 
+
+20111-2 | 3-4 
+
+20101-2 | 3 | 4 
+
+20091 | 2 | 3-4 
+
+20081 | 2 | 3-4 
+
+20071 | 2 | 3 | 4 
+
+20061-2 | 3 | 4 
+
+20051-2 | 3 | 4 
+
+20041 | 2-3 | 4 
+
+20031 | 2 | 3 | 4 
+
+20021 | 2 | 3 | 4 
+
+20011-2 | 3 | 4 
+
+20001-2-3-4 
+
+All issues 
+
+Compléments électroniques 
+
+Dossiers & archives 
+
+Belgeo - Belgian journal of geography 
+
+Belgeo 
+
+Comité éditorial 
+
+Éditeurs 
+
+Evaluateurs / Referees 
+
+Announcement 
+
+Libre accès aux revues de géographie belges / Free access to Belgian geography journals 
+
+Notes for authors 
+
+Informations 
+
+Contact 
+
+Editorial Board 
+
+Publishing policies 
+
+Call for papers 
+
+Call for papers - open 
+
+Call for papers - closed 
+
+Follow us 
+
+ RSS feed 
+
+Newsletters 
+
+OpenEdition Newsletter 
+
+In collaboration with 
+
+Electronic ISSN 2294-9135 
+
+Read detailed presentation  
+
+Site map – Syndication 
+
+TCU of OpenEdition Journals – Privacy Policy – About Cookies – Report a problem 
+
+OpenEdition Journals member – Published with Lodel – Administration only
+
+ Search OpenEdition Search 
+
+You will be redirected to OpenEdition Search 
+
+ In All OpenEdition 
+
+ On Belgeo 
+ Search 
+
+ English 
+
+Français 
+
+Nederlands 
+
+Deutsch 
+
+ Share 
+
+ Facebook 
+
+ Twitter 
+
+ Home 
+
+ Catalogue of 676 journals OpenEdition Search 
+
+ All OpenEdition 
+
+ English 
+
+Français 
+
+Nederlands 
+
+Deutsch A digital resources portal for the humanities and social sciences 
+ OpenEdition Our platforms 
+ OpenEdition Books OpenEdition Journals Hypotheses Calenda Libraries and institutions
+ OpenEdition Freemium Our services 
+ OpenEdition Search Newsletter Follow us
