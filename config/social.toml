@@ -1,0 +1,64 @@
+# LUKOJI MEDIA — comptes sociaux officiels (destinations du moteur)
+#
+# Fichier PUBLIC : uniquement des liens et des identifiants publics.
+# AUCUN secret ici : ni jeton, ni mot de passe, ni clé d'API, ni identifiant client OAuth.
+# Les accès aux API (phase 6) seront fournis par variables d'environnement / gestionnaire de
+# secrets, et référencés plus tard par leur NOM uniquement.
+# Le chargeur refuse ce fichier s'il contient une clé ou une valeur ressemblant à un secret.
+#
+# Modifier un lien : changer `url` (et `identifiant` si besoin), puis lancer
+#   ./bin/lukoji social          (affiche et valide)
+#   python3 -m pytest -q tests/test_social.py
+#
+# Phase 0 : aucune API connectée, aucune publication. `publication = "desactivee"` partout.
+
+[media]
+nom = "LUKOJI MEDIA"
+slogan = "INNOVER · CRÉER · IMPACTER"
+
+[comptes.youtube]
+plateforme = "YouTube"
+url = "https://www.youtube.com/@Lukoji-officiel"
+identifiant = "@Lukoji-officiel"
+type = "chaine"
+formats = ["documentaire", "short"]          # documentaires 16:9 + YouTube Shorts
+profils_rendu = ["youtube_16x9", "youtube_shorts"]
+publication = "desactivee"                   # desactivee | brouillon | active (phases ultérieures)
+notes = "Documentaires du samedi 18h00 + Shorts quotidiens."
+
+[comptes.facebook]
+plateforme = "Facebook"
+url = "https://www.facebook.com/share/1MKZxLR4Jz/"
+identifiant = ""                             # inconnu : le lien fourni est un lien de PARTAGE
+type = "page"
+formats = ["short", "affiche"]               # Reels + affiches
+profils_rendu = ["facebook_reels"]
+publication = "desactivee"
+notes = "Lien de partage (redirection). L'URL canonique et l'identifiant de la Page seront relevés lors de la connexion à l'API Graph (phase 6)."
+
+[comptes.instagram]
+plateforme = "Instagram"
+url = "https://www.instagram.com/lukoji_officiel"
+identifiant = "lukoji_officiel"
+type = "compte"
+formats = ["short", "affiche"]               # Reels + affiches
+profils_rendu = ["instagram_reels"]
+publication = "desactivee"
+notes = "La publication par API exigera un compte professionnel relié à la Page Facebook."
+
+[comptes.tiktok]
+plateforme = "TikTok"
+url = "https://www.tiktok.com/@lukoji_officiel"
+identifiant = "@lukoji_officiel"
+type = "compte"
+formats = ["short"]
+profils_rendu = ["tiktok"]
+publication = "desactivee"
+notes = ""
+
+# Routage éditorial : sur quels comptes chaque format est destiné à être publié.
+# Doit rester cohérent avec `formats` de chaque compte (vérifié par le chargeur).
+[routage]
+short = ["youtube", "tiktok", "instagram", "facebook"]
+affiche = ["facebook", "instagram"]
+documentaire = ["youtube"]

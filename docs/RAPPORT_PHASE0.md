@@ -116,3 +116,13 @@ Tables : `assets`, `contents`, `content_events`, `renders`, `qc_results`, `schem
 2. **Créer le dépôt GitHub** `lukoji-media-engine` (vide, privé) et pousser ce travail (`docs/TRANSFERT.md`).
 3. Faire **une capture d'écran par plateforme** avec un rendu publié en privé, pour passer les zones à `verifie_sur_appareil = true`.
 4. Ensuite seulement, **phase 1** (recherche et propositions de sujets), après votre accord.
+
+## 9. Complément — comptes sociaux officiels (§11)
+
+- Fichier dédié `config/social.toml` : YouTube, Facebook, Instagram et TikTok, avec les liens fournis enregistrés tels quels.
+- Chargement et validation hors ligne : `src/lukoji_engine/social.py`, commande `./bin/lukoji social`.
+- `tests/test_social.py` : **12 tests réussis**. Liens exacts, absence de secret, publication désactivée, routage
+  (affiches uniquement vers Facebook et Instagram), et 7 cas invalides correctement refusés.
+- Aucune API connectée, aucune requête réseau, aucune publication.
+- Le lien Facebook est un lien de partage. L'identifiant de la Page sera nécessaire en phase 6 (voir `docs/COMPTES_SOCIAUX.md`).
+- Suite complète : **39 tests** (27 + 12).

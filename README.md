@@ -22,7 +22,7 @@ Aucun service payant, aucune clé API n'est nécessaire pour la phase 0.
 
 ```bash
 ./scripts/run_phase0.sh          # reproduit toute la validation : base, kit, rendus réels, QC, tests
-python3 -m pytest -q             # 27 tests (unitaires + bout en bout, ~2 min 30)
+python3 -m pytest -q             # 39 tests (unitaires + bout en bout, ~2 min 30)
 python3 -m pytest -q -m "not e2e"  # tests rapides uniquement
 ```
 
@@ -38,6 +38,7 @@ python3 -m pytest -q -m "not e2e"  # tests rapides uniquement
 | `signature --profile P --preset court` | rend la signature seule |
 | `qc VIDEO [--json rapport.json]` | contrôle qualité complet (code retour 1 si bloquant) |
 | `sheet VIDEO planche.png [--times 1,5,9]` | planche visuelle avec zones sûres et boîte du filigrane |
+| `social` | affiche et valide les comptes sociaux officiels (hors ligne) |
 | `content list|add|move|history` | registre des contenus et cycle de vie |
 
 Exemple — vidéo courte destinée aux 4 plateformes, sous-titres réservés entre y=1180 et y=1400 :
@@ -55,7 +56,7 @@ brand/originals/   logos officiels, copies octet pour octet, en lecture seule (+
 brand/fonts/       Archivo Black, IBM Plex Mono (licence OFL)
 brand/manifest.json  empreintes SHA-256 des originaux
 config/            engine.toml (chemins, encodage), brand.toml (marque, filigrane, signature),
-                   platforms.toml (profils, zones sûres)
+                   platforms.toml (profils, zones sûres), social.toml (comptes officiels)
 src/lukoji_engine/ config, paths, log, db, geometry, assets, media, watermark, signature, qc, cli
 scripts/           render_svg.mjs, render_signature.mjs (Chromium), run_phase0.sh
 tests/             suite pytest
@@ -67,5 +68,6 @@ var/               (non versionné) base, journaux, caches, rendus
 
 - [Règles de marque : filigrane, signature, formats](docs/MARQUE.md)
 - [Zones de sécurité par plateforme](docs/ZONES_SECURITE.md)
+- [Comptes sociaux officiels](docs/COMPTES_SOCIAUX.md)
 - [Rapport de validation phase 0](docs/RAPPORT_PHASE0.md)
 - [Transfert vers le dépôt GitHub](docs/TRANSFERT.md)

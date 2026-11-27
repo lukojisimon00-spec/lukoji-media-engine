@@ -53,6 +53,7 @@ class Config:
     engine: dict
     brand: dict
     platforms: dict
+    social: dict
 
     def get(self, dotted: str, default: Any = None) -> Any:
         """Accès pointé dans engine.toml : cfg.get('encode.crf')."""
@@ -73,4 +74,5 @@ def load_config() -> Config:
         engine=_apply_env(load_toml("engine"), dict(os.environ)),
         brand=load_toml("brand"),
         platforms=load_toml("platforms"),
+        social=load_toml("social"),
     )

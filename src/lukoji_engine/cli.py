@@ -102,6 +102,24 @@ def cmd_sheet(a):
     print(contact_sheet(a.video, a.output, times))
 
 
+def cmd_social(a):
+    from .social import load_accounts, validate
+    from .config import load_config
+    problems = validate(load_config().social)
+    accounts = load_accounts(strict=False)
+    for acc in accounts.values():
+        extra = " (lien de partage)" if acc.is_share_link else ""
+        print(f"{acc.platform:10s} {acc.url}{extra}")
+        print(f"{'':10s} identifiant={acc.handle or '—'} · formats={','.join(acc.formats)} · publication={acc.publication}")
+    for fmt, targets in load_config().social["routage"].items():
+        print(f"routage {fmt:12s} -> {', '.join(targets)}")
+    if problems:
+        print("PROBLÈMES :\n- " + "\n- ".join(problems))
+        return 1
+    print("Comptes officiels valides · aucun secret · aucune API connectée (phase 0).")
+    return 0
+
+
 def cmd_content(a):
     db = _db()
     if a.action == "add":
@@ -129,6 +147,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("brand-build", help="manifeste des originaux + découpes de signature").set_defaults(fn=cmd_brand_build)
     sub.add_parser("brand-verify", help="vérifie l'intégrité du kit de marque").set_defaults(fn=cmd_brand_verify)
     sub.add_parser("profiles", help="liste les profils et zones sûres").set_defaults(fn=cmd_profiles)
+    sub.add_parser("social", help="affiche et valide les comptes sociaux officiels").set_defaults(fn=cmd_social)
 
     w = sub.add_parser("watermark", help="applique le filigrane (+ signature) à une vidéo")
     w.add_argument("input"); w.add_argument("output")

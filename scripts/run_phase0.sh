@@ -24,6 +24,7 @@ $L db-init
 $L brand-build
 $L brand-verify
 $L profiles
+$L social
 
 mkdir -p "$V/renders"
 if [ -f "$SRC_VERTICAL" ]; then
