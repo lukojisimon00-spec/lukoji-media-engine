@@ -145,12 +145,31 @@ class SourceRecord:
     row: dict = field(default_factory=dict)
 
 
-def register_source(db: Database, s: dict, *, fetch: bool, opener=None) -> SourceRecord:
+def load_captures(folder: str | Path | None) -> dict:
+    """Captures faites par le moteur ailleurs (scripts/capture_sources.py). Empreinte contrôlée."""
+    if not folder:
+        return {}
+    folder = Path(folder)
+    manifest = json.loads((folder / "captures.json").read_text(encoding="utf-8"))
+    out = {}
+    for url, e in manifest.items():
+        if e.get("text_file"):
+            text = (folder / e["text_file"]).read_text(encoding="utf-8")
+            import hashlib
+            if hashlib.sha256(text.encode()).hexdigest() != e["text_sha256"]:
+                raise ValueError(f"capture altérée (empreinte différente) : {url}")
+            e = dict(e, text=text)
+        out[url] = e
+    return out
+
+
+def register_source(db: Database, s: dict, *, fetch: bool, opener=None, captures: dict | None = None) -> SourceRecord:
     url = src.normalize_url(s["url"])
     cls = src.classify(url, s)
     consultation = s["consultation"]
     availability, http_status, final_url, sha, tpath, text = "non_verifiee", None, None, None, None, None
     title, published = s["titre"], s.get("date_publication")
+    cap = (captures or {}).get(url)
     if fetch:
         fr = src.fetch(url, opener)
         http_status = fr.http_status
@@ -158,8 +177,23 @@ def register_source(db: Database, s: dict, *, fetch: bool, opener=None) -> Sourc
             availability, consultation = "disponible", "page_verifiee"
             final_url, sha, tpath, text = fr.final_url, fr.content_sha256, fr.text_path, fr.text
             published = published or (fr.published_at or "")[:10] or None
+            cap = None
         else:
             availability = fr.availability
+    if cap is not None:
+        # Page récupérée PAR LE MOTEUR dans un environnement autorisé : preuve équivalente à une récupération locale.
+        if cap.get("text"):
+            store = Path(load_config().engine["paths"]["cache"]) / "sources"
+            store = resolve(store); store.mkdir(parents=True, exist_ok=True)
+            tfile = store / f"{cap['text_sha256'][:16]}.txt"
+            tfile.write_text(cap["text"], encoding="utf-8")
+            from .paths import rel as _rel
+            availability, consultation, http_status = "disponible", "page_verifiee", cap.get("http_status")
+            final_url, sha, tpath, text = cap.get("final_url"), cap["text_sha256"], _rel(tfile), cap["text"]
+            published = published or (cap.get("published_at") or "")[:10] or None
+            s = dict(s, notes=((s.get("notes") or "") + f" | capturée par le moteur le {cap['captured_at']}").strip(" |"))
+        else:
+            availability, http_status = cap.get("availability", availability), cap.get("http_status", http_status)
     limitations = (s.get("limites") or "").strip()
     if availability == "inaccessible_environnement":
         limitations = (limitations + " | " if limitations else "") + \
@@ -275,7 +309,7 @@ def finish_run(db: Database, run_id: int, status: str, errors: list | None = Non
 
 
 def import_dossier(db: Database, dossier: dict | str | Path, *, fetch: bool = True, opener=None,
-                   allow_same_subject: bool = False) -> dict:
+                   allow_same_subject: bool = False, captures: str | Path | None = None) -> dict:
     if not isinstance(dossier, dict):
         dossier = json.loads(Path(dossier).read_text(encoding="utf-8"))
     problems = validate_dossier(dossier)
@@ -288,7 +322,8 @@ def import_dossier(db: Database, dossier: dict | str | Path, *, fetch: bool = Tr
     report = {"run_id": run_id, "sources": [], "propositions": [], "refusees": []}
     errors = []
     try:
-        _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_same_subject)
+        _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_same_subject,
+                     load_captures(captures))
     except Exception as exc:
         finish_run(db, run_id, "echec", [{"type": "exception", "detail": str(exc)}])
         log.error("import en échec", extra={"run_id": run_id, "erreur": str(exc)})
@@ -296,11 +331,11 @@ def import_dossier(db: Database, dossier: dict | str | Path, *, fetch: bool = Tr
     return report
 
 
-def _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_same_subject):
+def _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_same_subject, captures):
     with db.tx():
         recs: dict[str, SourceRecord] = {}
         for s in dossier["sources"]:
-            r = register_source(db, s, fetch=fetch, opener=opener)
+            r = register_source(db, s, fetch=fetch, opener=opener, captures=captures)
             recs[s["id"]] = r
             report["sources"].append({"id": s["id"], "url": r.url, "categorie": r.category,
                                       "organisation": r.organisation, "consultation": r.consultation,

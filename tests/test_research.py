@@ -383,3 +383,30 @@ def test_cli_is_reproducible(tmp_path):
     assert bad.returncode == 2 and "transition interdite" in bad.stderr
     again = run("recherche", "importer", str(dossier), "--no-fetch")
     assert "REFUSÉE" in again.stdout                     # doublon détecté à la ré-exécution
+
+
+def test_engine_captures_are_used_and_integrity_checked(db, offline, tmp_path, monkeypatch):
+    """Pages capturées par le moteur dans un autre environnement : extraits revérifiés ici ;
+    une capture modifiée est refusée."""
+    import hashlib
+    import lukoji_engine.sources as srcmod
+    folder = tmp_path / "captures"
+    folder.mkdir()
+    manifest = {}
+    for url, body in PAGES.items():
+        text = srcmod.parse_html(body.decode())["text"]
+        sha = hashlib.sha256(text.encode()).hexdigest()
+        (folder / f"{sha[:16]}.txt").write_text(text, encoding="utf-8")
+        manifest[url] = {"url": url, "captured_at": "2026-11-27T10:00:00Z", "availability": "disponible",
+                         "http_status": 200, "text_file": f"{sha[:16]}.txt", "text_sha256": sha}
+    (folder / "captures.json").write_text(json.dumps(manifest))
+    rep = import_dossier(db, make_dossier(), opener=offline, captures=folder)
+    s = subject_details(db, rep["propositions"][0]["uid"])
+    assert {e["excerpt_check"] for c in s["claims"] for e in c["evidence"]} == {"verifie"}
+    assert all(so["consultation"] == "page_verifiee" for so in s["sources"])
+    # altération d'une capture -> refus
+    f = next(folder.glob("*.txt"))
+    f.write_text(f.read_text() + " ajout", encoding="utf-8")
+    with pytest.raises(ValueError, match="altérée"):
+        import_dossier(db, make_dossier(propositions=[]) | {"propositions": make_dossier()["propositions"]},
+                       opener=offline, captures=folder, allow_same_subject=True)

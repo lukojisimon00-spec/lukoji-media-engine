@@ -160,7 +160,8 @@ def cmd_research_import(a):
     from .subjects import DossierError, import_dossier
     db = _db()
     try:
-        rep = import_dossier(db, a.dossier, fetch=not a.no_fetch, allow_same_subject=a.allow_same_subject)
+        rep = import_dossier(db, a.dossier, fetch=not a.no_fetch, allow_same_subject=a.allow_same_subject,
+                             captures=a.captures)
     except DossierError as e:
         print(str(e))
         return 1
@@ -303,6 +304,7 @@ def build_parser() -> argparse.ArgumentParser:
     ri = rs.add_parser("importer", help="importe un dossier de recherche (sources consultées + propositions)")
     ri.add_argument("dossier"); ri.add_argument("--no-fetch", action="store_true", help="ne pas tenter de récupérer les pages")
     ri.add_argument("--allow-same-subject", action="store_true"); ri.add_argument("--json")
+    ri.add_argument("--captures", help="dossier de captures du moteur (scripts/capture_sources.py)")
     ri.set_defaults(fn=cmd_research_import)
 
     so = sub.add_parser("sources", help="sources enregistrées : list | check (disponibilité)")
