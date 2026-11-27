@@ -1,0 +1,88 @@
+{
+ "projet": "STO-20261127-001",
+ "titre": "Quand les clients ont changé le produit",
+ "statut": "structure_draft",
+ "avertissement": "Fiche préparatoire : AUCUNE validation n'est enregistrée par ce document.",
+ "etapes": {
+  "structure": {
+   "research": {
+    "version": 4,
+    "sha256": "e05227f4006cc36ce40b9864172b91d778f459d7e19c8bb30e81822eefcbdf1c",
+    "base_sur": {},
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": null,
+    "fichier_identique_a_la_base": null
+   },
+   "hooks": {
+    "version": 5,
+    "sha256": "a89eecdfbad18e4b1051e60d3e6110568598777c52f28e6bd51a102bb982ffe0",
+    "base_sur": {
+     "research": 4
+    },
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": "research/stories/mpesa/v2_2/hooks_v2_2.json",
+    "fichier_identique_a_la_base": true
+   },
+   "structure": {
+    "version": 6,
+    "sha256": "d243c5878317b4e5f1932e672c9419909b73296a9780b4dcd98e372285b25677",
+    "base_sur": {
+     "research": 4,
+     "hooks": 5
+    },
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": "research/stories/mpesa/v2_2/structure_v2_2.json",
+    "fichier_identique_a_la_base": true
+   }
+  },
+  "script": {
+   "research": {
+    "version": 4,
+    "sha256": "e05227f4006cc36ce40b9864172b91d778f459d7e19c8bb30e81822eefcbdf1c",
+    "base_sur": {},
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": null,
+    "fichier_identique_a_la_base": null
+   },
+   "hooks": {
+    "version": 5,
+    "sha256": "a89eecdfbad18e4b1051e60d3e6110568598777c52f28e6bd51a102bb982ffe0",
+    "base_sur": {
+     "research": 4
+    },
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": "research/stories/mpesa/v2_2/hooks_v2_2.json",
+    "fichier_identique_a_la_base": true
+   },
+   "structure": {
+    "version": 6,
+    "sha256": "d243c5878317b4e5f1932e672c9419909b73296a9780b4dcd98e372285b25677",
+    "base_sur": {
+     "research": 4,
+     "hooks": 5
+    },
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": "research/stories/mpesa/v2_2/structure_v2_2.json",
+    "fichier_identique_a_la_base": true
+   },
+   "script": {
+    "version": 21,
+    "sha256": "62bd3ad4d0c86f20c1910513004970370ae4f76f14a49c71bb68adaa1cfcd7a4",
+    "base_sur": {
+     "research": 4,
+     "hooks": 5,
+     "structure": 6
+    },
+    "empreinte_recalculee_ok": true,
+    "fichier_versionne": "research/stories/mpesa/v2_2/script_v2_2.json",
+    "fichier_identique_a_la_base": true
+   }
+  }
+ },
+ "dernier_qc": {
+  "id": 11,
+  "statut": "bloque",
+  "sur_versions_courantes": true
+ },
+ "validations_existantes": 0
+}

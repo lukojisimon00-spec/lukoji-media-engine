@@ -125,3 +125,23 @@ def test_consolidation_v2_2_coherente():
     vo = " ".join(s["voix_off"] for s in script["sequences"])
     for motif in (r"2009", r"communiqu", r"\bparis\b", r"chauffeur", r"\b49\b", r"41 ?%", r"survit au débat"):
         assert not re.search(motif, vo, flags=re.I), motif
+
+
+FICHE = ROOT / "docs/stories/STO-20261127-001/v2_2/fiche_validation.json"
+
+
+@pytest.mark.skipif(not FICHE.exists(), reason="fiche de validation absente")
+def test_fiche_de_validation_correspond_aux_fichiers_versionnes():
+    import hashlib
+
+    def sha(o):
+        return hashlib.sha256(json.dumps(o, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+    fiche = _load(FICHE)
+    for stage in ("structure", "script"):
+        for kind, entry in fiche["etapes"][stage].items():
+            if entry["fichier_versionne"]:
+                assert sha(_load(ROOT / entry["fichier_versionne"])) == entry["sha256"], (stage, kind)
+    verrou = ROOT / "docs/stories/STO-20261127-001/VERROU_VALIDATION.json"
+    if not verrou.exists():
+        assert fiche["validations_existantes"] == 0
