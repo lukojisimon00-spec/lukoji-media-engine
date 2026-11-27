@@ -1,0 +1,131 @@
+{
+  "engine": "lukoji-media-engine",
+  "kind": "documentaire",
+  "input": "/home/user/Motion-design-/time-capital/renders/le-temps-est-ton-capital.mp4",
+  "input_sha256": "81be6b9c99ea829eed93e0f21a7374db16e6ccab91d0001f03dc7a406c1e0e35",
+  "output": "/home/user/lukoji-media-engine/var/out/test_horizontal_1920x1080.mp4",
+  "source_in": 0.0,
+  "source_out": 20.011,
+  "main_duration": 20.011,
+  "total_duration": 23.261,
+  "normalize_filter": "setsar=1,fps=30",
+  "profile": "youtube_16x9",
+  "profile_members": [
+    "youtube_16x9"
+  ],
+  "safe_rect": [
+    96,
+    54,
+    1728,
+    876
+  ],
+  "watermark": {
+    "profile": "youtube_16x9",
+    "canvas": [
+      1920,
+      1080
+    ],
+    "variant": "lockup",
+    "box": [
+      1584,
+      54,
+      240,
+      65
+    ],
+    "anchor": "top_right",
+    "opacity": 0.88,
+    "fade_in": 0.3,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 20.011,
+        "color": "white",
+        "bg_luma": 0.048,
+        "contrast": 0.952
+      }
+    ],
+    "candidates": [
+      {
+        "anchor": "top_right",
+        "box": [
+          1584,
+          54,
+          240,
+          65
+        ],
+        "rejected": null,
+        "busyness": 0.00197,
+        "score": 0.00197,
+        "occlusion": {
+          "max": 0.0066,
+          "p95": 0.00197,
+          "occluded_fraction": 0.0,
+          "occluded_spans": [],
+          "threshold": 0.012
+        }
+      },
+      {
+        "anchor": "top_left",
+        "box": [
+          96,
+          54,
+          240,
+          65
+        ],
+        "rejected": null,
+        "busyness": 0.00197,
+        "score": 0.01197,
+        "occlusion": {
+          "max": 0.00202,
+          "p95": 0.00197,
+          "occluded_fraction": 0.0,
+          "occluded_spans": [],
+          "threshold": 0.012
+        }
+      }
+    ],
+    "avoid": [],
+    "clear": true,
+    "logos": {
+      "white": {
+        "path": "var/cache/brand/filigrane_lockup_white_240x65_ombre.png",
+        "sha256": "8fbc8d63669126a2e36bfbe93a967a6e96e27d3bcce7536ab29a8f0e4724dabb",
+        "box_w": 240,
+        "box_h": 65,
+        "pad": 14,
+        "source_key": "horizontal_blanc",
+        "source_aspect": 3.69672131147541
+      }
+    }
+  },
+  "signature": {
+    "preset": "documentaire",
+    "path": "var/cache/signature/signature_documentaire_1920x1080_c9923b524e44.mp4",
+    "duration": 3.5,
+    "start": 19.761,
+    "transition": 0.25,
+    "last_frame": "var/cache/signature/signature_documentaire_1920x1080_c9923b524e44_last.png",
+    "content_box": [
+      623,
+      205,
+      674,
+      670
+    ]
+  },
+  "encode": {
+    "video_codec": "libx264",
+    "preset": "medium",
+    "crf": 18,
+    "profile": "high",
+    "level": "4.1",
+    "pix_fmt": "yuv420p",
+    "gop_seconds": 2,
+    "audio_codec": "aac",
+    "audio_bitrate": "192k",
+    "audio_rate": 48000,
+    "audio_channels": 2,
+    "faststart": true
+  },
+  "ffmpeg": "ffmpeg -ss 0.000 -t 20.011 -i /home/user/Motion-design-/time-capital/renders/le-temps-est-ton-capital.mp4 -loop 1 -framerate 30 -t 20.011 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_white_240x65_ombre.png -i /home/user/lukoji-media-engine/var/cache/signature/signature_documentaire_1920x1080_c9923b524e44.mp4 -filter_complex '[0:v]setsar=1,fps=30,format=yuv444p[base];[1:v]format=rgba,colorchannelmixer=aa=0.880,fade=t=in:st=0:d=0.3:alpha=1[lg1];[base][lg1]overlay=x=1570:y=40:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,0.000)*lt(t,20.011)'\"'\"'[ov1];[ov1]format=yuv420p,settb=AVTB,fps=30[main];[2:v]format=yuv420p,setsar=1,settb=AVTB,fps=30[sig];[main][sig]xfade=transition=fade:duration=0.25:offset=19.761[vx];[0:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=out:st=19.611:d=0.4,apad=whole_dur=23.261[aout]' -map '[vx]' -map '[aout]' -c:v libx264 -preset medium -crf 18 -profile:v high -level:v 4.1 -pix_fmt yuv420p -g 60 -r 30 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -ac 2 -t 23.261 -movflags +faststart /home/user/lukoji-media-engine/var/out/test_horizontal_1920x1080.mp4",
+  "render_id": 5
+}

@@ -1,0 +1,79 @@
+# LUKOJI — profils de sortie et zones de sécurité par plateforme
+#
+# Les marges sont exprimées en pixels sur le canevas indiqué. Elles délimitent la zone dans
+# laquelle aucun élément important (filigrane, texte, sous-titre) ne doit être masqué par
+# l'interface de l'application (onglets, boutons d'action, légende, barre de navigation).
+#
+# STATUT : valeurs de travail PRUDENTES établies à partir des recommandations publiques des
+# plateformes et des pratiques de production courantes (novembre 2026). Les interfaces changent
+# selon l'appareil, la version de l'application et la langue : chaque profil porte
+# `verifie_sur_appareil = false` tant qu'une capture réelle n'a pas confirmé les valeurs.
+#
+# `apercus` : recadrages centraux appliqués par certaines vues (grille de profil, fil d'actualité).
+# Le filigrane doit rester visible dans ces aperçus : la zone sûre est intersectée avec eux.
+#
+# `reserve` : rectangles supplémentaires interdits [x, y, largeur, hauteur].
+
+[profiles.tiktok]
+label = "TikTok"
+canvas = [1080, 1920]
+fps = 30
+orientation = "vertical"
+marges = { top = 160, bottom = 480, left = 60, right = 140 }
+apercus = []
+verifie_sur_appareil = false
+notes = "Haut : onglets Suivis/Pour toi, LIVE, recherche. Droite : colonne J'aime/Commentaires/Partages/disque. Bas : pseudo, légende, son, barre de navigation."
+
+[profiles.instagram_reels]
+label = "Instagram Reels"
+canvas = [1080, 1920]
+fps = 30
+orientation = "vertical"
+marges = { top = 250, bottom = 500, left = 65, right = 130 }
+apercus = [{ nom = "grille de profil 3:4", ratio = [3, 4] }]
+verifie_sur_appareil = false
+notes = "Haut : titre Reels + caméra. Droite : actions. Bas : compte, légende, audio. La grille du profil affiche un recadrage central 3:4."
+
+[profiles.facebook_reels]
+label = "Facebook Reels"
+canvas = [1080, 1920]
+fps = 30
+orientation = "vertical"
+marges = { top = 230, bottom = 500, left = 60, right = 130 }
+apercus = [{ nom = "fil d'actualité 4:5", ratio = [4, 5] }]
+verifie_sur_appareil = false
+notes = "Interface proche d'Instagram. Dans le fil, Facebook peut afficher un recadrage central 4:5."
+
+[profiles.youtube_shorts]
+label = "YouTube Shorts"
+canvas = [1080, 1920]
+fps = 30
+orientation = "vertical"
+marges = { top = 180, bottom = 450, left = 60, right = 150 }
+apercus = []
+verifie_sur_appareil = false
+notes = "Haut : recherche, caméra, menu. Droite : actions (J'aime, commentaires, partage, remix). Bas : titre, chaîne, bouton S'abonner, son."
+
+# Profil maître vertical : un seul export pour les quatre plateformes.
+# Zone sûre = intersection de toutes les zones sûres et de tous les aperçus des profils listés.
+[profiles.vertical_universal]
+label = "Vertical 9:16 — maître multi-plateformes"
+canvas = [1080, 1920]
+fps = 30
+orientation = "vertical"
+union_of = ["tiktok", "instagram_reels", "facebook_reels", "youtube_shorts"]
+verifie_sur_appareil = false
+notes = "Profil par défaut des vidéos courtes LUKOJI (une vidéo, quatre plateformes)."
+
+[profiles.youtube_16x9]
+label = "YouTube 16:9 (documentaire)"
+canvas = [1920, 1080]
+fps = 30
+orientation = "horizontal"
+# Marges « title safe » 90 % + bande basse des contrôles du lecteur.
+marges = { top = 54, bottom = 150, left = 96, right = 96 }
+apercus = []
+# Coin bas-droit réservé au filigrane de chaîne YouTube (« branding ») et aux écrans de fin.
+reserve = [[1500, 760, 420, 320]]
+verifie_sur_appareil = false
+notes = "Haut-gauche : titre/avatar en lecteur intégré au survol. Haut-droit : teaser des fiches (bref). Bas : barre de progression et contrôles. Bas-droit : filigrane de chaîne YouTube. 20 dernières secondes : écran de fin."

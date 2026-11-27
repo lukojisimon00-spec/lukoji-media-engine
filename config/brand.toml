@@ -1,0 +1,206 @@
+# LUKOJI — kit de marque (source de vérité pour le moteur)
+# Ne jamais modifier les fichiers de brand/originals : ils sont verrouillés et vérifiés par empreinte SHA-256.
+
+[brand]
+nom = "LUKOJI"
+slogan = "INNOVER · CRÉER · IMPACTER"
+signature_texte = "LUKOJI MEDIA"
+
+[palette]
+noir = "#0B0B0B"
+blanc = "#FFFFFF"
+fond_clair = "#F6F6F3"
+gris_clair = "#BDBDBD"
+gris = "#9A9A9A"
+gris_fonce = "#555555"
+jaune = "#FFD23F"          # accent motion design
+orange = "#FF8A00"         # accent motion design
+orange_intense = "#FF5A00" # accent motion design
+
+[fonts]
+titres = "brand/fonts/ArchivoBlack-Regular.ttf"
+labels = "brand/fonts/IBMPlexMono-Regular.ttf"
+labels_medium = "brand/fonts/IBMPlexMono-Medium.ttf"
+labels_semibold = "brand/fonts/IBMPlexMono-SemiBold.ttf"
+labels_bold = "brand/fonts/IBMPlexMono-Bold.ttf"
+
+# ---------------------------------------------------------------------------
+# Fichiers originaux (copies octet pour octet des fichiers fournis par LUKOJI).
+# `uploads` = noms d'origine (doublons exacts regroupés).
+# ---------------------------------------------------------------------------
+[[originals]]
+key = "symbole_svg"
+file = "brand/originals/symbole_officiel.svg"
+role = "Symbole drapeau — source VECTORIELLE officielle (copiée de lukoji-blog/symbole.svg). Base de tout rendu du symbole."
+uploads = ["lukoji-blog/symbole.svg"]
+
+[[originals]]
+key = "symbole_noir"
+file = "brand/originals/symbole_noir_transparent_800x1600.png"
+role = "Symbole seul, noir, fond transparent (référence raster du SVG)."
+uploads = ["1000095401.png"]
+
+[[originals]]
+key = "symbole_blanc"
+file = "brand/originals/symbole_blanc_transparent_800x1600.png"
+role = "Symbole seul, blanc, fond transparent."
+uploads = ["1000095402.png"]
+
+[[originals]]
+key = "horizontal_noir"
+file = "brand/originals/horizontal_noir_transparent_2800x800.png"
+role = "Logo horizontal (symbole + LUKOJI), noir, transparent — filigrane sur fonds clairs."
+uploads = ["1000095398.png"]
+
+[[originals]]
+key = "horizontal_blanc"
+file = "brand/originals/horizontal_blanc_transparent_2800x800.png"
+role = "Logo horizontal (symbole + LUKOJI), blanc, transparent — filigrane sur fonds sombres."
+uploads = ["1000095405.png"]
+
+[[originals]]
+key = "horizontal_blanc_ombre"
+file = "brand/originals/horizontal_blanc_ombre_720x240.png"
+role = "Logo horizontal blanc avec ombre portée (précédent officiel pour l'ombre douce du filigrane)."
+uploads = ["1000095393.png"]
+
+[[originals]]
+key = "vertical_slogan_noir"
+file = "brand/originals/vertical_slogan_noir_transparent_2400x1600.png"
+role = "Logo vertical (symbole + LUKOJI + slogan), noir, transparent."
+uploads = ["1000095406.png"]
+
+[[originals]]
+key = "vertical_slogan_blanc"
+file = "brand/originals/vertical_slogan_blanc_transparent_2400x1600.png"
+role = "Logo vertical (symbole + LUKOJI + slogan), blanc, transparent — base de la signature de fin."
+uploads = ["1000095404.png"]
+
+[[originals]]
+key = "avatar_noir_sur_blanc"
+file = "brand/originals/avatar_symbole_noir_fond_blanc_1000.png"
+role = "Format carré 1:1 — symbole noir sur blanc (avatars)."
+uploads = ["1000095380.png"]
+
+[[originals]]
+key = "avatar_blanc_sur_noir"
+file = "brand/originals/avatar_symbole_blanc_fond_noir_1000.png"
+role = "Format carré 1:1 — symbole blanc sur noir (avatars)."
+uploads = ["1000095379.png", "1000095330.png"]
+
+[[originals]]
+key = "presentation_positif"
+file = "brand/originals/presentation_positif_2400x1600.png"
+role = "Planche de présentation du logo principal (positif). Référence visuelle, non utilisée en production."
+uploads = ["1000095397.png"]
+
+[[originals]]
+key = "presentation_negatif"
+file = "brand/originals/presentation_negatif_2400x1600.png"
+role = "Planche de présentation du logo principal (négatif). Référence visuelle."
+uploads = ["1000095400.png", "1000095331.png"]
+
+[[originals]]
+key = "planche_declinaisons"
+file = "brand/originals/planche_declinaisons_2400x1600.png"
+role = "Planche des déclinaisons (horizontal négatif/positif, avatars, logotype + slogan). Référence."
+uploads = ["1000095407.png"]
+
+[[originals]]
+key = "font_archivo_black"
+file = "brand/fonts/ArchivoBlack-Regular.ttf"
+role = "Typographie des titres (OFL, google/fonts)."
+uploads = ["https://github.com/google/fonts/tree/main/ofl/archivoblack"]
+
+[[originals]]
+key = "font_plex_mono"
+file = "brand/fonts/IBMPlexMono-Regular.ttf"
+role = "Typographie des labels, sources, rubriques (OFL, google/fonts)."
+uploads = ["https://github.com/google/fonts/tree/main/ofl/ibmplexmono"]
+
+# ---------------------------------------------------------------------------
+# Extractions dérivées : DÉCOUPES sans retouche de pixels des originaux.
+# Boîtes en pixels [x0, y0, x1, y1] (x1/y1 inclus), mesurées par segmentation alpha.
+# ---------------------------------------------------------------------------
+[derived.vertical_layout]
+# Position des trois blocs dans vertical_slogan_* (identique en noir et blanc).
+symbole = [1068, 297, 1329, 904]
+logotype = [690, 1038, 1701, 1186]
+slogan = [724, 1263, 1663, 1302]
+
+# ---------------------------------------------------------------------------
+# Filigrane
+# ---------------------------------------------------------------------------
+[watermark]
+variant = "lockup"        # "lockup" = logo horizontal officiel ; "symbole" = symbole SVG seul
+color_mode = "adaptive"   # "adaptive" (blanc/noir selon le fond, par segment) | "white" | "black"
+opacity = 0.88
+fade_in = 0.30            # secondes
+shadow = "auto"           # "auto" = ombre douce sous la version blanche | "on" | "off"
+shadow_opacity = 0.35
+# Hystérésis de luminance (0–1) mesurée sous la zone du filigrane.
+light_threshold = 0.62    # au-dessus : fond clair -> logo noir
+dark_threshold = 0.50     # en dessous : fond sombre -> logo blanc
+analysis_step = 0.25      # pas d'échantillonnage (s)
+min_segment = 0.75        # durée minimale d'un segment de couleur (s)
+avoid_padding = 16        # marge autour des zones réservées (px)
+# Non-masquage : densité de contours (0–1) au-delà de laquelle la zone contient du détail
+# (texte, visage, graphique). Mesurée toutes les `occlusion_step` s sur TOUTE la durée :
+# une position n'est « dégagée » que si le seuil n'est JAMAIS dépassé.
+# Calibrage phase 0 : fond uni/texturé ≤ 0.006 ; texte en Archivo Black ≈ 0.02.
+occlusion_threshold = 0.012
+occlusion_step = 0.25
+
+[watermark.layouts.vertical]
+lockup_width = 220        # px, sur une largeur de 1080
+symbole_height = 120
+# Ordre de préférence. Les coins bas sont ceux de la zone sûre universelle (au-dessus des
+# légendes des applications) ; les sous-titres y seront déclarés comme zones réservées (phase 3).
+anchors = ["top_left", "top_right", "bottom_left", "bottom_right"]
+
+[watermark.layouts.horizontal]
+lockup_width = 240        # px, sur une largeur de 1920
+symbole_height = 110
+anchors = ["top_right", "top_left"]   # bas exclu : contrôles du lecteur, filigrane de chaîne, écran de fin
+
+# ---------------------------------------------------------------------------
+# Signature de fin
+# ---------------------------------------------------------------------------
+[signature]
+background = "#0B0B0B"
+theme = "negatif"          # "negatif" (blanc sur noir) | "positif" (noir sur blanc)
+transition = 0.25          # fondu enchaîné avec la fin du contenu (s)
+audio_fade_out = 0.40      # fondu de sortie de l'audio principal (s)
+min_main_duration = 12.0   # en dessous, pas de signature (format trop court)
+
+[signature.default_by_kind]
+short = "court"
+documentaire = "documentaire"
+affiche = "aucune"
+test = "court"
+
+[signature.presets.aucune]
+duration = 0.0
+
+[signature.presets.flash]
+duration = 1.0
+draw = [0.00, 0.45]
+logotype = [0.30, 0.60]
+slogan = false
+
+[signature.presets.court]
+duration = 1.6
+draw = [0.00, 0.60]
+logotype = [0.40, 0.78]
+slogan = [0.62, 0.98]
+
+[signature.presets.documentaire]
+duration = 3.5
+draw = [0.00, 1.10]
+logotype = [0.80, 1.50]
+slogan = [1.30, 2.00]
+
+[signature.layout]
+# Hauteur du logo vertical complet, en fraction de la hauteur du canevas.
+vertical_canvas_fraction = 0.40
+horizontal_canvas_fraction = 0.62

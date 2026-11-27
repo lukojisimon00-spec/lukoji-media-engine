@@ -1,0 +1,42 @@
+# LUKOJI MEDIA ENGINE — configuration générale
+# Toute valeur peut être surchargée par une variable d'environnement :
+#   LUKOJI_<SECTION>__<CLE>   ex. LUKOJI_ENCODE__CRF=20, LUKOJI_PATHS__DB=/data/lukoji.sqlite3
+# Aucun secret ne doit figurer dans ce fichier (voir .env.example).
+
+[engine]
+name = "LUKOJI MEDIA ENGINE"
+espace = "contenus propres LUKOJI (distinct de CLIENT STUDIO)"
+
+[paths]
+# Chemins relatifs à la racine du dépôt.
+var = "var"
+db = "var/lukoji.sqlite3"
+logs = "var/logs"
+out = "var/out"
+cache = "var/cache"
+brand = "brand"
+manifest = "brand/manifest.json"
+
+[tools]
+ffmpeg = "ffmpeg"
+ffprobe = "ffprobe"
+node = "node"
+
+[encode]
+# Export de diffusion : H.264 High, yuv420p, AAC 48 kHz, moov en tête (faststart).
+video_codec = "libx264"
+preset = "medium"
+crf = 18
+profile = "high"
+level = "4.1"
+pix_fmt = "yuv420p"
+gop_seconds = 2
+audio_codec = "aac"
+audio_bitrate = "192k"
+audio_rate = 48000
+audio_channels = 2
+faststart = true
+
+[logging]
+level = "INFO"
+file = "var/logs/engine.jsonl"

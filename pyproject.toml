@@ -1,0 +1,14 @@
+[project]
+name = "lukoji-media-engine"
+version = "0.1.0"
+description = "LUKOJI MEDIA ENGINE — production des contenus propres de LUKOJI (distinct de CLIENT STUDIO)"
+requires-python = ">=3.11"
+dependencies = ["Pillow>=10", "numpy>=1.26"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["e2e: tests de bout en bout (FFmpeg + Chromium, ~1 min)"]

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Lanceur : ./bin/lukoji <commande>
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PYTHONPATH="$ROOT/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m lukoji_engine "$@"

@@ -1,0 +1,363 @@
+{
+  "video": "/home/user/lukoji-media-engine/var/out/test_horizontal_1920x1080.mp4",
+  "profile": "youtube_16x9",
+  "status": "conforme",
+  "blocking": 0,
+  "warnings": 0,
+  "checks": [
+    {
+      "name": "kit_de_marque_integre",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "ok",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "symbole_svg_officiel",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "38496199aadb",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "police_titres",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "ArchivoBlack-Regular.ttf",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "police_labels",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "IBMPlexMono-Regular.ttf",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "fichier_present",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "/home/user/lukoji-media-engine/var/out/test_horizontal_1920x1080.mp4",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "conteneur_mp4",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "mov,mp4,m4a,3gp,3g2,mj2",
+      "expected": "mp4",
+      "detail": null
+    },
+    {
+      "name": "dimensions",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "1920x1080",
+      "expected": "1920x1080",
+      "detail": null
+    },
+    {
+      "name": "ratio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 1.7778,
+      "expected": 1.7778,
+      "detail": null
+    },
+    {
+      "name": "pixels_carres",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "1:1",
+      "expected": "1:1",
+      "detail": null
+    },
+    {
+      "name": "codec_video",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "h264",
+      "expected": "h264",
+      "detail": null
+    },
+    {
+      "name": "profil_h264",
+      "passed": true,
+      "severity": "avertissement",
+      "value": "High",
+      "expected": "high",
+      "detail": null
+    },
+    {
+      "name": "format_pixel",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "yuv420p",
+      "expected": "yuv420p",
+      "detail": null
+    },
+    {
+      "name": "framerate",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "r=30.000 avg=30.000",
+      "expected": 30,
+      "detail": null
+    },
+    {
+      "name": "audio_present",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "aac",
+      "expected": "aac",
+      "detail": null
+    },
+    {
+      "name": "codec_audio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "aac",
+      "expected": "aac",
+      "detail": null
+    },
+    {
+      "name": "audio_48k_stereo",
+      "passed": true,
+      "severity": "avertissement",
+      "value": "48000 Hz / 2 canaux",
+      "expected": "48000 Hz / 2 canaux",
+      "detail": null
+    },
+    {
+      "name": "faststart",
+      "passed": true,
+      "severity": "avertissement",
+      "value": true,
+      "expected": true,
+      "detail": "moov avant mdat : lecture progressive sur le web"
+    },
+    {
+      "name": "duree",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 23.267,
+      "expected": "23.261 ± 0.1 s",
+      "detail": null
+    },
+    {
+      "name": "nombre_images",
+      "passed": true,
+      "severity": "avertissement",
+      "value": 698,
+      "expected": 698,
+      "detail": null
+    },
+    {
+      "name": "debit",
+      "passed": true,
+      "severity": "info",
+      "value": "5659 kb/s",
+      "expected": "variable (CRF)",
+      "detail": null
+    },
+    {
+      "name": "audio_non_silencieux",
+      "passed": true,
+      "severity": "avertissement",
+      "value": -16.3,
+      "expected": "> -50 LUFS",
+      "detail": null
+    },
+    {
+      "name": "audio_loudness_lufs",
+      "passed": true,
+      "severity": "info",
+      "value": -16.3,
+      "expected": "cible réseaux sociaux ≈ -14 LUFS (phase 3)",
+      "detail": null
+    },
+    {
+      "name": "audio_crete_dbtp",
+      "passed": true,
+      "severity": "avertissement",
+      "value": -4.2,
+      "expected": "≤ -0.5 dBTP",
+      "detail": null
+    },
+    {
+      "name": "zone_securite_youtube_16x9",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        1584,
+        54,
+        240,
+        65
+      ],
+      "expected": "dans [96, 54, 1728, 876]",
+      "detail": null
+    },
+    {
+      "name": "hors_zone_reservee_plateforme",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        1584,
+        54,
+        240,
+        65
+      ],
+      "expected": "hors [1500, 760, 420, 320]",
+      "detail": null
+    },
+    {
+      "name": "logo_white_empreinte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "8fbc8d636691",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "logo_white_ratio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "240x65 écart 0.12 %",
+      "expected": "écart < 1 % vs source officielle",
+      "detail": null
+    },
+    {
+      "name": "logo_white_dimensions",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        268,
+        93
+      ],
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "filigrane_ne_masque_pas_le_contenu",
+      "passed": true,
+      "severity": "bloquant",
+      "value": {
+        "max": 0.0066,
+        "zones_masquees": []
+      },
+      "expected": "densité de contours ≤ 0.012 à chaque instant",
+      "detail": "texte, visage ou graphique sous le filigrane = rendu refusé (règle de marque)"
+    },
+    {
+      "name": "filigrane_present_et_conforme",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        0.9998,
+        0.9998,
+        0.9999,
+        0.9999,
+        0.9999,
+        0.9999,
+        0.9999
+      ],
+      "expected": "corrélation ≥ 0.90 à chaque instant",
+      "detail": "rendu réel comparé à la composition attendue (forme, opacité, position)"
+    },
+    {
+      "name": "filigrane_position_exacte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "expected": "décalage (0, 0)",
+      "detail": null
+    },
+    {
+      "name": "filigrane_visible",
+      "passed": true,
+      "severity": "avertissement",
+      "value": [
+        0.801,
+        0.8,
+        0.802,
+        0.801,
+        0.801,
+        0.801,
+        0.802
+      ],
+      "expected": "écart de luminance ≥ 0.25",
+      "detail": null
+    },
+    {
+      "name": "contenu_non_altere",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 0.0034,
+      "expected": "dérive de luminance < 0.01",
+      "detail": null
+    },
+    {
+      "name": "signature_dans_zone_sure",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        623,
+        205,
+        674,
+        670
+      ],
+      "expected": "dans [96, 54, 1728, 876]",
+      "detail": null
+    },
+    {
+      "name": "signature_presente",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 0.994,
+      "expected": "écart moyen < 3/255 avec l'image finale de référence",
+      "detail": null
+    },
+    {
+      "name": "signature_sans_filigrane",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 1.0,
+      "expected": "zone du filigrane inchangée",
+      "detail": null
+    }
+  ]
+}

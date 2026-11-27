@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-11-27T06:46:26Z",
+  "generator": "1",
+  "originals": [
+    {
+      "key": "symbole_svg",
+      "file": "brand/originals/symbole_officiel.svg",
+      "sha256": "38496199aadbb6f95225fb0ef86c23c3ce0d225d34015c4fd0d860952d475aab",
+      "bytes": 372,
+      "width": null,
+      "height": null,
+      "role": "Symbole drapeau — source VECTORIELLE officielle (copiée de lukoji-blog/symbole.svg). Base de tout rendu du symbole.",
+      "uploads": [
+        "lukoji-blog/symbole.svg"
+      ]
+    },
+    {
+      "key": "symbole_noir",
+      "file": "brand/originals/symbole_noir_transparent_800x1600.png",
+      "sha256": "db19458ecc34c14cce2eee9d79190c39b98e7ed8cbcaf0094d1b7d6e822cb340",
+      "bytes": 30910,
+      "width": 800,
+      "height": 1600,
+      "role": "Symbole seul, noir, fond transparent (référence raster du SVG).",
+      "uploads": [
+        "1000095401.png"
+      ]
+    },
+    {
+      "key": "symbole_blanc",
+      "file": "brand/originals/symbole_blanc_transparent_800x1600.png",
+      "sha256": "94b4bb191e3b301c5f6995c9bc86de7379224b071fc8dfdee03cf1ac051ab011",
+      "bytes": 25744,
+      "width": 800,
+      "height": 1600,
+      "role": "Symbole seul, blanc, fond transparent.",
+      "uploads": [
+        "1000095402.png"
+      ]
+    },
+    {
+      "key": "horizontal_noir",
+      "file": "brand/originals/horizontal_noir_transparent_2800x800.png",
+      "sha256": "7e17f6b0560d0af5c5e7a7819aff05227d9c48cc1057c1d7724a9136ebd7c87f",
+      "bytes": 37575,
+      "width": 2800,
+      "height": 800,
+      "role": "Logo horizontal (symbole + LUKOJI), noir, transparent — filigrane sur fonds clairs.",
+      "uploads": [
+        "1000095398.png"
+      ]
+    },
+    {
+      "key": "horizontal_blanc",
+      "file": "brand/originals/horizontal_blanc_transparent_2800x800.png",
+      "sha256": "c88b23ae19f9cec44bf53e05f3905f4e42c0a633ea5ba130acf66c28349cce40",
+      "bytes": 31545,
+      "width": 2800,
+      "height": 800,
+      "role": "Logo horizontal (symbole + LUKOJI), blanc, transparent — filigrane sur fonds sombres.",
+      "uploads": [
+        "1000095405.png"
+      ]
+    },
+    {
+      "key": "horizontal_blanc_ombre",
+      "file": "brand/originals/horizontal_blanc_ombre_720x240.png",
+      "sha256": "9f471483459935f67c0d8a8ef00fa4221deaf45f2c29ec5fc89c952adfca626b",
+      "bytes": 23043,
+      "width": 720,
+      "height": 240,
+      "role": "Logo horizontal blanc avec ombre portée (précédent officiel pour l'ombre douce du filigrane).",
+      "uploads": [
+        "1000095393.png"
+      ]
+    },
+    {
+      "key": "vertical_slogan_noir",
+      "file": "brand/originals/vertical_slogan_noir_transparent_2400x1600.png",
+      "sha256": "1f24122365704e2eef3b6961376178b6867d2a927c4f86418ae490150e6ed381",
+      "bytes": 49656,
+      "width": 2400,
+      "height": 1600,
+      "role": "Logo vertical (symbole + LUKOJI + slogan), noir, transparent.",
+      "uploads": [
+        "1000095406.png"
+      ]
+    },
+    {
+      "key": "vertical_slogan_blanc",
+      "file": "brand/originals/vertical_slogan_blanc_transparent_2400x1600.png",
+      "sha256": "dfdd67ac082ed4f51dc2bf63c4da3cb4231a3076ee53faeeef779e5200d8d3a8",
+      "bytes": 43068,
+      "width": 2400,
+      "height": 1600,
+      "role": "Logo vertical (symbole + LUKOJI + slogan), blanc, transparent — base de la signature de fin.",
+      "uploads": [
+        "1000095404.png"
+      ]
+    },
+    {
+      "key": "avatar_noir_sur_blanc",
+      "file": "brand/originals/avatar_symbole_noir_fond_blanc_1000.png",
+      "sha256": "51cfb65c9beb84ea19a33daf35154d0aad071d83815636886649cc86ac4c91e7",
+      "bytes": 15549,
+      "width": 1000,
+      "height": 1000,
+      "role": "Format carré 1:1 — symbole noir sur blanc (avatars).",
+      "uploads": [
+        "1000095380.png"
+      ]
+    },
+    {
+      "key": "avatar_blanc_sur_noir",
+      "file": "brand/originals/avatar_symbole_blanc_fond_noir_1000.png",
+      "sha256": "f3a22d39627a3f5d94426286d7997ebd8d025e75f4731bda800397205b97fee3",
+      "bytes": 15971,
+      "width": 1000,
+      "height": 1000,
+      "role": "Format carré 1:1 — symbole blanc sur noir (avatars).",
+      "uploads": [
+        "1000095379.png",
+        "1000095330.png"
+      ]
+    },
+    {
+      "key": "presentation_positif",
+      "file": "brand/originals/presentation_positif_2400x1600.png",
+      "sha256": "f4e181a4a2ca96adc750ebe03ab8c2e665a72032a34ac0468bdf9ef190861dff",
+      "bytes": 51351,
+      "width": 2400,
+      "height": 1600,
+      "role": "Planche de présentation du logo principal (positif). Référence visuelle, non utilisée en production.",
+      "uploads": [
+        "1000095397.png"
+      ]
+    },
+    {
+      "key": "presentation_negatif",
+      "file": "brand/originals/presentation_negatif_2400x1600.png",
+      "sha256": "8216c1debfe7164875f1114818ff1d166292903e736959dbfcfb9dd8c089ef5f",
+      "bytes": 52085,
+      "width": 2400,
+      "height": 1600,
+      "role": "Planche de présentation du logo principal (négatif). Référence visuelle.",
+      "uploads": [
+        "1000095400.png",
+        "1000095331.png"
+      ]
+    },
+    {
+      "key": "planche_declinaisons",
+      "file": "brand/originals/planche_declinaisons_2400x1600.png",
+      "sha256": "2e584bd7ba68ede1bf74e285c2c698fe28daf89a9e05ba0e747bccd1597e6fff",
+      "bytes": 84137,
+      "width": 2400,
+      "height": 1600,
+      "role": "Planche des déclinaisons (horizontal négatif/positif, avatars, logotype + slogan). Référence.",
+      "uploads": [
+        "1000095407.png"
+      ]
+    },
+    {
+      "key": "font_archivo_black",
+      "file": "brand/fonts/ArchivoBlack-Regular.ttf",
+      "sha256": "dd9a89a019b4849f66ab75455fe7bdf931311042cbb0f0f97acc061539703180",
+      "bytes": 90988,
+      "width": null,
+      "height": null,
+      "role": "Typographie des titres (OFL, google/fonts).",
+      "uploads": [
+        "https://github.com/google/fonts/tree/main/ofl/archivoblack"
+      ]
+    },
+    {
+      "key": "font_plex_mono",
+      "file": "brand/fonts/IBMPlexMono-Regular.ttf",
+      "sha256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46",
+      "bytes": 135580,
+      "width": null,
+      "height": null,
+      "role": "Typographie des labels, sources, rubriques (OFL, google/fonts).",
+      "uploads": [
+        "https://github.com/google/fonts/tree/main/ofl/ibmplexmono"
+      ]
+    }
+  ]
+}

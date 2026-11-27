@@ -1,0 +1,221 @@
+{
+  "engine": "lukoji-media-engine",
+  "kind": "test",
+  "input": "/home/user/lukoji-blog/pubs/reseaux/2026-11-20-reel-ta-premiere-pub.mp4",
+  "input_sha256": "672bb7e07d24a08c991381162516f409efc91a7e604d2a94268e6561bc72cc1b",
+  "output": "/home/user/lukoji-media-engine/var/out/test_vertical_1080x1920.mp4",
+  "source_in": 0.0,
+  "source_out": 19.35,
+  "main_duration": 19.35,
+  "total_duration": 20.7,
+  "normalize_filter": "setsar=1,fps=30",
+  "profile": "vertical_universal",
+  "profile_members": [
+    "tiktok",
+    "instagram_reels",
+    "facebook_reels",
+    "youtube_shorts"
+  ],
+  "safe_rect": [
+    65,
+    285,
+    865,
+    1135
+  ],
+  "watermark": {
+    "profile": "vertical_universal",
+    "canvas": [
+      1080,
+      1920
+    ],
+    "variant": "lockup",
+    "box": [
+      65,
+      1361,
+      218,
+      59
+    ],
+    "anchor": "bottom_left",
+    "opacity": 0.88,
+    "fade_in": 0.3,
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 3.0,
+        "color": "white",
+        "bg_luma": 0.065,
+        "contrast": 0.935
+      },
+      {
+        "start": 3.0,
+        "end": 17.75,
+        "color": "black",
+        "bg_luma": 0.963,
+        "contrast": 0.92
+      },
+      {
+        "start": 17.75,
+        "end": 19.35,
+        "color": "white",
+        "bg_luma": 0.063,
+        "contrast": 0.937
+      }
+    ],
+    "candidates": [
+      {
+        "anchor": "top_left",
+        "box": [
+          65,
+          285,
+          218,
+          59
+        ],
+        "rejected": "masquerait du contenu pendant [[3.5, 5.0], [5.25, 8.25], [9.25, 11.75]]",
+        "busyness": 0.02351,
+        "score": 36.38351,
+        "occlusion": {
+          "max": 0.02385,
+          "p95": 0.02351,
+          "occluded_fraction": 0.3636,
+          "occluded_spans": [
+            [
+              3.5,
+              5.0
+            ],
+            [
+              5.25,
+              8.25
+            ],
+            [
+              9.25,
+              11.75
+            ]
+          ],
+          "threshold": 0.012
+        }
+      },
+      {
+        "anchor": "top_right",
+        "box": [
+          712,
+          285,
+          218,
+          59
+        ],
+        "rejected": "masquerait du contenu pendant [[3.5, 5.0], [5.25, 8.25], [9.5, 11.75]]",
+        "busyness": 0.02417,
+        "score": 35.09417,
+        "occlusion": {
+          "max": 0.03996,
+          "p95": 0.02417,
+          "occluded_fraction": 0.3506,
+          "occluded_spans": [
+            [
+              3.5,
+              5.0
+            ],
+            [
+              5.25,
+              8.25
+            ],
+            [
+              9.5,
+              11.75
+            ]
+          ],
+          "threshold": 0.012
+        }
+      },
+      {
+        "anchor": "bottom_left",
+        "box": [
+          65,
+          1361,
+          218,
+          59
+        ],
+        "rejected": null,
+        "busyness": 0.00524,
+        "score": 0.02524,
+        "occlusion": {
+          "max": 0.00605,
+          "p95": 0.00524,
+          "occluded_fraction": 0.0,
+          "occluded_spans": [],
+          "threshold": 0.012
+        }
+      },
+      {
+        "anchor": "bottom_right",
+        "box": [
+          712,
+          1361,
+          218,
+          59
+        ],
+        "rejected": null,
+        "busyness": 0.00655,
+        "score": 0.03655,
+        "occlusion": {
+          "max": 0.0098,
+          "p95": 0.00655,
+          "occluded_fraction": 0.0,
+          "occluded_spans": [],
+          "threshold": 0.012
+        }
+      }
+    ],
+    "avoid": [],
+    "clear": true,
+    "logos": {
+      "white": {
+        "path": "var/cache/brand/filigrane_lockup_white_218x59_ombre.png",
+        "sha256": "79760c240202e80114b88a76bab46416aec55455c11cb45c2b1ca5a49280a4eb",
+        "box_w": 218,
+        "box_h": 59,
+        "pad": 13,
+        "source_key": "horizontal_blanc",
+        "source_aspect": 3.69672131147541
+      },
+      "black": {
+        "path": "var/cache/brand/filigrane_lockup_black_218x59.png",
+        "sha256": "0b34465d7ba462f379697458e5dac3ae8b3cdb5f61d0360d52bb391549c4cea0",
+        "box_w": 218,
+        "box_h": 59,
+        "pad": 0,
+        "source_key": "horizontal_noir",
+        "source_aspect": 3.69672131147541
+      }
+    }
+  },
+  "signature": {
+    "preset": "court",
+    "path": "var/cache/signature/signature_court_1080x1920_ef14622a8453.mp4",
+    "duration": 1.6,
+    "start": 19.1,
+    "transition": 0.25,
+    "last_frame": "var/cache/signature/signature_court_1080x1920_ef14622a8453_last.png",
+    "content_box": [
+      154,
+      576,
+      773,
+      768
+    ]
+  },
+  "encode": {
+    "video_codec": "libx264",
+    "preset": "medium",
+    "crf": 18,
+    "profile": "high",
+    "level": "4.1",
+    "pix_fmt": "yuv420p",
+    "gop_seconds": 2,
+    "audio_codec": "aac",
+    "audio_bitrate": "192k",
+    "audio_rate": 48000,
+    "audio_channels": 2,
+    "faststart": true
+  },
+  "ffmpeg": "ffmpeg -ss 0.000 -t 19.350 -i /home/user/lukoji-blog/pubs/reseaux/2026-11-20-reel-ta-premiere-pub.mp4 -loop 1 -framerate 30 -t 19.350 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_white_218x59_ombre.png -loop 1 -framerate 30 -t 19.350 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_black_218x59.png -i /home/user/lukoji-media-engine/var/cache/signature/signature_court_1080x1920_ef14622a8453.mp4 -filter_complex '[0:v]setsar=1,fps=30,format=yuv444p[base];[1:v]format=rgba,colorchannelmixer=aa=0.880,fade=t=in:st=0:d=0.3:alpha=1[lg1];[base][lg1]overlay=x=52:y=1348:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,0.000)*lt(t,3.000)+gte(t,17.750)*lt(t,19.350)'\"'\"'[ov1];[2:v]format=rgba,colorchannelmixer=aa=0.880[lg2];[ov1][lg2]overlay=x=65:y=1361:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,3.000)*lt(t,17.750)'\"'\"'[ov2];[ov2]format=yuv420p,settb=AVTB,fps=30[main];[3:v]format=yuv420p,setsar=1,settb=AVTB,fps=30[sig];[main][sig]xfade=transition=fade:duration=0.25:offset=19.100[vx];[0:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=out:st=18.950:d=0.4,apad=whole_dur=20.7[aout]' -map '[vx]' -map '[aout]' -c:v libx264 -preset medium -crf 18 -profile:v high -level:v 4.1 -pix_fmt yuv420p -g 60 -r 30 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -ac 2 -t 20.700 -movflags +faststart /home/user/lukoji-media-engine/var/out/test_vertical_1080x1920.mp4",
+  "render_id": 4
+}

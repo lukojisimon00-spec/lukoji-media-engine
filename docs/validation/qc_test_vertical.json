@@ -1,0 +1,428 @@
+{
+  "video": "/home/user/lukoji-media-engine/var/out/test_vertical_1080x1920.mp4",
+  "profile": "vertical_universal",
+  "status": "conforme",
+  "blocking": 0,
+  "warnings": 0,
+  "checks": [
+    {
+      "name": "kit_de_marque_integre",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "ok",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "symbole_svg_officiel",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "38496199aadb",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "police_titres",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "ArchivoBlack-Regular.ttf",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "police_labels",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "IBMPlexMono-Regular.ttf",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "fichier_present",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "/home/user/lukoji-media-engine/var/out/test_vertical_1080x1920.mp4",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "conteneur_mp4",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "mov,mp4,m4a,3gp,3g2,mj2",
+      "expected": "mp4",
+      "detail": null
+    },
+    {
+      "name": "dimensions",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "1080x1920",
+      "expected": "1080x1920",
+      "detail": null
+    },
+    {
+      "name": "ratio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 0.5625,
+      "expected": 0.5625,
+      "detail": null
+    },
+    {
+      "name": "pixels_carres",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "1:1",
+      "expected": "1:1",
+      "detail": null
+    },
+    {
+      "name": "codec_video",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "h264",
+      "expected": "h264",
+      "detail": null
+    },
+    {
+      "name": "profil_h264",
+      "passed": true,
+      "severity": "avertissement",
+      "value": "High",
+      "expected": "high",
+      "detail": null
+    },
+    {
+      "name": "format_pixel",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "yuv420p",
+      "expected": "yuv420p",
+      "detail": null
+    },
+    {
+      "name": "framerate",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "r=30.000 avg=30.000",
+      "expected": 30,
+      "detail": null
+    },
+    {
+      "name": "audio_present",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "aac",
+      "expected": "aac",
+      "detail": null
+    },
+    {
+      "name": "codec_audio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "aac",
+      "expected": "aac",
+      "detail": null
+    },
+    {
+      "name": "audio_48k_stereo",
+      "passed": true,
+      "severity": "avertissement",
+      "value": "48000 Hz / 2 canaux",
+      "expected": "48000 Hz / 2 canaux",
+      "detail": null
+    },
+    {
+      "name": "faststart",
+      "passed": true,
+      "severity": "avertissement",
+      "value": true,
+      "expected": true,
+      "detail": "moov avant mdat : lecture progressive sur le web"
+    },
+    {
+      "name": "duree",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 20.7,
+      "expected": "20.7 ± 0.1 s",
+      "detail": null
+    },
+    {
+      "name": "nombre_images",
+      "passed": true,
+      "severity": "avertissement",
+      "value": 621,
+      "expected": 621,
+      "detail": null
+    },
+    {
+      "name": "debit",
+      "passed": true,
+      "severity": "info",
+      "value": "3144 kb/s",
+      "expected": "variable (CRF)",
+      "detail": null
+    },
+    {
+      "name": "audio_non_silencieux",
+      "passed": true,
+      "severity": "avertissement",
+      "value": -14.3,
+      "expected": "> -50 LUFS",
+      "detail": null
+    },
+    {
+      "name": "audio_loudness_lufs",
+      "passed": true,
+      "severity": "info",
+      "value": -14.3,
+      "expected": "cible réseaux sociaux ≈ -14 LUFS (phase 3)",
+      "detail": null
+    },
+    {
+      "name": "audio_crete_dbtp",
+      "passed": true,
+      "severity": "avertissement",
+      "value": -4.0,
+      "expected": "≤ -0.5 dBTP",
+      "detail": null
+    },
+    {
+      "name": "zone_securite_tiktok",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        65,
+        1361,
+        218,
+        59
+      ],
+      "expected": "dans [60, 160, 880, 1280]",
+      "detail": null
+    },
+    {
+      "name": "zone_securite_instagram_reels",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        65,
+        1361,
+        218,
+        59
+      ],
+      "expected": "dans [65, 250, 885, 1170]",
+      "detail": null
+    },
+    {
+      "name": "zone_securite_facebook_reels",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        65,
+        1361,
+        218,
+        59
+      ],
+      "expected": "dans [60, 285, 890, 1135]",
+      "detail": null
+    },
+    {
+      "name": "zone_securite_youtube_shorts",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        65,
+        1361,
+        218,
+        59
+      ],
+      "expected": "dans [60, 180, 870, 1290]",
+      "detail": null
+    },
+    {
+      "name": "logo_white_empreinte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "79760c240202",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "logo_white_ratio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "218x59 écart 0.05 %",
+      "expected": "écart < 1 % vs source officielle",
+      "detail": null
+    },
+    {
+      "name": "logo_white_dimensions",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        244,
+        85
+      ],
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "logo_black_empreinte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "0b34465d7ba4",
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "logo_black_ratio",
+      "passed": true,
+      "severity": "bloquant",
+      "value": "218x59 écart 0.05 %",
+      "expected": "écart < 1 % vs source officielle",
+      "detail": null
+    },
+    {
+      "name": "logo_black_dimensions",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        218,
+        59
+      ],
+      "expected": null,
+      "detail": null
+    },
+    {
+      "name": "filigrane_ne_masque_pas_le_contenu",
+      "passed": true,
+      "severity": "bloquant",
+      "value": {
+        "max": 0.00605,
+        "zones_masquees": []
+      },
+      "expected": "densité de contours ≤ 0.012 à chaque instant",
+      "detail": "texte, visage ou graphique sous le filigrane = rendu refusé (règle de marque)"
+    },
+    {
+      "name": "filigrane_present_et_conforme",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        0.9998,
+        0.9997,
+        0.9998,
+        0.9999,
+        0.9999,
+        0.9999,
+        0.9999,
+        0.9999,
+        0.9999
+      ],
+      "expected": "corrélation ≥ 0.90 à chaque instant",
+      "detail": "rendu réel comparé à la composition attendue (forme, opacité, position)"
+    },
+    {
+      "name": "filigrane_position_exacte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "expected": "décalage (0, 0)",
+      "detail": null
+    },
+    {
+      "name": "filigrane_visible",
+      "passed": true,
+      "severity": "avertissement",
+      "value": [
+        0.788,
+        0.785,
+        0.793,
+        0.793,
+        0.793,
+        0.793,
+        0.793,
+        0.788,
+        0.788
+      ],
+      "expected": "écart de luminance ≥ 0.25",
+      "detail": null
+    },
+    {
+      "name": "contenu_non_altere",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 0.0018,
+      "expected": "dérive de luminance < 0.01",
+      "detail": null
+    },
+    {
+      "name": "signature_dans_zone_sure",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        154,
+        576,
+        773,
+        768
+      ],
+      "expected": "dans [65, 285, 865, 1135]",
+      "detail": null
+    },
+    {
+      "name": "signature_presente",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 1.006,
+      "expected": "écart moyen < 3/255 avec l'image finale de référence",
+      "detail": null
+    },
+    {
+      "name": "signature_sans_filigrane",
+      "passed": true,
+      "severity": "bloquant",
+      "value": 1.0,
+      "expected": "zone du filigrane inchangée",
+      "detail": null
+    }
+  ]
+}
