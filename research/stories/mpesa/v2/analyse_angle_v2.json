@@ -1,0 +1,35 @@
+{
+ "angle_provisoire_editeur": "Comment un service conçu pour envoyer de l'argent par téléphone a bouleversé l'accès aux services financiers au Kenya.",
+ "verdict_angle": "corrige",
+ "angle_retenu": "Comment un service pensé pour verser et rembourser des microcrédits a été détourné par ses premiers utilisateurs pour envoyer de l'argent à leurs proches, puis a accompagné une forte progression de l'accès aux services financiers au Kenya — dans une proportion que seules des estimations attribuées permettent d'approcher —, au prix d'une puissance aujourd'hui contestée.",
+ "justification": "Les sources primaires (Vodafone, F8, F9) établissent que M-Pesa n'a PAS été conçu pour envoyer de l'argent : le prototype testé à Thika servait à verser et rembourser des microcrédits ; l'équipe a réorienté le produit après avoir observé que les bénéficiaires envoyaient l'argent à des proches. L'angle provisoire contient donc une erreur de prémisse. La seconde partie (« bouleversé l'accès aux services financiers ») est soutenue par des sources sérieuses mais non confirmées par deux organisations indépendantes (F38, F51 : source unique ; F11 : estimation d'une étude rapportée par le MIT) : elle doit être attribuée et nuancée (corrélation, extrapolation). Les limites documentées (frais F55, domination F54/F56, paris F57, crédit F58, critique académique F59) font partie de l'angle, pour ne pas produire un récit promotionnel. RÉVISION V2 : le récit des origines repose sur une seule organisation (Vodafone, récit signé Michael Joseph) et est attribué comme tel ; les chiffres 22 % et 77 % (enquête de 2008, postérieure au lancement) sont retirés ; la part de marché de 90,8 % (indicateur non établi) et la comparaison 30 000 points / 400 agences (400 contredit par la Banque centrale) sont retirées ; la menace des sénateurs est redatée en novembre 2020.",
+ "points_a_verifier": [
+  "Lire l'article original de Science (Suri et Jack, 2016) : non consulté, seul le compte rendu du MIT l'a été.",
+  "Working paper NBER w16721 (Jack & Suri, 2011) : base du chiffre de 77 % et origine du 22 % (hôte non autorisé).",
+  "Rapport trimestriel de l'Autorité des communications (janvier-mars 2025) : indicateur exact de la part de 90,8 %.",
+  "Date de publication exacte de l'article Agence Ecofin sur les sénateurs (page bloquée par Cloudflare).",
+  "Corroboration indépendante du récit des origines (microcrédit, Thika, détournement) : seule Vodafone le raconte.",
+  "Effet réel du projet de plafonnement des frais de la Banque centrale (annoncé, non confirmé en vigueur)."
+ ],
+ "faits_interdits_rappel": [
+  "F13",
+  "F38",
+  "F39",
+  "F47",
+  "F54",
+  "F56",
+  "F57",
+  "F48"
+ ],
+ "revision": "v2 — révision éditoriale corrective (audit humain, commit 70d0f17)",
+ "faits_exclus_v2": {
+  "F38": "chronologie fausse (« avant M-Pesa ») et origine du 22 % non établie",
+  "F39": "enquête de 2008, base du 77 % non établie",
+  "F47": "« 400 agences bancaires » contredit par la Banque centrale",
+  "F54": "indicateur de la part de 90,8 % non établi",
+  "F56": "date fausse (2018) et « trop dominant » non étayé — remplacé par un fait redaté",
+  "F57": "remplacé par un fait daté (exercice 2022)",
+  "F48": "retiré pour alléger SEQ-07 (10 pays en 2016 puis 7 en 2022, sans explication)",
+  "F13": "Wikipédia seule"
+ }
+}

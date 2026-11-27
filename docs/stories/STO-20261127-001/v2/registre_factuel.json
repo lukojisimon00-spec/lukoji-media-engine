@@ -1,0 +1,1319 @@
+{
+ "projet": "STO-20261127-001",
+ "version_editoriale": "v2",
+ "research_version_moteur": 3,
+ "statuts": {
+  "confirmed": "ce que dit un document primaire consulté",
+  "corroborated": "≥ 2 organisations indépendantes consultées",
+  "single_source": "une seule organisation consultée",
+  "uncertain": "non établi",
+  "excluded": "retiré du script v2"
+ },
+ "faits": [
+  {
+   "ref": "F61",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "on pouvait voyager pendant des jours. Ou confier ses billets à un chauffeur de bus",
+   "attribution": "à l'écran : « SOURCE DU RÉCIT : VODAFONE (2017) »",
+   "limites": "Anecdote racontée par Vodafone seule (source intéressée) ; aucune date précise.",
+   "texte_dossier": "Avant M-Pesa, pour envoyer de l'argent à leurs proches, des Kényans voyageaient des jours ou confiaient l'argent à un chauffeur de bus.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F43",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Quelques SMS plus tard, la somme est devenue de la monnaie électronique, stockée sur sa carte SIM",
+   "attribution": "« raconte Vodafone » (même séquence)",
+   "limites": "Description du fonctionnement par Vodafone seule.",
+   "texte_dossier": "Le service fonctionne avec des agents : le client dépose des espèces, les convertit par SMS en argent électronique sur sa carte SIM, puis l'envoie ; le destinataire le retire chez un agent.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F51",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "seuls 27 % des Kényans ont accès à des produits ou des services financiers",
+   "attribution": "« selon Agence Ecofin qui la cite » (enquête FSD Kenya / Banque centrale)",
+   "limites": "Source secondaire : le rapport FinAccess 2019 n'a pas été consulté ; définition exacte de l'indicateur (formel / informel) non vérifiée.",
+   "texte_dossier": "Selon une enquête de FSD Kenya et de la Banque centrale, l'inclusion financière est passée de 27 % des Kényans en 2006 à 83 % en 2019.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S27",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Les Kenyans dans la spirale du crédit sur mobile",
+     "url": "https://www.agenceecofin.com/hebdop3/0611-70837-les-kenyans-dans-la-spirale-du-credit-sur-mobile",
+     "date": "2019-11",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F41",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "l'entreprise saisit l'occasion et obtient une subvention",
+   "attribution": "« Selon Vodafone »",
+   "limites": "Deux pages Vodafone (2017, 2022) : une seule organisation, intéressée. Aucun document du DFID consulté.",
+   "texte_dossier": "Le projet a été financé en partie par le ministère britannique du Développement international (DFID), qui cherchait des services pour les non-bancarisés.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S32",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+     "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+     "date": "2022-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F42",
+   "statut": "corroborated",
+   "utilise_v2": true,
+   "formulation_voix_off": "le projet se monte avec l'opérateur Safaricom",
+   "attribution": "non requise",
+   "limites": "Vodafone (2022) et Agence Ecofin (2023) : lancement par Safaricom et Vodafone. Le jour exact (6 mars 2007) n'est plus utilisé.",
+   "texte_dossier": "M-Pesa a été lancé le 6 mars 2007 au Kenya par Safaricom et Vodafone.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S32",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+     "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+     "date": "2022-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S29",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya : Safaricom finalise l’acquisition de M-Pesa Holdings auprès de Vodafone",
+     "url": "https://www.agenceecofin.com/fusions-acquisitions/1910-112889-kenya-safaricom-finalise-l-acquisition-de-m-pesa-holdings-aupres-de-vodafone",
+     "date": "2023-10",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin",
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F62",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Michael Joseph, ancien directeur général de Safaricom, raconte la suite dans un texte publié par Vodafone",
+   "attribution": "« raconte … dans un texte publié par Vodafone »",
+   "limites": "Auteur du texte : confirmé par la page Vodafone ; « ancien directeur général de Safaricom » : Agence Ecofin seule.",
+   "texte_dossier": "Le récit des origines de M-Pesa publié par Vodafone en 2017 est signé Michael Joseph, directeur de l'argent mobile du groupe Vodafone et ancien directeur général de Safaricom.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin",
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F8",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "L'équipe travaille sur le microcrédit : verser de petits prêts par téléphone, et les faire rembourser de la même façon. Le prototype est testé à Thika, au nord de Nairobi",
+   "attribution": "« explique-t-il » (Michael Joseph, texte Vodafone)",
+   "limites": "Récit des origines par Vodafone seule ; aucune corroboration indépendante trouvée (point ouvert).",
+   "texte_dossier": "Le service a d'abord été conçu pour des microcrédits, testé à Thika ; les bénéficiaires envoyaient l'argent à des proches éloignés.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F63",
+   "statut": "confirmed",
+   "utilise_v2": true,
+   "formulation_voix_off": "« Alors nous avons pris un risque », raconte Michael Joseph",
+   "attribution": "« raconte Michael Joseph » ; original anglais à l'écran",
+   "limites": "Déclaration confirmée comme telle ; elle n'établit pas les faits qu'elle raconte.",
+   "texte_dossier": "Selon Michael Joseph, face à l'usage inattendu du prototype, l'équipe « a pris un risque » et a reconstruit le système de prêts autour du transfert d'argent d'un téléphone à l'autre.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "declaration",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F9",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Le système de prêts est reconstruit autour d'une seule fonction : envoyer de l'argent d'un téléphone à un autre",
+   "attribution": "contexte : récit de Michael Joseph",
+   "limites": "Vodafone seule.",
+   "texte_dossier": "L'équipe a réorienté le système vers le transfert d'argent d'un téléphone à l'autre, appuyé sur un réseau d'agents.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F44",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Ces agents, raconte Vodafone, sont souvent de petites boutiques familiales",
+   "attribution": "« raconte Vodafone »",
+   "limites": "Vodafone seule.",
+   "texte_dossier": "Beaucoup d'agents étaient de petites boutiques plus habituées à vendre des marchandises qu'à manipuler l'argent des clients.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F45",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "la Banque centrale du Kenya pose ses conditions : un plafond de dépôt contre le blanchiment, la protection des clients, la sécurité des agents",
+   "attribution": "aucune dans la voix off (fait de contexte) ; source à l'écran",
+   "limites": "Conditions : Agence Ecofin ; enregistrement des clients : Vodafone. Chaque élément repose sur une seule organisation.",
+   "texte_dossier": "Avant le lancement, la Banque centrale du Kenya a exigé des garanties : plafond de dépôt contre le blanchiment, protection des consommateurs, sécurité des produits et des agents ; chaque client devait être enregistré.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin",
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F7",
+   "statut": "corroborated",
+   "utilise_v2": true,
+   "formulation_voix_off": "M-Pesa est lancé en mars 2007",
+   "attribution": "non requise",
+   "limites": "Vodafone (2017) et Banque centrale citée par Agence Ecofin (« mars 2007, date de son lancement ») ; Wikipédia en appoint.",
+   "texte_dossier": "M-Pesa a été lancé en mars 2007.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "libre",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S8",
+     "organisation": "Wikipédia",
+     "categorie": "C",
+     "titre": "M-PESA — Wikipedia (EN)",
+     "url": "https://en.wikipedia.org/wiki/M-Pesa",
+     "date": "2009-02-20",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie",
+     "via_fait": "F66"
+    },
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie",
+     "via_fait": "F66"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin",
+    "Vodafone",
+    "Wikipédia"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F46",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Selon Agence Ecofin, des banques y voient une incursion dans leur métier",
+   "attribution": "« Selon Agence Ecofin »",
+   "limites": "Article non daté ; banques non nommées.",
+   "texte_dossier": "Des banques ont vu dans M-Pesa une incursion dans leur domaine, estimant qu'un opérateur mobile ne pouvait pas exercer une activité bancaire sans licence.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F66",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Le 27 janvier 2009, la Banque centrale publie un communiqué pour rassurer",
+   "attribution": "« Selon Agence Ecofin » (même séquence) ; à l'écran : « citée par Agence Ecofin »",
+   "limites": "Communiqué original non consulté ; citation rapportée par Agence Ecofin (article dont un autre chiffre est erroné).",
+   "texte_dossier": "Selon Agence Ecofin, face à un débat public sur le cadre légal de M-Pesa, la Banque centrale du Kenya a publié le 27 janvier 2009 un communiqué affirmant que « la réglementation traîne généralement derrière l'innovation » et que le produit avait été vérifié d'août 2005 à mars 2007.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F10",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Vodafone annonce 1,2 million d'utilisateurs à la fin de la première année",
+   "attribution": "« Vodafone annonce »",
+   "limites": "Chiffre de l'entreprise, non audité.",
+   "texte_dossier": "Selon Vodafone, M-Pesa comptait 1,2 million de clients à la fin de sa première année.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "declaration",
+   "sources": [
+    {
+     "ref": "S6",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa: creating the leading mobile money service",
+     "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F49",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "l'entreprise en revendique plus de 51 millions, servis par 600 000 agents, dans sept pays",
+   "attribution": "« revendique »",
+   "limites": "Chiffres de l'entreprise, non audités ; liste des sept pays non reprise (seule la RDC est nommée).",
+   "texte_dossier": "Selon Vodafone, en 2022, M-Pesa comptait plus de 51 millions de clients et 600 000 agents dans sept pays, dont la RDC.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "declaration",
+   "sources": [
+    {
+     "ref": "S32",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+     "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+     "date": "2022-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S32",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+     "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+     "date": "2022-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F68",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Selon eux, cela suggère que des enfants partis travailler soutiennent leurs parents",
+   "attribution": "« Selon eux »",
+   "limites": "Interprétation des chercheurs rapportée par MIT News (« strongly suggests »).",
+   "texte_dossier": "Selon les chercheurs Suri et Jack, cités par le MIT, la répartition des transferts (41 % vers des parents, 8 % vers des enfants) suggère que des enfants partis travailler envoient de l'argent pour aider leurs parents.",
+   "statut_moteur": "opinion_attribuee",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "opinion",
+   "sources": [
+    {
+     "ref": "S33",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Banking on mobile money",
+     "url": "https://news.mit.edu/2010/mobile-money-0223",
+     "date": "2010-02-23",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F40",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "41 % des transferts étudiés partent vers des parents, 8 % vers des enfants",
+   "attribution": "« les économistes Tavneet Suri et William Jack »",
+   "limites": "MIT News (2010) ; working paper non consulté ; période exacte des données non précisée.",
+   "texte_dossier": "41 % des transferts M-Pesa étudiés allaient vers des parents, contre 8 % vers des enfants.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S33",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Banking on mobile money",
+     "url": "https://news.mit.edu/2010/mobile-money-0223",
+     "date": "2010-02-23",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F11",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "l'accès à l'argent mobile aurait fait sortir de l'extrême pauvreté quelque 194 000 foyers, soit 2 % des ménages du pays",
+   "attribution": "« Leur estimation » + conditionnel",
+   "limites": "Compte rendu MIT News de l'article de Science (2016), non consulté ; résultat discuté dans la littérature (non vérifié par l'agent).",
+   "texte_dossier": "Selon une étude publiée dans Science (Suri et Jack, 2016), l'accès à l'argent mobile a sorti environ 194 000 ménages kényans (environ 2 %) de l'extrême pauvreté.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S7",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+     "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+     "date": "2016-12-08",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F52",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Ils comparent les familles selon le nombre d'agents installés près de chez eux",
+   "attribution": "« Ils » (Suri et Jack)",
+   "limites": "Méthode décrite par MIT News.",
+   "texte_dossier": "L'étude de Suri et Jack mesure l'accès à M-Pesa par la densité d'agents autour des ménages, puis extrapole à l'échelle nationale.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S7",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+     "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+     "date": "2016-12-08",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S7",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+     "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+     "date": "2016-12-08",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F12",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Environ 185 000 femmes auraient quitté l'agriculture pour des activités commerciales",
+   "attribution": "conditionnel ; « Ce sont des estimations »",
+   "limites": "MIT News : « from farming to business occupations ».",
+   "texte_dossier": "L'effet a été plus fort pour les ménages dirigés par des femmes ; environ 185 000 femmes sont passées de l'agriculture au commerce.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S7",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+     "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+     "date": "2016-12-08",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S7",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+     "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+     "date": "2016-12-08",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F55",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "certains transferts coûtent près de 7 % du montant envoyé",
+   "attribution": "« Selon Agence Ecofin » ; « Des médias kényans rapportent un projet »",
+   "limites": "Agence Ecofin (oct. 2025) rapportant « plusieurs médias locaux » ; projet de la Banque centrale non confirmé comme adopté.",
+   "texte_dossier": "Certains transferts coûtent près de 7 % du montant envoyé ; la Banque centrale veut ramener le coût moyen d'environ 23 à 10 shillings par transaction d'ici 2028.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S25",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "La Banque centrale du Kenya veut réduire les frais de transfert de M-Pesa et Airtel Money",
+     "url": "https://www.agenceecofin.com/actualites-numerique/0110-131952-la-banque-centrale-du-kenya-veut-reduire-les-frais-de-transfert-de-m-pesa-et-airtel-money",
+     "date": "2025-10",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S25",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "La Banque centrale du Kenya veut réduire les frais de transfert de M-Pesa et Airtel Money",
+     "url": "https://www.agenceecofin.com/actualites-numerique/0110-131952-la-banque-centrale-du-kenya-veut-reduire-les-frais-de-transfert-de-m-pesa-et-airtel-money",
+     "date": "2025-10",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S8",
+     "organisation": "Wikipédia",
+     "categorie": "C",
+     "titre": "M-PESA — Wikipedia (EN)",
+     "url": "https://en.wikipedia.org/wiki/M-Pesa",
+     "date": "2009-02-20",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin",
+    "Wikipédia"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F53",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "il pèse 44,2 % des revenus de Safaricom",
+   "attribution": "« selon la même agence »",
+   "limites": "Rapport annuel de Safaricom non consulté.",
+   "texte_dossier": "Pour l'exercice 2025, M-Pesa représentait environ 44,2 % des revenus de Safaricom.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S25",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "La Banque centrale du Kenya veut réduire les frais de transfert de M-Pesa et Airtel Money",
+     "url": "https://www.agenceecofin.com/actualites-numerique/0110-131952-la-banque-centrale-du-kenya-veut-reduire-les-frais-de-transfert-de-m-pesa-et-airtel-money",
+     "date": "2025-10",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F64",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "En novembre 2020, des sénateurs kényans menacent à nouveau de séparer M-Pesa des activités télécoms de Safaricom, qu'ils jugent de plus en plus dominante",
+   "attribution": "« des sénateurs kényans … qu'ils jugent »",
+   "limites": "Contenu : Agence Ecofin (extraits capturés). Date : établie par indices concordants (liens connexes datés, numérotation Ecofin, URL de The Star et Techweez datées des 17-18/11/2020, vues en résultat de recherche seulement) ; page Ecofin non relue (Cloudflare).",
+   "texte_dossier": "En novembre 2020, le comité sénatorial kényan des TIC a de nouveau menacé de séparer les activités télécoms et M-Pesa de Safaricom, que les sénateurs jugent de plus en plus dominante.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S26",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya: les sénateurs menacent à nouveau de séparer les activités télécoms et M-Pesa chez Safaricom",
+     "url": "https://www.agenceecofin.com/regulation/1811-82596-kenya-les-senateurs-menacent-a-nouveau-de-separer-les-activites-telecoms-et-m-pesa-chez-safaricom",
+     "date": "2020-11",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S26",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya: les sénateurs menacent à nouveau de séparer les activités télécoms et M-Pesa chez Safaricom",
+     "url": "https://www.agenceecofin.com/regulation/1811-82596-kenya-les-senateurs-menacent-a-nouveau-de-separer-les-activites-telecoms-et-m-pesa-chez-safaricom",
+     "date": "2020-11",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S36",
+     "organisation": "The Star (Kenya)",
+     "categorie": "B",
+     "titre": "Senators reignite push to split Safaricom (titre déduit de l'URL)",
+     "url": "https://www.the-star.co.ke/news/2020-11-18-senators-reignite-push-to-split-safaricom",
+     "date": "2020-11-18",
+     "consultation": "resultat_recherche",
+     "verification_extrait": "non_probant"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F65",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Sur l'exercice clos en mars 2022, les paris en ligne étaient devenus la deuxième source de revenus de M-Pesa",
+   "attribution": "« Selon Agence Ecofin » (séquence)",
+   "limites": "Agence Ecofin (mai 2022) ; rapport annuel de Safaricom non consulté.",
+   "texte_dossier": "Selon Agence Ecofin (mai 2022), sur l'exercice clos le 31 mars 2022, les paris en ligne étaient devenus la deuxième source de revenus des activités M-Pesa.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S28",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya : les jeux de hasard tirent l'activité de Mobile Money vers le haut et les familles vers le bas",
+     "url": "https://www.agenceecofin.com/finance/2405-97948-kenya-les-jeux-de-hasard-tirent-lactivite-de-mobile-money-vers-le-haut-et-les-familles-vers-le-bas",
+     "date": "2022-05",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S28",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya : les jeux de hasard tirent l'activité de Mobile Money vers le haut et les familles vers le bas",
+     "url": "https://www.agenceecofin.com/finance/2405-97948-kenya-les-jeux-de-hasard-tirent-lactivite-de-mobile-money-vers-le-haut-et-les-familles-vers-le-bas",
+     "date": "2022-05",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F58",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "Le crédit sur mobile, lui, a démocratisé l'emprunt, mais il soulève la question de la protection des plus pauvres",
+   "attribution": "source à l'écran (Agence Ecofin, 2019)",
+   "limites": "Agence Ecofin (2019).",
+   "texte_dossier": "Le crédit sur mobile, apparu avec M-Pesa en 2012, a démocratisé l'emprunt mais soulève des questions de protection des plus pauvres.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S27",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Les Kenyans dans la spirale du crédit sur mobile",
+     "url": "https://www.agenceecofin.com/hebdop3/0611-70837-les-kenyans-dans-la-spirale-du-credit-sur-mobile",
+     "date": "2019-11",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F67",
+   "statut": "single_source",
+   "utilise_v2": true,
+   "formulation_voix_off": "En 2019, FSD Kenya comptait déjà 49 plateformes de prêt, dans un secteur très peu réglementé",
+   "attribution": "« FSD Kenya » ; à l'écran « via Agence Ecofin »",
+   "limites": "Agence Ecofin (2019) citant FSD Kenya.",
+   "texte_dossier": "En 2019, selon Agence Ecofin, FSD Kenya comptait 49 plateformes mobiles de prêt dans un secteur très peu réglementé.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S27",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Les Kenyans dans la spirale du crédit sur mobile",
+     "url": "https://www.agenceecofin.com/hebdop3/0611-70837-les-kenyans-dans-la-spirale-du-credit-sur-mobile",
+     "date": "2019-11",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F59",
+   "statut": "confirmed",
+   "utilise_v2": true,
+   "formulation_voix_off": "Selon son auteur, l'argent mobile ne s'attaque pas aux causes systémiques de la pauvreté",
+   "attribution": "« Une thèse d'économie, présentée dans la Revue de la régulation … Selon son auteur »",
+   "limites": "Opinion attribuée, confirmée comme telle (présentation de thèse consultée) ; l'auteur n'est pas nommé (nom non relevé).",
+   "texte_dossier": "Pour une thèse publiée dans la Revue de la régulation, la monnaie mobile ne s'attaque pas aux causes systémiques de la pauvreté et ses effets ne concernent que très indirectement les plus pauvres.",
+   "statut_moteur": "opinion_attribuee",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "opinion",
+   "sources": [
+    {
+     "ref": "S34",
+     "organisation": "OpenEdition",
+     "categorie": "B",
+     "titre": "Socioéconomie de la monnaie mobile et des monnaies locales au Kenya : quelles innovations monétaires pour quel développement ? (Revue de la régulation)",
+     "url": "https://journals.openedition.org/regulation/15139?lang=en",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S34",
+     "organisation": "OpenEdition",
+     "categorie": "B",
+     "titre": "Socioéconomie de la monnaie mobile et des monnaies locales au Kenya : quelles innovations monétaires pour quel développement ? (Revue de la régulation)",
+     "url": "https://journals.openedition.org/regulation/15139?lang=en",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "OpenEdition"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F38",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : « seuls 22 % des adultes ont alors un compte bancaire » (présenté comme antérieur à M-Pesa)",
+   "motif": "Enquête de 2008, POSTÉRIEURE au lancement ; origine du chiffre de 22 % non précisée par le MIT ; working paper non consulté.",
+   "texte_dossier": "Avant M-Pesa, les chercheurs du MIT relevaient que seuls 22 % des adultes kényans avaient un compte bancaire, alors que 38 % des ménages comptaient déjà au moins un utilisateur de M-Pesa.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S33",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Banking on mobile money",
+     "url": "https://news.mit.edu/2010/mobile-money-0223",
+     "date": "2010-02-23",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F39",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : « 77 % des Kényans disent garder leur argent sous le matelas »",
+   "motif": "Enquête de 2008 (après le lancement) ; base du pourcentage non précisée ; « so to speak » : figure de style.",
+   "texte_dossier": "Selon les chercheurs, 77 % des Kényans disaient garder leur argent « sous le matelas ».",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S33",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Banking on mobile money",
+     "url": "https://news.mit.edu/2010/mobile-money-0223",
+     "date": "2010-02-23",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F47",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : « environ 30 000 points de ce type, contre seulement 400 agences bancaires » (début 2012)",
+   "motif": "« 400 agences » contredit par la Banque centrale du Kenya : 1 161 agences en décembre 2011 (communiqué vu en résultat de recherche seulement) ; comparaison retirée, y compris les 30 000 points.",
+   "texte_dossier": "Début 2012, Safaricom comptait environ 30 000 agents de transfert, contre seulement 400 agences bancaires.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S24",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Paiement mobile : la leçon kenyane au monde",
+     "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+     "date": null,
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F54",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : « M-Pesa détient 90,8 % des parts de marché »",
+   "motif": "Indicateur non établi (abonnements, transactions ou valeur ?) ; rapport de l'Autorité des communications non consulté ; la presse kényane (Capital FM, vue en résultat de recherche) confirme le chiffre pour le trimestre clos fin mars 2025 sans préciser l'indicateur.",
+   "texte_dossier": "Au 31 mars 2025, M-Pesa détenait 90,8 % des parts de marché, selon l'Autorité des communications.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "chiffre",
+   "sources": [
+    {
+     "ref": "S30",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya : Safaricom modernise M-Pesa et se positionne pour un marché de plus de 14,5 milliards USD",
+     "url": "https://www.agenceecofin.com/actualites-numerique/2309-131709-kenya-safaricom-modernise-m-pesa-et-se-positionne-pour-un-marche-de-plus-de-14-5-milliards-usd",
+     "date": "2025-09",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F56",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : « Dès 2018, des sénateurs … jugé trop dominant »",
+   "motif": "Date fausse (novembre 2020) et « trop dominant » non attribuable aux sénateurs ; remplacé par F64.",
+   "texte_dossier": "En 2018, des sénateurs kényans ont menacé de séparer M-Pesa des activités télécoms de Safaricom, jugée trop dominante.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S26",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya: les sénateurs menacent à nouveau de séparer les activités télécoms et M-Pesa chez Safaricom",
+     "url": "https://www.agenceecofin.com/regulation/1811-82596-kenya-les-senateurs-menacent-a-nouveau-de-separer-les-activites-telecoms-et-m-pesa-chez-safaricom",
+     "date": "2020-11",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F57",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : « Les paris en ligne sont devenus la deuxième source de revenus » (présent)",
+   "motif": "Constat daté (exercice 2022) présenté au présent ; remplacé par F65.",
+   "texte_dossier": "Les paris en ligne sont devenus la deuxième source de revenus des activités M-Pesa.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S28",
+     "organisation": "Agence Ecofin",
+     "categorie": "B",
+     "titre": "Kenya : les jeux de hasard tirent l'activité de Mobile Money vers le haut et les familles vers le bas",
+     "url": "https://www.agenceecofin.com/finance/2405-97948-kenya-les-jeux-de-hasard-tirent-lactivite-de-mobile-money-vers-le-haut-et-les-familles-vers-le-bas",
+     "date": "2022-05",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Agence Ecofin"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F48",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "v1 : chiffres Vodafone de fin 2016 (29,5 millions, 287 400 agents, 10 pays)",
+   "motif": "Retrait éditorial : un seul jeu de chiffres d'entreprise ; « 10 pays » puis « sept pays » créait une incohérence non expliquée.",
+   "texte_dossier": "Selon Vodafone, fin 2016, M-Pesa servait près de 29,5 millions de clients actifs via plus de 287 400 agents, dans 10 pays dont la RDC.",
+   "statut_moteur": "confirme",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "declaration",
+   "sources": [
+    {
+     "ref": "S31",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa marks 10 year anniversary in Africa",
+     "url": "https://www.vodafone.com/news/digital-society/m-pesa-10",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S31",
+     "organisation": "Vodafone",
+     "categorie": "A",
+     "titre": "M-Pesa marks 10 year anniversary in Africa",
+     "url": "https://www.vodafone.com/news/digital-society/m-pesa-10",
+     "date": "2017-03",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Vodafone"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F13",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "pilote financé par le DFID (Wikipédia seule)",
+   "motif": "Wikipédia seule ; information reprise par F41 (Vodafone).",
+   "texte_dossier": "Le pilote a bénéficié d'un financement du ministère britannique du Développement international (DFID).",
+   "statut_moteur": "a_verifier",
+   "usage_moteur": "interdit",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S8",
+     "organisation": "Wikipédia",
+     "categorie": "C",
+     "titre": "M-PESA — Wikipedia (EN)",
+     "url": "https://en.wikipedia.org/wiki/M-Pesa",
+     "date": "2009-02-20",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "Wikipédia"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F69",
+   "statut": "excluded",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "enquête 2008 de Suri et Jack (3 000 ménages, 92 % de la population)",
+   "motif": "Fait correct, enregistré en v2 pour corriger F38/F39 ; non utilisé dans la voix off.",
+   "texte_dossier": "En 2008, un an après le lancement de M-Pesa, Suri et Jack ont enquêté auprès de 3 000 ménages dans des zones représentant 92 % de la population kényane ; le MIT rapporte que 77 % des Kényans disent garder leur argent « sous le matelas, pour ainsi dire », sans préciser la base de ce chiffre.",
+   "statut_moteur": "source_unique",
+   "usage_moteur": "attribution_obligatoire",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S33",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Banking on mobile money",
+     "url": "https://news.mit.edu/2010/mobile-money-0223",
+     "date": "2010-02-23",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    },
+    {
+     "ref": "S33",
+     "organisation": "MIT News (Massachusetts Institute of Technology)",
+     "categorie": "B",
+     "titre": "Banking on mobile money",
+     "url": "https://news.mit.edu/2010/mobile-money-0223",
+     "date": "2010-02-23",
+     "consultation": "page_verifiee",
+     "verification_extrait": "verifie"
+    }
+   ],
+   "organisations_consultees": [
+    "MIT News (Massachusetts Institute of Technology)"
+   ],
+   "niveau_verification": "extraits vérifiés contre la capture du moteur"
+  },
+  {
+   "ref": "F70",
+   "statut": "uncertain",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "agences bancaires 2011-2012 (Banque centrale du Kenya)",
+   "motif": "Source non consultée (résultat de recherche) ; sert uniquement à justifier le retrait de F47.",
+   "texte_dossier": "Selon la Banque centrale du Kenya, le pays comptait 1 161 agences bancaires en décembre 2011 et 1 272 en décembre 2012 (ce qui contredit le chiffre de 400 agences donné par Agence Ecofin pour début 2012).",
+   "statut_moteur": "a_verifier",
+   "usage_moteur": "interdit",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S35",
+     "organisation": "Central Bank of Kenya",
+     "categorie": "A",
+     "titre": "BSD Annual Report 2012 Press Release",
+     "url": "https://www.centralbank.go.ke//images/docs/media/Press%20Releases/BSD-Annual-Report-2012-Press-Release.pdf",
+     "date": "2013",
+     "consultation": "resultat_recherche",
+     "verification_extrait": "non_probant"
+    }
+   ],
+   "organisations_consultees": [],
+   "niveau_verification": "aucune page consultée"
+  },
+  {
+   "ref": "F71",
+   "statut": "uncertain",
+   "utilise_v2": false,
+   "formulation_v1_ou_objet": "part de 90,8 % selon Capital FM",
+   "motif": "Source non consultée ; indicateur inconnu.",
+   "texte_dossier": "Selon Capital FM, citant l'Autorité des communications, la part de marché de M-Pesa est tombée à 90,8 % au trimestre clos fin mars 2025, contre 94,9 % un an plus tôt ; l'indicateur mesuré (abonnements, transactions ou valeur) n'est pas établi.",
+   "statut_moteur": "a_verifier",
+   "usage_moteur": "interdit",
+   "type": "fait",
+   "sources": [
+    {
+     "ref": "S37",
+     "organisation": "Capital FM (Kenya)",
+     "categorie": "B",
+     "titre": "M-Pesa's market share dips as Airtel Money gains, CA report",
+     "url": "https://capitalfm.africa/m-pesas-market-share-dips-as-airtel-money-gains-ca-report/",
+     "date": "2025-06",
+     "consultation": "resultat_recherche",
+     "verification_extrait": "non_probant"
+    }
+   ],
+   "organisations_consultees": [],
+   "niveau_verification": "aucune page consultée"
+  }
+ ]
+}

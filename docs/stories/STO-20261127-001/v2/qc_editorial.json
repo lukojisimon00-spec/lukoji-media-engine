@@ -1,0 +1,406 @@
+{
+ "verdict": "pret_pour_validation_humaine",
+ "valide": false,
+ "sections": {
+  "technique": [
+   {
+    "controle": "export présent : script.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : storyboard.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : storyboard.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : direction_artistique.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : verification_factuelle.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : qc.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : qc.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : bundle.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : hooks.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : registre_factuel.md",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "export présent : registre_factuel.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "JSON lisible : storyboard.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "JSON lisible : bundle.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "JSON lisible : qc.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "JSON lisible : registre_factuel.json",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "storyboard.json conforme au schéma lukoji.storyboard/1.0",
+    "resultat": "ok",
+    "detail": "0 erreur(s)"
+   },
+   {
+    "controle": "intégrité de la base (PRAGMA integrity_check)",
+    "resultat": "ok",
+    "detail": "ok"
+   },
+   {
+    "controle": "version 1 conservée : research v2",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "version 1 conservée : hooks v2",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "version 1 conservée : structure v2",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "version 1 conservée : script v9",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "version 1 conservée : storyboard v2",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "version 1 conservée : visual v1",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "version 2 créée (script postérieur à v9)",
+    "resultat": "ok",
+    "detail": "script v13"
+   },
+   {
+    "controle": "aucune validation humaine enregistrée par l'agent",
+    "resultat": "ok",
+    "detail": "0 validation(s)"
+   },
+   {
+    "controle": "statut inchangé (structure_draft)",
+    "resultat": "ok",
+    "detail": "structure_draft"
+   },
+   {
+    "controle": "durée estimée dans la cible 6–8 min",
+    "resultat": "ok",
+    "detail": "968 mots · ≈ 392.6 s"
+   },
+   {
+    "controle": "storyboard synchronisé mot pour mot avec le script",
+    "resultat": "ok",
+    "detail": ""
+   }
+  ],
+  "factuel": [
+   {
+    "controle": "chaque fait cité figure au registre v2",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "aucun fait incertain ou exclu dans la voix off",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "chaque formulation du registre se retrouve mot pour mot dans la voix off",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "« corroborated » = au moins deux organisations consultées",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "un communiqué d'entreprise n'est jamais compté comme corroboration indépendante",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : chiffre de 22 % (origine non établie, enquête postérieure au lancement)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : chiffre de 77 % (base non établie)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : « sous le matelas » (figure de style prise au pied de la lettre en v1)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : « 400 agences bancaires » (contredit par la Banque centrale)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : part de 90,8 % (indicateur non établi)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : date « 2018 » des sénateurs (événement de novembre 2020)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : « trop dominant » (non attribuable aux sénateurs)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : « thèse publiée » (c'est une présentation de thèse)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : glose « maison familiale »",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : glose non sourcée sur la dépendance du pays",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "pas de régression : jour exact du lancement (Vodafone seule)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "chaque fait à source unique a une attribution déclarée",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "répartition des faits utilisés",
+    "resultat": "info",
+    "detail": "confirmed 2 · corroborated 2 · single_source 24"
+   },
+   {
+    "controle": "part des faits utilisés reposant sur une seule organisation",
+    "resultat": "alerte",
+    "detail": "24 / 28 faits : la majorité du récit repose sur une seule source par fait"
+   }
+  ],
+  "narratif": [
+   {
+    "controle": "le microcrédit n'est pas révélé dans l'ouverture (SEQ-01, SEQ-02)",
+    "resultat": "ok",
+    "detail": "première mention : SEQ-03"
+   },
+   {
+    "controle": "le rebondissement (microcrédit) n'est raconté qu'une fois",
+    "resultat": "ok",
+    "detail": "1 séquence(s)"
+   },
+   {
+    "controle": "le hook choisi ouvre bien le script",
+    "resultat": "ok",
+    "detail": "H9"
+   },
+   {
+    "controle": "le hook choisi ne révèle pas la réponse",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "aucune formule artificielle relevée par l'audit",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "aucune transition ne répète la première phrase de la séquence suivante",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "« Selon » en tête de phrase limité (≤ 5)",
+    "resultat": "ok",
+    "detail": "5 phrase(s)"
+   },
+   {
+    "controle": "aucune phrase de plus de 28 mots",
+    "resultat": "ok",
+    "detail": "max 28 mots"
+   },
+   {
+    "controle": "phrases courtes de rupture présentes (≥ 4)",
+    "resultat": "ok",
+    "detail": "14 phrase(s) de 6 mots ou moins"
+   },
+   {
+    "controle": "aucune séquence ne dépasse 20 % de la durée",
+    "resultat": "ok",
+    "detail": "SEQ-08 : 186 mots / 968"
+   },
+   {
+    "controle": "la RDC est préparée avant la conclusion",
+    "resultat": "ok",
+    "detail": ""
+   }
+  ],
+  "visuel": [
+   {
+    "controle": "motion design ≤ 60 % des scènes",
+    "resultat": "ok",
+    "detail": "26/44 (59%)"
+   },
+   {
+    "controle": "aucune caméra 3D simulée",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "aucun zoom lent",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "aucune reconstitution impossible à produire gratuitement",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "aucune image générée",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "chaque scène « authentique » repose sur une ressource identifiée (métadonnées vérifiées ou page à capturer)",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "chaque image symbolique ou illustration porte une mention à l'écran",
+    "resultat": "ok",
+    "detail": ""
+   },
+   {
+    "controle": "fil orange utilisé avec parcimonie (≤ 3 apparitions)",
+    "resultat": "ok",
+    "detail": "3 apparition(s) déclarée(s)"
+   },
+   {
+    "controle": "pas plus de 4 scènes de motion design consécutives",
+    "resultat": "alerte",
+    "detail": "suite maximale : 5"
+   },
+   {
+    "controle": "ressources à capturer ou à produire en Phase 3",
+    "resultat": "info",
+    "detail": "R12, R13, R14, R20, R21, R22, R24, R25"
+   },
+   {
+    "controle": "ressources non obtenues (substituts prévus)",
+    "resultat": "info",
+    "detail": "R15 Captures des articles Agence Ecofin (leçon kenyane, sénateurs) ; R16 Archive photo du Kenya au milieu des années 2000 (gare routière, transport d'argent) ; R17 Image du prototype de Thika (2005-2007) ; R18 Communiqué original de la Banque centrale du Kenya (27 janvier 2009) ; R19 Rue de Kinshasa avec enseignes d'argent mobile"
+   },
+   {
+    "controle": "contenu visuel des photos contrôlé par un humain",
+    "resultat": "alerte",
+    "detail": "métadonnées seules lues par l'agent : contrôle visuel à faire par l'éditeur"
+   }
+  ],
+  "editorial_humain": [
+   {
+    "controle": "Valider (ou non) la structure v2 — étape « structure » (commande story approve, par l'éditeur seulement).",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "Choix du hook : H9 (choix éditorial) contre H1 (recommandation du score automatique).",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "Accepter que la majorité des faits reposent sur une seule organisation, ou demander des corroborations.",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "Décider si la menace des sénateurs, datée par indices concordants, peut rester avec « novembre 2020 ».",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "Contrôler visuellement les photos Wikimedia retenues (R01–R04, R06, R11).",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "Titre du projet en base (« le prêt par SMS … révolution ») : à corriger par l'éditeur ; le script v2 porte « le détournement qui a changé l'argent au Kenya ».",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "Valider le script puis le storyboard dans l'ordre, après la structure.",
+    "resultat": "alerte",
+    "detail": "décision humaine en attente — jamais remplie par l'agent"
+   },
+   {
+    "controle": "QC automatique du moteur (pour mémoire, non décisionnel)",
+    "resultat": "info",
+    "detail": "QC n° 6 : a_revoir · 95.2"
+   }
+  ]
+ }
+}

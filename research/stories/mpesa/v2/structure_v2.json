@@ -1,0 +1,145 @@
+{
+ "type": "transformation",
+ "justification": "Structure « transformation » conservée, réorganisée en v2 : (1) la révélation du microcrédit est retenue jusqu'à SEQ-03 au lieu d'être donnée trois fois ; (2) un acteur nommé (Michael Joseph) porte le récit des origines, explicitement attribué à Vodafone ; (3) un chiffre antérieur au lancement (2006, 27 %) est planté en SEQ-02 et repris en SEQ-08 (2019, 83 %) ; (4) SEQ-06 contient un vrai conflit (banques, débat public, communiqué de 2009) ; (5) SEQ-07 ne garde qu'un jeu de chiffres d'entreprise ; (6) SEQ-09 est réduit à trois limites datées ; (7) la RDC est préparée dès SEQ-07.",
+ "alternatives_ecartees": [
+  {
+   "type": "probleme_solution_consequences",
+   "raison": "Risque de récit promotionnel (« la solution miracle ») et de minimiser les limites."
+  },
+  {
+   "type": "chronologie",
+   "raison": "Les dates sont peu nombreuses et sûres ; une chronologie deviendrait une liste."
+  },
+  {
+   "type": "portrait",
+   "raison": "Un portrait de Safaricom ou de Vodafone donnerait trop de poids à des sources intéressées."
+  }
+ ],
+ "angle": "Comment un service pensé pour verser et rembourser des microcrédits a été détourné par ses premiers utilisateurs pour envoyer de l'argent à leurs proches, puis a accompagné une forte progression de l'accès aux services financiers au Kenya — dans une proportion que seules des estimations attribuées permettent d'approcher —, au prix d'une puissance aujourd'hui contestée.",
+ "promesse": "Le spectateur découvre pour quoi M-Pesa a vraiment été conçu, comment ses utilisateurs l'ont détourné, ce que les chercheurs estiment qu'il a changé — et pourquoi sa puissance pose aujourd'hui des questions, jusqu'en RDC.",
+ "etapes": [
+  {
+   "id": "E1",
+   "role": "hook",
+   "titre": "Jours de voyage, quelques SMS",
+   "objectif": "Ouvrir sur une scène concrète (le chauffeur de bus) et poser une question sans y répondre : pour quoi ce service a-t-il été conçu ?",
+   "faits": [
+    "F61",
+    "F43"
+   ],
+   "duree_cible_s": 17
+  },
+  {
+   "id": "E2",
+   "role": "contexte",
+   "titre": "Hors des banques",
+   "objectif": "Installer le problème avec un chiffre antérieur au lancement (2006) et introduire l'acteur qui finance le projet.",
+   "faits": [
+    "F51",
+    "F41"
+   ],
+   "duree_cible_s": 34
+  },
+  {
+   "id": "E3",
+   "role": "origine",
+   "titre": "Le prototype de Thika",
+   "objectif": "Révéler l'intention initiale (le microcrédit) par la voix d'un acteur nommé, en signalant que le récit vient de Vodafone.",
+   "faits": [
+    "F42",
+    "F62",
+    "F8"
+   ],
+   "duree_cible_s": 28
+  },
+  {
+   "id": "E4",
+   "role": "tournant",
+   "titre": "Le détournement",
+   "objectif": "Montrer le tournant : les clients détournent le prototype, l'équipe choisit de les suivre.",
+   "faits": [
+    "F8",
+    "F63",
+    "F9"
+   ],
+   "duree_cible_s": 28
+  },
+  {
+   "id": "E5",
+   "role": "developpement",
+   "titre": "Une banque sans agences",
+   "objectif": "Expliquer le mécanisme en suivant une somme, de la main du client au retrait.",
+   "faits": [
+    "F43",
+    "F44"
+   ],
+   "duree_cible_s": 35
+  },
+  {
+   "id": "E6",
+   "role": "obstacles",
+   "titre": "Le régulateur et les banques",
+   "objectif": "Donner une vraie tension : conditions du régulateur, hostilité des banques, débat public, réponse de la Banque centrale en 2009.",
+   "faits": [
+    "F45",
+    "F7",
+    "F46",
+    "F66"
+   ],
+   "duree_cible_s": 44
+  },
+  {
+   "id": "E7",
+   "role": "developpement",
+   "titre": "La croissance, selon l'entreprise",
+   "objectif": "Donner l'échelle avec les seuls chiffres de l'entreprise, présentés comme tels, et préparer le lien avec la RDC.",
+   "faits": [
+    "F10",
+    "F49"
+   ],
+   "duree_cible_s": 24
+  },
+  {
+   "id": "E8",
+   "role": "consequences",
+   "titre": "Ce que mesurent les chercheurs",
+   "objectif": "Présenter les effets documentés, du constat global à l'estimation, avec leurs limites.",
+   "faits": [
+    "F51",
+    "F68",
+    "F40",
+    "F11",
+    "F52",
+    "F12"
+   ],
+   "duree_cible_s": 74
+  },
+  {
+   "id": "E9",
+   "role": "limites",
+   "titre": "Le prix du succès",
+   "objectif": "Trois limites développées, toutes datées et attribuées : le coût, la puissance, les usages à risque.",
+   "faits": [
+    "F55",
+    "F53",
+    "F64",
+    "F65",
+    "F58",
+    "F67"
+   ],
+   "duree_cible_s": 62
+  },
+  {
+   "id": "E10",
+   "role": "conclusion",
+   "titre": "À quelles conditions",
+   "objectif": "Conclure sans morale plaquée : une critique attribuée, la leçon du détournement, puis une question concrète pour le public congolais.",
+   "faits": [
+    "F59",
+    "F49"
+   ],
+   "duree_cible_s": 40
+  }
+ ],
+ "version_editoriale": "v2"
+}
