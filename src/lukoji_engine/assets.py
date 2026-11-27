@@ -83,6 +83,9 @@ def build_manifest(db: Database | None = None) -> dict:
             raise RuntimeError(
                 f"Des originaux ont changé depuis le manifeste ({', '.join(changed)}). "
                 "Refus de réécrire : vérifier l'origine du changement, puis supprimer manuellement le manifeste.")
+    if previous and previous.get("originals") == entries and previous.get("generator") == GENERATOR_VERSION:
+        log.info("manifeste inchangé", extra={"originals": len(entries)})
+        return previous  # rien n'a changé : pas de réécriture (pas de faux diff Git)
     out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")
     log.info("manifeste écrit", extra={"originals": len(entries), "path": rel(out)})
     return manifest
