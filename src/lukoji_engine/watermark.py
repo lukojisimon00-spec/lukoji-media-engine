@@ -372,6 +372,12 @@ def apply(input_path: str | Path, output_path: str | Path, *, profile_name: str,
     if enc.get("faststart", True):
         args += ["-movflags", "+faststart"]
     args.append(str(out))
+    log.info("placement du filigrane", extra={
+        "anchor": anchor, "box": box.as_list(), "degage": clear, "footprint": footprint(box, overflow).as_list(),
+        "rejets": {c.anchor: c.rejected for c in cands if c.rejected},
+        "couleurs": [(s.start, s.end, s.color) for s in segments]})
+    if not clear:
+        log.warning("filigrane : aucune position entièrement dégagée, rendu à valider", extra={"output": rel(out)})
     log.info("encodage", extra={"output": rel(out), "profile": profile.name, "segments": len(segments)})
     run_ffmpeg(args, desc="incrustation du filigrane")
 

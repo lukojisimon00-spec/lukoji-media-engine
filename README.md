@@ -6,7 +6,7 @@ média entrepreneurial — *INNOVER · CRÉER · IMPACTER*.
 > Périmètre : uniquement les contenus publiés par LUKOJI sur ses propres réseaux.
 > Les commandes clients, devis et livrables relèvent de **CLIENT STUDIO** (espace distinct).
 
-**État : phase 0 terminée** (fondations et kit de marque). Voir [`docs/RAPPORT_PHASE0.md`](docs/RAPPORT_PHASE0.md).
+**État : phase 0 validée** (fondations et kit de marque) — 43/43 tests, 2 rendus réels conformes et examinés. Voir [`docs/RAPPORT_PHASE0.md`](docs/RAPPORT_PHASE0.md).
 
 ## Prérequis
 
@@ -22,7 +22,7 @@ Aucun service payant, aucune clé API n'est nécessaire pour la phase 0.
 
 ```bash
 ./scripts/run_phase0.sh          # reproduit toute la validation : base, kit, rendus réels, QC, tests
-python3 -m pytest -q             # 39 tests (unitaires + bout en bout, ~2 min 30)
+python3 -m pytest -q             # 43 tests (unitaires + bout en bout, ~3 min)
 python3 -m pytest -q -m "not e2e"  # tests rapides uniquement
 ```
 

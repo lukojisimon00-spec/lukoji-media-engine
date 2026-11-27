@@ -65,3 +65,33 @@ def test_signature_crops_are_pixel_exact():
     with Image.open(parts["logotype"]) as crop, Image.open(original_path("vertical_slogan_blanc")) as src:
         ref = src.convert("RGBA").crop((x0, y0, x1 + 1, y1 + 1))
         assert np.array_equal(np.asarray(crop.convert("RGBA")), np.asarray(ref))
+
+
+def test_signature_final_frame_matches_official_vertical_logo():
+    """La dernière image de la signature = logo vertical officiel (ratio ±0,5 %, IoU ≥ 0,93)."""
+    from lukoji_engine import signature
+    from lukoji_engine.geometry import get_profile
+    sig = signature.render(get_profile("vertical_universal"), "court")
+    with Image.open(sig.last_frame) as im:
+        out = np.asarray(im.convert("L")) > 128
+    ys, xs = np.where(out)
+    out = out[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+    with Image.open(original_path("vertical_slogan_blanc")) as ref:
+        a = np.asarray(ref.convert("RGBA"))[..., 3] > 128
+    ry, rx = np.where(a)
+    a = a[ry.min():ry.max() + 1, rx.min():rx.max() + 1]
+    assert abs((out.shape[1] / out.shape[0]) / (a.shape[1] / a.shape[0]) - 1) < 0.005
+    r = np.asarray(Image.fromarray((a * 255).astype(np.uint8)).resize(out.shape[::-1], Image.LANCZOS)) > 128
+    assert (out & r).sum() / (out | r).sum() >= 0.93
+
+
+def test_signature_cache_key_is_location_independent(tmp_path, monkeypatch):
+    """Deux caches à des emplacements différents doivent produire la même clé de signature."""
+    from lukoji_engine import signature
+    from lukoji_engine.geometry import get_profile
+    names = []
+    for d in ("cache_a", "ailleurs/cache_b"):
+        monkeypatch.setenv("LUKOJI_PATHS__CACHE", str(tmp_path / d))
+        config.load_config.cache_clear()
+        names.append(signature.render(get_profile("youtube_16x9"), "flash").path.name)
+    assert names[0] == names[1], names

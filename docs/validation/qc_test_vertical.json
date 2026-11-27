@@ -161,7 +161,7 @@
       "name": "debit",
       "passed": true,
       "severity": "info",
-      "value": "3143 kb/s",
+      "value": "3141 kb/s",
       "expected": "variable (CRF)",
       "detail": null
     },
@@ -193,12 +193,20 @@
       "name": "zone_securite_tiktok",
       "passed": true,
       "severity": "bloquant",
-      "value": [
-        65,
-        1361,
-        218,
-        59
-      ],
+      "value": {
+        "empreinte_visible": [
+          65,
+          1357,
+          226,
+          63
+        ],
+        "marges_restantes_px": {
+          "gauche": 5,
+          "haut": 1197,
+          "droite": 649,
+          "bas": 20
+        }
+      },
       "expected": "dans [60, 160, 880, 1280]",
       "detail": null
     },
@@ -206,12 +214,20 @@
       "name": "zone_securite_instagram_reels",
       "passed": true,
       "severity": "bloquant",
-      "value": [
-        65,
-        1361,
-        218,
-        59
-      ],
+      "value": {
+        "empreinte_visible": [
+          65,
+          1357,
+          226,
+          63
+        ],
+        "marges_restantes_px": {
+          "gauche": 0,
+          "haut": 1107,
+          "droite": 659,
+          "bas": 0
+        }
+      },
       "expected": "dans [65, 250, 885, 1170]",
       "detail": null
     },
@@ -219,12 +235,20 @@
       "name": "zone_securite_facebook_reels",
       "passed": true,
       "severity": "bloquant",
-      "value": [
-        65,
-        1361,
-        218,
-        59
-      ],
+      "value": {
+        "empreinte_visible": [
+          65,
+          1357,
+          226,
+          63
+        ],
+        "marges_restantes_px": {
+          "gauche": 5,
+          "haut": 1072,
+          "droite": 659,
+          "bas": 0
+        }
+      },
       "expected": "dans [60, 285, 890, 1135]",
       "detail": null
     },
@@ -232,12 +256,20 @@
       "name": "zone_securite_youtube_shorts",
       "passed": true,
       "severity": "bloquant",
-      "value": [
-        65,
-        1361,
-        218,
-        59
-      ],
+      "value": {
+        "empreinte_visible": [
+          65,
+          1357,
+          226,
+          63
+        ],
+        "marges_restantes_px": {
+          "gauche": 5,
+          "haut": 1177,
+          "droite": 639,
+          "bas": 50
+        }
+      },
       "expected": "dans [60, 180, 870, 1290]",
       "detail": null
     },
@@ -300,7 +332,7 @@
       "passed": true,
       "severity": "bloquant",
       "value": {
-        "max": 0.00605,
+        "max": 0.00622,
         "zones_masquees": []
       },
       "expected": "densité de contours ≤ 0.012 à chaque instant",
@@ -376,11 +408,11 @@
       "value": [
         0.788,
         0.785,
+        0.792,
+        0.792,
         0.793,
-        0.793,
-        0.793,
-        0.793,
-        0.793,
+        0.792,
+        0.792,
         0.789,
         0.789
       ],
@@ -405,6 +437,20 @@
       "severity": "bloquant",
       "value": 0.0019,
       "expected": "dérive de luminance < 0.01",
+      "detail": null
+    },
+    {
+      "name": "aucune_modification_hors_empreinte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        0,
+        0,
+        2,
+        45,
+        17
+      ],
+      "expected": "≤ 103 pixels isolés par image (bruit d'encodage)",
       "detail": null
     },
     {

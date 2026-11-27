@@ -38,8 +38,10 @@ def cmd_brand_verify(a):
     from .assets import verify_manifest
     problems = verify_manifest()
     if problems:
+        log.error("kit de marque altéré", extra={"problemes": problems})
         print(json.dumps(problems, ensure_ascii=False, indent=2))
         return 1
+    log.info("kit de marque intègre")
     print("Kit de marque intègre : toutes les empreintes SHA-256 correspondent.")
     return 0
 
@@ -87,6 +89,10 @@ def cmd_qc(a):
         mark = "OK " if r["passed"] else ("ÉCHEC" if r["severity"] == "bloquant" else "AVERT" if r["severity"] == "avertissement" else "INFO")
         print(f"[{mark:5s}] {r['name']:36s} {r['value']!s:.110}")
     print(f"=> {report['status'].upper()} · bloquants {report['blocking']} · avertissements {report['warnings']}")
+    failed = [c["name"] for c in report["checks"] if not c["passed"] and c["severity"] != "info"]
+    (log.info if report["status"] == "conforme" else log.warning)(
+        "contrôle qualité", extra={"video": a.video, "statut": report["status"], "controles": len(report["checks"]),
+                                   "bloquants": report["blocking"], "avertissements": report["warnings"], "echecs": failed})
     if a.json:
         Path(a.json).write_text(json.dumps(report, ensure_ascii=False, indent=2, default=str))
     db = _db()
@@ -192,9 +198,16 @@ def main(argv: list[str] | None = None) -> int:
     cfg = load_config()
     setup_logging(cfg.get("logging.level", "INFO"), cfg.path("var") / "logs" / "engine.jsonl")
     args = build_parser().parse_args(argv)
+    import time
+    t0 = time.monotonic()
+    params = {k: v for k, v in vars(args).items() if k not in ("fn", "cmd") and v not in (None, False, [])}
+    log.info("commande démarrée", extra={"cmd": args.cmd, "params": params})
     try:
-        return int(args.fn(args) or 0)
+        code = int(args.fn(args) or 0)
     except Exception as exc:  # erreur lisible + trace dans le journal JSON
-        log.exception("échec de la commande", extra={"cmd": args.cmd})
+        log.exception("échec de la commande", extra={"cmd": args.cmd, "duree_s": round(time.monotonic() - t0, 2)})
         print(f"ERREUR : {exc}", file=sys.stderr)
         return 2
+    level = log.info if code == 0 else log.warning
+    level("commande terminée", extra={"cmd": args.cmd, "code": code, "duree_s": round(time.monotonic() - t0, 2)})
+    return code

@@ -29,14 +29,16 @@ Les coordonnées diffèrent pour chaque plateforme (test `test_platforms_have_di
 Le profil maître garantit qu'**un seul export** est sûr partout. Le filigrane y est placé dans la bande
 centrale 4:5, donc il reste visible même dans les aperçus recadrés.
 
-Positions du filigrane (logo 218×59) dans le profil maître :
+Positions du filigrane dans le profil maître. Le logo fait 218×59 ; son empreinte visible, ombre de la version blanche comprise, fait 226×63. C'est l'empreinte qui touche le bord de la zone sûre :
 
-| Ancre | Boîte [x, y, l, h] |
-|---|---|
-| haut-gauche (préférée) | [65, 285, 218, 59] |
-| haut-droite | [712, 285, 218, 59] |
-| bas-gauche | [65, 1361, 218, 59] |
-| bas-droite | [712, 1361, 218, 59] |
+| Ancre | Logo [x, y, l, h] | Empreinte visible |
+|---|---|---|
+| haut-gauche (préférée) | [68, 286, 218, 59] | [65, 285, 226, 63] |
+| haut-droite | [707, 286, 218, 59] | [704, 285, 226, 63] |
+| bas-gauche | [68, 1358, 218, 59] | [65, 1357, 226, 63] |
+| bas-droite | [707, 1358, 218, 59] | [704, 1357, 226, 63] |
+
+**Application réelle, vérifiée au pixel** : le QC calcule l'empreinte visible à partir de l'image réelle du logo et vérifie qu'elle tient dans la zone sûre de **chaque** plateforme (`zone_securite_<plateforme>`, avec les marges restantes). Il compare aussi le rendu à la source pour prouver qu'aucun pixel n'est modifié hors de cette empreinte (`aucune_modification_hors_empreinte`).
 
 Les coins bas se situent **au-dessus** des légendes des applications. Les sous-titres du moteur (phase 3)
 seront déclarés comme zones réservées : le filigrane ne pourra donc jamais les recouvrir.

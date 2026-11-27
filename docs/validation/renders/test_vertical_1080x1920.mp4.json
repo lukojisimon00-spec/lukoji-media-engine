@@ -30,8 +30,8 @@
     ],
     "variant": "lockup",
     "box": [
-      65,
-      1361,
+      68,
+      1358,
       218,
       59
     ],
@@ -41,41 +41,41 @@
     "segments": [
       {
         "start": 0.0,
-        "end": 3.0,
+        "end": 2.9,
         "color": "white",
         "bg_luma": 0.065,
         "contrast": 0.935
       },
       {
-        "start": 3.0,
-        "end": 17.75,
+        "start": 2.9,
+        "end": 17.6667,
         "color": "black",
-        "bg_luma": 0.963,
-        "contrast": 0.92
+        "bg_luma": 0.947,
+        "contrast": 0.904
       },
       {
-        "start": 17.75,
+        "start": 17.6667,
         "end": 19.35,
         "color": "white",
-        "bg_luma": 0.063,
-        "contrast": 0.937
+        "bg_luma": 0.191,
+        "contrast": 0.809
       }
     ],
     "candidates": [
       {
         "anchor": "top_left",
         "box": [
-          65,
-          285,
+          68,
+          286,
           218,
           59
         ],
         "rejected": "masquerait du contenu pendant [[3.5, 5.0], [5.25, 8.25], [9.25, 11.75]]",
-        "busyness": 0.02351,
-        "score": 36.38351,
+        "busyness": 0.0241,
+        "score": 36.3841,
         "occlusion": {
-          "max": 0.02385,
-          "p95": 0.02351,
+          "max": 0.0246,
+          "p95": 0.0241,
           "occluded_fraction": 0.3636,
           "occluded_spans": [
             [
@@ -97,17 +97,17 @@
       {
         "anchor": "top_right",
         "box": [
-          712,
-          285,
+          707,
+          286,
           218,
           59
         ],
         "rejected": "masquerait du contenu pendant [[3.5, 5.0], [5.25, 8.25], [9.5, 11.75]]",
-        "busyness": 0.02417,
-        "score": 35.09417,
+        "busyness": 0.02406,
+        "score": 35.09406,
         "occlusion": {
-          "max": 0.03996,
-          "p95": 0.02417,
+          "max": 0.03969,
+          "p95": 0.02406,
           "occluded_fraction": 0.3506,
           "occluded_spans": [
             [
@@ -129,17 +129,17 @@
       {
         "anchor": "bottom_left",
         "box": [
-          65,
-          1361,
+          68,
+          1358,
           218,
           59
         ],
         "rejected": null,
-        "busyness": 0.00524,
-        "score": 0.02524,
+        "busyness": 0.0053,
+        "score": 0.0253,
         "occlusion": {
-          "max": 0.00605,
-          "p95": 0.00524,
+          "max": 0.00622,
+          "p95": 0.0053,
           "occluded_fraction": 0.0,
           "occluded_spans": [],
           "threshold": 0.012
@@ -148,17 +148,17 @@
       {
         "anchor": "bottom_right",
         "box": [
-          712,
-          1361,
+          707,
+          1358,
           218,
           59
         ],
         "rejected": null,
-        "busyness": 0.00655,
-        "score": 0.03655,
+        "busyness": 0.00674,
+        "score": 0.03674,
         "occlusion": {
-          "max": 0.0098,
-          "p95": 0.00655,
+          "max": 0.01008,
+          "p95": 0.00674,
           "occluded_fraction": 0.0,
           "occluded_spans": [],
           "threshold": 0.012
@@ -167,6 +167,13 @@
     ],
     "avoid": [],
     "clear": true,
+    "fps": 30,
+    "footprint": [
+      65,
+      1357,
+      226,
+      63
+    ],
     "logos": {
       "white": {
         "path": "var/cache/brand/filigrane_lockup_white_218x59_ombre.png",
@@ -190,11 +197,11 @@
   },
   "signature": {
     "preset": "court",
-    "path": "var/cache/signature/signature_court_1080x1920_ef14622a8453.mp4",
+    "path": "var/cache/signature/signature_court_1080x1920_4405b646ddee.mp4",
     "duration": 1.6,
     "start": 19.1,
     "transition": 0.25,
-    "last_frame": "var/cache/signature/signature_court_1080x1920_ef14622a8453_last.png",
+    "last_frame": "var/cache/signature/signature_court_1080x1920_4405b646ddee_last.png",
     "content_box": [
       154,
       576,
@@ -216,6 +223,6 @@
     "audio_channels": 2,
     "faststart": true
   },
-  "ffmpeg": "ffmpeg -ss 0.000 -t 19.350 -i /home/user/lukoji-blog/pubs/reseaux/2026-11-20-reel-ta-premiere-pub.mp4 -loop 1 -framerate 30 -t 19.350 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_white_218x59_ombre.png -loop 1 -framerate 30 -t 19.350 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_black_218x59.png -i /home/user/lukoji-media-engine/var/cache/signature/signature_court_1080x1920_ef14622a8453.mp4 -filter_complex '[0:v]setsar=1,fps=30,format=yuv444p[base];[1:v]format=rgba,colorchannelmixer=aa=0.880,fade=t=in:st=0:d=0.3:alpha=1[lg1];[base][lg1]overlay=x=52:y=1348:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,0.000)*lt(t,3.000)+gte(t,17.750)*lt(t,19.350)'\"'\"'[ov1];[2:v]format=rgba,colorchannelmixer=aa=0.880[lg2];[ov1][lg2]overlay=x=65:y=1361:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,3.000)*lt(t,17.750)'\"'\"'[ov2];[ov2]format=yuv420p,settb=AVTB,fps=30[main];[3:v]format=yuv420p,setsar=1,settb=AVTB,fps=30[sig];[main][sig]xfade=transition=fade:duration=0.25:offset=19.100[vx];[0:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=out:st=18.950:d=0.4,apad=whole_dur=20.7[aout]' -map '[vx]' -map '[aout]' -c:v libx264 -preset medium -crf 18 -profile:v high -level:v 4.1 -pix_fmt yuv420p -g 60 -r 30 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -ac 2 -t 20.700 -movflags +faststart /home/user/lukoji-media-engine/var/out/test_vertical_1080x1920.mp4",
-  "render_id": 4
+  "ffmpeg": "ffmpeg -ss 0.000 -t 19.350 -i /home/user/lukoji-blog/pubs/reseaux/2026-11-20-reel-ta-premiere-pub.mp4 -loop 1 -framerate 30 -t 19.350 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_white_218x59_ombre.png -loop 1 -framerate 30 -t 19.350 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_black_218x59.png -i /home/user/lukoji-media-engine/var/cache/signature/signature_court_1080x1920_4405b646ddee.mp4 -filter_complex '[0:v]setsar=1,fps=30,format=yuv444p[base];[1:v]format=rgba,colorchannelmixer=aa=0.880,fade=t=in:st=0:d=0.3:alpha=1[lg1];[base][lg1]overlay=x=55:y=1345:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,0.0000)*lt(t,2.8833)+gte(t,17.6500)*lt(t,19.3333)'\"'\"'[ov1];[2:v]format=rgba,colorchannelmixer=aa=0.880[lg2];[ov1][lg2]overlay=x=68:y=1358:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,2.8833)*lt(t,17.6500)'\"'\"'[ov2];[ov2]format=yuv420p,settb=AVTB,fps=30[main];[3:v]format=yuv420p,setsar=1,settb=AVTB,fps=30[sig];[main][sig]xfade=transition=fade:duration=0.25:offset=19.100[vx];[0:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=out:st=18.950:d=0.4,apad=whole_dur=20.7[aout]' -map '[vx]' -map '[aout]' -c:v libx264 -preset medium -crf 18 -profile:v high -level:v 4.1 -pix_fmt yuv420p -g 60 -r 30 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -ac 2 -t 20.700 -movflags +faststart /home/user/lukoji-media-engine/var/out/test_vertical_1080x1920.mp4",
+  "render_id": 7
 }

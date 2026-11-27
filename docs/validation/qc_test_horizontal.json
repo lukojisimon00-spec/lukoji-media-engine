@@ -161,7 +161,7 @@
       "name": "debit",
       "passed": true,
       "severity": "info",
-      "value": "5659 kb/s",
+      "value": "5658 kb/s",
       "expected": "variable (CRF)",
       "detail": null
     },
@@ -193,12 +193,20 @@
       "name": "zone_securite_youtube_16x9",
       "passed": true,
       "severity": "bloquant",
-      "value": [
-        1584,
-        54,
-        240,
-        65
-      ],
+      "value": {
+        "empreinte_visible": [
+          1575,
+          54,
+          249,
+          70
+        ],
+        "marges_restantes_px": {
+          "gauche": 1479,
+          "haut": 0,
+          "droite": 0,
+          "bas": 806
+        }
+      },
       "expected": "dans [96, 54, 1728, 876]",
       "detail": null
     },
@@ -207,10 +215,10 @@
       "passed": true,
       "severity": "bloquant",
       "value": [
-        1584,
+        1575,
         54,
-        240,
-        65
+        249,
+        70
       ],
       "expected": "hors [1500, 760, 420, 320]",
       "detail": null
@@ -247,7 +255,7 @@
       "passed": true,
       "severity": "bloquant",
       "value": {
-        "max": 0.0066,
+        "max": 0.00669,
         "zones_masquees": []
       },
       "expected": "densité de contours ≤ 0.012 à chaque instant",
@@ -259,7 +267,7 @@
       "severity": "bloquant",
       "value": [
         0.9998,
-        0.9998,
+        0.9999,
         0.9999,
         0.9999,
         0.9999,
@@ -311,16 +319,28 @@
       "passed": true,
       "severity": "avertissement",
       "value": [
-        0.801,
         0.8,
+        0.8,
+        0.801,
+        0.801,
+        0.801,
         0.802,
-        0.801,
-        0.801,
-        0.801,
         0.802
       ],
       "expected": "écart de luminance ≥ 0.25",
       "detail": null
+    },
+    {
+      "name": "filigrane_visible_chaque_image",
+      "passed": true,
+      "severity": "bloquant",
+      "value": {
+        "images": 600,
+        "invisibles": 0,
+        "exemples": []
+      },
+      "expected": "contraste logo/fond ≥ 0.25 sur chaque image",
+      "detail": "(temps s, couleur du logo, luminance du fond)"
     },
     {
       "name": "contenu_non_altere",
@@ -328,6 +348,20 @@
       "severity": "bloquant",
       "value": 0.0034,
       "expected": "dérive de luminance < 0.01",
+      "detail": null
+    },
+    {
+      "name": "aucune_modification_hors_empreinte",
+      "passed": true,
+      "severity": "bloquant",
+      "value": [
+        0,
+        0,
+        14,
+        2,
+        5
+      ],
+      "expected": "≤ 103 pixels isolés par image (bruit d'encodage)",
       "detail": null
     },
     {

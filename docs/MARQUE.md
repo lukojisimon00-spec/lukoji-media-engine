@@ -67,14 +67,15 @@ Interdits : redessiner, recolorer hors palette, étirer, recomposer le logotype 
 ### Règles de placement
 
 1. Le logo est rendu à sa taille finale **avant** FFmpeg. FFmpeg ne fait que le superposer, donc aucune déformation n'est possible.
-2. Candidats : coins de la **zone sûre** du profil, dans l'ordre de préférence. En 9:16 : haut-gauche, haut-droite, bas-gauche, bas-droite. En 16:9 : haut-droite, haut-gauche.
-3. Un candidat est **exclu** s'il chevauche :
+2. Les marges s'appliquent à l'**empreinte visible** du logo, ombre comprise (alpha × opacité > 2 %) : l'ombre ne déborde jamais de la zone sûre.
+3. Candidats : coins de la **zone sûre** du profil, dans l'ordre de préférence. En 9:16 : haut-gauche, haut-droite, bas-gauche, bas-droite. En 16:9 : haut-droite, haut-gauche.
+4. Un candidat est **exclu** s'il chevauche :
    - une zone réservée de la plateforme (par exemple le filigrane de chaîne YouTube) ;
    - une zone réservée du contenu (`--avoid` : sous-titres, texte clé, visage), avec 16 px de marge ;
    - du **détail à un instant quelconque**. La densité de contours est mesurée toutes les 0,25 s sur toute la durée ; seuil 0,012 (texte mesuré ≈ 0,02 ; fond ≤ 0,006).
-4. Parmi les candidats dégagés, le premier dans l'ordre de préférence l'emporte (à égalité, le plus calme).
-5. Si **aucun** coin n'est dégagé, le rendu est produit mais signalé (`clear=false`), et le contrôle qualité le **refuse**. Il faut alors une validation humaine : déplacer le texte du montage ou imposer une position.
-6. La couleur suit la luminance du fond **sous les tracés du logo**, avec une hystérésis de 0,50 à 0,62 et des segments d'au moins 0,75 s, pour éviter tout clignotement.
+5. Parmi les candidats dégagés, le premier dans l'ordre de préférence l'emporte (à égalité, le plus calme).
+6. Si **aucun** coin n'est dégagé, le rendu est produit mais signalé (`clear=false`), et le contrôle qualité le **refuse**. Il faut alors une validation humaine : déplacer le texte du montage ou imposer une position.
+7. La couleur suit la luminance du fond **sous les tracés du logo**, avec une hystérésis de 0,50 à 0,62 et des segments d'au moins 0,75 s, pour éviter tout clignotement. Chaque bascule est ensuite **recalée sur l'image exacte de la coupe** : le logo n'est jamais blanc sur blanc ni noir sur noir (contrôle image par image).
 
 ## 3. Signature de fin « LUKOJI »
 

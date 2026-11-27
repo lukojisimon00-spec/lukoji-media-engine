@@ -27,8 +27,8 @@
     ],
     "variant": "lockup",
     "box": [
-      1584,
-      54,
+      1578,
+      55,
       240,
       65
     ],
@@ -48,17 +48,17 @@
       {
         "anchor": "top_right",
         "box": [
-          1584,
-          54,
+          1578,
+          55,
           240,
           65
         ],
         "rejected": null,
-        "busyness": 0.00197,
-        "score": 0.00197,
+        "busyness": 0.00198,
+        "score": 0.00198,
         "occlusion": {
-          "max": 0.0066,
-          "p95": 0.00197,
+          "max": 0.00669,
+          "p95": 0.00198,
           "occluded_fraction": 0.0,
           "occluded_spans": [],
           "threshold": 0.012
@@ -67,8 +67,8 @@
       {
         "anchor": "top_left",
         "box": [
-          96,
-          54,
+          99,
+          55,
           240,
           65
         ],
@@ -76,7 +76,7 @@
         "busyness": 0.00197,
         "score": 0.01197,
         "occlusion": {
-          "max": 0.00202,
+          "max": 0.00199,
           "p95": 0.00197,
           "occluded_fraction": 0.0,
           "occluded_spans": [],
@@ -86,6 +86,13 @@
     ],
     "avoid": [],
     "clear": true,
+    "fps": 30,
+    "footprint": [
+      1575,
+      54,
+      249,
+      70
+    ],
     "logos": {
       "white": {
         "path": "var/cache/brand/filigrane_lockup_white_240x65_ombre.png",
@@ -100,11 +107,11 @@
   },
   "signature": {
     "preset": "documentaire",
-    "path": "var/cache/signature/signature_documentaire_1920x1080_c9923b524e44.mp4",
+    "path": "var/cache/signature/signature_documentaire_1920x1080_b61a8dcd3280.mp4",
     "duration": 3.5,
     "start": 19.761,
     "transition": 0.25,
-    "last_frame": "var/cache/signature/signature_documentaire_1920x1080_c9923b524e44_last.png",
+    "last_frame": "var/cache/signature/signature_documentaire_1920x1080_b61a8dcd3280_last.png",
     "content_box": [
       623,
       205,
@@ -126,6 +133,6 @@
     "audio_channels": 2,
     "faststart": true
   },
-  "ffmpeg": "ffmpeg -ss 0.000 -t 20.011 -i /home/user/Motion-design-/time-capital/renders/le-temps-est-ton-capital.mp4 -loop 1 -framerate 30 -t 20.011 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_white_240x65_ombre.png -i /home/user/lukoji-media-engine/var/cache/signature/signature_documentaire_1920x1080_c9923b524e44.mp4 -filter_complex '[0:v]setsar=1,fps=30,format=yuv444p[base];[1:v]format=rgba,colorchannelmixer=aa=0.880,fade=t=in:st=0:d=0.3:alpha=1[lg1];[base][lg1]overlay=x=1570:y=40:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,0.000)*lt(t,20.011)'\"'\"'[ov1];[ov1]format=yuv420p,settb=AVTB,fps=30[main];[2:v]format=yuv420p,setsar=1,settb=AVTB,fps=30[sig];[main][sig]xfade=transition=fade:duration=0.25:offset=19.761[vx];[0:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=out:st=19.611:d=0.4,apad=whole_dur=23.261[aout]' -map '[vx]' -map '[aout]' -c:v libx264 -preset medium -crf 18 -profile:v high -level:v 4.1 -pix_fmt yuv420p -g 60 -r 30 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -ac 2 -t 23.261 -movflags +faststart /home/user/lukoji-media-engine/var/out/test_horizontal_1920x1080.mp4",
-  "render_id": 5
+  "ffmpeg": "ffmpeg -ss 0.000 -t 20.011 -i /home/user/Motion-design-/time-capital/renders/le-temps-est-ton-capital.mp4 -loop 1 -framerate 30 -t 20.011 -i /home/user/lukoji-media-engine/var/cache/brand/filigrane_lockup_white_240x65_ombre.png -i /home/user/lukoji-media-engine/var/cache/signature/signature_documentaire_1920x1080_b61a8dcd3280.mp4 -filter_complex '[0:v]setsar=1,fps=30,format=yuv444p[base];[1:v]format=rgba,colorchannelmixer=aa=0.880,fade=t=in:st=0:d=0.3:alpha=1[lg1];[base][lg1]overlay=x=1564:y=41:format=yuv444:eof_action=pass:enable='\"'\"'gte(t,0.0000)*lt(t,19.9943)'\"'\"'[ov1];[ov1]format=yuv420p,settb=AVTB,fps=30[main];[2:v]format=yuv420p,setsar=1,settb=AVTB,fps=30[sig];[main][sig]xfade=transition=fade:duration=0.25:offset=19.761[vx];[0:a]aresample=48000,aformat=channel_layouts=stereo,afade=t=out:st=19.611:d=0.4,apad=whole_dur=23.261[aout]' -map '[vx]' -map '[aout]' -c:v libx264 -preset medium -crf 18 -profile:v high -level:v 4.1 -pix_fmt yuv420p -g 60 -r 30 -color_range tv -colorspace bt709 -color_primaries bt709 -color_trc bt709 -c:a aac -b:a 192k -ar 48000 -ac 2 -t 23.261 -movflags +faststart /home/user/lukoji-media-engine/var/out/test_horizontal_1920x1080.mp4",
+  "render_id": 8
 }

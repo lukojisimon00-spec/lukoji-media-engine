@@ -1,0 +1,62 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.18, pytest-9.1.1, pluggy-1.6.0 -- /usr/local/bin/python3
+rootdir: /home/user/lukoji-media-engine
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 43 items
+
+tests/test_brand_assets.py::test_manifest_matches_originals PASSED       [  2%]
+tests/test_brand_assets.py::test_originals_are_read_only_and_svg_is_official PASSED [  4%]
+tests/test_brand_assets.py::test_tampered_original_is_detected PASSED    [  6%]
+tests/test_brand_assets.py::test_fit_size_minimises_ratio_error PASSED   [  9%]
+tests/test_brand_assets.py::test_lockup_keeps_official_ratio PASSED      [ 11%]
+tests/test_brand_assets.py::test_symbol_from_svg_matches_official_png PASSED [ 13%]
+tests/test_brand_assets.py::test_signature_crops_are_pixel_exact PASSED  [ 16%]
+tests/test_brand_assets.py::test_signature_final_frame_matches_official_vertical_logo PASSED [ 18%]
+tests/test_brand_assets.py::test_signature_cache_key_is_location_independent PASSED [ 20%]
+tests/test_config_geometry.py::test_config_loads_and_palette_is_official PASSED [ 23%]
+tests/test_config_geometry.py::test_env_override PASSED                  [ 25%]
+tests/test_config_geometry.py::test_rect_operations PASSED               [ 27%]
+tests/test_config_geometry.py::test_central_crops PASSED                 [ 30%]
+tests/test_config_geometry.py::test_every_profile_resolves_with_positive_safe_zone PASSED [ 32%]
+tests/test_config_geometry.py::test_platforms_have_distinct_safe_zones PASSED [ 34%]
+tests/test_config_geometry.py::test_universal_is_intersection_of_members PASSED [ 37%]
+tests/test_config_geometry.py::test_anchor_box_stays_inside_safe PASSED  [ 39%]
+tests/test_config_geometry.py::test_youtube_reserved_zone_bottom_right PASSED [ 41%]
+tests/test_db.py::test_migrations_are_idempotent PASSED                  [ 44%]
+tests/test_db.py::test_content_lifecycle_and_history PASSED              [ 46%]
+tests/test_db.py::test_forbidden_transition_blocks_unvalidated_publication PASSED [ 48%]
+tests/test_db.py::test_unknown_kind_rejected PASSED                      [ 51%]
+tests/test_db.py::test_asset_versioning PASSED                           [ 53%]
+tests/test_e2e_watermark.py::test_render_is_conform PASSED               [ 55%]
+tests/test_e2e_watermark.py::test_placement_avoids_text_and_colour_adapts PASSED [ 58%]
+tests/test_e2e_watermark.py::test_render_registered_in_db PASSED         [ 60%]
+tests/test_e2e_watermark.py::test_qc_rejects_video_without_watermark PASSED [ 62%]
+tests/test_e2e_watermark.py::test_qc_rejects_stretched_logo PASSED       [ 65%]
+tests/test_e2e_watermark.py::test_short_content_gets_no_signature PASSED [ 67%]
+tests/test_e2e_watermark.py::test_logo_visible_on_every_frame PASSED     [ 69%]
+tests/test_e2e_watermark.py::test_visible_footprint_inside_every_platform_safe_zone PASSED [ 72%]
+tests/test_social.py::test_official_links_are_recorded_exactly PASSED    [ 74%]
+tests/test_social.py::test_config_is_valid_and_secret_free PASSED        [ 76%]
+tests/test_social.py::test_no_publication_enabled_in_phase0 PASSED       [ 79%]
+tests/test_social.py::test_editorial_routing PASSED                      [ 81%]
+tests/test_social.py::test_facebook_link_flagged_as_share_link PASSED    [ 83%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-https] PASSED [ 86%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-domaine] PASSED [ 88%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-cl\xe9 suspecte] PASSED [ 90%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-secret] PASSED [ 93%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-affiche] PASSED [ 95%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-plateformes attendues] PASSED [ 97%]
+tests/test_social.py::test_invalid_configurations_are_rejected[<lambda>-identifiant] PASSED [100%]
+
+============================= slowest 8 durations ==============================
+16.52s setup    tests/test_e2e_watermark.py::test_logo_visible_on_every_frame
+16.23s setup    tests/test_e2e_watermark.py::test_qc_rejects_stretched_logo
+15.50s setup    tests/test_e2e_watermark.py::test_qc_rejects_video_without_watermark
+15.31s setup    tests/test_e2e_watermark.py::test_visible_footprint_inside_every_platform_safe_zone
+15.23s setup    tests/test_e2e_watermark.py::test_render_registered_in_db
+14.98s setup    tests/test_e2e_watermark.py::test_placement_avoids_text_and_colour_adapts
+14.92s setup    tests/test_e2e_watermark.py::test_render_is_conform
+11.07s call     tests/test_e2e_watermark.py::test_short_content_gets_no_signature
+======================== 43 passed in 171.50s (0:02:51) ========================

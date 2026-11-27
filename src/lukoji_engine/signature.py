@@ -19,7 +19,7 @@ from pathlib import Path
 
 from PIL import Image
 
-from .assets import _resize_premultiplied, alpha_bbox, original_path, render_svg, vertical_lockup_parts
+from .assets import _resize_premultiplied, alpha_bbox, original_path, render_svg, sha256_file, vertical_lockup_parts
 from .config import load_config
 from .db import Database
 from .geometry import Profile
@@ -143,7 +143,12 @@ def render(profile: Profile, preset: str, *, theme: str | None = None, db: Datab
     if preset == "aucune":
         raise ValueError("rien à rendre pour le préréglage « aucune »")
     spec = build_spec(profile, preset, theme, db=db)
-    key = hashlib.sha256(json.dumps(spec, sort_keys=True).encode()).hexdigest()[:12]
+    # Clé de cache portable : contenu des images (empreinte) plutôt que leur chemin absolu.
+    portable = json.loads(json.dumps(spec))
+    for name in ("logotype", "slogan"):
+        if portable.get(name):
+            portable[name]["src"] = sha256_file(portable[name]["src"])
+    key = hashlib.sha256(json.dumps(portable, sort_keys=True).encode()).hexdigest()[:12]
     base = ensure_dir(Path(load_config().engine["paths"]["cache"]) / "signature")
     out = base / f"signature_{preset}_{profile.width}x{profile.height}_{key}.mp4"
     frames = base / f"frames_{key}"
