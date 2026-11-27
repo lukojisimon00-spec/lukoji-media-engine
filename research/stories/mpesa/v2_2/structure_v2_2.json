@@ -1,0 +1,278 @@
+{
+ "type": "transformation",
+ "justification": "Structure « transformation » conservée, réorganisée en v2 : (1) la révélation du microcrédit est retenue jusqu'à SEQ-03 au lieu d'être donnée trois fois ; (2) un acteur nommé (Michael Joseph) porte le récit des origines, explicitement attribué à Vodafone ; (3) un chiffre antérieur au lancement (2006, 27 %) est planté en SEQ-02 et repris en SEQ-08 (2019, 83 %) ; (4) SEQ-06 contient un vrai conflit (banques, débat public, communiqué de 2009) ; (5) SEQ-07 ne garde qu'un jeu de chiffres d'entreprise ; (6) SEQ-09 est réduit à trois limites datées ; (7) la RDC est préparée dès SEQ-07. Phase 2.4 : structure reconstruite à partir du script consolidé ; une question (téléphone ou banque ?) est posée en SEQ-06 et reprise en SEQ-09 ; SEQ-08 et SEQ-09 allégées ; conclusion sans comparaison Kenya-RDC.",
+ "alternatives_ecartees": [
+  {
+   "type": "probleme_solution_consequences",
+   "raison": "Risque de récit promotionnel (« la solution miracle ») et de minimiser les limites."
+  },
+  {
+   "type": "chronologie",
+   "raison": "Les dates sont peu nombreuses et sûres ; une chronologie deviendrait une liste."
+  },
+  {
+   "type": "portrait",
+   "raison": "Un portrait de Safaricom ou de Vodafone donnerait trop de poids à des sources intéressées."
+  }
+ ],
+ "angle": "Comment un service pensé pour verser et rembourser des microcrédits a été détourné par ses premiers utilisateurs pour envoyer de l'argent à leurs proches, puis a accompagné une forte progression de l'accès aux services financiers au Kenya — dans une proportion que seules des estimations attribuées permettent d'approcher —, au prix d'une puissance aujourd'hui contestée.",
+ "promesse": "Le spectateur découvre pour quoi M-Pesa a été conçu selon ceux qui l'ont fait, comment ses clients l'ont détourné, ce que les chercheurs estiment qu'il a changé — et pourquoi la question de son pouvoir reste posée, jusqu'en RDC.",
+ "etapes": [
+  {
+   "id": "E1",
+   "sequence": "SEQ-01",
+   "role": "hook",
+   "titre": "Jours de voyage, quelques SMS",
+   "objectif": "Ouvrir sur une scène concrète (le chauffeur de bus) et poser une question sans y répondre : pour quoi ce service a-t-il été conçu ?",
+   "fonction_narrative": "Ouvrir sur une pratique documentée et poser une question.",
+   "conflit_question_progression": "Question : pour quoi ce service a-t-il été conçu ?",
+   "transition_sortie": "Coupe franche sur le noir, puis carton « KENYA, 2006 » : avant la réponse, le problème.",
+   "informations_indispensables": [
+    "jours de voyage",
+    "compagnie de bus",
+    "quelques SMS",
+    "pas inventé pour ça"
+   ],
+   "informations_secondaires": [
+    "nom de M-Pesa"
+   ],
+   "risque_decrochage": "faible",
+   "faits": [
+    "F61",
+    "F72",
+    "F73",
+    "F43"
+   ],
+   "duree_cible_s": 17
+  },
+  {
+   "id": "E2",
+   "sequence": "SEQ-02",
+   "role": "contexte",
+   "titre": "Hors des banques",
+   "objectif": "Installer le problème avec un chiffre antérieur au lancement (2006) et introduire l'acteur qui finance le projet.",
+   "fonction_narrative": "Installer le problème avec un chiffre antérieur au lancement et l'acteur qui finance.",
+   "conflit_question_progression": "Progression : peu d'adultes ont accès à la finance formelle ; un bailleur cherche des solutions.",
+   "transition_sortie": "Une subvention, un opérateur kényan : le projet prend forme.",
+   "informations_indispensables": [
+    "26,7 % (accès formel, adultes, 2006)",
+    "subvention (selon Vodafone)"
+   ],
+   "informations_secondaires": [
+    "nature du ministère britannique"
+   ],
+   "risque_decrochage": "moyen (séquence didactique)",
+   "faits": [
+    "F74",
+    "F41"
+   ],
+   "duree_cible_s": 31
+  },
+  {
+   "id": "E3",
+   "sequence": "SEQ-03",
+   "role": "origine",
+   "titre": "Le prototype de Thika",
+   "objectif": "Révéler l'intention initiale (le microcrédit) en disant d'où vient ce récit : l'équipe projet et Vodafone, pas une enquête indépendante.",
+   "fonction_narrative": "Révéler le microcrédit et dire d'où vient ce récit.",
+   "conflit_question_progression": "Révélation : le service devait servir au microcrédit ; source : l'équipe projet et Vodafone.",
+   "transition_sortie": "Le test commence. Et les clients ne font pas ce qui était prévu.",
+   "informations_indispensables": [
+    "récit de l'équipe projet et de Vodafone",
+    "microcrédit",
+    "prototype à Nairobi et à Thika, octobre 2005"
+   ],
+   "informations_secondaires": [
+    "fonction de Michael Joseph"
+   ],
+   "risque_decrochage": "faible",
+   "faits": [
+    "F42",
+    "F76",
+    "F62",
+    "F8"
+   ],
+   "duree_cible_s": 39
+  },
+  {
+   "id": "E4",
+   "sequence": "SEQ-04",
+   "role": "tournant",
+   "titre": "Le détournement",
+   "objectif": "Montrer le tournant : les clients détournent le prototype, l'équipe choisit de les suivre.",
+   "fonction_narrative": "Le détournement par les clients et la décision de suivre l'usage.",
+   "conflit_question_progression": "Conflit : le plan prévu contre l'usage réel ; décision : « prendre un risque ».",
+   "transition_sortie": "Reste à faire entrer et sortir les billets du téléphone.",
+   "informations_indispensables": [
+    "les clients envoient l'argent ailleurs (d'après M. Joseph)",
+    "décision de reconstruire le système"
+   ],
+   "informations_secondaires": [
+    "« le portable devient un coursier »"
+   ],
+   "risque_decrochage": "faible",
+   "faits": [
+    "F8",
+    "F63",
+    "F9"
+   ],
+   "duree_cible_s": 28
+  },
+  {
+   "id": "E5",
+   "sequence": "SEQ-05",
+   "role": "developpement",
+   "titre": "Une banque sans agences",
+   "objectif": "Expliquer le mécanisme en suivant une somme, de la main du client au retrait.",
+   "fonction_narrative": "Expliquer le mécanisme en suivant une somme.",
+   "conflit_question_progression": "Compréhension : comment de l'argent liquide entre dans un téléphone et en sort.",
+   "transition_sortie": "Le mécanisme fonctionne. Reste à savoir qui a le droit de le faire fonctionner.",
+   "informations_indispensables": [
+    "dépôt chez un commerçant",
+    "SMS",
+    "carte SIM",
+    "retrait"
+   ],
+   "informations_secondaires": [
+    "petites boutiques familiales"
+   ],
+   "risque_decrochage": "moyen",
+   "faits": [
+    "F43",
+    "F44"
+   ],
+   "duree_cible_s": 35
+  },
+  {
+   "id": "E6",
+   "sequence": "SEQ-06",
+   "role": "obstacles",
+   "titre": "Le régulateur et les banques",
+   "objectif": "Poser une vraie question (téléphone ou banque ?), opposer les banques au service, faire trancher le régulateur sous conditions, et laisser la question ouverte jusqu'à SEQ-09.",
+   "fonction_narrative": "Poser la question du statut (téléphone ou banque ?) et la faire trancher sous conditions.",
+   "conflit_question_progression": "Conflit : banques contre opérateur ; arbitrage du régulateur ; question laissée ouverte (reprise en SEQ-09).",
+   "transition_sortie": "La question reste ouverte. En attendant, le service grandit.",
+   "informations_indispensables": [
+    "objection des banques (selon Ecofin)",
+    "feu vert sous conditions",
+    "lancement en mars 2007"
+   ],
+   "informations_secondaires": [
+    "détail des trois conditions"
+   ],
+   "risque_decrochage": "moyen",
+   "faits": [
+    "F46",
+    "F45",
+    "F7"
+   ],
+   "duree_cible_s": 43
+  },
+  {
+   "id": "E7",
+   "sequence": "SEQ-07",
+   "role": "developpement",
+   "titre": "La croissance, selon l'entreprise",
+   "objectif": "Donner l'échelle avec les seuls chiffres de l'entreprise, présentés comme tels, et préparer le lien avec la RDC.",
+   "fonction_narrative": "Donner l'échelle, en précisant que ce sont les chiffres de l'entreprise.",
+   "conflit_question_progression": "Pivot : chiffres d'entreprise contre ce qui a réellement changé.",
+   "transition_sortie": "Pour savoir ce qui a changé, il faut des chercheurs.",
+   "informations_indispensables": [
+    "1,2 million la première année (Vodafone)",
+    "51 millions dans sept pays en 2022 (Vodafone)",
+    "RDC parmi ces pays"
+   ],
+   "informations_secondaires": [
+    "600 000 agents"
+   ],
+   "risque_decrochage": "moyen",
+   "faits": [
+    "F10",
+    "F49"
+   ],
+   "duree_cible_s": 23
+  },
+  {
+   "id": "E8",
+   "sequence": "SEQ-08",
+   "role": "consequences",
+   "titre": "Ce que mesurent les chercheurs",
+   "objectif": "Distinguer le constat global (biaisé par la définition) de la mesure des chercheurs ; garder le résultat central, son attribution et ses limites, avec moins de chiffres.",
+   "fonction_narrative": "Distinguer le constat global de la mesure des chercheurs.",
+   "conflit_question_progression": "Question : qu'a vraiment changé M-Pesa ? Réponse attribuée, avec ses limites.",
+   "transition_sortie": "Coupe franche : le revers.",
+   "informations_indispensables": [
+    "82,9 % (2019) inclut l'argent mobile",
+    "méthode : agents près des familles",
+    "au moins 194 000 foyers, 2 %, estimation extrapolée"
+   ],
+   "informations_secondaires": [
+    "seuil de 1,25 $",
+    "effet plus fort pour les foyers dirigés par des femmes"
+   ],
+   "risque_decrochage": "élevé (chiffres et méthode)",
+   "faits": [
+    "F75",
+    "F79",
+    "F78",
+    "F12"
+   ],
+   "duree_cible_s": 55
+  },
+  {
+   "id": "E9",
+   "sequence": "SEQ-09",
+   "role": "limites",
+   "titre": "Le prix du succès",
+   "objectif": "Une progression plutôt qu'un catalogue : le coût pour les usagers, la réponse annoncée du régulateur, le poids pour l'opérateur, le retour politique de la question de SEQ-06, puis les nouveaux usages à risque.",
+   "fonction_narrative": "Une progression : coût, réponse annoncée, poids pour l'opérateur, question politique, nouveaux risques.",
+   "conflit_question_progression": "Progression : du portefeuille des usagers au pouvoir de l'opérateur.",
+   "transition_sortie": "Après les limites mesurées, une critique de fond, puis la question finale.",
+   "informations_indispensables": [
+    "7 % sur certains transferts (Ecofin)",
+    "projet de baisse (médias kényans)",
+    "44,2 % des revenus de services au Kenya (Safaricom)",
+    "sénateurs, novembre 2020"
+   ],
+   "informations_secondaires": [
+    "crédit mobile",
+    "110 applications de prêt (FSD Kenya)"
+   ],
+   "risque_decrochage": "élevé (densité)",
+   "faits": [
+    "F55",
+    "F80",
+    "F81",
+    "F58",
+    "F82"
+   ],
+   "duree_cible_s": 60
+  },
+  {
+   "id": "E10",
+   "sequence": "SEQ-10",
+   "role": "conclusion",
+   "titre": "À quelles conditions",
+   "objectif": "Conclure sur une critique attribuée et sur la leçon du titre (attribuée au récit des concepteurs), puis ouvrir une question pour le public congolais sans comparaison inventée.",
+   "fonction_narrative": "Critique attribuée, leçon du titre, question ouverte vers la RDC.",
+   "conflit_question_progression": "Question finale : à quelles conditions, et au profit de qui ?",
+   "transition_sortie": "",
+   "informations_indispensables": [
+    "critique de la thèse (attribuée)",
+    "leçon : regarder ce que les clients font (selon le récit des concepteurs)",
+    "présence en RDC (Vodafone), sans transposer"
+   ],
+   "informations_secondaires": [
+    "comparaison avec les monnaies locales"
+   ],
+   "risque_decrochage": "moyen",
+   "faits": [
+    "F59",
+    "F49"
+   ],
+   "duree_cible_s": 52
+  }
+ ],
+ "version_editoriale": "v2.2 — structure consolidée, alignée sur le script v2.2 (phase 2.4)",
+ "titre_travail": "Quand les clients ont changé le produit"
+}

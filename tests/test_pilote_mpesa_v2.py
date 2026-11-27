@@ -102,3 +102,26 @@ V21 = ROOT / "research/stories/mpesa/v2_1/script_v2_1.json"
 def test_fact_check_final_corrections_appliquees(motif):
     vo = " ".join(s["voix_off"] for s in _load(V21)["sequences"])
     assert not re.search(motif, vo, flags=re.I)
+
+
+V22 = ROOT / "research/stories/mpesa/v2_2"
+
+
+@pytest.mark.skipif(not (V22 / "script_v2_2.json").exists(), reason="consolidation v2.2 absente")
+def test_consolidation_v2_2_coherente():
+    script = _load(V22 / "script_v2_2.json")
+    struct = _load(V22 / "structure_v2_2.json")
+    hooks = _load(V22 / "hooks_v2_2.json")
+    assert script["titre"] == "Quand les clients ont changé le produit"
+    h9 = next(h for h in hooks["hooks"] if h["id"] == "H9")
+    assert hooks["choisi"] == "H9" and "compagnie de bus" in h9["voix_off"]
+    assert script["sequences"][0]["voix_off"] == h9["voix_off"]
+    by = {e["sequence"]: e for e in struct["etapes"]}
+    removed = {"F38", "F39", "F47", "F48", "F51", "F53", "F54", "F56", "F57", "F64", "F65", "F66", "F67", "F11", "F13"}
+    for s in script["sequences"]:
+        assert by[s["id"]]["faits"] == s["faits"], s["id"]
+        assert by[s["id"]]["transition_sortie"] == (s.get("transition") or ""), s["id"]
+        assert not set(s["faits"]) & removed, s["id"]
+    vo = " ".join(s["voix_off"] for s in script["sequences"])
+    for motif in (r"2009", r"communiqu", r"\bparis\b", r"chauffeur", r"\b49\b", r"41 ?%", r"survit au débat"):
+        assert not re.search(motif, vo, flags=re.I), motif

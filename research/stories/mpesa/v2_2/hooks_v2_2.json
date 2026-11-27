@@ -1,0 +1,552 @@
+{
+ "hooks": [
+  {
+   "id": "H1",
+   "type": "paradoxal",
+   "voix_off": "Au Kenya, envoyer de l'argent par téléphone est devenu un geste du quotidien. Pourtant, M-Pesa n'a pas été conçu pour ça. Il devait servir à rembourser des microcrédits. Ce sont ses premiers utilisateurs qui en ont décidé autrement.",
+   "concept_visuel": "Gros plan sur un téléphone à clavier : un SMS de confirmation de transfert s'affiche, puis le texte « REMBOURSEMENT DE PRÊT » se barre et devient « ENVOI À MAMAN ».",
+   "mouvement": "Insert fixe sur l'écran, puis travelling arrière révélant une rue commerçante floue (plan d'ambiance).",
+   "son": "Bip de réception de SMS, rumeur de rue, une note grave à la bascule du texte.",
+   "tension": "Contradiction entre l'usage connu (envoyer de l'argent) et l'intention d'origine (rembourser des prêts).",
+   "lien_suite": "Ouvre directement sur la question : qui a conçu le service, pour quoi, et comment les usagers l'ont détourné.",
+   "risques": "« Geste du quotidien » ne doit pas suggérer un usage universel ; les chiffres d'adoption viennent ensuite, attribués.",
+   "faits": [
+    "F8",
+    "F9"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 5,
+     "justification": "Paradoxe immédiatement compréhensible."
+    },
+    "clarte": {
+     "note": 5,
+     "justification": "Quatre phrases simples, une seule idée."
+    },
+    "originalite": {
+     "note": 4,
+     "justification": "Peu connu du grand public francophone."
+    },
+    "tension": {
+     "note": 3,
+     "justification": "v2 : la contradiction est posée puis résolue dans le même souffle ; le mystère est fermé à 16 s."
+    },
+    "pertinence": {
+     "note": 5,
+     "justification": "C'est exactement l'angle retenu."
+    },
+    "coherence_preuves": {
+     "note": 5,
+     "justification": "F8 et F9 confirmés par une source primaire."
+    },
+    "potentiel_visuel": {
+     "note": 4,
+     "justification": "Le texte barré est simple et fort."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Aucune promesse que la suite ne tient pas."
+    }
+   },
+   "revision_v2": "v2 : non retenu — révèle le microcrédit et le dénouement dans les 16 premières secondes (audit §2.2)."
+  },
+  {
+   "id": "H2",
+   "type": "historique",
+   "voix_off": "Le 6 mars 2007, Safaricom et Vodafone lancent au Kenya un service de paiement par téléphone : M-Pesa. Personne ne sait encore ce qu'il va devenir.",
+   "concept_visuel": "Calendrier typographique qui s'arrête sur le 6 mars 2007, puis logo textuel neutre « M-PESA » (sans logo de marque).",
+   "mouvement": "Défilement rapide des dates, arrêt net, léger zoom avant.",
+   "son": "Tic-tac qui s'arrête, coup sourd.",
+   "tension": "Attente d'un destin annoncé comme imprévisible.",
+   "lien_suite": "Enchaîne sur la croissance, mais saute l'origine (microcrédit) qui fait l'intérêt du récit.",
+   "risques": "« Personne ne sait » est une généralisation invérifiable : surenchère.",
+   "faits": [
+    "F42"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 3,
+     "justification": "Date précise mais ouverture classique."
+    },
+    "clarte": {
+     "note": 5,
+     "justification": "Très clair."
+    },
+    "originalite": {
+     "note": 2,
+     "justification": "Ouverture de documentaire très répandue."
+    },
+    "tension": {
+     "note": 2,
+     "justification": "Tension artificielle."
+    },
+    "pertinence": {
+     "note": 3,
+     "justification": "Ne porte pas l'angle du détournement d'usage."
+    },
+    "coherence_preuves": {
+     "note": 4,
+     "justification": "Date confirmée (F42) ; la fin n'est pas un fait."
+    },
+    "potentiel_visuel": {
+     "note": 3,
+     "justification": "Typographie seule."
+    },
+    "honnetete_promesse": {
+     "note": 2,
+     "justification": "v2 : « personne ne sait » est une généralisation invérifiable."
+    }
+   },
+   "revision_v2": "v2 : écarté — « personne ne » (surenchère) ; date du jour attribuable à Vodafone seule."
+  },
+  {
+   "id": "H3",
+   "type": "narratif",
+   "voix_off": "Au nord de Nairobi, à Thika, une équipe teste un prototype : des microcrédits versés et remboursés par téléphone. Très vite, elle remarque que l'argent prêté ne reste pas sur place. Il part ailleurs, vers des proches qui vivent loin.",
+   "concept_visuel": "Carte animée du Kenya : point lumineux sur Thika, puis des fils orange qui partent vers d'autres régions.",
+   "mouvement": "Zoom carte depuis l'Afrique de l'Est jusqu'à Thika, puis suivi des tracés.",
+   "son": "Ambiance de marché lointaine, sons de notifications qui se multiplient avec les tracés.",
+   "tension": "Une observation de terrain qui contredit le plan.",
+   "lien_suite": "Pose le tournant du récit dès l'ouverture.",
+   "risques": "Ne pas dater le test (date du pilote non confirmée, F13 interdit).",
+   "faits": [
+    "F8"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 4,
+     "justification": "Mystère concret : où part l'argent ?"
+    },
+    "clarte": {
+     "note": 4,
+     "justification": "Lisible, un peu plus long."
+    },
+    "originalite": {
+     "note": 4,
+     "justification": "Entrée par le terrain."
+    },
+    "tension": {
+     "note": 4,
+     "justification": "Écart entre plan et réalité."
+    },
+    "pertinence": {
+     "note": 5,
+     "justification": "Cœur de l'angle."
+    },
+    "coherence_preuves": {
+     "note": 5,
+     "justification": "F8 confirmé."
+    },
+    "potentiel_visuel": {
+     "note": 5,
+     "justification": "Carte et tracés très parlants."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Fidèle aux sources."
+    }
+   },
+   "revision_v2": "v2 : conservé comme matière de SEQ-03 (révélation du prototype), pas comme ouverture."
+  },
+  {
+   "id": "H4",
+   "type": "tension",
+   "voix_off": "Selon Agence Ecofin, des banques kényanes y voyaient une intrusion : un opérateur de téléphone n'avait pas à faire leur métier. La Banque centrale a posé ses conditions. Et le service a été lancé.",
+   "concept_visuel": "Écran partagé : façade de banque (image symbolique) face à une petite boutique d'agent (image symbolique), séparées par une ligne qui se fissure.",
+   "mouvement": "Les deux images glissent l'une vers l'autre.",
+   "son": "Silence tendu, puis son de tampon administratif.",
+   "tension": "Conflit d'institutions.",
+   "lien_suite": "Annonce le chapitre réglementaire mais pas le détournement d'usage.",
+   "risques": "Source unique (F46) : à attribuer ; ne pas faire des banques les « méchants ».",
+   "faits": [
+    "F46",
+    "F45"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 3,
+     "justification": "Conflit intéressant mais abstrait."
+    },
+    "clarte": {
+     "note": 4,
+     "justification": "Clair."
+    },
+    "originalite": {
+     "note": 3,
+     "justification": "Angle réglementaire."
+    },
+    "tension": {
+     "note": 4,
+     "justification": "Conflit explicite."
+    },
+    "pertinence": {
+     "note": 3,
+     "justification": "Secondaire par rapport à l'angle."
+    },
+    "coherence_preuves": {
+     "note": 4,
+     "justification": "F45 confirmé, F46 attribué."
+    },
+    "potentiel_visuel": {
+     "note": 3,
+     "justification": "Images symboliques nécessaires."
+    },
+    "honnetete_promesse": {
+     "note": 4,
+     "justification": "Attribution correcte."
+    }
+   },
+   "revision_v2": "v2 : la source dit « incursion », pas « intrusion » ; matière de SEQ-06."
+  },
+  {
+   "id": "H5",
+   "type": "consequence",
+   "voix_off": "Quand des chercheurs du MIT font leurs comptes, le contraste saute aux yeux : seuls 22 % des adultes kényans ont un compte bancaire, mais 38 % des ménages utilisent déjà M-Pesa.",
+   "concept_visuel": "Deux barres animées qui montent côte à côte : 22 % comptes bancaires, 38 % ménages avec M-Pesa.",
+   "mouvement": "Croissance des barres, la seconde dépasse la première.",
+   "son": "Montée sonore synchronisée avec les barres.",
+   "tension": "Le téléphone devance la banque.",
+   "lien_suite": "Pose la question du « comment », traitée ensuite.",
+   "risques": "Comparer des adultes et des ménages : unités différentes, à dire clairement ; source unique attribuée.",
+   "faits": [
+    "F38"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 4,
+     "justification": "Chiffres contre-intuitifs."
+    },
+    "clarte": {
+     "note": 3,
+     "justification": "Deux unités différentes à comprendre."
+    },
+    "originalite": {
+     "note": 3,
+     "justification": "Ouverture chiffrée classique."
+    },
+    "tension": {
+     "note": 3,
+     "justification": "Contraste plus que tension."
+    },
+    "pertinence": {
+     "note": 4,
+     "justification": "Lié à l'accès aux services financiers."
+    },
+    "coherence_preuves": {
+     "note": 1,
+     "justification": "v2 : F38 exclu (origine du chiffre de 22 % non établie ; enquête postérieure au lancement)."
+    },
+    "potentiel_visuel": {
+     "note": 4,
+     "justification": "Graphique simple."
+    },
+    "honnetete_promesse": {
+     "note": 2,
+     "justification": "v2 : le contraste repose sur deux indicateurs non comparables (adultes / ménages) dont l'un n'est pas sourcé."
+    }
+   },
+   "revision_v2": "v2 : éliminé — repose sur F38 (origine du 22 % non établie, exclu du script v2)."
+  },
+  {
+   "id": "H6",
+   "type": "question",
+   "voix_off": "Comment envoyer de l'argent à sa famille quand la banque la plus proche est hors de portée ? Au Kenya, on voyageait parfois des jours, ou on confiait ses billets à un chauffeur de bus.",
+   "concept_visuel": "Plan d'ambiance d'une gare routière, puis gros plan symbolique d'une enveloppe passée de main en main.",
+   "mouvement": "Panoramique sur les bus, puis insert sur l'enveloppe.",
+   "son": "Moteurs de bus, brouhaha.",
+   "tension": "Problème concret et universel.",
+   "lien_suite": "Introduit le contexte avant la solution.",
+   "risques": "Les images de gare et d'enveloppe sont symboliques : mention à l'écran.",
+   "faits": [
+    "F61"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 4,
+     "justification": "Question concrète."
+    },
+    "clarte": {
+     "note": 5,
+     "justification": "Très clair."
+    },
+    "originalite": {
+     "note": 3,
+     "justification": "Ouverture par le problème, attendue."
+    },
+    "tension": {
+     "note": 3,
+     "justification": "Tension faible."
+    },
+    "pertinence": {
+     "note": 4,
+     "justification": "Bon point d'entrée."
+    },
+    "coherence_preuves": {
+     "note": 5,
+     "justification": "F61 confirmé (source A)."
+    },
+    "potentiel_visuel": {
+     "note": 4,
+     "justification": "Images d'ambiance fortes."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Aucune exagération."
+    }
+   },
+   "revision_v2": "v2 : « la banque la plus proche est hors de portée » n'est pas sourcé ; idée reprise et corrigée dans H9."
+  },
+  {
+   "id": "H7",
+   "type": "revelation",
+   "voix_off": "Une étude publiée dans la revue Science estime que l'argent mobile a sorti environ 194 000 ménages kényans de l'extrême pauvreté. Un chiffre impressionnant. Mais d'où vient-il, et que mesure-t-il vraiment ?",
+   "concept_visuel": "Le nombre 194 000 apparaît en grand, puis se décompose en points qui forment une carte du Kenya.",
+   "mouvement": "Typographie animée, éclatement en particules.",
+   "son": "Impact sourd sur le chiffre, puis nappe.",
+   "tension": "Révélation suivie d'un doute méthodique.",
+   "lien_suite": "Mène à l'enquête sur l'étude ; risque de déplacer le centre du récit.",
+   "risques": "Estimation extrapolée (F52) : ne jamais la présenter comme un décompte.",
+   "faits": [
+    "F11",
+    "F52"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 5,
+     "justification": "Chiffre fort et question honnête."
+    },
+    "clarte": {
+     "note": 4,
+     "justification": "Clair."
+    },
+    "originalite": {
+     "note": 4,
+     "justification": "Ouverture critique rare."
+    },
+    "tension": {
+     "note": 4,
+     "justification": "Doute méthodique."
+    },
+    "pertinence": {
+     "note": 3,
+     "justification": "Le récit porte d'abord sur l'origine."
+    },
+    "coherence_preuves": {
+     "note": 4,
+     "justification": "Attribué à l'étude, estimation signalée."
+    },
+    "potentiel_visuel": {
+     "note": 4,
+     "justification": "Typographie animée."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Annonce elle-même la nuance."
+    }
+   },
+   "revision_v2": "v2 : conservé comme alternative ; promet une enquête méthodologique, pas l'histoire du détournement."
+  },
+  {
+   "id": "H8",
+   "type": "cinematographique",
+   "voix_off": "Une petite boutique au bord d'une route. Un client tend des billets au comptoir. Quelques SMS plus tard, l'argent est sur un téléphone, prêt à partir à l'autre bout du pays. Ce geste banal a une histoire.",
+   "concept_visuel": "Reconstitution clairement signalée : comptoir, billets, téléphone ; lumière chaude de fin de journée.",
+   "mouvement": "Plan-séquence simulé : travelling latéral le long du comptoir, insert sur l'écran.",
+   "son": "Bruits de rue, froissement de billets, bip de SMS.",
+   "tension": "Atmosphère plus que tension.",
+   "lien_suite": "Bonne entrée, mais retarde le paradoxe de l'origine.",
+   "risques": "Reconstitution : mention obligatoire, ne pas suggérer une scène historique datée.",
+   "faits": [
+    "F43",
+    "F44"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 3,
+     "justification": "Image forte, enjeu flou."
+    },
+    "clarte": {
+     "note": 4,
+     "justification": "Clair."
+    },
+    "originalite": {
+     "note": 3,
+     "justification": "Ouverture d'ambiance classique."
+    },
+    "tension": {
+     "note": 2,
+     "justification": "Peu de tension."
+    },
+    "pertinence": {
+     "note": 4,
+     "justification": "Montre le mécanisme."
+    },
+    "coherence_preuves": {
+     "note": 5,
+     "justification": "F43, F44 confirmés."
+    },
+    "potentiel_visuel": {
+     "note": 5,
+     "justification": "Très cinématographique."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Aucune promesse excessive."
+    }
+   },
+   "revision_v2": "v2 : non retenu — nécessite un tournage (boutique, client) non disponible gratuitement."
+  },
+  {
+   "id": "H9",
+   "type": "cinematographique",
+   "voix_off": "Pour envoyer de l'argent à sa famille, au Kenya, on pouvait voyager pendant des jours. Ou confier son argent à une compagnie de bus, et attendre. Aujourd'hui, quelques SMS suffisent. Le service s'appelle M-Pesa. Et ses concepteurs ne l'avaient pas inventé pour ça.",
+   "concept_visuel": "Ouverture sur un matatu réel de Nairobi (photo Wikimedia datée de 2025, mention de date) qui traverse le cadre ; carton IBM Plex Mono « SOURCE : VODAFONE (2017) » pendant l'anecdote ; coupe sec sur un écran noir ; un seul bip de SMS ; le nom M-PESA s'écrit en Archivo Black ; la dernière phrase tombe sur le noir.",
+   "mouvement": "Plan fixe sur la photo (aucun zoom), puis coupe franche au noir sur « Aujourd'hui ».",
+   "son": "Ambiance routière libre de droits (Freesound CC0) qui s'arrête net ; un bip de SMS ; silence sous la dernière phrase.",
+   "tension": "Contraste entre des jours de voyage et quelques SMS, puis question ouverte : pour quoi ce service a-t-il été inventé ?",
+   "lien_suite": "La réponse (le microcrédit) est gardée pour SEQ-03 ; SEQ-02 installe d'abord le problème (l'accès aux services financiers en 2006).",
+   "risques": "Pratique documentée par FinAccess 2006 (envois par une compagnie de bus ou de matatu), Hughes & Lonie (2007) et CGAP (2009) ; ne pas la présenter comme la seule ni comme la principale (le premier moyen était un ami ou un proche). Le matatu de 2025 reste une image d'illustration datée.",
+   "faits": [
+    "F61",
+    "F72",
+    "F73",
+    "F43"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 4,
+     "justification": "Contraste concret et question finale ouverte."
+    },
+    "clarte": {
+     "note": 5,
+     "justification": "Cinq phrases courtes, une seule idée."
+    },
+    "originalite": {
+     "note": 4,
+     "justification": "L'anecdote du chauffeur est peu connue du public francophone."
+    },
+    "tension": {
+     "note": 4,
+     "justification": "Le spectateur ne sait pas pour quoi le service a été conçu : la tension dure jusqu'à SEQ-03."
+    },
+    "pertinence": {
+     "note": 5,
+     "justification": "Pose l'angle (détournement) sans le résoudre."
+    },
+    "coherence_preuves": {
+     "note": 4,
+     "justification": "F61 et F43 confirmés par la source primaire (Vodafone) ; source intéressée, affichée."
+    },
+    "potentiel_visuel": {
+     "note": 4,
+     "justification": "Une photo réelle datée, un noir, un bip : réalisable sans tournage."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Ne promet que ce que le film raconte."
+    }
+   },
+   "revision_v2_2": "Version prudente retenue par l'éditeur (phase 2.4) : « compagnie de bus » au lieu de « chauffeur de bus »."
+  },
+  {
+   "id": "H10",
+   "type": "revelation",
+   "voix_off": "« Alors nous avons pris un risque. » Celui qui parle s'appelle Michael Joseph. Il a dirigé Safaricom, l'opérateur kényan qui a lancé M-Pesa. Le risque ? Abandonner l'idée de départ, pour suivre ce que les clients faisaient vraiment du service.",
+   "concept_visuel": "La citation originale (« So we took a chance ») en typographie sur noir, source en IBM Plex Mono ; puis capture de la page Vodafone (citation courte).",
+   "mouvement": "Fixe.",
+   "son": "Silence, puis nappe grave.",
+   "tension": "Une citation sans contexte : quel risque, quelle idée de départ ?",
+   "lien_suite": "Ouvre sur le prototype de microcrédit.",
+   "risques": "Citation traduite : afficher l'original. Récit d'un dirigeant, donc intéressé.",
+   "faits": [
+    "F63",
+    "F62",
+    "F42"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 4,
+     "justification": "Citation énigmatique."
+    },
+    "clarte": {
+     "note": 4,
+     "justification": "Le nom propre demande un temps d'attention."
+    },
+    "originalite": {
+     "note": 4,
+     "justification": "Un personnage réel, absent de la v1."
+    },
+    "tension": {
+     "note": 4,
+     "justification": "Question laissée ouverte."
+    },
+    "pertinence": {
+     "note": 4,
+     "justification": "Lié à l'angle."
+    },
+    "coherence_preuves": {
+     "note": 4,
+     "justification": "Citation exacte, attribuée."
+    },
+    "potentiel_visuel": {
+     "note": 2,
+     "justification": "Peu d'images : typographie et capture."
+    },
+    "honnetete_promesse": {
+     "note": 4,
+     "justification": "Le « risque » est raconté par l'intéressé : à signaler."
+    }
+   }
+  },
+  {
+   "id": "H11",
+   "type": "consequence",
+   "voix_off": "En 2006, selon une enquête de FSD Kenya et de la Banque centrale, 27 % des Kényans avaient accès à des services financiers. En 2019, 83 %. Entre les deux, un service d'argent par téléphone est apparu. Mais quelle part de ce bond lui revient vraiment ?",
+   "concept_visuel": "Deux chiffres seuls sur noir, source en bas à gauche ; entre les deux, un trait orange vide.",
+   "mouvement": "Fixe.",
+   "son": "Deux impacts sourds.",
+   "tension": "Un bond spectaculaire et une question de causalité.",
+   "lien_suite": "Conduit vers les chercheurs ; moins bon pour raconter l'origine.",
+   "risques": "Le spectateur peut attribuer tout le bond à M-Pesa : la question doit rester explicite.",
+   "faits": [
+    "F51"
+   ],
+   "notes": {
+    "curiosite": {
+     "note": 4,
+     "justification": "Bond chiffré marquant."
+    },
+    "clarte": {
+     "note": 4,
+     "justification": "Deux chiffres, une question."
+    },
+    "originalite": {
+     "note": 3,
+     "justification": "Données souvent citées."
+    },
+    "tension": {
+     "note": 3,
+     "justification": "Question de causalité, peu dramatique."
+    },
+    "pertinence": {
+     "note": 4,
+     "justification": "Pertinent pour la seconde moitié du film."
+    },
+    "coherence_preuves": {
+     "note": 4,
+     "justification": "F51 attribué (source secondaire Ecofin)."
+    },
+    "potentiel_visuel": {
+     "note": 2,
+     "justification": "Graphique seul."
+    },
+    "honnetete_promesse": {
+     "note": 5,
+     "justification": "Pose explicitement la limite."
+    }
+   }
+  }
+ ],
+ "choisi": "H9",
+ "justification_choix": "v2 : H9 ouvre sur une scène sourcée (F61) et une image réelle disponible, garde la révélation du microcrédit pour SEQ-03 et pose une question sans y répondre. H1 (choix v1) révélait le rebondissement à 16 s ; H10 reste une alternative forte mais demande un spectateur déjà attentif ; H11 convient mieux à un format court sur l'inclusion financière. Phase 2.4 : version prudente de H9 retenue par l'éditeur."
+}

@@ -1,0 +1,144 @@
+{
+ "bloquants": 0,
+ "valide": false,
+ "controles": [
+  {
+   "categorie": "alignement",
+   "controle": "chaque séquence a son étape, avec les mêmes faits",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "alignement",
+   "controle": "transitions identiques dans le script et la structure",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "versions",
+   "controle": "hooks, structure et script rattachés au dossier factuel courant",
+   "resultat": "ok",
+   "detail": "dossier v4 · hooks {'research': 4} · structure {'research': 4, 'hooks': 5} · script {'research': 4, 'hooks': 5, 'structure': 6}"
+  },
+  {
+   "categorie": "versions",
+   "controle": "script rattaché aux hooks et à la structure courants",
+   "resultat": "ok",
+   "detail": "script basé sur {'research': 4, 'hooks': 5, 'structure': 6}"
+  },
+  {
+   "categorie": "versions",
+   "controle": "versions antérieures conservées : script [9, 13, 16]",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "versions",
+   "controle": "versions antérieures conservées : structure [2, 3, 4]",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "versions",
+   "controle": "versions antérieures conservées : research [2, 3, 4]",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "versions",
+   "controle": "versions antérieures conservées : hooks [2, 3, 4]",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "versions",
+   "controle": "versions antérieures conservées : storyboard [2, 7]",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "factuel",
+   "controle": "faits connus, utilisables, attribués ; chaque nombre présent dans un fait ou une preuve (contrôle du moteur)",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "factuel",
+   "controle": "aucun fait retiré cité (script et structure)",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "factuel",
+   "controle": "absent de la voix off : communiqué de la Banque centrale de 2009",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "factuel",
+   "controle": "absent de la voix off : paris en ligne",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "factuel",
+   "controle": "absent de la voix off : « chauffeur de bus » (version non prudente du hook)",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "factuel",
+   "controle": "absent de la voix off : chiffres retirés",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "titre",
+   "controle": "titre du projet en base",
+   "resultat": "ok",
+   "detail": "Quand les clients ont changé le produit"
+  },
+  {
+   "categorie": "titre",
+   "controle": "titre du script",
+   "resultat": "ok",
+   "detail": "Quand les clients ont changé le produit"
+  },
+  {
+   "categorie": "hook",
+   "controle": "H9 prudent choisi et identique à l'ouverture du script",
+   "resultat": "ok",
+   "detail": ""
+  },
+  {
+   "categorie": "duree",
+   "controle": "durée calculée sur les mots (150 mots/min + pauses) dans la cible 6-8 min",
+   "resultat": "ok",
+   "detail": "984 mots (décompte du moteur) · 399.0 s · 6.7 min"
+  },
+  {
+   "categorie": "base",
+   "controle": "intégrité de la base",
+   "resultat": "ok",
+   "detail": "ok"
+  },
+  {
+   "categorie": "base",
+   "controle": "aucune validation enregistrée",
+   "resultat": "ok",
+   "detail": "0"
+  },
+  {
+   "categorie": "base",
+   "controle": "statut inchangé : structure_draft",
+   "resultat": "ok",
+   "detail": "structure_draft"
+  },
+  {
+   "categorie": "storyboard",
+   "controle": "storyboard non reconstruit (v7, obsolète par décision)",
+   "resultat": "ok",
+   "detail": "à reprendre après validation du script et de la structure"
+  }
+ ]
+}
