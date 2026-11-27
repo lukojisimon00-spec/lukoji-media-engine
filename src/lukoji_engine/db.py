@@ -96,6 +96,118 @@ MIGRATIONS: list[str] = [
     CREATE INDEX idx_renders_content ON renders(content_id);
     CREATE INDEX idx_qc_render ON qc_results(render_id);
     """,
+    # 2 — phase 1 : recherche, sources, sujets éditoriaux
+    """
+    CREATE TABLE research_runs (
+        id INTEGER PRIMARY KEY,
+        mode TEXT NOT NULL,
+        started_at TEXT NOT NULL,
+        finished_at TEXT,
+        status TEXT NOT NULL,
+        params_json TEXT NOT NULL DEFAULT '{}',
+        errors_json TEXT NOT NULL DEFAULT '[]',
+        notes TEXT
+    );
+    CREATE TABLE search_hits (
+        id INTEGER PRIMARY KEY,
+        run_id INTEGER NOT NULL REFERENCES research_runs(id),
+        provider TEXT NOT NULL,
+        query TEXT NOT NULL,
+        rank INTEGER,
+        title TEXT NOT NULL,
+        url TEXT NOT NULL,
+        source_name TEXT,
+        published_at TEXT,
+        snippet TEXT,
+        retrieved_at TEXT NOT NULL
+    );
+    CREATE TABLE sources (
+        id INTEGER PRIMARY KEY,
+        url TEXT NOT NULL UNIQUE,
+        final_url TEXT,
+        domain TEXT NOT NULL,
+        title TEXT NOT NULL,
+        organisation TEXT NOT NULL,
+        category TEXT NOT NULL CHECK (category IN ('A','B','C')),
+        category_origin TEXT NOT NULL,
+        nature TEXT,
+        published_at TEXT,
+        accessed_at TEXT NOT NULL,
+        consultation TEXT NOT NULL CHECK (consultation IN ('resultat_recherche','page_lue_agent','page_verifiee')),
+        availability TEXT NOT NULL CHECK (availability IN ('disponible','indisponible','inaccessible_environnement','non_verifiee')),
+        http_status INTEGER,
+        content_sha256 TEXT,
+        text_path TEXT,
+        limitations TEXT,
+        notes TEXT
+    );
+    CREATE TABLE subjects (
+        id INTEGER PRIMARY KEY,
+        uid TEXT NOT NULL UNIQUE,
+        title TEXT NOT NULL,
+        subject TEXT NOT NULL,
+        angle TEXT NOT NULL,
+        family TEXT NOT NULL,
+        territory TEXT NOT NULL,
+        temporality TEXT NOT NULL,
+        interest TEXT NOT NULL,
+        hook TEXT NOT NULL,
+        summary TEXT NOT NULL,
+        entities_json TEXT NOT NULL DEFAULT '[]',
+        formats_json TEXT NOT NULL DEFAULT '[]',
+        episodes INTEGER NOT NULL DEFAULT 1,
+        visual_potential TEXT,
+        difficulty INTEGER,
+        risks_json TEXT NOT NULL DEFAULT '[]',
+        ratings_json TEXT NOT NULL DEFAULT '{}',
+        score_json TEXT NOT NULL DEFAULT '{}',
+        priority REAL,
+        flags_json TEXT NOT NULL DEFAULT '[]',
+        dedup_json TEXT NOT NULL DEFAULT '[]',
+        status TEXT NOT NULL,
+        run_id INTEGER REFERENCES research_runs(id),
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+    );
+    CREATE TABLE subject_sources (
+        subject_id INTEGER NOT NULL REFERENCES subjects(id),
+        source_id INTEGER NOT NULL REFERENCES sources(id),
+        role TEXT,
+        PRIMARY KEY (subject_id, source_id)
+    );
+    CREATE TABLE claims (
+        id INTEGER PRIMARY KEY,
+        subject_id INTEGER NOT NULL REFERENCES subjects(id),
+        text TEXT NOT NULL,
+        kind TEXT NOT NULL CHECK (kind IN ('fait','chiffre','declaration','opinion','hypothese')),
+        importance TEXT NOT NULL CHECK (importance IN ('cle','secondaire')),
+        status TEXT NOT NULL,
+        status_detail TEXT,
+        notes TEXT
+    );
+    CREATE TABLE claim_evidence (
+        id INTEGER PRIMARY KEY,
+        claim_id INTEGER NOT NULL REFERENCES claims(id),
+        source_id INTEGER NOT NULL REFERENCES sources(id),
+        stance TEXT NOT NULL CHECK (stance IN ('soutient','contredit','nuance')),
+        excerpt TEXT NOT NULL,
+        excerpt_check TEXT NOT NULL
+    );
+    CREATE TABLE subject_events (
+        id INTEGER PRIMARY KEY,
+        subject_id INTEGER NOT NULL REFERENCES subjects(id),
+        from_status TEXT, to_status TEXT NOT NULL,
+        note TEXT, actor TEXT NOT NULL, at TEXT NOT NULL
+    );
+    CREATE TABLE subject_notes (
+        id INTEGER PRIMARY KEY,
+        subject_id INTEGER NOT NULL REFERENCES subjects(id),
+        note TEXT NOT NULL, actor TEXT NOT NULL, at TEXT NOT NULL
+    );
+    CREATE INDEX idx_subjects_status ON subjects(status);
+    CREATE INDEX idx_claims_subject ON claims(subject_id);
+    CREATE INDEX idx_hits_run ON search_hits(run_id)
+    """,
 ]
 
 

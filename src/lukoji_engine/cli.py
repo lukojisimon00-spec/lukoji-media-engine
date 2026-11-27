@@ -126,6 +126,117 @@ def cmd_social(a):
     return 0
 
 
+# ---------------------------------------------------------------------------
+# Phase 1 : recherche, sources, sujets
+# ---------------------------------------------------------------------------
+def cmd_research_discover(a):
+    from .providers import discover
+    from .subjects import finish_run, start_run
+    from .db import now
+    db = _db()
+    run_id = start_run(db, "collecteurs", {"requete": a.query, "collecteurs": a.providers})
+    results = discover(a.query, a.providers.split(",") if a.providers else None)
+    errors, total = [], 0
+    for r in results:
+        if r.error:
+            errors.append({"collecteur": r.provider, **r.error})
+            print(f"[{r.provider}] ÉCHEC ({r.error['type']}) : {r.error['detail'][:200]}")
+            continue
+        print(f"[{r.provider}] {len(r.hits)} résultat(s)")
+        for h in r.hits:
+            total += 1
+            db.conn.execute("INSERT INTO search_hits (run_id, provider, query, rank, title, url, source_name, published_at,"
+                            " snippet, retrieved_at) VALUES (?,?,?,?,?,?,?,?,?,?)",
+                            (run_id, h.provider, h.query, h.rank, h.title, h.url, h.source_name, h.published_at,
+                             h.snippet, now()))
+            print(f"   {h.rank:2d}. {h.title[:90]} — {h.source_name or ''} {h.published_at or ''}\n       {h.url}")
+    status = "termine" if not errors else ("echec" if total == 0 else "termine_avec_limites")
+    finish_run(db, run_id, status, errors, f"{total} piste(s) — résultats de recherche, NON des preuves")
+    print(f"Session {run_id} : {status} · {total} piste(s) enregistrée(s) (niveau « resultat_recherche »)")
+    return 0 if total or not errors else 3
+
+
+def cmd_research_import(a):
+    from .subjects import DossierError, import_dossier
+    db = _db()
+    try:
+        rep = import_dossier(db, a.dossier, fetch=not a.no_fetch, allow_same_subject=a.allow_same_subject)
+    except DossierError as e:
+        print(str(e))
+        return 1
+    print(f"Session de recherche {rep['run_id']}")
+    for s in rep["sources"]:
+        print(f"  source {s['id']:4s} [{s['categorie']}] {s['organisation'][:28]:28s} {s['consultation']:18s} {s['disponibilite']}")
+    for p in rep["propositions"]:
+        print(f"  + {p['uid']} prio {p['priorite']:5.1f} (attrait {p['attrait']}, solidité {p['solidite']}) {p['titre']}")
+        if p["drapeaux"]:
+            print(f"      signalements : {', '.join(p['drapeaux'])}")
+    for r in rep["refusees"]:
+        d = r["doublon_de"]
+        print(f"  ✗ REFUSÉE (doublon de {d['ref']} « {d['title']} », {d['status']}) : {r['titre']} — {r['conseil']}")
+    if a.json:
+        Path(a.json).write_text(json.dumps(rep, ensure_ascii=False, indent=2))
+    return 0
+
+
+def cmd_sources(a):
+    db = _db()
+    if a.action == "list":
+        for r in db.conn.execute("SELECT * FROM sources ORDER BY category, organisation"):
+            print(f"[{r['category']}] {r['organisation'][:30]:30s} {r['consultation']:18s} {r['availability']:26s} {r['url']}")
+        return 0
+    if a.action == "check":
+        from . import sources as src
+        bad = 0
+        for r in db.conn.execute("SELECT id, url FROM sources ORDER BY id").fetchall():
+            fr = src.fetch(r["url"])
+            print(f"{fr.availability:26s} {fr.http_status or '-':>4} {r['url']}" + (f"  ({fr.error})" if fr.error else ""))
+            bad += fr.availability != "disponible"
+            if fr.ok:
+                db.conn.execute("UPDATE sources SET availability='disponible', http_status=?, content_sha256=?, text_path=?"
+                                " WHERE id=?", (fr.http_status, fr.content_sha256, fr.text_path, r["id"]))
+            else:
+                db.conn.execute("UPDATE sources SET availability=?, http_status=? WHERE id=? AND availability != 'disponible'",
+                                (fr.availability, fr.http_status, r["id"]))
+        print(f"{bad} source(s) non récupérée(s) par le moteur")
+        return 0
+
+
+def cmd_sujets(a):
+    from . import mediacenter as mc
+    from . import subjects as sj
+    db = _db()
+    act = a.action
+    if act == "list":
+        print(mc.render_list(db, a.status.split(",") if a.status else None))
+    elif act == "show":
+        print(mc.render_show(db, a.uid[0]))
+    elif act == "compare":
+        if len(a.uid) < 2:
+            print("indiquer au moins deux UID"); return 1
+        print(mc.render_compare(db, a.uid))
+    elif act in ("valider", "rejeter", "reporter", "reactiver", "statut"):
+        target = {"valider": "valide", "rejeter": "rejete", "reporter": "reporte", "reactiver": "propose"}.get(act, a.to)
+        if not target:
+            print("--to requis pour « statut »"); return 1
+        for uid in a.uid:
+            s = sj.transition(db, uid, target, a.note or "", a.acteur)
+            print(f"{uid} → {s['status']}" + (f" (« {a.note} »)" if a.note else ""))
+    elif act == "note":
+        sj.add_note(db, a.uid[0], a.note or "", a.acteur)
+        print(f"Remarque enregistrée sur {a.uid[0]}")
+    elif act == "history":
+        print(mc.render_show(db, a.uid[0]).split("── Historique des décisions")[1])
+    elif act == "search":
+        q = " ".join(a.uid)
+        for r in sj.search_subjects(db, q, a.status.split(",") if a.status else None):
+            print(f"{r['pertinence']:.3f} {r['uid']} [{r['status']}] {r['title']}")
+    elif act == "html":
+        out = a.out or "var/out/media_center.html"
+        print(mc.write_html(db, out, a.status.split(",") if a.status else None))
+    return 0
+
+
 def cmd_content(a):
     db = _db()
     if a.action == "add":
@@ -184,6 +295,27 @@ def build_parser() -> argparse.ArgumentParser:
     sh = sub.add_parser("sheet", help="planche de contrôle visuel (zones + filigrane)")
     sh.add_argument("video"); sh.add_argument("output"); sh.add_argument("--times")
     sh.set_defaults(fn=cmd_sheet)
+
+    r = sub.add_parser("recherche", help="collecte de pistes (Wikipédia, GDELT, RSS) — pistes, pas preuves")
+    rs = r.add_subparsers(dest="raction", required=True)
+    rd = rs.add_parser("collecter"); rd.add_argument("query"); rd.add_argument("--providers")
+    rd.set_defaults(fn=cmd_research_discover)
+    ri = rs.add_parser("importer", help="importe un dossier de recherche (sources consultées + propositions)")
+    ri.add_argument("dossier"); ri.add_argument("--no-fetch", action="store_true", help="ne pas tenter de récupérer les pages")
+    ri.add_argument("--allow-same-subject", action="store_true"); ri.add_argument("--json")
+    ri.set_defaults(fn=cmd_research_import)
+
+    so = sub.add_parser("sources", help="sources enregistrées : list | check (disponibilité)")
+    so.add_argument("action", choices=["list", "check"]); so.set_defaults(fn=cmd_sources)
+
+    sj = sub.add_parser("sujets", help="Media Center V0 : consulter et décider")
+    sj.add_argument("action", choices=["list", "show", "compare", "valider", "rejeter", "reporter", "reactiver",
+                                       "statut", "note", "history", "search", "html"])
+    sj.add_argument("uid", nargs="*", help="UID (ou texte pour « search »)")
+    sj.add_argument("--note"); sj.add_argument("--status", help="filtre, ex. propose,reporte")
+    sj.add_argument("--to", help="statut cible pour « statut »"); sj.add_argument("--out")
+    sj.add_argument("--acteur", default="editeur")
+    sj.set_defaults(fn=cmd_sujets)
 
     c = sub.add_parser("content", help="registre des contenus")
     c.add_argument("action", choices=["list", "add", "move", "history"])

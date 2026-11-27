@@ -1,0 +1,174 @@
+# LUKOJI MEDIA ENGINE — recherche, sources, score éditorial, doublons (phase 1)
+# Fichier public : aucun secret. Toutes les règles sont modifiables ici.
+
+[recherche]
+agent_utilisateur = "LukojiMediaEngine/0.2 (recherche editoriale)"
+delai_reseau_s = 15
+max_resultats_par_requete = 10
+# Langues de travail (public francophone élargi, sources internationales acceptées).
+langues = ["fr", "en"]
+
+# ---------------------------------------------------------------------------
+# Familles éditoriales explorées (diversité obligatoire : pas uniquement l'actualité).
+# sensible = exige plusieurs sources indépendantes pour CHAQUE fait clé.
+# ---------------------------------------------------------------------------
+[familles]
+business = { label = "Business et entrepreneuriat", sensible = false }
+histoire_entreprise = { label = "Histoires d'entreprises", sensible = false }
+economie = { label = "Économie", sensible = false }
+tech_ia = { label = "Technologie et intelligence artificielle", sensible = false }
+histoire = { label = "Histoire", sensible = false }
+geopolitique = { label = "Géopolitique", sensible = true }
+societe = { label = "Société", sensible = false }
+geographie = { label = "Géographie", sensible = false }
+personnalites = { label = "Personnalités et parcours", sensible = false }
+innovation = { label = "Innovations", sensible = false }
+echec_entreprise = { label = "Échecs d'entreprises", sensible = false }
+scandale = { label = "Scandales documentés", sensible = true }
+histoire_meconnue = { label = "Histoires méconnues", sensible = false }
+culture = { label = "Phénomènes culturels", sensible = false }
+decision_economique = { label = "Grandes décisions économiques", sensible = false }
+reussite_faillite = { label = "Récits de réussite et de faillite", sensible = false }
+enquete = { label = "Enquêtes documentaires", sensible = true }
+
+[territoires]
+valeurs = ["rdc", "afrique_centrale", "afrique_ouest", "afrique_est", "afrique_australe", "afrique_nord",
+           "afrique", "europe", "ameriques", "asie", "moyen_orient", "oceanie", "monde"]
+
+[temporalite]
+valeurs = ["actualite", "tendance", "intemporel", "historique"]
+
+# ---------------------------------------------------------------------------
+# Collecteurs automatiques (découverte). Ils nécessitent un accès réseau aux hôtes
+# indiqués ; si l'environnement les bloque, l'échec est journalisé (jamais simulé).
+# ---------------------------------------------------------------------------
+[collecteurs.wikipedia]
+actif = true
+langues = ["fr", "en"]
+hote = "{lang}.wikipedia.org"
+
+[collecteurs.gdelt]
+actif = true
+url = "https://api.gdeltproject.org/api/v2/doc/doc"
+periode = "3months"
+
+[collecteurs.rss]
+actif = true
+flux = [
+  { nom = "RFI Afrique", url = "https://www.rfi.fr/fr/afrique/rss" },
+  { nom = "Jeune Afrique", url = "https://www.jeuneafrique.com/feed/" },
+  { nom = "Agence Ecofin", url = "https://www.agenceecofin.com/rss" },
+  { nom = "Le Monde Afrique", url = "https://www.lemonde.fr/afrique/rss_full.xml" },
+  { nom = "BBC Afrique", url = "https://feeds.bbci.co.uk/afrique/rss.xml" },
+  { nom = "France 24 Afrique", url = "https://www.france24.com/fr/afrique/rss" },
+  { nom = "Radio Okapi", url = "https://www.radiookapi.net/rss.xml" },
+  { nom = "TechCabal", url = "https://techcabal.com/feed/" },
+]
+
+# ---------------------------------------------------------------------------
+# Registre des sources : domaine -> organisation, catégorie, nature.
+# A = primaire (officiel, données, rapport, publication originale, déclaration directe)
+# B = secondaire fiable (média réputé, analyse documentée, ouvrage, revue spécialisée)
+# C = complémentaire (blog, encyclopédie collaborative, réseau social, à confirmer)
+# Un domaine absent du registre est classé C, sauf catégorie DÉCLARÉE et justifiée dans
+# le dossier (signalée « à revoir » dans les propositions).
+# Les suffixes (ex. "gouv.fr") couvrent tous les sous-domaines.
+# ---------------------------------------------------------------------------
+[sources.domaines]
+"worldbank.org" = { org = "Banque mondiale", cat = "A", nature = "institution internationale" }
+"imf.org" = { org = "Fonds monétaire international", cat = "A", nature = "institution internationale" }
+"afdb.org" = { org = "Banque africaine de développement", cat = "A", nature = "institution internationale" }
+"un.org" = { org = "Organisation des Nations unies", cat = "A", nature = "institution internationale" }
+"unctad.org" = { org = "CNUCED", cat = "A", nature = "institution internationale" }
+"oecd.org" = { org = "OCDE", cat = "A", nature = "institution internationale" }
+"europa.eu" = { org = "Union européenne", cat = "A", nature = "institution officielle" }
+"state.gov" = { org = "Département d'État des États-Unis", cat = "A", nature = "gouvernement" }
+"gouv.fr" = { org = "Gouvernement français", cat = "A", nature = "gouvernement" }
+"gouv.cd" = { org = "Gouvernement de la RDC", cat = "A", nature = "gouvernement" }
+"bcc.cd" = { org = "Banque centrale du Congo", cat = "A", nature = "banque centrale" }
+"gsma.com" = { org = "GSMA", cat = "A", nature = "rapport sectoriel" }
+"safaricom.co.ke" = { org = "Safaricom", cat = "A", nature = "entreprise (communication officielle)" }
+"sec.gov" = { org = "SEC (États-Unis)", cat = "A", nature = "régulateur" }
+"justice.gov" = { org = "Département de la Justice des États-Unis", cat = "A", nature = "justice" }
+"nobelprize.org" = { org = "Fondation Nobel", cat = "A", nature = "publication originale" }
+"nature.com" = { org = "Nature", cat = "A", nature = "revue scientifique" }
+"science.org" = { org = "Science (AAAS)", cat = "A", nature = "revue scientifique" }
+"arxiv.org" = { org = "arXiv", cat = "A", nature = "prépublication scientifique (non relue)" }
+"rfi.fr" = { org = "RFI", cat = "B", nature = "média" }
+"jeuneafrique.com" = { org = "Jeune Afrique", cat = "B", nature = "média" }
+"agenceecofin.com" = { org = "Agence Ecofin", cat = "B", nature = "média économique" }
+"lemonde.fr" = { org = "Le Monde", cat = "B", nature = "média" }
+"france24.com" = { org = "France 24", cat = "B", nature = "média" }
+"bbc.com" = { org = "BBC", cat = "B", nature = "média" }
+"bbc.co.uk" = { org = "BBC", cat = "B", nature = "média" }
+"reuters.com" = { org = "Reuters", cat = "B", nature = "agence de presse" }
+"apnews.com" = { org = "Associated Press", cat = "B", nature = "agence de presse" }
+"afp.com" = { org = "AFP", cat = "B", nature = "agence de presse" }
+"lesechos.fr" = { org = "Les Échos", cat = "B", nature = "média économique" }
+"lefigaro.fr" = { org = "Le Figaro", cat = "B", nature = "média" }
+"liberation.fr" = { org = "Libération", cat = "B", nature = "média" }
+"ft.com" = { org = "Financial Times", cat = "B", nature = "média économique" }
+"economist.com" = { org = "The Economist", cat = "B", nature = "média économique" }
+"bloomberg.com" = { org = "Bloomberg", cat = "B", nature = "média économique" }
+"nytimes.com" = { org = "The New York Times", cat = "B", nature = "média" }
+"theguardian.com" = { org = "The Guardian", cat = "B", nature = "média" }
+"washingtonpost.com" = { org = "The Washington Post", cat = "B", nature = "média" }
+"wsj.com" = { org = "The Wall Street Journal", cat = "B", nature = "média économique" }
+"cnbc.com" = { org = "CNBC", cat = "B", nature = "média économique" }
+"radiookapi.net" = { org = "Radio Okapi (MONUSCO)", cat = "B", nature = "média" }
+"actualite.cd" = { org = "Actualite.cd", cat = "B", nature = "média" }
+"theafricareport.com" = { org = "The Africa Report", cat = "B", nature = "média" }
+"techcabal.com" = { org = "TechCabal", cat = "B", nature = "média spécialisé" }
+"britannica.com" = { org = "Encyclopædia Britannica", cat = "B", nature = "ouvrage de référence" }
+"smithsonianmag.com" = { org = "Smithsonian Magazine", cat = "B", nature = "revue" }
+"nationalgeographic.com" = { org = "National Geographic", cat = "B", nature = "revue" }
+"hbr.org" = { org = "Harvard Business Review", cat = "B", nature = "revue spécialisée" }
+"cairn.info" = { org = "Cairn.info", cat = "B", nature = "revues académiques" }
+"persee.fr" = { org = "Persée", cat = "B", nature = "revues académiques" }
+"openedition.org" = { org = "OpenEdition", cat = "B", nature = "revues académiques" }
+"universalis.fr" = { org = "Encyclopædia Universalis", cat = "B", nature = "ouvrage de référence" }
+"ina.fr" = { org = "INA", cat = "B", nature = "archives audiovisuelles" }
+"wikipedia.org" = { org = "Wikipédia", cat = "C", nature = "encyclopédie collaborative" }
+"medium.com" = { org = "Medium", cat = "C", nature = "blog" }
+"substack.com" = { org = "Substack", cat = "C", nature = "blog" }
+"x.com" = { org = "X", cat = "C", nature = "réseau social" }
+"twitter.com" = { org = "X (Twitter)", cat = "C", nature = "réseau social" }
+"facebook.com" = { org = "Facebook", cat = "C", nature = "réseau social" }
+"linkedin.com" = { org = "LinkedIn", cat = "C", nature = "réseau social" }
+"youtube.com" = { org = "YouTube", cat = "C", nature = "plateforme vidéo" }
+"reddit.com" = { org = "Reddit", cat = "C", nature = "forum" }
+
+# ---------------------------------------------------------------------------
+# Règles de confirmation des faits (calculées, jamais déclarées).
+# ---------------------------------------------------------------------------
+[verification]
+# Niveaux de consultation reconnus, du plus faible au plus fort.
+#   resultat_recherche : titre + extrait d'un moteur de recherche (jamais une preuve)
+#   page_lue_agent     : page complète lue par l'agent de lecture ; extraits rapportés mot pour mot
+#   page_verifiee      : page récupérée par le moteur ; extrait retrouvé dans le texte
+niveaux_probants = ["page_lue_agent", "page_verifiee"]
+# Un fait est CONFIRMÉ si : 1 source A probante, OU ≥ 2 sources A/B probantes d'organisations distinctes.
+# Fait d'un sujet SENSIBLE : ≥ 2 sources A/B probantes d'organisations distinctes, sans exception.
+min_sources_independantes = 2
+# Une source C ne confirme jamais rien.
+
+# ---------------------------------------------------------------------------
+# Score éditorial (version de formule versionnée, voir docs/SCORE_EDITORIAL.md)
+# ---------------------------------------------------------------------------
+[score]
+version = "1.0"
+# Attrait : critères éditoriaux notés 1–5 avec justification obligatoire.
+poids_attrait = { potentiel_narratif = 0.22, interet_public = 0.20, originalite = 0.16, potentiel_visuel = 0.14, potentiel_hook = 0.14, pertinence_lukoji = 0.14 }
+# Seuils d'alerte
+solidite_min_prioritaire = 50     # en dessous : « insuffisamment documenté », non prioritaire
+risque_juridique_alerte = 4       # ≥ 4 : risque élevé signalé
+
+# ---------------------------------------------------------------------------
+# Doublons : comparaison du sujet (titre + sujet + entités) ET de l'angle narratif.
+# ---------------------------------------------------------------------------
+[doublons]
+seuil_meme_sujet = 0.55           # similarité sujet ≥ seuil -> même sujet
+seuil_sujet_proche = 0.35         # sujet proche…
+seuil_angle_similaire = 0.45      # …ET angle ≥ seuil -> angle trop similaire
+# Corpus externes en LECTURE SEULE (contenus déjà publiés par LUKOJI ailleurs).
+corpus_externes = [{ nom = "blog LUKOJI", dossier = "../lukoji-blog/articles", statut = "publie" }]

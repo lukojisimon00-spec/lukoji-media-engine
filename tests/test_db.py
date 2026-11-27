@@ -13,8 +13,9 @@ def db():
 
 
 def test_migrations_are_idempotent(db):
+    from lukoji_engine.db import MIGRATIONS
     db.migrate(); db.migrate()
-    assert db.conn.execute("SELECT COUNT(*) FROM schema_migrations").fetchone()[0] == 1
+    assert db.conn.execute("SELECT COUNT(*) FROM schema_migrations").fetchone()[0] == len(MIGRATIONS)
 
 
 def test_content_lifecycle_and_history(db):
