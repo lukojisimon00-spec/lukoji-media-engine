@@ -1,0 +1,347 @@
+{
+ "niveaux": {
+  "CONFORME": 25,
+  "ALERTE": 18,
+  "RISQUE MAJEUR": 1,
+  "RECOMMANDATION": 4
+ },
+ "valide": false,
+ "controles": [
+  {
+   "niveau": "CONFORME",
+   "categorie": "verrou",
+   "controle": "versions validées intactes et reconstruction autorisée",
+   "detail": "reconstruction du storyboard : AUTORISÉE à partir des versions validées",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "verrou",
+   "controle": "storyboard du moteur construit sur le script v21 (et la direction v5)",
+   "detail": "storyboard v10 basé sur {'script': 21, 'visual': 5}",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "verrou",
+   "controle": "fichier storyboard_v2_6_2.json = version du moteur (v10)",
+   "detail": "v10",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "statut",
+   "controle": "projet en storyboard_draft",
+   "detail": "storyboard_draft",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "couverture",
+   "controle": "voix off reconstituée mot pour mot, champs requis (contrôle du moteur)",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "structure",
+   "controle": "les dix séquences du script validé sont couvertes",
+   "detail": "SEQ-01, SEQ-02, SEQ-03, SEQ-04, SEQ-05, SEQ-06, SEQ-07, SEQ-08, SEQ-09, SEQ-10",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "structure",
+   "controle": "correspondance avec les étapes de la structure v6",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "sources",
+   "controle": "faits affichés ⊂ faits de la séquence validée, aucun fait exclu",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "duree",
+   "controle": "durée du storyboard dans la cible 6–8 min",
+   "detail": "406.5 s ≈ 6.8 min (voix off seule : 399.0 s ; +7.5 s de silences et de tenues)",
+   "scene": ""
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "statisme",
+   "controle": "plan fixe sans mouvement graphique de plus de 9 s",
+   "detail": "9.6 s",
+   "scene": "SC-17"
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "transitions",
+   "controle": "chaque scène a une transition d'entrée et de sortie",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "RISQUE MAJEUR",
+   "categorie": "diversite",
+   "controle": "part du motion design ≤ 60 %",
+   "detail": "31/50 (62%) · types : {'illustration': 2, 'document': 7, 'reconstitution': 3, 'typographie_animee': 11, 'carte': 7, 'graphique': 7, 'animation': 2, 'infographie': 4, 'photo_lieu': 3, 'archive_photo': 2, 'plan_ambiance': 2}",
+   "scene": ""
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "diversite",
+   "controle": "pas plus de 4 plans de motion design consécutifs",
+   "detail": "suite maximale : 7 (jusqu'à SC-37)",
+   "scene": ""
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "repetition",
+   "controle": "même ressource utilisée 3 fois ou plus",
+   "detail": "R12 (Page Vodafone « M-Pesa: creating the leading mobile money se) : 3 scènes",
+   "scene": ""
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "repetition",
+   "controle": "même ressource utilisée 3 fois ou plus",
+   "detail": "R04 (Kiosque M-Pesa au Kenya (description du fichier : « Safarico) : 3 scènes",
+   "scene": ""
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "repetition",
+   "controle": "même ressource utilisée 3 fois ou plus",
+   "detail": "R06 (Bâtiment de la Banque centrale du Kenya en 2007) : 3 scènes",
+   "scene": ""
+  },
+  {
+   "niveau": "RECOMMANDATION",
+   "categorie": "motion",
+   "controle": "fiche de motion design à détailler",
+   "detail": "carte",
+   "scene": "SC-09"
+  },
+  {
+   "niveau": "RECOMMANDATION",
+   "categorie": "motion",
+   "controle": "fiche de motion design à détailler",
+   "detail": "carte",
+   "scene": "SC-49"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R26",
+   "scene": "SC-02"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R12",
+   "scene": "SC-08"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R29",
+   "scene": "SC-10"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R12",
+   "scene": "SC-11"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R12",
+   "scene": "SC-15"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "sourcing",
+   "controle": "ressource non obtenue (substitut prévu)",
+   "detail": "R15",
+   "scene": "SC-23"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R24",
+   "scene": "SC-30"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R27",
+   "scene": "SC-31"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R31",
+   "scene": "SC-41"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R30",
+   "scene": "SC-42"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "droits",
+   "controle": "document à capturer ; droits de citation à confirmer",
+   "detail": "R32",
+   "scene": "SC-44"
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "sourcing",
+   "controle": "URL exacte du communiqué Safaricom non relevée",
+   "detail": "R31",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "images_generees",
+   "controle": "aucune image générée par IA",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "reconstitution",
+   "controle": "reconstitutions mentionnées à l'écran",
+   "detail": "SC-03, SC-18, SC-47",
+   "scene": ""
+  },
+  {
+   "niveau": "ALERTE",
+   "categorie": "reconstitution",
+   "controle": "inserts à tourner (table, mains, téléphone) ; illustration prévue en remplacement",
+   "detail": "SC-03, SC-18, SC-47",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "authenticite",
+   "controle": "images d'illustration et illustrations mentionnées",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "complexite",
+   "controle": "aucune scène de difficulté élevée",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "RECOMMANDATION",
+   "categorie": "audio",
+   "controle": "choisir et créditer les sons Freesound et la musique avant montage (aucun son sélectionné)",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "audio",
+   "controle": "chaque scène a une ambiance et une intention musicale",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "RECOMMANDATION",
+   "categorie": "rythme",
+   "controle": "SEQ-08 enchaîne graphiques et schémas : prévoir une respiration visuelle si le test d'écoute montre un décrochage",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "version",
+   "controle": "storyboard courant = v10",
+   "detail": "v10",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "fidelite",
+   "controle": "mêmes 50 scènes que la v9, sans nouveau découpage",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "fidelite",
+   "controle": "voix off et durées déclarées identiques à la v9 (silences conservés)",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "fidelite",
+   "controle": "faits affichés identiques à la v9 (aucun fait ni chiffre nouveau)",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "fidelite",
+   "controle": "seules les scènes décidées sont modifiées",
+   "detail": "SC-01, SC-05, SC-17, SC-20, SC-34, SC-39, SC-45, SC-47",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "decisions",
+   "controle": "aucune dépendance à R02 ou R03",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "decisions",
+   "controle": "R02 et R03 toujours déclarées non inspectées",
+   "detail": "",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "decisions",
+   "controle": "SC-01 : R01 remplacée par carte + autocar dessiné, mentionné ILLUSTRATION",
+   "detail": "R20, R22",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "decisions",
+   "controle": "SC-34 : référence typographique originale, aucune page de Science",
+   "detail": "R21",
+   "scene": ""
+  },
+  {
+   "niveau": "CONFORME",
+   "categorie": "decisions",
+   "controle": "R01 et R28 absentes de toutes les scènes",
+   "detail": "",
+   "scene": ""
+  }
+ ]
+}

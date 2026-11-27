@@ -186,3 +186,21 @@ def test_revue_2_6_1_tracabilite_et_storyboard_intact():
     assert v26["R04"]["statut"] == "metadonnees_verifiees"  # registre v2.6 conservé tel quel
     sb = _load(SB26)
     assert len(sb["scenes"]) == 50 and sb["base_validee"] == {"script": 21, "structure": 6}
+
+
+SB262 = ROOT / "research/stories/mpesa/v2_6_2/storyboard_v2_6_2.json"
+
+
+@pytest.mark.skipif(not SB262.exists(), reason="storyboard v2.6.2 absent")
+def test_storyboard_v10_corrections_ciblees():
+    v9, v10 = _load(SB26), _load(SB262)
+    assert [s["id"] for s in v9["scenes"]] == [s["id"] for s in v10["scenes"]]
+    for a, b in zip(v9["scenes"], v10["scenes"]):
+        assert a["voix_off"] == b["voix_off"] and a.get("duree_s") == b.get("duree_s") and a["source_factuelle"] == b["source_factuelle"], a["id"]
+        assert not set(b["ressources"]) & {"R01", "R02", "R03", "R28"}, b["id"]
+        if b["authenticite"] in ("symbolique", "illustration", "reconstitution"):
+            assert b.get("mention_ecran"), b["id"]
+    changed = [b["id"] for a, b in zip(v9["scenes"], v10["scenes"]) if a != b]
+    assert changed == ["SC-01", "SC-05", "SC-17", "SC-20", "SC-34", "SC-39", "SC-45", "SC-47"]
+    reg = {r["id"]: r for r in _load(ROOT / "research/stories/mpesa/v2_6_2/ressources_visuelles_v2_6_2.json")["ressources"]}
+    assert reg["R02"]["statut"] != "contenu_inspecte" and reg["R03"]["statut"] != "contenu_inspecte"

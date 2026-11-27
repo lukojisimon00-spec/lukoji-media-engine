@@ -1,0 +1,2611 @@
+{
+ "schema": "lukoji.storyboard/1.0",
+ "genere_le": "2026-11-27T16:09:40Z",
+ "projet": {
+  "id": "STO-20261127-001",
+  "titre": "Quand les clients ont changé le produit",
+  "sujet": "SUJ-20261127-002",
+  "format": "documentaire_long",
+  "profil_rendu": "youtube_16x9",
+  "statut": "storyboard_draft",
+  "versions": {
+   "research": 4,
+   "hooks": 5,
+   "structure": 6,
+   "script": 21,
+   "storyboard": 10,
+   "visual": 5
+  }
+ },
+ "rythme": {
+  "mots_par_minute": 150,
+  "pause_entre_sequences_s": 0.6,
+  "duree_totale_s": 406.5
+ },
+ "direction_artistique": {
+  "titre": "Le fil de l'argent — version 2 (resserrée)",
+  "version_editoriale": "v2 — révision corrective (audit humain 70d0f17)",
+  "style_general": "Documentaire éditorial sobre en trois registres seulement : (1) DOCUMENTS RÉELS — captures de pages citées, photographies identifiées (auteur, date, licence) ; (2) CARTE ET CHIFFRES — une carte unique du Kenya qui revient à quatre moments du récit, un gabarit unique pour les chiffres ; (3) ILLUSTRATION AU TRAIT — dessins LUKOJI (noir, blanc cassé, orange) pour les mécanismes et pour tout ce dont aucune image réelle n'existe, toujours mentionnés « ILLUSTRATION ». Le fil orange n'apparaît qu'aux trois moments où l'argent circule réellement dans le récit : le détournement (SEQ-04), le mécanisme (SEQ-05), la conclusion (SEQ-10).",
+  "atmosphere": "Sobriété et précision. Les rares photos réelles (agents à Nairobi, Banque centrale en mars 2007) portent la chaleur du terrain ; les séquences chiffrées restent froides (fond noir, typographie nette). Aucune image ne prétend montrer ce qui n'a pas été photographié.",
+  "palette": {
+   "dominantes": [
+    "#0B0B0B",
+    "#F6F6F3"
+   ],
+   "accents": [
+    "#FF8A00",
+    "#FFD23F"
+   ],
+   "neutres": [
+    "#9A9A9A",
+    "#555555"
+   ],
+   "justification": "Charte LUKOJI uniquement. Orange #FF8A00 : le fil de l'argent (trois apparitions) et le trait des illustrations. Jaune #FFD23F : chiffres-clés. Aucune couleur de marque de M-Pesa ou de Safaricom (pas de promotion) ; les photos réelles ne sont pas recolorées."
+  },
+  "typographie": {
+   "titres": "Archivo Black, capitales, pour les chiffres-clés, les dates et les titres de chapitre",
+   "labels": "IBM Plex Mono pour les sources, les légendes photo (lieu, date, auteur, licence) et les mentions (« ILLUSTRATION », « IMAGE D'ILLUSTRATION »)",
+   "citations": "Citations courtes en IBM Plex Mono, langue originale en petit sous la traduction (ex. « So we took a chance »)",
+   "regle": "Tout chiffre affiché porte sa source et sa date en IBM Plex Mono, en bas à gauche, pendant toute sa durée d'affichage. Toute photo porte sa légende (lieu, date, auteur, licence)."
+  },
+  "texture": "Aplats nets, pas de grain artificiel, pas de faux vieillissement d'image, pas de « glitch ». Les captures de pages sont présentées plein cadre sur fond #0B0B0B, avec un simple trait orange fixe sous la phrase citée (pas de surlignage animé systématique).",
+  "realisme": "Réalisme documentaire pour les photos et documents réels ; stylisation graphique assumée et signalée pour les mécanismes. Une photo d'aujourd'hui n'est jamais présentée comme une archive ; une photo d'un autre pays n'est jamais présentée comme kényane.",
+  "archives": "Seules les ressources réellement identifiées sont utilisées (registre ressources_visuelles_v2.json : URL directe, auteur, date, licence, conditions). Licences CC BY / CC BY-SA : crédit à l'écran et au générique ; CC BY-SA : une image recadrée ou modifiée est redistribuée sous la même licence. Aucune archive des années 2005-2007 au Kenya (gare routière, prototype de Thika) n'a été trouvée : ces moments sont traités en illustration ou en typographie, jamais en fausse archive. Les captures de pages (Vodafone, MIT News, OpenEdition, Agence Ecofin) sont des citations courtes, légendées avec l'URL et la date de consultation.",
+  "cartes": "UNE carte du Kenya (aplats #555555 sur #0B0B0B, frontières Natural Earth, domaine public) qui revient à quatre moments : contexte (SEQ-02), Thika (SEQ-03), le détournement (SEQ-04, premier fil orange), la conclusion (SEQ-10, fils denses). Villes en IBM Plex Mono ; Thika et Nairobi placées exactement ; pas de relief, pas de globe 3D, pas de caméra simulée. Une seule carte d'Afrique (SEQ-07) pour situer la RDC.",
+  "graphiques": "Un seul gabarit : une donnée par écran, barre ou chiffre plat, valeur en Archivo Black jaune, unité, date et source toujours visibles. Le graphique de l'inclusion financière est le même objet en SEQ-02 (27 %, 2006) et en SEQ-08 (83 %, 2019) : la barre repart de là où on l'avait laissée. Jamais deux unités différentes sur un même axe ; pas de camembert.",
+  "motion": "Plans fixes par défaut. Un mouvement n'est autorisé que s'il a une fonction : suivre le fil (SEQ-04, SEQ-05), faire monter une barre, révéler une ligne de citation. Aucun zoom lent décoratif, aucune parallaxe sur photo d'archive, aucune caméra 3D simulée, aucun « morphing » d'icônes.",
+  "transitions": "Coupe franche par défaut. Le fil orange sert de raccord seulement dans SEQ-04 et SEQ-05. Coupe au noir avec une seconde de silence avant SEQ-09 (« Ce succès a un prix »). Fondu au noir uniquement à la fin, avant la signature LUKOJI.",
+  "sound_design": "Voix off posée, en avant. Bip de SMS trois fois seulement (SEQ-01, SEQ-05, SEQ-10). Ambiances réelles libres de droits (Freesound, licence CC0 ou CC BY à créditer) sous les photos de rue ; nappe grave sobre sous les séquences chiffrées ; silence d'une seconde avant SEQ-09. Musique : bibliothèque libre de droits ou composition maison, à créditer.",
+  "regles_reconstitution": "Aucune reconstitution jouée dans la v2 (tournage non disponible gratuitement). Si une reconstitution est ajoutée plus tard (tournage LUKOJI à Kinshasa, par exemple) : mention « RECONSTITUTION » pendant toute la scène, aucun visage présenté comme un acteur réel de l'histoire, aucun faux document.",
+  "regles_generation_images": "Aucune image générée par IA dans ce documentaire. Une image générée ne pourrait jamais représenter une personne, un lieu, un document ou un événement réels ; elle porterait la mention « IMAGE GÉNÉRÉE » et ne remplacerait jamais une archive manquante.",
+  "categories_visuelles": {
+   "authentique": "Photographies et documents réels identifiés dans le registre (URL directe, auteur, date, licence) : légende lieu + date + auteur + licence ; jamais retouchés hors recadrage ; une photo récente est datée comme telle.",
+   "illustration": "Dessins au trait LUKOJI expliquant un mécanisme (microcrédit, SMS, carte SIM, interface neutre) : mention « ILLUSTRATION » à l'écran.",
+   "reconstitution": "Non utilisée dans la v2 (voir regles_reconstitution).",
+   "graphique_explicatif": "Carte unique, chiffres, typographie de citations : source, unité et date visibles ; données exactement celles des faits cités.",
+   "image_generee": "Non utilisée (voir regles_generation_images).",
+   "symbolique": "Photo réelle utilisée pour évoquer, et non pour montrer, ce dont parle la voix off (ex. un matatu de 2025 pendant l'anecdote du chauffeur de bus) : mention « IMAGE D'ILLUSTRATION » avec lieu et date réels de la photo."
+  },
+  "references_a_eviter": [
+   "esthétique publicitaire de marque, vert institutionnel de l'opérateur",
+   "banques d'images « Afrique générique », clichés de pauvreté misérabiliste",
+   "photo d'une personne identifiable associée à une statistique de pauvreté",
+   "écrans de marques réelles (application M-Pesa, sites de paris)",
+   "zooms lents en série, parallaxe, 3D simulée, morphing d'icônes",
+   "surlignage animé systématique des captures"
+  ]
+ },
+ "sequences": [
+  {
+   "id": "SEQ-01",
+   "titre": "Jours de voyage, quelques SMS",
+   "etape": "E1",
+   "voix_off": "Pour envoyer de l'argent à sa famille, au Kenya, on pouvait voyager pendant des jours. Ou confier son argent à une compagnie de bus, et attendre. Aujourd'hui, quelques SMS suffisent. Le service s'appelle M-Pesa. Et ses concepteurs ne l'avaient pas inventé pour ça.",
+   "debut_s": 0.0,
+   "fin_s": 19.2,
+   "duree_voix_s": 17.2,
+   "objectif": "Ouvrir sur une scène concrète (le chauffeur de bus) et poser une question sans y répondre : pour quoi ce service a-t-il été conçu ?",
+   "emotion": "curiosité, étonnement",
+   "transition": "Coupe franche sur le noir, puis carton « KENYA, 2006 » : avant la réponse, le problème.",
+   "faits": [
+    "F61",
+    "F72",
+    "F73",
+    "F43"
+   ],
+   "sources": [
+    "S6",
+    "S38",
+    "S42",
+    "S43"
+   ]
+  },
+  {
+   "id": "SEQ-02",
+   "titre": "Hors des banques",
+   "etape": "E2",
+   "voix_off": "Au milieu des années deux mille, la distance n'est pas le seul obstacle. Une enquête nationale, FinAccess, le mesure. En 2006, seuls 26,7 % des adultes kényans utilisent un service financier formel, comme une banque ou une assurance. Ce manque intéresse un acteur venu de loin : le ministère britannique du Développement international. Il cherche des entreprises capables d'inventer des services pour les personnes qui n'ont pas de compte. Selon Vodafone, l'entreprise saisit l'occasion et obtient une subvention.",
+   "debut_s": 19.8,
+   "fin_s": 51.8,
+   "duree_voix_s": 32.0,
+   "objectif": "Installer le problème avec un chiffre antérieur au lancement (2006) et introduire l'acteur qui finance le projet.",
+   "emotion": "empathie, attente",
+   "transition": "Une subvention, un opérateur kényan : le projet prend forme.",
+   "faits": [
+    "F74",
+    "F41"
+   ],
+   "sources": [
+    "S39",
+    "S38",
+    "S6",
+    "S32"
+   ]
+  },
+  {
+   "id": "SEQ-03",
+   "titre": "Le prototype de Thika",
+   "etape": "E3",
+   "voix_off": "Au Kenya, le projet se monte avec l'opérateur Safaricom. Ce qui suit, on le connaît surtout par ceux qui l'ont mené. Un article publié en 2007 par deux responsables du projet. Puis un texte de Michael Joseph, ancien directeur général de Safaricom, publié par Vodafone en 2017. Selon ces récits, il ne s'agit pas, au départ, d'envoyer de l'argent. L'équipe travaille sur le microcrédit : verser de petits prêts par téléphone, et les faire rembourser de la même façon. Le prototype est testé à partir d'octobre 2005, à Nairobi et à Thika, au nord de la capitale.",
+   "debut_s": 52.4,
+   "fin_s": 93.2,
+   "duree_voix_s": 40.8,
+   "objectif": "Révéler l'intention initiale (le microcrédit) en disant d'où vient ce récit : l'équipe projet et Vodafone, pas une enquête indépendante.",
+   "emotion": "intérêt, surprise",
+   "transition": "Le test commence. Et les clients ne font pas ce qui était prévu.",
+   "faits": [
+    "F42",
+    "F76",
+    "F62",
+    "F8"
+   ],
+   "sources": [
+    "S32",
+    "S29",
+    "S42",
+    "S6",
+    "S24"
+   ]
+  },
+  {
+   "id": "SEQ-04",
+   "titre": "Le détournement",
+   "etape": "E4",
+   "voix_off": "Sur le terrain, les clients font autre chose. D'après Michael Joseph, ceux qui reçoivent un prêt envoient l'argent à d'autres personnes, parfois à des centaines de kilomètres. Le portable devient un coursier. Plutôt que de corriger cet usage, l'équipe décide de le suivre. « Alors nous avons pris un risque », raconte-t-il. Le système de prêts est reconstruit autour d'une seule fonction : envoyer de l'argent d'un téléphone à un autre.",
+   "debut_s": 93.8,
+   "fin_s": 121.0,
+   "duree_voix_s": 27.2,
+   "objectif": "Montrer le tournant : les clients détournent le prototype, l'équipe choisit de les suivre.",
+   "emotion": "surprise, déclic",
+   "transition": "Reste à faire entrer et sortir les billets du téléphone.",
+   "faits": [
+    "F8",
+    "F63",
+    "F9"
+   ],
+   "sources": [
+    "S6"
+   ]
+  },
+  {
+   "id": "SEQ-05",
+   "titre": "Une banque sans agences",
+   "etape": "E5",
+   "voix_off": "Reste un problème très concret : comment faire entrer des billets dans un téléphone, et les en faire sortir ? La réponse passe par des commerçants. Le client dépose ses espèces au comptoir. Quelques SMS plus tard, la somme est devenue de la monnaie électronique, stockée sur sa carte SIM. Il l'envoie. Plus loin, le destinataire retire les billets chez un commerçant de son quartier. Ces agents, raconte Vodafone, sont souvent de petites boutiques familiales, plus habituées à vendre des marchandises qu'à manipuler l'argent de leurs clients.",
+   "debut_s": 121.6,
+   "fin_s": 155.6,
+   "duree_voix_s": 34.0,
+   "objectif": "Expliquer le mécanisme en suivant une somme, de la main du client au retrait.",
+   "emotion": "compréhension, simplicité",
+   "transition": "Le mécanisme fonctionne. Reste à savoir qui a le droit de le faire fonctionner.",
+   "faits": [
+    "F43",
+    "F44"
+   ],
+   "sources": [
+    "S6"
+   ]
+  },
+  {
+   "id": "SEQ-06",
+   "titre": "Le régulateur et les banques",
+   "etape": "E6",
+   "voix_off": "Un opérateur de téléphonie qui fait circuler de l'argent : est-ce encore du téléphone, ou déjà de la banque ? Pour des banques, la réponse est claire. Selon Agence Ecofin, elles y voient une incursion dans leur métier : un opérateur ne peut pas exercer une activité bancaire sans licence. C'est à la Banque centrale du Kenya de trancher. Toujours selon cette agence, elle donne son feu vert, mais sous conditions. Un plafond de dépôt contre le blanchiment, la protection des clients, la sécurité des agents. Et chaque client doit être enregistré. M-Pesa est lancé en mars 2007. Mais la question de départ, elle, ne disparaîtra pas.",
+   "debut_s": 156.2,
+   "fin_s": 199.6,
+   "duree_voix_s": 42.4,
+   "objectif": "Poser une vraie question (téléphone ou banque ?), opposer les banques au service, faire trancher le régulateur sous conditions, et laisser la question ouverte jusqu'à SEQ-09.",
+   "emotion": "tension, suspense",
+   "transition": "La question reste ouverte. En attendant, le service grandit.",
+   "faits": [
+    "F46",
+    "F45",
+    "F7"
+   ],
+   "sources": [
+    "S24",
+    "S6",
+    "S8"
+   ]
+  },
+  {
+   "id": "SEQ-07",
+   "titre": "La croissance, selon l'entreprise",
+   "etape": "E7",
+   "voix_off": "Vodafone annonce 1,2 million d'utilisateurs à la fin de la première année. En 2022, l'entreprise en revendique plus de 51 millions, servis par 600 000 agents, dans sept pays. Parmi eux, la République démocratique du Congo. Ce sont les chiffres de Vodafone. Ils disent combien de clients le service a gagnés. Pas ce qui a changé pour eux.",
+   "debut_s": 200.2,
+   "fin_s": 225.8,
+   "duree_voix_s": 25.6,
+   "objectif": "Donner l'échelle avec les seuls chiffres de l'entreprise, présentés comme tels, et préparer le lien avec la RDC.",
+   "emotion": "ampleur, recul critique",
+   "transition": "Pour savoir ce qui a changé, il faut des chercheurs.",
+   "faits": [
+    "F10",
+    "F49"
+   ],
+   "sources": [
+    "S6",
+    "S32"
+   ]
+  },
+  {
+   "id": "SEQ-08",
+   "titre": "Ce que mesurent les chercheurs",
+   "etape": "E8",
+   "voix_off": "Revenons à l'enquête FinAccess. En 2019, 82,9 % des adultes utilisent un service financier formel. Mais l'argent mobile y est lui-même compté comme de la finance formelle. Cette courbe ne dit donc pas ce que M-Pesa a changé dans la vie des gens. Pour le mesurer, les économistes Tavneet Suri et William Jack suivent des familles kényanes depuis 2008. Ils les comparent en fonction du nombre d'agents installés près de chez elles. Leur conclusion paraît dans la revue Science en 2016. Selon eux, l'accès à M-Pesa aurait fait sortir au moins 194 000 foyers de l'extrême pauvreté, soit 2 % des ménages du pays. Le seuil retenu : 1,25 dollar par jour et par personne. L'effet serait plus fort pour les foyers dirigés par des femmes. C'est une estimation, extrapolée à l'échelle du pays. Pas un décompte.",
+   "debut_s": 226.4,
+   "fin_s": 285.3,
+   "duree_voix_s": 58.4,
+   "objectif": "Distinguer le constat global (biaisé par la définition) de la mesure des chercheurs ; garder le résultat central, son attribution et ses limites, avec moins de chiffres.",
+   "emotion": "satisfaction nuancée, rigueur",
+   "transition": "Coupe franche : le revers.",
+   "faits": [
+    "F75",
+    "F79",
+    "F78",
+    "F12"
+   ],
+   "sources": [
+    "S39",
+    "S40",
+    "S7"
+   ]
+  },
+  {
+   "id": "SEQ-09",
+   "titre": "Le prix du succès",
+   "etape": "E9",
+   "voix_off": "Ce succès a un prix, et d'abord pour les usagers. Selon Agence Ecofin, certains transferts coûtent près de 7 % du montant envoyé. Des médias kényans rapportent que la Banque centrale prépare une réponse. Elle voudrait ramener le coût moyen d'environ 23 shillings à 10 shillings par transaction, d'ici 2028. Pour Safaricom, en revanche, M-Pesa est devenu un pilier. Sur l'exercice 2025, d'après l'entreprise, il représente 44,2 % de ses revenus de services au Kenya. Et la question posée dès les débuts revient. En novembre 2020, des sénateurs kényans réclament à nouveau que Safaricom soit déclarée dominante, et que ses activités télécoms soient séparées de M-Pesa. Le service a aussi ouvert la porte à d'autres usages. Le crédit sur mobile a démocratisé l'emprunt, mais il soulève, selon Agence Ecofin, la question de la protection des plus pauvres. En septembre 2018, FSD Kenya recensait déjà environ 110 applications de prêt sur téléphone.",
+   "debut_s": 285.9,
+   "fin_s": 352.7,
+   "duree_voix_s": 64.8,
+   "objectif": "Une progression plutôt qu'un catalogue : le coût pour les usagers, la réponse annoncée du régulateur, le poids pour l'opérateur, le retour politique de la question de SEQ-06, puis les nouveaux usages à risque.",
+   "emotion": "lucidité, inquiétude",
+   "transition": "Après les limites mesurées, une critique de fond, puis la question finale.",
+   "faits": [
+    "F55",
+    "F80",
+    "F81",
+    "F58",
+    "F82"
+   ],
+   "sources": [
+    "S25",
+    "S8",
+    "S44",
+    "S36",
+    "S26",
+    "S27",
+    "S45"
+   ]
+  },
+  {
+   "id": "SEQ-10",
+   "titre": "À quelles conditions",
+   "etape": "E10",
+   "voix_off": "Une dernière critique vient de la recherche. Une thèse d'économie, présentée dans la Revue de la régulation, compare les monnaies locales et l'argent mobile. Selon son auteur, seules les premières visent les causes systémiques de la pauvreté. Reste la leçon de départ. Le téléphone, le SMS, les petites boutiques : tout existait déjà. Si l'on suit le récit de ses concepteurs, ce qui était nouveau, c'est d'avoir regardé ce que les clients en faisaient vraiment. M-Pesa est aussi présent en République démocratique du Congo, selon Vodafone. Ce film ne dit pas ce qu'il y a changé : l'histoire kényane ne se transpose pas telle quelle. Mais elle laisse une question à poser, ici aussi. Quand un service privé devient aussi central, à quelles conditions fonctionne-t-il, et au profit de qui ?",
+   "debut_s": 353.3,
+   "fin_s": 406.5,
+   "duree_voix_s": 51.2,
+   "objectif": "Conclure sur une critique attribuée et sur la leçon du titre (attribuée au récit des concepteurs), puis ouvrir une question pour le public congolais sans comparaison inventée.",
+   "emotion": "réflexion, ouverture",
+   "transition": "",
+   "faits": [
+    "F59",
+    "F49"
+   ],
+   "sources": [
+    "S34",
+    "S32"
+   ]
+  }
+ ],
+ "scenes": [
+  {
+   "id": "SC-01",
+   "sequence": "SEQ-01",
+   "ordre": 1,
+   "debut_s": 0.0,
+   "fin_s": 6.0,
+   "duree_s": 6.0,
+   "voix_off": "Pour envoyer de l'argent à sa famille, au Kenya, on pouvait voyager pendant des jours.",
+   "visuel": {
+    "type": "illustration",
+    "authenticite": "illustration",
+    "mention_ecran": "ILLUSTRATION",
+    "description": "Carte du Kenya (aplats #555555 sur noir, frontières Natural Earth). Un tracé orange schématique part de Nairobi vers une région rurale non nommée ; un autocar dessiné au trait (silhouette blanc cassé, sans logo, sans inscription, aucune personne visible) avance lentement le long du tracé.",
+    "sujet": "carte du Kenya, autocar dessiné",
+    "composition": "carte légèrement décentrée à droite ; tracé en diagonale ; autocar petit dans le cadre",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "l'autocar avance le long du tracé pendant toute la phrase (mouvement unique, lent)"
+   },
+   "animation": [
+    "déplacement linéaire de l'autocar (6 s) — la distance et la durée du trajet"
+   ],
+   "texte_ecran": [
+    "KENYA",
+    "SOURCE DU RÉCIT : VODAFONE (2017)"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/",
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "vent et route lointaine, très bas (Freesound, CC0)",
+    "effets": []
+   },
+   "risques_representation": "Illustration : mention à l'écran ; aucune personne, aucune marque ; ne suggère aucune date précise.",
+   "instructions_montage": "Carte maîtresse, état 0/4 (ouverture). Le tracé n'est pas le fil de l'argent : pas de raccord avec SC-14.",
+   "raison_narrative": "Établir le contexte géographique et la longueur du trajet, par une image clairement illustrative."
+  },
+  {
+   "id": "SC-02",
+   "sequence": "SEQ-01",
+   "ordre": 2,
+   "debut_s": 6.0,
+   "fin_s": 10.4,
+   "duree_s": 4.4,
+   "voix_off": "Ou confier son argent à une compagnie de bus, et attendre.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Extrait du tableau 8.5 du rapport FinAccess 2006 : la ligne « Through a bus or matatu company » soulignée en orange, le reste du tableau assombri.",
+    "sujet": "tableau FinAccess 2006",
+    "composition": "ligne du tableau au centre, titre du rapport en haut à gauche",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "trait orange fixe sous l'extrait"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "FINACCESS 2006 · ENQUÊTE NATIONALE · TABLEAU 8.5"
+   ],
+   "sources_visuelles": [
+    "https://www.centralbank.go.ke/uploads/financial_inclusion/410963334_FinAccess%20%20Household%202006%20Key%20Results%20Report.pdf"
+   ],
+   "recherche": [],
+   "transition": "coupe sèche au noir",
+   "son": {
+    "ambiance": "la rumeur de rue se coupe sur « attendre »",
+    "effets": []
+   },
+   "risques_representation": "Le tableau porte sur les 12 mois précédant l'enquête de 2006 : ne pas afficher de pourcentage sans sa base.",
+   "instructions_montage": "Couper l'ambiance exactement sur « attendre » : une demi-seconde de silence.",
+   "raison_narrative": "Montrer la source réelle de la pratique : l'enquête nationale FinAccess 2006."
+  },
+  {
+   "id": "SC-03",
+   "sequence": "SEQ-01",
+   "ordre": 3,
+   "debut_s": 10.4,
+   "fin_s": 13.0,
+   "duree_s": 2.6,
+   "voix_off": "Aujourd'hui, quelques SMS suffisent.",
+   "visuel": {
+    "type": "reconstitution",
+    "authenticite": "reconstitution",
+    "mention_ecran": "RECONSTITUTION",
+    "description": "Insert très serré : un téléphone à clavier posé sur une table de bois reçoit un SMS ; l'écran affiche un texte générique (« Vous avez reçu… »), sans marque ni numéro réel.",
+    "sujet": "téléphone à clavier, SMS",
+    "composition": "écran au tiers gauche, profondeur de champ courte",
+    "cadrage": "insert très serré"
+   },
+   "mouvement": {
+    "camera": "insert_detail",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [],
+   "sources_visuelles": [
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "silence de pièce",
+    "effets": [
+     "vibration du téléphone, bip unique (signature sonore 1/3)"
+    ]
+   },
+   "risques_representation": "Ne reproduire aucune interface réelle de M-Pesa ou de Safaricom.",
+   "instructions_montage": "Le bip tombe sur « SMS ».",
+   "raison_narrative": "Rupture : des jours de voyage contre quelques SMS."
+  },
+  {
+   "id": "SC-04",
+   "sequence": "SEQ-01",
+   "ordre": 4,
+   "debut_s": 13.0,
+   "fin_s": 19.2,
+   "duree_s": 6.2,
+   "voix_off": "Le service s'appelle M-Pesa. Et ses concepteurs ne l'avaient pas inventé pour ça.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Sur noir, « M-PESA » s'écrit en Archivo Black blanc ; la dernière phrase est dite sur le noir ; le titre de travail apparaît ensuite en IBM Plex Mono.",
+    "sujet": "titre",
+    "composition": "nom centré, titre en bas",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition lettre à lettre (12 images), sans rebond"
+   },
+   "animation": [
+    "apparition sèche, maintien, disparition (4 s + 1 s de noir) — le nom du service, puis le titre du film"
+   ],
+   "texte_ecran": [
+    "M-PESA",
+    "QUAND LES CLIENTS ONT CHANGÉ LE PRODUIT"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "carton « KENYA · 2006 » en coupe franche",
+   "son": {
+    "ambiance": "silence",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Une seconde de noir après « pour ça », avant le carton.",
+   "raison_narrative": "Nommer le sujet et laisser la question ouverte."
+  },
+  {
+   "id": "SC-05",
+   "sequence": "SEQ-02",
+   "ordre": 5,
+   "debut_s": 19.8,
+   "fin_s": 27.4,
+   "duree_s": 7.6,
+   "voix_off": "Au milieu des années deux mille, la distance n'est pas le seul obstacle. Une enquête nationale, FinAccess, le mesure.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Retour de la carte du Kenya (aplats #555555 sur noir), sans tracé ; Nairobi seule nommée ; carton « 2006 » en haut à droite.",
+    "sujet": "carte du Kenya",
+    "composition": "pays centré, légèrement à droite pour laisser la place aux chiffres",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "fondu d'entrée de la carte (8 images)"
+   },
+   "animation": [
+    "apparition (6 s) — où se passe l'histoire"
+   ],
+   "texte_ecran": [
+    "KENYA",
+    "NAIROBI",
+    "2006"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe grave",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Carte maîtresse, état 1/4 (déjà vue en ouverture, SC-01).",
+   "raison_narrative": "Poser le territoire et annoncer la mesure."
+  },
+  {
+   "id": "SC-06",
+   "sequence": "SEQ-02",
+   "ordre": 6,
+   "debut_s": 27.4,
+   "fin_s": 36.2,
+   "duree_s": 8.8,
+   "voix_off": "En 2006, seuls 26,7 % des adultes kényans utilisent un service financier formel, comme une banque ou une assurance.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Barre unique, échelle 0-100 % : 26,7 % en jaune. Sous la barre : « ADULTES · SERVICE FINANCIER FORMEL ».",
+    "sujet": "26,7 % en 2006",
+    "composition": "barre à gauche, valeur en Archivo Black jaune, légende en Plex Mono",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "la barre monte jusqu'à 26,7 %"
+   },
+   "animation": [
+    "montée linéaire 1 s (8 s) — un quart des adultes seulement utilise la finance formelle en 2006"
+   ],
+   "texte_ecran": [
+    "26,7 %",
+    "ADULTES UTILISANT UN SERVICE FINANCIER FORMEL · 2006",
+    "SOURCE : FINACCESS (CBK · KNBS · FSD KENYA), SÉRIE 2019"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe grave",
+    "effets": []
+   },
+   "risques_representation": "Ne pas écrire « bancarisés » : la définition inclut assurances, coopératives et microfinance.",
+   "instructions_montage": "Conserver le fichier projet : la même barre reviendra en SEQ-08.",
+   "raison_narrative": "Donner le chiffre antérieur au lancement, avec son périmètre exact."
+  },
+  {
+   "id": "SC-07",
+   "sequence": "SEQ-02",
+   "ordre": 7,
+   "debut_s": 36.2,
+   "fin_s": 48.2,
+   "duree_s": 12.0,
+   "voix_off": "Ce manque intéresse un acteur venu de loin : le ministère britannique du Développement international. Il cherche des entreprises capables d'inventer des services pour les personnes qui n'ont pas de compte.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Sur noir, le nom du ministère en IBM Plex Mono, puis son objectif en une ligne : « des services pour les personnes sans compte ».",
+    "sujet": "ministère britannique du Développement international",
+    "composition": "texte centré, deux lignes",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "MINISTÈRE BRITANNIQUE DU DÉVELOPPEMENT INTERNATIONAL (DFID)",
+    "OBJECTIF : DES SERVICES POUR LES PERSONNES SANS COMPTE"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe grave",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Pas de drapeau ni de carte de Londres.",
+   "raison_narrative": "Introduire le financeur et son objectif."
+  },
+  {
+   "id": "SC-08",
+   "sequence": "SEQ-02",
+   "ordre": 8,
+   "debut_s": 48.2,
+   "fin_s": 51.8,
+   "duree_s": 3.6,
+   "voix_off": "Selon Vodafone, l'entreprise saisit l'occasion et obtient une subvention.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Page Vodafone (2017) : trait orange sous « a grant from the Department for International Development in the UK… to help the unbanked » ; traduction courte en sous-titre.",
+    "sujet": "page Vodafone 2017",
+    "composition": "paragraphe au centre, page assombrie autour",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "trait orange fixe sous l'extrait"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "SOURCE : VODAFONE (2017) · RÉCIT DE L'ENTREPRISE"
+   ],
+   "sources_visuelles": [
+    "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe grave",
+    "effets": []
+   },
+   "risques_representation": "Source intéressée : la légende le dit.",
+   "instructions_montage": "Tenir 2 s sur la phrase soulignée.",
+   "raison_narrative": "Montrer le document qui mentionne la subvention."
+  },
+  {
+   "id": "SC-09",
+   "sequence": "SEQ-03",
+   "ordre": 9,
+   "debut_s": 52.4,
+   "fin_s": 56.0,
+   "duree_s": 3.6,
+   "voix_off": "Au Kenya, le projet se monte avec l'opérateur Safaricom.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Retour sur la carte : Nairobi s'éclaire, étiquette « SAFARICOM · OPÉRATEUR KÉNYAN ».",
+    "sujet": "carte, Nairobi",
+    "composition": "Nairobi au centre-bas",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "halo bref sur Nairobi"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "SAFARICOM · OPÉRATEUR KÉNYAN"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe",
+    "effets": []
+   },
+   "risques_representation": "Aucun logo de l'opérateur.",
+   "instructions_montage": "Carte maîtresse, état 2/4.",
+   "raison_narrative": "Situer l'opérateur kényan."
+  },
+  {
+   "id": "SC-10",
+   "sequence": "SEQ-03",
+   "ordre": 10,
+   "debut_s": 56.0,
+   "fin_s": 65.6,
+   "duree_s": 9.6,
+   "voix_off": "Ce qui suit, on le connaît surtout par ceux qui l'ont mené. Un article publié en 2007 par deux responsables du projet.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Page de titre de l'article de Hughes & Lonie (Innovations, MIT Press, 2007) ; trait orange sous le titre.",
+    "sujet": "article de 2007",
+    "composition": "page à gauche, place libre à droite pour le document suivant",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "trait orange fixe sous l'extrait"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "HUGHES & LONIE · INNOVATIONS (MIT PRESS) · 2007 · ÉQUIPE DU PROJET"
+   ],
+   "sources_visuelles": [
+    "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf"
+   ],
+   "recherche": [],
+   "transition": "glissement latéral (split-screen)",
+   "son": {
+    "ambiance": "nappe",
+    "effets": []
+   },
+   "risques_representation": "Source liée à Vodafone : la légende dit « équipe du projet ».",
+   "instructions_montage": "Le document suivant entre à droite : les deux sources restent un instant côte à côte.",
+   "raison_narrative": "Dire d'où vient le récit des origines (1/2) : l'article de l'équipe projet."
+  },
+  {
+   "id": "SC-11",
+   "sequence": "SEQ-03",
+   "ordre": 11,
+   "debut_s": 65.6,
+   "fin_s": 72.8,
+   "duree_s": 7.2,
+   "voix_off": "Puis un texte de Michael Joseph, ancien directeur général de Safaricom, publié par Vodafone en 2017.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Page Vodafone (2017) recadrée sur la signature « Michael Joseph, Vodafone Group's Director of Mobile Money » ; la page de 2007 reste à gauche.",
+    "sujet": "signature Michael Joseph",
+    "composition": "split-screen : 2007 à gauche, 2017 à droite",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "trait orange fixe sous l'extrait"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "MICHAEL JOSEPH · VODAFONE · 2017"
+   ],
+   "sources_visuelles": [
+    "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe",
+    "effets": []
+   },
+   "risques_representation": "Ne pas suggérer qu'il a inventé seul le service.",
+   "instructions_montage": "Ne montrer aucune photo de Michael Joseph (aucune image libre identifiée).",
+   "raison_narrative": "Dire d'où vient le récit (2/2) : le texte de Michael Joseph publié par Vodafone."
+  },
+  {
+   "id": "SC-12",
+   "sequence": "SEQ-03",
+   "ordre": 12,
+   "debut_s": 72.8,
+   "fin_s": 85.2,
+   "duree_s": 12.4,
+   "voix_off": "Selon ces récits, il ne s'agit pas, au départ, d'envoyer de l'argent. L'équipe travaille sur le microcrédit : verser de petits prêts par téléphone, et les faire rembourser de la même façon.",
+   "visuel": {
+    "type": "animation",
+    "authenticite": "illustration",
+    "mention_ecran": "ILLUSTRATION",
+    "description": "Animation au trait : une petite somme part d'une institution de microcrédit (bâtiment schématique, sans nom) vers un téléphone, puis revient en petits remboursements.",
+    "sujet": "boucle prêt / remboursement",
+    "composition": "institution à gauche, téléphone à droite, trajet en arc",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "aller simple, puis trois petits retours"
+   },
+   "animation": [
+    "trajet en arc, retours en pointillés (11 s) — le prototype servait à verser et rembourser des microcrédits"
+   ],
+   "texte_ecran": [
+    "SELON L'ÉQUIPE PROJET ET VODAFONE"
+   ],
+   "sources_visuelles": [
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Deux boucles au maximum.",
+   "raison_narrative": "Révéler l'intention initiale : le microcrédit."
+  },
+  {
+   "id": "SC-13",
+   "sequence": "SEQ-03",
+   "ordre": 13,
+   "debut_s": 85.2,
+   "fin_s": 93.2,
+   "duree_s": 8.0,
+   "voix_off": "Le prototype est testé à partir d'octobre 2005, à Nairobi et à Thika, au nord de la capitale.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "La carte se resserre sur la région de Nairobi : Nairobi et Thika apparaissent, date « OCTOBRE 2005 ».",
+    "sujet": "Nairobi, Thika",
+    "composition": "deux points, Thika au nord",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "recadrage de carte (zoom 2D motivé : passer du pays à la région), 1,5 s"
+   },
+   "animation": [
+    "recadrage unique (6 s) — où et quand le prototype est testé"
+   ],
+   "texte_ecran": [
+    "NAIROBI",
+    "THIKA",
+    "PILOTE · OCTOBRE 2005"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe",
+    "effets": []
+   },
+   "risques_representation": "Ne pas ajouter le troisième lieu (Mathare) sans le dire : il n'est pas dans la voix off.",
+   "instructions_montage": "Carte maîtresse, état 2/4 (détail).",
+   "raison_narrative": "Situer et dater le prototype."
+  },
+  {
+   "id": "SC-14",
+   "sequence": "SEQ-04",
+   "ordre": 14,
+   "debut_s": 93.8,
+   "fin_s": 106.6,
+   "duree_s": 12.8,
+   "voix_off": "Sur le terrain, les clients font autre chose. D'après Michael Joseph, ceux qui reçoivent un prêt envoient l'argent à d'autres personnes, parfois à des centaines de kilomètres. Le portable devient un coursier.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Depuis la région de Nairobi, des fils orange partent vers plusieurs régions du Kenya (premier fil de l'argent).",
+    "sujet": "fils orange",
+    "composition": "origine au centre, fils vers les bords",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "suivi_trace",
+    "graphique": "les fils s'étirent, accélèrent sur « coursier »"
+   },
+   "animation": [
+    "tracés progressifs, vitesse croissante (11 s) — l'argent prêté circule vers d'autres personnes, loin"
+   ],
+   "texte_ecran": [
+    "D'APRÈS MICHAEL JOSEPH (VODAFONE, 2017)"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "coupe au noir",
+   "son": {
+    "ambiance": "pulsation légère",
+    "effets": []
+   },
+   "risques_representation": "Ne pas nommer de villes de destination (non sourcées).",
+   "instructions_montage": "Carte maîtresse, état 3/4 ; fil 1/3.",
+   "raison_narrative": "Faire voir le détournement : l'argent part ailleurs."
+  },
+  {
+   "id": "SC-15",
+   "sequence": "SEQ-04",
+   "ordre": 15,
+   "debut_s": 106.6,
+   "fin_s": 113.8,
+   "duree_s": 7.2,
+   "voix_off": "Plutôt que de corriger cet usage, l'équipe décide de le suivre. « Alors nous avons pris un risque », raconte-t-il.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Page Vodafone (2017) recadrée sur « So we took a chance, and re-engineered the loans system… » ; sous-titre : « Alors nous avons pris un risque ».",
+    "sujet": "citation de Michael Joseph",
+    "composition": "phrase au centre, page floutée",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "trait orange fixe sous l'extrait"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "« ALORS NOUS AVONS PRIS UN RISQUE »",
+    "MICHAEL JOSEPH · VODAFONE · 2017"
+   ],
+   "sources_visuelles": [
+    "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "silence d'une seconde avant la citation",
+    "effets": []
+   },
+   "risques_representation": "Citation traduite : original visible ; texte d'anniversaire de l'entreprise (2017), date affichée.",
+   "instructions_montage": "La musique s'arrête avant « Alors » ; reprise sur le plan suivant.",
+   "raison_narrative": "Le moment de décision, montré dans le document qui le rapporte."
+  },
+  {
+   "id": "SC-16",
+   "sequence": "SEQ-04",
+   "ordre": 16,
+   "debut_s": 113.8,
+   "fin_s": 121.0,
+   "duree_s": 7.2,
+   "voix_off": "Le système de prêts est reconstruit autour d'une seule fonction : envoyer de l'argent d'un téléphone à un autre.",
+   "visuel": {
+    "type": "infographie",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Le schéma « PRÊT → REMBOURSEMENT » se réécrit en « TÉLÉPHONE → TÉLÉPHONE ».",
+    "sujet": "schéma de fonction",
+    "composition": "schéma centré",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "réécriture du schéma (pas de morphing d'icônes)"
+   },
+   "animation": [
+    "la première ligne s'efface, la seconde s'écrit (7 s) — le produit change de fonction"
+   ],
+   "texte_ecran": [
+    "PRÊT → REMBOURSEMENT",
+    "TÉLÉPHONE → TÉLÉPHONE"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "pulsation reprise",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Résumer la transformation du produit."
+  },
+  {
+   "id": "SC-17",
+   "sequence": "SEQ-05",
+   "ordre": 17,
+   "debut_s": 121.6,
+   "fin_s": 131.2,
+   "duree_s": 9.6,
+   "voix_off": "Reste un problème très concret : comment faire entrer des billets dans un téléphone, et les en faire sortir ? La réponse passe par des commerçants.",
+   "visuel": {
+    "type": "photo_lieu",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Kiosque M-Pesa au Kenya (R04) en plan serré sur le lettrage peint « M-PESA » du mur vert ; la boutique entière n'est montrée qu'en SC-21.",
+    "sujet": "lettrage peint « M-PESA »",
+    "composition": "lettrage vertical au centre, mur vert plein cadre",
+    "cadrage": "plan serré"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "KENYA · DATE INCONNUE · PHOTO : REALT0N12 · CC BY-SA 3.0"
+   ],
+   "sources_visuelles": [
+    "https://commons.wikimedia.org/wiki/File:M-Pesa_Kenyan_Kiosk.JPG"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "ambiance de rue (Freesound, CC0)",
+    "effets": []
+   },
+   "risques_representation": "Date inconnue : le dire ; ne jamais afficher la date des métadonnées.",
+   "instructions_montage": "Recadrage serré (le logo Safaricom hors cadre) ; image recadrée = adaptation sous CC BY-SA 3.0.",
+   "raison_narrative": "Montrer un vrai point d'argent mobile."
+  },
+  {
+   "id": "SC-18",
+   "sequence": "SEQ-05",
+   "ordre": 18,
+   "debut_s": 131.2,
+   "fin_s": 134.0,
+   "duree_s": 2.8,
+   "voix_off": "Le client dépose ses espèces au comptoir.",
+   "visuel": {
+    "type": "reconstitution",
+    "authenticite": "reconstitution",
+    "mention_ecran": "RECONSTITUTION",
+    "description": "Insert : deux mains posent des billets sur un comptoir de bois, à côté d'un téléphone à clavier ; aucun visage.",
+    "sujet": "dépôt d'espèces",
+    "composition": "mains au centre, téléphone en bord de cadre",
+    "cadrage": "insert très serré"
+   },
+   "mouvement": {
+    "camera": "insert_detail",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [],
+   "sources_visuelles": [
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)"
+   ],
+   "recherche": [],
+   "transition": "raccord par le fil",
+   "son": {
+    "ambiance": "ambiance de boutique, discrète",
+    "effets": [
+     "froissement de billets (discret)"
+    ]
+   },
+   "risques_representation": "Ne montrer aucune marque ni interface.",
+   "instructions_montage": "Billets génériques ou flous : ne pas falsifier de monnaie.",
+   "raison_narrative": "Rendre concret le dépôt d'espèces."
+  },
+  {
+   "id": "SC-19",
+   "sequence": "SEQ-05",
+   "ordre": 19,
+   "debut_s": 134.0,
+   "fin_s": 141.6,
+   "duree_s": 7.6,
+   "voix_off": "Quelques SMS plus tard, la somme est devenue de la monnaie électronique, stockée sur sa carte SIM. Il l'envoie.",
+   "visuel": {
+    "type": "animation",
+    "authenticite": "illustration",
+    "mention_ecran": "ILLUSTRATION",
+    "description": "Animation pas à pas : billets → SMS → montant inscrit dans une carte SIM dessinée ; le fil orange part de la SIM.",
+    "sujet": "SMS et carte SIM",
+    "composition": "trois étapes de gauche à droite",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "suivi_trace",
+    "graphique": "le fil part de la SIM vers la droite"
+   },
+   "animation": [
+    "trois étapes enchaînées (9 s) — l'argent devient électronique et voyage par SMS"
+   ],
+   "texte_ecran": [],
+   "sources_visuelles": [
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)"
+   ],
+   "recherche": [],
+   "transition": "raccord par le fil",
+   "son": {
+    "ambiance": "motif rythmé léger",
+    "effets": [
+     "bip de SMS (signature sonore 2/3)"
+    ]
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Fil 2/3.",
+   "raison_narrative": "Expliquer la conversion en monnaie électronique."
+  },
+  {
+   "id": "SC-20",
+   "sequence": "SEQ-05",
+   "ordre": 20,
+   "debut_s": 141.6,
+   "fin_s": 146.8,
+   "duree_s": 5.2,
+   "voix_off": "Plus loin, le destinataire retire les billets chez un commerçant de son quartier.",
+   "visuel": {
+    "type": "illustration",
+    "authenticite": "illustration",
+    "mention_ecran": "ILLUSTRATION",
+    "description": "Le fil orange venu de la carte SIM (SC-19) aboutit à un petit kiosque dessiné au trait, sans enseigne ni marque ; une main dessinée reçoit des billets.",
+    "sujet": "kiosque dessiné, retrait",
+    "composition": "kiosque au tiers droit, fil entrant par la gauche",
+    "cadrage": "plan moyen"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "le fil se termine sur le comptoir dessiné"
+   },
+   "animation": [
+    "fin du tracé du fil (2 s) — l'argent est retiré plus loin"
+   ],
+   "texte_ecran": [],
+   "sources_visuelles": [
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "motif rythmé léger",
+    "effets": []
+   },
+   "risques_representation": "Illustration mentionnée ; aucune marque.",
+   "instructions_montage": "Même style graphique que SC-19 (continuité de l'explication).",
+   "raison_narrative": "Le retrait chez un commerçant du quartier."
+  },
+  {
+   "id": "SC-21",
+   "sequence": "SEQ-05",
+   "ordre": 21,
+   "debut_s": 146.8,
+   "fin_s": 155.6,
+   "duree_s": 8.8,
+   "voix_off": "Ces agents, raconte Vodafone, sont souvent de petites boutiques familiales, plus habituées à vendre des marchandises qu'à manipuler l'argent de leurs clients.",
+   "visuel": {
+    "type": "photo_lieu",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Kiosque M-Pesa au Kenya (photo réelle, date inconnue) ; en bas, la citation « ‘mom and pop’ stores ».",
+    "sujet": "kiosque M-Pesa",
+    "composition": "kiosque plein cadre",
+    "cadrage": "plan moyen"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "KENYA · DATE INCONNUE · PHOTO : REALT0N12 · CC BY-SA 3.0",
+    "« ‘MOM AND POP’ STORES » — VODAFONE (2017)"
+   ],
+   "sources_visuelles": [
+    "https://commons.wikimedia.org/wiki/File:M-Pesa_Kenyan_Kiosk.JPG"
+   ],
+   "recherche": [],
+   "transition": "coupe sèche au noir",
+   "son": {
+    "ambiance": "ambiance de rue",
+    "effets": []
+   },
+   "risques_representation": "Date inconnue : le dire ; contenu à inspecter.",
+   "instructions_montage": "Ne jamais afficher la date des métadonnées (2005, impossible).",
+   "raison_narrative": "Les agents sont de petites boutiques."
+  },
+  {
+   "id": "SC-22",
+   "sequence": "SEQ-06",
+   "ordre": 22,
+   "debut_s": 156.2,
+   "fin_s": 163.4,
+   "duree_s": 7.2,
+   "voix_off": "Un opérateur de téléphonie qui fait circuler de l'argent : est-ce encore du téléphone, ou déjà de la banque ?",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Écran partagé sur noir : « TÉLÉPHONE ? » à gauche, « BANQUE ? » à droite ; une ligne verticale orange les sépare.",
+    "sujet": "question du statut",
+    "composition": "symétrie gauche / droite",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "les deux mots apparaissent l'un après l'autre"
+   },
+   "animation": [
+    "apparitions successives (6 s) — le service brouille la frontière entre téléphone et banque"
+   ],
+   "texte_ecran": [
+    "TÉLÉPHONE ?",
+    "BANQUE ?"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "basse tenue, dissonance discrète",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Conserver le fichier : le motif revient deux fois.",
+   "raison_narrative": "Poser la question qui structure la seconde moitié du film."
+  },
+  {
+   "id": "SC-23",
+   "sequence": "SEQ-06",
+   "ordre": 23,
+   "debut_s": 163.4,
+   "fin_s": 175.0,
+   "duree_s": 11.6,
+   "voix_off": "Pour des banques, la réponse est claire. Selon Agence Ecofin, elles y voient une incursion dans leur métier : un opérateur ne peut pas exercer une activité bancaire sans licence.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Citation d'Agence Ecofin en IBM Plex Mono : « une incursion dans leur champ de compétence » ; le mot « BANQUE ? » de l'écran précédent reste en filigrane.",
+    "sujet": "objection des banques",
+    "composition": "citation centrée",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "« UNE INCURSION DANS LEUR CHAMP DE COMPÉTENCE »",
+    "SOURCE : AGENCE ECOFIN"
+   ],
+   "sources_visuelles": [
+    "https://www.agenceecofin.com/"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "tension",
+    "effets": []
+   },
+   "risques_representation": "Article non relu (site protégé) ; banques non nommées.",
+   "instructions_montage": "—",
+   "raison_narrative": "Donner la voix de l'opposition."
+  },
+  {
+   "id": "SC-24",
+   "sequence": "SEQ-06",
+   "ordre": 24,
+   "debut_s": 175.0,
+   "fin_s": 178.6,
+   "duree_s": 3.6,
+   "voix_off": "C'est à la Banque centrale du Kenya de trancher.",
+   "visuel": {
+    "type": "archive_photo",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Photo de la Banque centrale du Kenya prise le 7 mars 2007 : panoramique vertical lent de la façade vers l'enseigne « CENTRAL BANK OF KENYA » (révélation de l'institution).",
+    "sujet": "Banque centrale du Kenya",
+    "composition": "façade en contre-plongée, enseigne en bas à droite",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "panoramique",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "BANQUE CENTRALE DU KENYA · 7 MARS 2007 · PHOTO : DEMOSH · CC BY 2.0"
+   ],
+   "sources_visuelles": [
+    "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Kenya_(1743419355).jpg"
+   ],
+   "recherche": [],
+   "transition": "coupe franche (même photo)",
+   "son": {
+    "ambiance": "ambiance de ville lointaine",
+    "effets": []
+   },
+   "risques_representation": "Coïncidence de date : ne pas suggérer que la photo documente une décision sur M-Pesa.",
+   "instructions_montage": "Le panoramique a une fonction : révéler l'enseigne ; vitesse calée sur la phrase.",
+   "raison_narrative": "Le régulateur entre en scène."
+  },
+  {
+   "id": "SC-25",
+   "sequence": "SEQ-06",
+   "ordre": 25,
+   "debut_s": 178.6,
+   "fin_s": 191.8,
+   "duree_s": 13.2,
+   "voix_off": "Toujours selon cette agence, elle donne son feu vert, mais sous conditions. Un plafond de dépôt contre le blanchiment, la protection des clients, la sécurité des agents. Et chaque client doit être enregistré.",
+   "visuel": {
+    "type": "archive_photo",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Même photo, cadre fixe sur l'enseigne, assombri à gauche ; trois conditions puis l'enregistrement des clients s'inscrivent en liste.",
+    "sujet": "conditions du régulateur",
+    "composition": "liste à gauche, enseigne à droite",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "quatre lignes successives"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "PLAFOND DE DÉPÔT (BLANCHIMENT)",
+    "PROTECTION DES CLIENTS",
+    "SÉCURITÉ DES AGENTS",
+    "ENREGISTREMENT DE CHAQUE CLIENT",
+    "SOURCES : AGENCE ECOFIN · VODAFONE"
+   ],
+   "sources_visuelles": [
+    "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Kenya_(1743419355).jpg"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "résolution partielle de la tension",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Le feu vert sous conditions."
+  },
+  {
+   "id": "SC-26",
+   "sequence": "SEQ-06",
+   "ordre": 26,
+   "debut_s": 191.8,
+   "fin_s": 195.0,
+   "duree_s": 3.2,
+   "voix_off": "M-Pesa est lancé en mars 2007.",
+   "visuel": {
+    "type": "infographie",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Frise sobre : « OCT. 2005 · PILOTE » → « MARS 2007 · LANCEMENT ».",
+    "sujet": "frise",
+    "composition": "frise horizontale centrée",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "la frise se trace de gauche à droite"
+   },
+   "animation": [
+    "tracé 1,5 s (4 s) — un an et demi entre le pilote et le lancement"
+   ],
+   "texte_ecran": [
+    "OCT. 2005 · PILOTE",
+    "MARS 2007 · LANCEMENT"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "nappe",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Dater le lancement et rappeler le pilote."
+  },
+  {
+   "id": "SC-27",
+   "sequence": "SEQ-06",
+   "ordre": 27,
+   "debut_s": 195.0,
+   "fin_s": 199.6,
+   "duree_s": 4.6,
+   "voix_off": "Mais la question de départ, elle, ne disparaîtra pas.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Retour de l'écran partagé « TÉLÉPHONE ? / BANQUE ? », qui s'assombrit lentement.",
+    "sujet": "question ouverte",
+    "composition": "symétrie",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "assombrissement lent"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "TÉLÉPHONE ?",
+    "BANQUE ?"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "fondu au noir court (0,5 s)",
+   "son": {
+    "ambiance": "basse tenue qui s'éteint",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Une seconde de silence avant SEQ-07.",
+   "raison_narrative": "Laisser la question ouverte jusqu'à SEQ-09."
+  },
+  {
+   "id": "SC-28",
+   "sequence": "SEQ-07",
+   "ordre": 28,
+   "debut_s": 200.2,
+   "fin_s": 205.4,
+   "duree_s": 5.2,
+   "voix_off": "Vodafone annonce 1,2 million d'utilisateurs à la fin de la première année.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Chiffre unique « 1,2 MILLION », sous-titre « UTILISATEURS À LA FIN DE LA PREMIÈRE ANNÉE ».",
+    "sujet": "1,2 million",
+    "composition": "chiffre centré",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "compteur bref (1 s)"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "1,2 MILLION",
+    "SOURCE : VODAFONE · CHIFFRE DE L'ENTREPRISE"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "motif d'ampleur retenu",
+    "effets": []
+   },
+   "risques_representation": "Chiffre non audité.",
+   "instructions_montage": "—",
+   "raison_narrative": "Donner l'échelle de départ, en citant l'entreprise."
+  },
+  {
+   "id": "SC-29",
+   "sequence": "SEQ-07",
+   "ordre": 29,
+   "debut_s": 205.4,
+   "fin_s": 217.0,
+   "duree_s": 11.6,
+   "voix_off": "En 2022, l'entreprise en revendique plus de 51 millions, servis par 600 000 agents, dans sept pays. Parmi eux, la République démocratique du Congo.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Carte de l'Afrique : les sept pays cités par Vodafone s'allument (Kenya, Tanzanie, Mozambique, RDC, Lesotho, Ghana, Égypte) ; la RDC reste éclairée plus longtemps.",
+    "sujet": "sept pays",
+    "composition": "Afrique centrée",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "les pays s'allument un à un, la RDC en dernier"
+   },
+   "animation": [
+    "allumage successif (10 s) — les 51 millions concernent sept pays, pas le seul Kenya"
+   ],
+   "texte_ecran": [
+    "51 MILLIONS DE CLIENTS DANS 7 PAYS · 600 000 AGENTS · 2022",
+    "SOURCE : VODAFONE · CHIFFRES DE L'ENTREPRISE",
+    "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "motif d'ampleur",
+    "effets": []
+   },
+   "risques_representation": "Pas de globe 3D.",
+   "instructions_montage": "Lève l'ambiguïté orale des « 51 millions ».",
+   "raison_narrative": "Rendre visible le périmètre des 51 millions : sept pays."
+  },
+  {
+   "id": "SC-30",
+   "sequence": "SEQ-07",
+   "ordre": 30,
+   "debut_s": 217.0,
+   "fin_s": 225.8,
+   "duree_s": 8.8,
+   "voix_off": "Ce sont les chiffres de Vodafone. Ils disent combien de clients le service a gagnés. Pas ce qui a changé pour eux.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Page Vodafone de 2022 ; en surimpression, une ligne : « CHIFFRES DE L'ENTREPRISE ».",
+    "sujet": "page Vodafone 2022",
+    "composition": "page plein cadre, ligne en bas",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "trait orange fixe sous l'extrait"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "CHIFFRES DE L'ENTREPRISE · VODAFONE · 2022"
+   ],
+   "sources_visuelles": [
+    "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years"
+   ],
+   "recherche": [],
+   "transition": "coupe sèche",
+   "son": {
+    "ambiance": "la musique s'interrompt sur « Pas ce qui a changé »",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Montrer que ces chiffres viennent d'un communiqué."
+  },
+  {
+   "id": "SC-31",
+   "sequence": "SEQ-08",
+   "ordre": 31,
+   "debut_s": 226.4,
+   "fin_s": 233.6,
+   "duree_s": 7.2,
+   "voix_off": "Revenons à l'enquête FinAccess. En 2019, 82,9 % des adultes utilisent un service financier formel.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "La barre de SEQ-02 revient à 26,7 % (2006) et monte jusqu'à 82,9 % (2019).",
+    "sujet": "26,7 % → 82,9 %",
+    "composition": "même gabarit et même échelle qu'en SEQ-02",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "montée de la barre (1,5 s)"
+   },
+   "animation": [
+    "montée (7 s) — la finance formelle a fortement progressé"
+   ],
+   "texte_ecran": [
+    "2006 : 26,7 %",
+    "2019 : 82,9 %",
+    "ADULTES · SERVICE FINANCIER FORMEL",
+    "SOURCE : FINACCESS 2019 (CBK · KNBS · FSD KENYA)"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)",
+    "https://www.centralbank.go.ke/uploads/financial_inclusion/1275230559_2019%20FinAcces%20Report%20(web).pdf"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "musique très basse",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Reprendre la barre de SEQ-02 : le bond."
+  },
+  {
+   "id": "SC-32",
+   "sequence": "SEQ-08",
+   "ordre": 32,
+   "debut_s": 233.6,
+   "fin_s": 244.8,
+   "duree_s": 11.2,
+   "voix_off": "Mais l'argent mobile y est lui-même compté comme de la finance formelle. Cette courbe ne dit donc pas ce que M-Pesa a changé dans la vie des gens.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Sur la barre figée, une zone hachurée et l'étiquette « INCLUT L'ARGENT MOBILE (CLASSÉ FORMEL) », sans pourcentage ; puis « ≠ CE QUE M-PESA A CHANGÉ ».",
+    "sujet": "biais de définition",
+    "composition": "barre à gauche, étiquettes à droite",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition des hachures puis des étiquettes"
+   },
+   "animation": [
+    "apparitions (10 s) — la hausse inclut mécaniquement l'argent mobile"
+   ],
+   "texte_ecran": [
+    "INCLUT L'ARGENT MOBILE (CLASSÉ FORMEL)",
+    "≠ CE QUE M-PESA A CHANGÉ"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "musique très basse",
+    "effets": []
+   },
+   "risques_representation": "Ne pas quantifier la part de l'argent mobile (non sourcée).",
+   "instructions_montage": "—",
+   "raison_narrative": "Expliquer le biais de définition."
+  },
+  {
+   "id": "SC-33",
+   "sequence": "SEQ-08",
+   "ordre": 33,
+   "debut_s": 244.8,
+   "fin_s": 257.2,
+   "duree_s": 12.4,
+   "voix_off": "Pour le mesurer, les économistes Tavneet Suri et William Jack suivent des familles kényanes depuis 2008. Ils les comparent en fonction du nombre d'agents installés près de chez elles.",
+   "visuel": {
+    "type": "infographie",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Schéma : un panel de familles suivies de 2008 à 2014 ; autour d'un foyer, un cercle de 1 km où apparaissent des points d'agents.",
+    "sujet": "méthode de Suri et Jack",
+    "composition": "frise 2008-2014 en haut, cercle en bas",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "la frise se trace, puis les points apparaissent dans le cercle"
+   },
+   "animation": [
+    "tracé puis apparitions (12 s) — on compare des familles selon le nombre d'agents installés près de chez elles"
+   ],
+   "texte_ecran": [
+    "TAVNEET SURI · WILLIAM JACK",
+    "PANEL DE MÉNAGES · 2008 → 2014",
+    "AGENTS DANS UN RAYON DE 1 KM"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "silence musical, voix seule",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Expliquer la méthode avant le résultat."
+  },
+  {
+   "id": "SC-34",
+   "sequence": "SEQ-08",
+   "ordre": 34,
+   "debut_s": 257.2,
+   "fin_s": 261.6,
+   "duree_s": 4.4,
+   "voix_off": "Leur conclusion paraît dans la revue Science en 2016.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Carte de référence typographique originale, sur noir : « The long-run poverty and gender impacts of mobile money » · Tavneet Suri & William Jack · Science · 2016. La carte se réduit ensuite en haut d'écran et reste visible pendant les visualisations originales des résultats (SC-35, SC-36).",
+    "sujet": "référence de l'étude",
+    "composition": "titre en IBM Plex Mono au centre, auteurs et revue dessous",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne, puis réduction en bandeau"
+   },
+   "animation": [
+    "apparition puis réduction en bandeau (4 s) — la référence exacte de l'étude"
+   ],
+   "texte_ecran": [
+    "« THE LONG-RUN POVERTY AND GENDER IMPACTS OF MOBILE MONEY »",
+    "TAVNEET SURI & WILLIAM JACK · SCIENCE · 2016"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "voix seule",
+    "effets": []
+   },
+   "risques_representation": "Aucun élément protégé de l'article n'est reproduit.",
+   "instructions_montage": "Aucune page, figure ou illustration de l'article.",
+   "raison_narrative": "Montrer la publication scientifique."
+  },
+  {
+   "id": "SC-35",
+   "sequence": "SEQ-08",
+   "ordre": 35,
+   "debut_s": 261.6,
+   "fin_s": 271.2,
+   "duree_s": 9.6,
+   "voix_off": "Selon eux, l'accès à M-Pesa aurait fait sortir au moins 194 000 foyers de l'extrême pauvreté, soit 2 % des ménages du pays.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Grille de 100 carrés gris ; 2 deviennent orange. Légende : « AU MOINS 194 000 FOYERS · 2 % DES MÉNAGES · ESTIMATION ».",
+    "sujet": "2 %",
+    "composition": "grille centrée, légende dessous",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "deux carrés s'allument"
+   },
+   "animation": [
+    "allumage (10 s) — un effet réel mais limité à 2 % des ménages"
+   ],
+   "texte_ecran": [
+    "AU MOINS 194 000 FOYERS (ESTIMATION)",
+    "2 % DES MÉNAGES",
+    "SOURCE : SURI & JACK, SCIENCE (2016)"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "voix seule",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Rendre l'ordre de grandeur lisible."
+  },
+  {
+   "id": "SC-36",
+   "sequence": "SEQ-08",
+   "ordre": 36,
+   "debut_s": 271.2,
+   "fin_s": 280.4,
+   "duree_s": 9.2,
+   "voix_off": "Le seuil retenu : 1,25 dollar par jour et par personne. L'effet serait plus fort pour les foyers dirigés par des femmes.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Sous la grille : « SEUIL : 1,25 $ PAR JOUR ET PAR PERSONNE », puis « EFFET PLUS FORT : FOYERS DIRIGÉS PAR DES FEMMES ».",
+    "sujet": "seuil et effet par genre",
+    "composition": "deux lignes sous la grille",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "SEUIL : 1,25 $ PAR JOUR ET PAR PERSONNE",
+    "EFFET PLUS FORT : FOYERS DIRIGÉS PAR DES FEMMES"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "voix seule",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Aucune photo de personne associée à ces chiffres.",
+   "raison_narrative": "Définir le seuil et donner l'effet par genre."
+  },
+  {
+   "id": "SC-37",
+   "sequence": "SEQ-08",
+   "ordre": 37,
+   "debut_s": 280.4,
+   "fin_s": 285.3,
+   "duree_s": 4.9,
+   "voix_off": "C'est une estimation, extrapolée à l'échelle du pays. Pas un décompte.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Le mot « ESTIMATION » en grand, puis « ≠ DÉCOMPTE ».",
+    "sujet": "limite méthodologique",
+    "composition": "mot centré",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition sèche"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "ESTIMATION",
+    "≠ DÉCOMPTE"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe au noir",
+   "son": {
+    "ambiance": "silence",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Silence complet sur « Pas un décompte ».",
+   "raison_narrative": "Clore sur la limite."
+  },
+  {
+   "id": "SC-38",
+   "sequence": "SEQ-09",
+   "ordre": 38,
+   "debut_s": 285.9,
+   "fin_s": 287.9,
+   "duree_s": 2.0,
+   "voix_off": "",
+   "visuel": {
+    "type": "plan_ambiance",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Noir complet, sans texte.",
+    "sujet": "noir",
+    "composition": "—",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [],
+   "sources_visuelles": [],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "silence total",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "2 s de silence.",
+   "raison_narrative": "Marquer le changement de régime du film."
+  },
+  {
+   "id": "SC-39",
+   "sequence": "SEQ-09",
+   "ordre": 39,
+   "debut_s": 287.9,
+   "fin_s": 296.7,
+   "duree_s": 8.8,
+   "voix_off": "Ce succès a un prix, et d'abord pour les usagers. Selon Agence Ecofin, certains transferts coûtent près de 7 % du montant envoyé.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Sur noir, une jauge horizontale se remplit jusqu'à 7 % ; légende « CERTAINS TRANSFERTS ».",
+    "sujet": "coût des transferts",
+    "composition": "jauge au centre, valeur en Archivo Black jaune",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "remplissage de la jauge (1 s)"
+   },
+   "animation": [
+    "remplissage (1 s) — le coût peut atteindre 7 % du montant"
+   ],
+   "texte_ecran": [
+    "JUSQU'À 7 % DU MONTANT · CERTAINS TRANSFERTS",
+    "SOURCE : AGENCE ECOFIN (2025)"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "reprise musicale en mineur",
+    "effets": []
+   },
+   "risques_representation": "Ne pas généraliser le chiffre à tous les transferts.",
+   "instructions_montage": "« Certains transferts » toujours visible.",
+   "raison_narrative": "Le coût, du côté des usagers."
+  },
+  {
+   "id": "SC-40",
+   "sequence": "SEQ-09",
+   "ordre": 40,
+   "debut_s": 296.7,
+   "fin_s": 309.1,
+   "duree_s": 12.4,
+   "voix_off": "Des médias kényans rapportent que la Banque centrale prépare une réponse. Elle voudrait ramener le coût moyen d'environ 23 shillings à 10 shillings par transaction, d'ici 2028.",
+   "visuel": {
+    "type": "photo_lieu",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Banque centrale du Kenya (R06), cadre serré sur l'enseigne ; flèche « 23 → 10 KES » et le mot « PROJET ».",
+    "sujet": "projet de baisse des frais",
+    "composition": "enseigne à droite, flèche à gauche",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "la flèche descend"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "23 → 10 SHILLINGS PAR TRANSACTION (COÛT MOYEN)",
+    "PROJET · D'ICI 2028 · RAPPORTÉ PAR DES MÉDIAS KÉNYANS (VIA AGENCE ECOFIN)"
+   ],
+   "sources_visuelles": [
+    "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Kenya_(1743419355).jpg"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "musique en mineur",
+    "effets": []
+   },
+   "risques_representation": "Ne pas présenter le plafonnement comme adopté ; photo de 2007 réutilisée : légende.",
+   "instructions_montage": "Le mot « PROJET » reste visible tout le plan.",
+   "raison_narrative": "Le régulateur prépare une réponse."
+  },
+  {
+   "id": "SC-41",
+   "sequence": "SEQ-09",
+   "ordre": 41,
+   "debut_s": 309.1,
+   "fin_s": 320.3,
+   "duree_s": 11.2,
+   "voix_off": "Pour Safaricom, en revanche, M-Pesa est devenu un pilier. Sur l'exercice 2025, d'après l'entreprise, il représente 44,2 % de ses revenus de services au Kenya.",
+   "visuel": {
+    "type": "graphique",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Barre horizontale des revenus de services de Safaricom au Kenya : 44,2 % pour M-PESA.",
+    "sujet": "44,2 %",
+    "composition": "barre horizontale, valeur jaune",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "remplissage 1 s"
+   },
+   "animation": [
+    "remplissage (8 s) — M-Pesa pèse près de la moitié des revenus de services de Safaricom au Kenya"
+   ],
+   "texte_ecran": [
+    "44,2 % DES REVENUS DE SERVICES AU KENYA",
+    "EXERCICE 2025 · SOURCE : SAFARICOM"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)",
+    "https://www.safaricom.co.ke/"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "musique qui monte légèrement",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "Pas de camembert.",
+   "raison_narrative": "Le poids du service pour l'opérateur."
+  },
+  {
+   "id": "SC-42",
+   "sequence": "SEQ-09",
+   "ordre": 42,
+   "debut_s": 320.3,
+   "fin_s": 333.5,
+   "duree_s": 13.2,
+   "voix_off": "Et la question posée dès les débuts revient. En novembre 2020, des sénateurs kényans réclament à nouveau que Safaricom soit déclarée dominante, et que ses activités télécoms soient séparées de M-Pesa.",
+   "visuel": {
+    "type": "document",
+    "authenticite": "authentique",
+    "mention_ecran": null,
+    "description": "Titre de l'article de The Star (17/11/2020) ; puis retour bref du motif « TÉLÉPHONE ? / BANQUE ? » en filigrane.",
+    "sujet": "sénateurs, 2020",
+    "composition": "titre au centre, motif en filigrane",
+    "cadrage": "plan serré sur l'extrait"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition du motif en surimpression (20 % d'opacité)"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "THE STAR · 17 NOVEMBRE 2020",
+    "SÉNAT KÉNYAN · COMITÉ DES TIC"
+   ],
+   "sources_visuelles": [
+    "https://www.the-star.co.ke/news/2020-11-18-senators-reignite-push-to-split-safaricom"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "point culminant de la tension",
+    "effets": []
+   },
+   "risques_representation": "Article de la rubrique Opinion/Columnists : la légende dit seulement « The Star ».",
+   "instructions_montage": "Rappel explicite du motif de SEQ-06.",
+   "raison_narrative": "La question de SEQ-06 revient, portée par des élus."
+  },
+  {
+   "id": "SC-43",
+   "sequence": "SEQ-09",
+   "ordre": 43,
+   "debut_s": 333.5,
+   "fin_s": 345.9,
+   "duree_s": 12.4,
+   "voix_off": "Le service a aussi ouvert la porte à d'autres usages. Le crédit sur mobile a démocratisé l'emprunt, mais il soulève, selon Agence Ecofin, la question de la protection des plus pauvres.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Citation d'Agence Ecofin en IBM Plex Mono : « des questions se posent quant à la protection des pauvres ».",
+    "sujet": "crédit mobile",
+    "composition": "citation centrée",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "« DES QUESTIONS SE POSENT QUANT À LA PROTECTION DES PAUVRES »",
+    "SOURCE : AGENCE ECOFIN (2019)"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "musique qui retombe",
+    "effets": []
+   },
+   "risques_representation": "Article non relu (site protégé).",
+   "instructions_montage": "—",
+   "raison_narrative": "Les nouveaux usages et leur risque."
+  },
+  {
+   "id": "SC-44",
+   "sequence": "SEQ-09",
+   "ordre": 44,
+   "debut_s": 345.9,
+   "fin_s": 352.7,
+   "duree_s": 6.8,
+   "voix_off": "En septembre 2018, FSD Kenya recensait déjà environ 110 applications de prêt sur téléphone.",
+   "visuel": {
+    "type": "infographie",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "110 petits carrés neutres (applications) apparaissent en grille ; à côté, la couverture du rapport de FSD Kenya.",
+    "sujet": "110 applications",
+    "composition": "grille à gauche, document à droite",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "les carrés apparaissent par rangées"
+   },
+   "animation": [
+    "apparition par rangées (7 s) — le crédit sur téléphone s'est multiplié très vite"
+   ],
+   "texte_ecran": [
+    "≈ 110 APPLICATIONS DE PRÊT · SEPTEMBRE 2018",
+    "SOURCE : FSD KENYA, DIGITAL CREDIT AUDIT REPORT (2019)"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)",
+    "https://www.fsdkenya.org/wp-content/uploads/2019/11/19-09-10-Regulation-Digital-credit-audit.pdf"
+   ],
+   "recherche": [],
+   "transition": "coupe au noir",
+   "son": {
+    "ambiance": "musique éteinte",
+    "effets": []
+   },
+   "risques_representation": "Aucun risque particulier identifié.",
+   "instructions_montage": "—",
+   "raison_narrative": "Donner l'ampleur du crédit numérique."
+  },
+  {
+   "id": "SC-45",
+   "sequence": "SEQ-10",
+   "ordre": 45,
+   "debut_s": 353.3,
+   "fin_s": 362.9,
+   "duree_s": 9.6,
+   "voix_off": "Une dernière critique vient de la recherche. Une thèse d'économie, présentée dans la Revue de la régulation, compare les monnaies locales et l'argent mobile.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Carte de référence sur noir : « Présentation de thèse · Revue de la régulation (OpenEdition) » ; la phrase source suit en SC-46.",
+    "sujet": "référence de la thèse",
+    "composition": "référence centrée",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "PRÉSENTATION DE THÈSE · REVUE DE LA RÉGULATION (OPENEDITION)"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "thème final, très bas",
+    "effets": []
+   },
+   "risques_representation": "Auteur non nommé (non relevé) ; la référence ne l'invente pas.",
+   "instructions_montage": "—",
+   "raison_narrative": "Une critique académique, avec son cadre."
+  },
+  {
+   "id": "SC-46",
+   "sequence": "SEQ-10",
+   "ordre": 46,
+   "debut_s": 362.9,
+   "fin_s": 368.1,
+   "duree_s": 5.2,
+   "voix_off": "Selon son auteur, seules les premières visent les causes systémiques de la pauvreté.",
+   "visuel": {
+    "type": "typographie_animee",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "La phrase source en IBM Plex Mono : « Les monnaies locales visent les causes systémiques de la pauvreté, ce que les systèmes de monnaie mobile ne font pas. »",
+    "sujet": "citation de la thèse",
+    "composition": "citation centrée",
+    "cadrage": "plein cadre"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition ligne à ligne"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "« LES MONNAIES LOCALES VISENT LES CAUSES SYSTÉMIQUES DE LA PAUVRETÉ, CE QUE LES SYSTÈMES DE MONNAIE MOBILE NE FONT PAS. »",
+    "PRÉSENTATION DE THÈSE · REVUE DE LA RÉGULATION"
+   ],
+   "sources_visuelles": [
+    "Graphiques et typographies (gabarit unique LUKOJI)"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "thème final, très bas",
+    "effets": []
+   },
+   "risques_representation": "Citation exacte de la source capturée en phase 1.",
+   "instructions_montage": "—",
+   "raison_narrative": "Donner le jugement de l'auteur, dans ses propres termes."
+  },
+  {
+   "id": "SC-47",
+   "sequence": "SEQ-10",
+   "ordre": 47,
+   "debut_s": 368.1,
+   "fin_s": 374.1,
+   "duree_s": 6.0,
+   "voix_off": "Reste la leçon de départ. Le téléphone, le SMS, les petites boutiques : tout existait déjà.",
+   "visuel": {
+    "type": "reconstitution",
+    "authenticite": "reconstitution",
+    "mention_ecran": "RECONSTITUTION (téléphone) · ILLUSTRATION (SMS) · PHOTO : KENYA, DATE INCONNUE (boutique)",
+    "description": "Rappel de trois plans du film, en coupes sèches calées sur la voix : l'insert du téléphone (SC-03), la bulle de SMS dessinée (SC-19), la boutique peinte (R04, cadre de SC-21). Chaque plan garde sa propre mention.",
+    "sujet": "rappel",
+    "composition": "trois plans fixes déjà vus",
+    "cadrage": "plans de rappel"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "aucun"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "RECONSTITUTION",
+    "ILLUSTRATION",
+    "KENYA · DATE INCONNUE · PHOTO : REALT0N12 · CC BY-SA 3.0"
+   ],
+   "sources_visuelles": [
+    "Illustrations au trait (microcrédit, SMS → carte SIM, interface de paris neutre)",
+    "https://commons.wikimedia.org/wiki/File:M-Pesa_Kenyan_Kiosk.JPG"
+   ],
+   "recherche": [],
+   "transition": "coupe franche",
+   "son": {
+    "ambiance": "ambiance de rue légère",
+    "effets": []
+   },
+   "risques_representation": "Ne pas présenter l'insert ni le dessin comme des archives.",
+   "instructions_montage": "Coupes calées sur « téléphone », « SMS », « boutiques » ; mention propre à chaque plan.",
+   "raison_narrative": "Tout existait déjà : le rappeler par l'image."
+  },
+  {
+   "id": "SC-48",
+   "sequence": "SEQ-10",
+   "ordre": 48,
+   "debut_s": 374.1,
+   "fin_s": 382.9,
+   "duree_s": 8.8,
+   "voix_off": "Si l'on suit le récit de ses concepteurs, ce qui était nouveau, c'est d'avoir regardé ce que les clients en faisaient vraiment.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "Dernier retour à la carte du Kenya : les fils orange sont devenus denses (dernier fil de l'argent).",
+    "sujet": "carte, fils denses",
+    "composition": "pays centré",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "les fils se densifient lentement"
+   },
+   "animation": [
+    "densification (9 s) — l'usage des clients a dessiné le réseau"
+   ],
+   "texte_ecran": [
+    "SELON LE RÉCIT DE SES CONCEPTEURS"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "glissement de carte vers l'Afrique centrale",
+   "son": {
+    "ambiance": "thème final",
+    "effets": [
+     "bip de SMS (signature sonore 3/3)"
+    ]
+   },
+   "risques_representation": "Interprétation éditoriale : le sous-titre l'attribue au récit des concepteurs.",
+   "instructions_montage": "Carte maîtresse, état 4/4 ; fil 3/3.",
+   "raison_narrative": "Boucler la carte du récit sur la leçon du titre."
+  },
+  {
+   "id": "SC-49",
+   "sequence": "SEQ-10",
+   "ordre": 49,
+   "debut_s": 382.9,
+   "fin_s": 394.5,
+   "duree_s": 11.6,
+   "voix_off": "M-Pesa est aussi présent en République démocratique du Congo, selon Vodafone. Ce film ne dit pas ce qu'il y a changé : l'histoire kényane ne se transpose pas telle quelle.",
+   "visuel": {
+    "type": "carte",
+    "authenticite": "graphique_explicatif",
+    "mention_ecran": null,
+    "description": "La carte glisse du Kenya vers la RDC, qui s'éclaire seule ; aucune donnée comparative.",
+    "sujet": "RDC",
+    "composition": "RDC centrée",
+    "cadrage": "plan large"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "glissement de carte (motivé : changement de pays)"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "RÉPUBLIQUE DÉMOCRATIQUE DU CONGO",
+    "PRÉSENCE DE M-PESA SELON VODAFONE (2022)"
+   ],
+   "sources_visuelles": [
+    "https://www.naturalearthdata.com/"
+   ],
+   "recherche": [],
+   "transition": "fondu enchaîné (1 s)",
+   "son": {
+    "ambiance": "thème final",
+    "effets": []
+   },
+   "risques_representation": "Ne montrer aucun chiffre pour la RDC.",
+   "instructions_montage": "—",
+   "raison_narrative": "Ouvrir vers la RDC sans comparaison."
+  },
+  {
+   "id": "SC-50",
+   "sequence": "SEQ-10",
+   "ordre": 50,
+   "debut_s": 394.5,
+   "fin_s": 406.5,
+   "duree_s": 12.0,
+   "voix_off": "Mais elle laisse une question à poser, ici aussi. Quand un service privé devient aussi central, à quelles conditions fonctionne-t-il, et au profit de qui ?",
+   "visuel": {
+    "type": "plan_ambiance",
+    "authenticite": "symbolique",
+    "mention_ecran": "IMAGE D'ILLUSTRATION — KINSHASA, 2013",
+    "description": "Boulevard du 30 Juin, Kinshasa (photo réelle, 2013) ; la dernière question s'inscrit en Archivo Black ; silence, puis fondu au noir.",
+    "sujet": "Kinshasa",
+    "composition": "boulevard en perspective, question au tiers inférieur",
+    "cadrage": "plan moyen"
+   },
+   "mouvement": {
+    "camera": "fixe",
+    "graphique": "apparition de la question"
+   },
+   "animation": [],
+   "texte_ecran": [
+    "À QUELLES CONDITIONS, ET AU PROFIT DE QUI ?",
+    "PHOTO : ANTOINE MOENS DE HASE · CC BY 2.0"
+   ],
+   "sources_visuelles": [
+    "https://commons.wikimedia.org/wiki/File:2013_Boulevard_du_30_Juin_Kinshasa_8756682965.jpg"
+   ],
+   "recherche": [],
+   "transition": "fondu au noir (fin ; la signature LUKOJI est ajoutée par le moteur vidéo)",
+   "son": {
+    "ambiance": "ambiance de ville lointaine, puis silence",
+    "effets": []
+   },
+   "risques_representation": "Aucun argent mobile visible : image d'illustration ; contenu à inspecter.",
+   "instructions_montage": "Deux secondes de silence avant le fondu.",
+   "raison_narrative": "Poser la question au public congolais."
+  }
+ ],
+ "faits": [
+  {
+   "ref": "F7",
+   "texte": "M-Pesa a été lancé en mars 2007.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F8",
+   "texte": "Le service a d'abord été conçu pour des microcrédits, testé à Thika ; les bénéficiaires envoyaient l'argent à des proches éloignés.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F9",
+   "texte": "L'équipe a réorienté le système vers le transfert d'argent d'un téléphone à l'autre, appuyé sur un réseau d'agents.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F10",
+   "texte": "Selon Vodafone, M-Pesa comptait 1,2 million de clients à la fin de sa première année.",
+   "statut": "confirme",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F12",
+   "texte": "L'effet a été plus fort pour les ménages dirigés par des femmes ; environ 185 000 femmes sont passées de l'agriculture au commerce.",
+   "statut": "source_unique",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F41",
+   "texte": "Le projet a été financé en partie par le ministère britannique du Développement international (DFID), qui cherchait des services pour les non-bancarisés.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F42",
+   "texte": "M-Pesa a été lancé le 6 mars 2007 au Kenya par Safaricom et Vodafone.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F43",
+   "texte": "Le service fonctionne avec des agents : le client dépose des espèces, les convertit par SMS en argent électronique sur sa carte SIM, puis l'envoie ; le destinataire le retire chez un agent.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F44",
+   "texte": "Beaucoup d'agents étaient de petites boutiques plus habituées à vendre des marchandises qu'à manipuler l'argent des clients.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F45",
+   "texte": "Avant le lancement, la Banque centrale du Kenya a exigé des garanties : plafond de dépôt contre le blanchiment, protection des consommateurs, sécurité des produits et des agents ; chaque client devait être enregistré.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F46",
+   "texte": "Des banques ont vu dans M-Pesa une incursion dans leur domaine, estimant qu'un opérateur mobile ne pouvait pas exercer une activité bancaire sans licence.",
+   "statut": "source_unique",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F49",
+   "texte": "Selon Vodafone, en 2022, M-Pesa comptait plus de 51 millions de clients et 600 000 agents dans sept pays, dont la RDC.",
+   "statut": "confirme",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F55",
+   "texte": "Certains transferts coûtent près de 7 % du montant envoyé ; la Banque centrale veut ramener le coût moyen d'environ 23 à 10 shillings par transaction d'ici 2028.",
+   "statut": "source_unique",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F58",
+   "texte": "Le crédit sur mobile, apparu avec M-Pesa en 2012, a démocratisé l'emprunt mais soulève des questions de protection des plus pauvres.",
+   "statut": "source_unique",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F59",
+   "texte": "Pour une thèse publiée dans la Revue de la régulation, la monnaie mobile ne s'attaque pas aux causes systémiques de la pauvreté et ses effets ne concernent que très indirectement les plus pauvres.",
+   "statut": "opinion_attribuee",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F61",
+   "texte": "Avant M-Pesa, pour envoyer de l'argent à leurs proches, des Kényans voyageaient des jours ou confiaient l'argent à un chauffeur de bus.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F62",
+   "texte": "Le récit des origines de M-Pesa publié par Vodafone en 2017 est signé Michael Joseph, directeur de l'argent mobile du groupe Vodafone et ancien directeur général de Safaricom.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F63",
+   "texte": "Selon Michael Joseph, face à l'usage inattendu du prototype, l'équipe « a pris un risque » et a reconstruit le système de prêts autour du transfert d'argent d'un téléphone à l'autre.",
+   "statut": "confirme",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F72",
+   "texte": "Selon le rapport original FinAccess 2006, l'envoi d'argent au Kenya passait surtout par un ami ou un proche (environ 50 % à 56 %) et par une compagnie de bus ou de matatu (21,6 % des receveurs, 29,4 % des envoyeurs) ; ces moyens étaient jugés les moins chers mais les plus risqués et les plus lents.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F73",
+   "texte": "Avant M-Pesa, des Kényans envoyaient de l'argent par bus (colis déguisés, voyageurs) et des femmes rurales devaient voyager jusqu'à la ville ou au bureau de poste, une démarche qui pouvait prendre plus d'une semaine.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F74",
+   "texte": "Selon l'enquête FinAccess, 26,7 % des adultes kényans utilisaient un service financier formel en 2006 (série harmonisée publiée en 2019 ; le rapport original de 2006 donnait 26,4 %).",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F75",
+   "texte": "Selon l'enquête FinAccess publiée en 2019 par la Banque centrale du Kenya, le KNBS et FSD Kenya, 82,9 % des adultes utilisent un service financier formel ; l'argent mobile y est lui-même classé parmi les services formels.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F76",
+   "texte": "Selon Hughes et Lonie (2007), responsables du projet, le pilote a commencé le 11 octobre 2005 avec l'institution de microfinance Faulu Kenya, dans trois lieux : le centre de Nairobi, Mathare et Thika ; il visait les remboursements de prêts, mais d'autres usages sont apparus.",
+   "statut": "source_unique",
+   "usage": "attribution_obligatoire"
+  },
+  {
+   "ref": "F78",
+   "texte": "Selon Suri et Jack (Science, 2016), l'accès à M-Pesa a fait sortir au moins 194 000 ménages, soit 2 % des ménages kényans, de l'extrême pauvreté (moins de 1,25 dollar par personne et par jour) et conduit 185 000 femmes vers une activité commerciale ; il s'agit d'une extrapolation nationale présentée par les auteurs comme une borne basse.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F79",
+   "texte": "Suri et Jack mesurent l'accès à M-Pesa par le nombre d'agents dans un rayon d'un kilomètre autour de chaque ménage d'un panel suivi de 2008 à 2014, et revendiquent une identification causale.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F80",
+   "texte": "Selon Safaricom, sur l'exercice 2025, M-PESA a représenté 44,2 % des revenus de services de l'opérateur au Kenya (161,1 milliards de shillings).",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F81",
+   "texte": "En novembre 2020, des sénateurs kényans ont demandé à nouveau que Safaricom soit déclarée dominante et que ses activités télécoms soient séparées de M-Pesa.",
+   "statut": "confirme",
+   "usage": "libre"
+  },
+  {
+   "ref": "F82",
+   "texte": "Selon FSD Kenya, environ 110 applications de prêt mobile étaient disponibles en septembre 2018 ; 49 avaient été publiées au cours de la seule année 2018, contre 14 en 2017.",
+   "statut": "confirme",
+   "usage": "libre"
+  }
+ ],
+ "sources": [
+  {
+   "ref": "S39",
+   "organisation": "Banque centrale du Kenya / KNBS / FSD Kenya",
+   "categorie": "A",
+   "titre": "2019 FinAccess Household Survey",
+   "url": "https://www.centralbank.go.ke/uploads/financial_inclusion/1275230559_2019%20FinAcces%20Report%20(web).pdf",
+   "date_publication": "2019-04"
+  },
+  {
+   "ref": "S43",
+   "organisation": "Banque mondiale",
+   "categorie": "A",
+   "titre": "Poor People Using Mobile Financial Services: Observations on Customer Usage and Impact from M-PESA (CGAP Brief)",
+   "url": "https://openknowledge.worldbank.org/handle/10986/9492",
+   "date_publication": "2009-08"
+  },
+  {
+   "ref": "S45",
+   "organisation": "FSD Kenya",
+   "categorie": "A",
+   "titre": "Digital credit audit report",
+   "url": "https://www.fsdkenya.org/wp-content/uploads/2019/11/19-09-10-Regulation-Digital-credit-audit.pdf",
+   "date_publication": "2019-09"
+  },
+  {
+   "ref": "S38",
+   "organisation": "FSD Kenya / Financial Access Partnership (hébergé par la Banque centrale du Kenya)",
+   "categorie": "A",
+   "titre": "Financial Access in Kenya – Results of the 2006 National Survey",
+   "url": "https://www.centralbank.go.ke/uploads/financial_inclusion/410963334_FinAccess%20%20Household%202006%20Key%20Results%20Report.pdf",
+   "date_publication": "2007-10"
+  },
+  {
+   "ref": "S44",
+   "organisation": "Safaricom",
+   "categorie": "A",
+   "titre": "Safaricom’s Revenue Tops 3 Billion Dollars… (résultats de l'exercice 2025)",
+   "url": "https://www.safaricom.co.ke/media-center-landing/press-releases/safaricom-s-revenue-tops-3-billion-dollars",
+   "date_publication": "2025-05-09"
+  },
+  {
+   "ref": "S40",
+   "organisation": "Science (Suri & Jack), copie FinDev Gateway",
+   "categorie": "A",
+   "titre": "The long-run poverty and gender impacts of mobile money (Science, vol. 354, n° 6317, p. 1288-1292)",
+   "url": "https://www.findevgateway.org/sites/default/files/publications/files/new_jack_and_suri_paper_1.pdf",
+   "date_publication": "2016-12-09"
+  },
+  {
+   "ref": "S6",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "titre": "M-Pesa: creating the leading mobile money service",
+   "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+   "date_publication": "2017-03"
+  },
+  {
+   "ref": "S32",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+   "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+   "date_publication": "2022-03"
+  },
+  {
+   "ref": "S24",
+   "organisation": "Agence Ecofin",
+   "categorie": "B",
+   "titre": "Paiement mobile : la leçon kenyane au monde",
+   "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+   "date_publication": null
+  },
+  {
+   "ref": "S25",
+   "organisation": "Agence Ecofin",
+   "categorie": "B",
+   "titre": "La Banque centrale du Kenya veut réduire les frais de transfert de M-Pesa et Airtel Money",
+   "url": "https://www.agenceecofin.com/actualites-numerique/0110-131952-la-banque-centrale-du-kenya-veut-reduire-les-frais-de-transfert-de-m-pesa-et-airtel-money",
+   "date_publication": "2025-10"
+  },
+  {
+   "ref": "S26",
+   "organisation": "Agence Ecofin",
+   "categorie": "B",
+   "titre": "Kenya: les sénateurs menacent à nouveau de séparer les activités télécoms et M-Pesa chez Safaricom",
+   "url": "https://www.agenceecofin.com/regulation/1811-82596-kenya-les-senateurs-menacent-a-nouveau-de-separer-les-activites-telecoms-et-m-pesa-chez-safaricom",
+   "date_publication": "2020-11"
+  },
+  {
+   "ref": "S27",
+   "organisation": "Agence Ecofin",
+   "categorie": "B",
+   "titre": "Les Kenyans dans la spirale du crédit sur mobile",
+   "url": "https://www.agenceecofin.com/hebdop3/0611-70837-les-kenyans-dans-la-spirale-du-credit-sur-mobile",
+   "date_publication": "2019-11"
+  },
+  {
+   "ref": "S29",
+   "organisation": "Agence Ecofin",
+   "categorie": "B",
+   "titre": "Kenya : Safaricom finalise l’acquisition de M-Pesa Holdings auprès de Vodafone",
+   "url": "https://www.agenceecofin.com/fusions-acquisitions/1910-112889-kenya-safaricom-finalise-l-acquisition-de-m-pesa-holdings-aupres-de-vodafone",
+   "date_publication": "2023-10"
+  },
+  {
+   "ref": "S42",
+   "organisation": "Innovations (MIT Press) — Hughes & Lonie",
+   "categorie": "B",
+   "titre": "M-PESA: Mobile Money for the « Unbanked » (Innovations, MIT Press, vol. 2, n° 1-2, p. 63-81)",
+   "url": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf",
+   "date_publication": "2007"
+  },
+  {
+   "ref": "S7",
+   "organisation": "MIT News (Massachusetts Institute of Technology)",
+   "categorie": "B",
+   "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+   "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+   "date_publication": "2016-12-08"
+  },
+  {
+   "ref": "S34",
+   "organisation": "OpenEdition",
+   "categorie": "B",
+   "titre": "Socioéconomie de la monnaie mobile et des monnaies locales au Kenya : quelles innovations monétaires pour quel développement ? (Revue de la régulation)",
+   "url": "https://journals.openedition.org/regulation/15139?lang=en",
+   "date_publication": null
+  },
+  {
+   "ref": "S36",
+   "organisation": "The Star (Kenya)",
+   "categorie": "B",
+   "titre": "Senators reignite push to split Safaricom",
+   "url": "https://www.the-star.co.ke/news/2020-11-18-senators-reignite-push-to-split-safaricom",
+   "date_publication": "2020-11-17"
+  },
+  {
+   "ref": "S8",
+   "organisation": "Wikipédia",
+   "categorie": "C",
+   "titre": "M-PESA — Wikipedia (EN)",
+   "url": "https://en.wikipedia.org/wiki/M-Pesa",
+   "date_publication": "2009-02-20"
+  }
+ ]
+}
