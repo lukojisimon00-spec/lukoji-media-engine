@@ -1,0 +1,377 @@
+{
+ "session": {
+  "mode": "assistee",
+  "chercheur": "Claude (agent) + session de vérification en lecture seule (environnement « LUKOJI Fact-check ») — fact-check final v2",
+  "requetes": [
+   "Suri & Jack, Science 2016 (copie FinDev Gateway) et supplément",
+   "Jack & Suri, NBER w16721 (2011)",
+   "FinAccess 2006 (rapport original) et FinAccess 2019 (Banque centrale du Kenya)",
+   "Hughes & Lonie 2007 (Innovations, miroir UZH) ; Morawczynski & Pickens 2009 (CGAP)",
+   "Vodafone 2017 et 2022 ; Safaricom FY25 ; The Star 17/11/2020 ; FSD Kenya 2019 ; communiqués de la Banque centrale 2009"
+  ],
+  "notes": "Pages lues par la session de vérification le 27/11/2026 (curl, pdftotext) ; extraits courts relevés par l'agent (niveau « page_lue_agent »). Inaccessibles : science.org (Cloudflare), journals.openedition.org (protection anti-robots « Anubis »), agenceecofin.com (Cloudflare), PDF du communiqué FY25 de Safaricom (403)."
+ },
+ "sources": [
+  {
+   "id": "fa2006",
+   "url": "https://www.centralbank.go.ke/uploads/financial_inclusion/410963334_FinAccess%20%20Household%202006%20Key%20Results%20Report.pdf",
+   "titre": "Financial Access in Kenya – Results of the 2006 National Survey",
+   "date_publication": "2007-10",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "FSD Kenya / Financial Access Partnership (hébergé par la Banque centrale du Kenya)",
+   "categorie": "A",
+   "nature": "enquête nationale officielle",
+   "justification_categorie": "Rapport original de l'enquête FinAccess 2006 (échantillon 4 418, terrain The Steadman Group).",
+   "limites": "Définitions de 2006 révisées dans les rapports ultérieurs (formel 26,4 % dans ce rapport ; 26,7 % dans la série harmonisée de 2019)."
+  },
+  {
+   "id": "fa2019",
+   "url": "https://www.centralbank.go.ke/uploads/financial_inclusion/1275230559_2019%20FinAcces%20Report%20(web).pdf",
+   "titre": "2019 FinAccess Household Survey",
+   "date_publication": "2019-04",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Banque centrale du Kenya / KNBS / FSD Kenya",
+   "categorie": "A",
+   "nature": "enquête nationale officielle",
+   "justification_categorie": "Rapport officiel conjoint CBK, KNBS, FSD Kenya.",
+   "limites": "Terrain d'octobre à décembre 2018. L'argent mobile est classé comme service formel (prudentiel) ; reclassement de 2006 non expliqué."
+  },
+  {
+   "id": "science2016",
+   "url": "https://www.findevgateway.org/sites/default/files/publications/files/new_jack_and_suri_paper_1.pdf",
+   "titre": "The long-run poverty and gender impacts of mobile money (Science, vol. 354, n° 6317, p. 1288-1292)",
+   "date_publication": "2016-12-09",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Science (Suri & Jack), copie FinDev Gateway",
+   "categorie": "A",
+   "nature": "article scientifique à comité de lecture",
+   "justification_categorie": "Étude originale (copie de la version publiée hébergée par FinDev Gateway ; science.org inaccessible).",
+   "limites": "Extrapolation nationale « back of the envelope » présentée comme borne basse ; attrition du panel ; aucune mention de PPA."
+  },
+  {
+   "id": "nber16721",
+   "url": "https://www.nber.org/system/files/working_papers/w16721/w16721.pdf",
+   "titre": "Mobile Money: The Economics of M-PESA (NBER Working Paper 16721)",
+   "date_publication": "2011-01",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "NBER (Jack & Suri)",
+   "categorie": "A",
+   "nature": "document de travail de recherche",
+   "justification_categorie": "Document de travail des auteurs de l'étude.",
+   "limites": "Les chiffres 41 % / 8 % et 77 % rapportés par MIT News (2010) n'y figurent pas sous cette forme."
+  },
+  {
+   "id": "hughes_lonie",
+   "url": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf",
+   "titre": "M-PESA: Mobile Money for the « Unbanked » (Innovations, MIT Press, vol. 2, n° 1-2, p. 63-81)",
+   "date_publication": "2007",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Innovations (MIT Press) — Hughes & Lonie",
+   "categorie": "B",
+   "nature": "témoignage des responsables du projet publié dans une revue",
+   "justification_categorie": "Récit contemporain des responsables du projet (Vodafone) ; copie miroir hébergée par l'Université de Zurich.",
+   "limites": "Auteurs liés à Vodafone : pas une source indépendante de l'entreprise."
+  },
+  {
+   "id": "cgap2009",
+   "url": "https://openknowledge.worldbank.org/handle/10986/9492",
+   "titre": "Poor People Using Mobile Financial Services: Observations on Customer Usage and Impact from M-PESA (CGAP Brief)",
+   "date_publication": "2009-08",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "CGAP / Banque mondiale (Morawczynski & Pickens)",
+   "categorie": "A",
+   "nature": "étude ethnographique publiée par une institution internationale",
+   "justification_categorie": "Étude de terrain indépendante de l'opérateur (14 mois, Kibera et Bukura).",
+   "limites": ""
+  },
+  {
+   "id": "voda15",
+   "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+   "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+   "date_publication": "2022-03",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "nature": "communication officielle d'entreprise",
+   "justification_categorie": "Communication officielle (source intéressée).",
+   "limites": "Chiffres de l'entreprise, non audités."
+  },
+  {
+   "id": "saf_fy25",
+   "url": "https://www.safaricom.co.ke/media-center-landing/press-releases/safaricom-s-revenue-tops-3-billion-dollars",
+   "titre": "Safaricom’s Revenue Tops 3 Billion Dollars… (résultats de l'exercice 2025)",
+   "date_publication": "2025-05-09",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Safaricom",
+   "categorie": "A",
+   "nature": "communication financière officielle",
+   "justification_categorie": "Communiqué de résultats de l'entreprise.",
+   "limites": "URL exacte de la page web relevée approximativement par la session de vérification (le PDF du communiqué renvoie HTTP 403) ; chiffre de l'entreprise."
+  },
+  {
+   "id": "star_senat",
+   "url": "https://www.the-star.co.ke/news/2020-11-18-senators-reignite-push-to-split-safaricom",
+   "titre": "Senators reignite push to split Safaricom",
+   "date_publication": "2020-11-17",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "The Star (Kenya)",
+   "categorie": "B",
+   "nature": "presse nationale",
+   "justification_categorie": "Quotidien national kényan.",
+   "limites": "Page lue le 27/11/2026 (date affichée : 17/11/2020, 17 h EAT ; l'URL porte le 18). Rubrique « Opinion/Columnists », signée « The Star »."
+  },
+  {
+   "id": "fsd_audit",
+   "url": "https://www.fsdkenya.org/wp-content/uploads/2019/11/19-09-10-Regulation-Digital-credit-audit.pdf",
+   "titre": "Digital credit audit report",
+   "date_publication": "2019-09",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "FSD Kenya",
+   "categorie": "A",
+   "nature": "rapport d'un programme indépendant d'inclusion financière",
+   "justification_categorie": "Rapport original de FSD Kenya.",
+   "limites": "Chemin exact du PDF relevé par la session de vérification (…/2019/11/19-09-10-Regulation-Digital-credit-audit.pdf)."
+  },
+  {
+   "id": "cbk_zain2009",
+   "url": "https://www.centralbank.go.ke/images/docs/media/2009/Zain-Mobile%20Phone%20Transfer%20Service%20Release%20260109.pdf",
+   "titre": "Recent media reports and queries on the Central Bank of Kenya (CBK) and mobile phone financial services",
+   "date_publication": "2009-01-26",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Central Bank of Kenya",
+   "categorie": "A",
+   "nature": "communiqué d'une banque centrale",
+   "justification_categorie": "Communiqué officiel.",
+   "limites": "Porte sur Zain, pas sur M-PESA."
+  },
+  {
+   "id": "voda_created",
+   "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+   "titre": "M-Pesa: creating the leading mobile money service",
+   "date_publication": "2017-03",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "nature": "communication officielle d'entreprise",
+   "justification_categorie": "Communication officielle de l'entreprise co-créatrice du service (source primaire, intéressée).",
+   "limites": "Source intéressée : récit des origines raconté par un dirigeant de Vodafone (Michael Joseph), non corroboré par une organisation indépendante."
+  },
+  {
+   "id": "eco_senat",
+   "url": "https://www.agenceecofin.com/regulation/1811-82596-kenya-les-senateurs-menacent-a-nouveau-de-separer-les-activites-telecoms-et-m-pesa-chez-safaricom",
+   "titre": "Kenya: les sénateurs menacent à nouveau de séparer les activités télécoms et M-Pesa chez Safaricom",
+   "date_publication": "2020-11",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "limites": "Date corrigée en v2 (déclarée « 2018-11 » en v1, sans preuve). Date de publication non lisible (page bloquée par Cloudflare le 27/11/2026) ; « novembre 2020 » est établi par trois indices concordants : liens connexes datés du 09/03/2017 et du 20/02/2018 (article postérieur), numérotation des articles Ecofin (entre novembre 2019 et mai 2022), et articles de presse kényane datés des 17-18/11/2020 dans leur URL (The Star, Techweez ; vus en résultat de recherche seulement)."
+  }
+ ],
+ "faits": [
+  {
+   "texte": "Selon le rapport original FinAccess 2006, l'envoi d'argent au Kenya passait surtout par un ami ou un proche (environ 50 % à 56 %) et par une compagnie de bus ou de matatu (21,6 % des receveurs, 29,4 % des envoyeurs) ; ces moyens étaient jugés les moins chers mais les plus risqués et les plus lents.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "fa2006",
+     "extrait": "Using a friend or public transport are the popular methods of money transfer"
+    },
+    {
+     "source": "fa2006",
+     "extrait": "Bus/matatu and sending with a friend are the least expensive, the easiest to get to but at the same time the most risky and the slowest."
+    },
+    {
+     "source": "fa2006",
+     "extrait": "Through a bus or matatu company"
+    }
+   ]
+  },
+  {
+   "texte": "Avant M-Pesa, des Kényans envoyaient de l'argent par bus (colis déguisés, voyageurs) et des femmes rurales devaient voyager jusqu'à la ville ou au bureau de poste, une démarche qui pouvait prendre plus d'une semaine.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "hughes_lonie",
+     "extrait": "sending heavily disguised parcels by bus or finding someone travelling that way and giving them the cash"
+    },
+    {
+     "source": "cgap2009",
+     "extrait": "rural women had to travel to the city or post office by bus to get money… This process could take over a week."
+    },
+    {
+     "source": "voda_created",
+     "extrait": "In order to send money to their relatives, people would travel for days to get home or give the money to a bus driver."
+    }
+   ]
+  },
+  {
+   "texte": "Selon l'enquête FinAccess, 26,7 % des adultes kényans utilisaient un service financier formel en 2006 (série harmonisée publiée en 2019 ; le rapport original de 2006 donnait 26,4 %).",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "fa2019",
+     "extrait": "Formal financial inclusion has risen to 82.9 percent, up from 26.7 percent in 2006, while complete exclusion has narrowed to 11.0 percent from 41.3 percent in 2006."
+    },
+    {
+     "source": "fa2006",
+     "extrait": "In total, 26.4% are formally served"
+    }
+   ]
+  },
+  {
+   "texte": "Selon l'enquête FinAccess publiée en 2019 par la Banque centrale du Kenya, le KNBS et FSD Kenya, 82,9 % des adultes utilisent un service financier formel ; l'argent mobile y est lui-même classé parmi les services formels.",
+   "type": "fait",
+   "importance": "cle",
+   "notes": "Classement du mobile money en « formel prudentiel » : tableau 2.1 du rapport, relevé par la session de vérification (paraphrase, pas de citation).",
+   "preuves": [
+    {
+     "source": "fa2019",
+     "extrait": "Formal financial inclusion has risen to 82.9 percent, up from 26.7 percent in 2006, while complete exclusion has narrowed to 11.0 percent from 41.3 percent in 2006."
+    }
+   ]
+  },
+  {
+   "texte": "Selon Hughes et Lonie (2007), responsables du projet, le pilote a commencé le 11 octobre 2005 avec l'institution de microfinance Faulu Kenya, dans trois lieux : le centre de Nairobi, Mathare et Thika ; il visait les remboursements de prêts, mais d'autres usages sont apparus.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "hughes_lonie",
+     "extrait": "On 11 October, 2005, the pilot finally started"
+    },
+    {
+     "source": "hughes_lonie",
+     "extrait": "We partnered with Faulu Kenya, a local MFI"
+    },
+    {
+     "source": "hughes_lonie",
+     "extrait": "The pleasant market town of Thika… was confirmed as the third location for the pilot"
+    },
+    {
+     "source": "hughes_lonie",
+     "extrait": "Aside from the standard loan repayments for which we had designed the system, we observed several other applications"
+    }
+   ]
+  },
+  {
+   "texte": "Le projet a obtenu près d'un million de livres du Financial Deepening Challenge Fund du DFID, somme égalée par Vodafone.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "hughes_lonie",
+     "extrait": "awarded funding of nearly £1 million, which was matched by Vodafone"
+    },
+    {
+     "source": "voda15",
+     "extrait": "originally as an idea part-funded by the UK Department for International Development in partnership with Vodafone"
+    }
+   ]
+  },
+  {
+   "texte": "Selon Suri et Jack (Science, 2016), l'accès à M-Pesa a fait sortir au moins 194 000 ménages, soit 2 % des ménages kényans, de l'extrême pauvreté (moins de 1,25 dollar par personne et par jour) et conduit 185 000 femmes vers une activité commerciale ; il s'agit d'une extrapolation nationale présentée par les auteurs comme une borne basse.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "science2016",
+     "extrait": "We estimate that access to the Kenyan mobile money system M-PESA increased per capita consumption levels and lifted 194,000 households, or 2% of Kenyan households, out of poverty."
+    },
+    {
+     "source": "science2016",
+     "extrait": "we estimate that the spread of mobile money helped raise at least 194,000 households out of extreme poverty, and induced 185,000 women to switch into business or retail as their main occupation."
+    },
+    {
+     "source": "science2016",
+     "extrait": "43.3% of our sample had per capita consumption less than $1.25 per day (a common measure of extreme poverty)"
+    }
+   ]
+  },
+  {
+   "texte": "Suri et Jack mesurent l'accès à M-Pesa par le nombre d'agents dans un rayon d'un kilomètre autour de chaque ménage d'un panel suivi de 2008 à 2014, et revendiquent une identification causale.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "science2016",
+     "extrait": "Between 2008 and 2014, we conducted five rounds of a household panel survey"
+    },
+    {
+     "source": "science2016",
+     "extrait": "the number of agents within 1 km of the household"
+    },
+    {
+     "source": "science2016",
+     "extrait": "To identify the causal effects of M-PESA"
+    }
+   ]
+  },
+  {
+   "texte": "Selon Safaricom, sur l'exercice 2025, M-PESA a représenté 44,2 % des revenus de services de l'opérateur au Kenya (161,1 milliards de shillings).",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "saf_fy25",
+     "extrait": "In Kenya, service revenue grew by 10.5% to KES 364.3 billion. M-PESA… grew 15.2% YoY to KES 161.1 billion, contributing 44.2% of Kenya’s service revenue."
+    }
+   ]
+  },
+  {
+   "texte": "En novembre 2020, des sénateurs kényans ont demandé à nouveau que Safaricom soit déclarée dominante et que ses activités télécoms soient séparées de M-Pesa.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "star_senat",
+     "extrait": "Safaricom should be declared dominant and split into two firms, senators have said."
+    },
+    {
+     "source": "eco_senat",
+     "extrait": "Le Comité sénatorial kenyan des technologies de l’information et de la communication menace à nouveau de séparer les activités télécoms et de mobile money (M-Pesa) de l’opérateur de téléphonie mobile Safaricom."
+    }
+   ]
+  },
+  {
+   "texte": "Selon FSD Kenya, environ 110 applications de prêt mobile étaient disponibles en septembre 2018 ; 49 avaient été publiées au cours de la seule année 2018, contre 14 en 2017.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "fsd_audit",
+     "extrait": "In September 2018, the two main app stores… had approximately 110 mobile apps by 74 unique developers"
+    },
+    {
+     "source": "fsd_audit",
+     "extrait": "There was an unprecedented rise in the number of apps published in 2018, from 14 in 2017 to 49 in 2018."
+    }
+   ]
+  },
+  {
+   "texte": "Le seul communiqué de la Banque centrale du Kenya de janvier 2009 sur les services financiers mobiles retrouvé (26 janvier 2009) porte sur Zain ; la citation « la réglementation traîne généralement derrière l'innovation » n'y figure pas.",
+   "type": "fait",
+   "importance": "secondaire",
+   "notes": "Documente le retrait de F66.",
+   "preuves": [
+    {
+     "source": "cbk_zain2009",
+     "extrait": "CBK DOES NOT REGULATE MOBILE PHONE PROVIDERS SUCH AS ZAIN"
+    }
+   ]
+  }
+ ]
+}

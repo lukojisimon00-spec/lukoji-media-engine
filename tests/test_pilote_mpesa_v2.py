@@ -90,3 +90,15 @@ def test_qc_editorial_ne_declare_jamais_le_pilote_valide():
     qc = _load(V2 / "qc_editorial.json")
     assert qc["valide"] is False
     assert qc["verdict"] in ("bloque", "pret_pour_validation_humaine")
+
+
+V21 = ROOT / "research/stories/mpesa/v2_1/script_v2_1.json"
+
+
+@pytest.mark.skipif(not V21.exists(), reason="script v2.1 absent")
+@pytest.mark.parametrize("motif", [r"27 janvier 2009", r"traîne généralement", r"deuxième source de revenus",
+                                   r"49 plateformes", r"\b41 ?%", r"\b8 ?% vers", r"testé à Thika, au nord",
+                                   r"44,2 % des revenus de Safaricom", r"menacent"])
+def test_fact_check_final_corrections_appliquees(motif):
+    vo = " ".join(s["voix_off"] for s in _load(V21)["sequences"])
+    assert not re.search(motif, vo, flags=re.I)

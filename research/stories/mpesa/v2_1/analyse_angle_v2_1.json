@@ -1,0 +1,43 @@
+{
+ "angle_provisoire_editeur": "Comment un service conçu pour envoyer de l'argent par téléphone a bouleversé l'accès aux services financiers au Kenya.",
+ "verdict_angle": "corrige",
+ "angle_retenu": "Comment un service pensé pour verser et rembourser des microcrédits a été détourné par ses premiers utilisateurs pour envoyer de l'argent à leurs proches, puis a accompagné une forte progression de l'accès aux services financiers au Kenya — dans une proportion que seules des estimations attribuées permettent d'approcher —, au prix d'une puissance aujourd'hui contestée.",
+ "justification": "Les sources primaires (Vodafone, F8, F9) établissent que M-Pesa n'a PAS été conçu pour envoyer de l'argent : le prototype testé à Thika servait à verser et rembourser des microcrédits ; l'équipe a réorienté le produit après avoir observé que les bénéficiaires envoyaient l'argent à des proches. L'angle provisoire contient donc une erreur de prémisse. La seconde partie (« bouleversé l'accès aux services financiers ») est soutenue par des sources sérieuses mais non confirmées par deux organisations indépendantes (F38, F51 : source unique ; F11 : estimation d'une étude rapportée par le MIT) : elle doit être attribuée et nuancée (corrélation, extrapolation). Les limites documentées (frais F55, domination F54/F56, paris F57, crédit F58, critique académique F59) font partie de l'angle, pour ne pas produire un récit promotionnel. RÉVISION V2 : le récit des origines repose sur une seule organisation (Vodafone, récit signé Michael Joseph) et est attribué comme tel ; les chiffres 22 % et 77 % (enquête de 2008, postérieure au lancement) sont retirés ; la part de marché de 90,8 % (indicateur non établi) et la comparaison 30 000 points / 400 agences (400 contredit par la Banque centrale) sont retirées ; la menace des sénateurs est redatée en novembre 2020.",
+ "points_a_verifier": [
+  "Paris en ligne : part des revenus M-PESA (rapport annuel Safaricom FY2022).",
+  "Frais de transfert (7 %) et projet de plafonnement (23 → 10 KES) : source primaire de la Banque centrale (Stratégie nationale d'inclusion financière 2025-2028).",
+  "Auteur de la présentation de thèse (OpenEdition, page protégée).",
+  "Récit des origines : aucune source indépendante de Vodafone pour le détournement (Hughes & Lonie sont l'équipe du projet).",
+  "Conditions posées par la Banque centrale avant le lancement : Agence Ecofin seule."
+ ],
+ "faits_interdits_rappel": [
+  "F13",
+  "F38",
+  "F39",
+  "F47",
+  "F54",
+  "F56",
+  "F57",
+  "F48"
+ ],
+ "revision": "v2.1 — fact-check final (sources primaires lues le 27/11/2026)",
+ "faits_exclus_v2": {
+  "F38": "chronologie fausse (« avant M-Pesa ») et origine du 22 % non établie",
+  "F39": "enquête de 2008, base du 77 % non établie",
+  "F47": "« 400 agences bancaires » contredit par la Banque centrale",
+  "F54": "indicateur de la part de 90,8 % non établi",
+  "F56": "date fausse (2018) et « trop dominant » non étayé — remplacé par un fait redaté",
+  "F57": "remplacé par un fait daté (exercice 2022)",
+  "F48": "retiré pour alléger SEQ-07 (10 pays en 2016 puis 7 en 2022, sans explication)",
+  "F13": "Wikipédia seule"
+ },
+ "faits_exclus_v2_1": {
+  "F66": "communiqué de la Banque centrale du 27/01/2009 et citation introuvables (le communiqué du 26/01/2009 porte sur Zain)",
+  "F51": "remplacé par F74/F75 (FinAccess lu : accès FORMEL, mobile money classé formel)",
+  "F11": "remplacé par F78 (article de Science lu)",
+  "F53": "remplacé par F80 (Safaricom : revenus de services au Kenya)",
+  "F64": "remplacé par F81 (The Star lu : demande, pas menace)",
+  "F65": "PENDING : « deuxième source de revenus » non vérifiée dans une source primaire",
+  "F67": "remplacé par F82 (49 = applications publiées en 2018)"
+ }
+}
