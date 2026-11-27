@@ -1,7 +1,7 @@
 {
  "projet": "STO-20261127-001",
  "titre": "Quand les clients ont changé le produit",
- "statut_au_verrouillage": "storyboard_draft",
+ "statut_au_verrouillage": "storyboard_approved",
  "validations": [
   {
    "etape": "structure",
@@ -62,6 +62,39 @@
     "storyboard": {
      "version": 7,
      "sha256": "dd62551c01d2e4e4b3d89251bb9070f4af4302b8b905eedeb0ff34022130dbb9"
+    },
+    "visual": {
+     "version": 5,
+     "sha256": "bc0811a0be2a59880bf384c9562677976b898b567e2f5f88913b9686c86d6642"
+    }
+   }
+  },
+  {
+   "etape": "storyboard",
+   "acteur": "Simon Lukoji",
+   "date": "2026-11-27T16:33:30Z",
+   "note": "Storyboard v10 (phase 2.6.2) validé dans son état actuel. Densité graphique de SEQ-08 acceptée comme risque éditorial à vérifier au test d'écoute et au montage.",
+   "qc_id": 13,
+   "versions": {
+    "research": {
+     "version": 4,
+     "sha256": "e05227f4006cc36ce40b9864172b91d778f459d7e19c8bb30e81822eefcbdf1c"
+    },
+    "hooks": {
+     "version": 5,
+     "sha256": "a89eecdfbad18e4b1051e60d3e6110568598777c52f28e6bd51a102bb982ffe0"
+    },
+    "structure": {
+     "version": 6,
+     "sha256": "d243c5878317b4e5f1932e672c9419909b73296a9780b4dcd98e372285b25677"
+    },
+    "script": {
+     "version": 21,
+     "sha256": "62bd3ad4d0c86f20c1910513004970370ae4f76f14a49c71bb68adaa1cfcd7a4"
+    },
+    "storyboard": {
+     "version": 10,
+     "sha256": "07ffc5f5daf4a6c9bbf004cae7d11b07285e516a1bd43b237d015bb5a6744d10"
     },
     "visual": {
      "version": 5,
