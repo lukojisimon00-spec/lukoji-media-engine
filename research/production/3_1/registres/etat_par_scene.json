@@ -1,0 +1,660 @@
+[
+ {
+  "scene": "SC-01",
+  "sequence": "SEQ-01",
+  "type": "illustration",
+  "ressources": [
+   "R20",
+   "R22"
+  ],
+  "etats": [
+   "a_produire_par_lukoji",
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Carte seule avec le tracé (sans autocar)."
+ },
+ {
+  "scene": "SC-02",
+  "sequence": "SEQ-01",
+  "type": "document",
+  "ressources": [
+   "R26"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie seule : « ENVOI PAR UNE COMPAGNIE DE BUS OU DE MATATU — FINACCESS 2006 »."
+ },
+ {
+  "scene": "SC-03",
+  "sequence": "SEQ-01",
+  "type": "reconstitution",
+  "ressources": [
+   "R22"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Illustration au trait : bulle de SMS orange sur fond noir (mention ILLUSTRATION)."
+ },
+ {
+  "scene": "SC-04",
+  "sequence": "SEQ-01",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-05",
+  "sequence": "SEQ-02",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-06",
+  "sequence": "SEQ-02",
+  "type": "graphique",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-07",
+  "sequence": "SEQ-02",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-08",
+  "sequence": "SEQ-02",
+  "type": "document",
+  "ressources": [
+   "R12"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie : nom du ministère + phrase source."
+ },
+ {
+  "scene": "SC-09",
+  "sequence": "SEQ-03",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-10",
+  "sequence": "SEQ-03",
+  "type": "document",
+  "ressources": [
+   "R29"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie : référence complète de l'article."
+ },
+ {
+  "scene": "SC-11",
+  "sequence": "SEQ-03",
+  "type": "document",
+  "ressources": [
+   "R12"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie : nom, fonction, date et éditeur."
+ },
+ {
+  "scene": "SC-12",
+  "sequence": "SEQ-03",
+  "type": "animation",
+  "ressources": [
+   "R22"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-13",
+  "sequence": "SEQ-03",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-14",
+  "sequence": "SEQ-04",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-15",
+  "sequence": "SEQ-04",
+  "type": "document",
+  "ressources": [
+   "R12"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie de la citation, original anglais dessous."
+ },
+ {
+  "scene": "SC-16",
+  "sequence": "SEQ-04",
+  "type": "infographie",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-17",
+  "sequence": "SEQ-05",
+  "type": "photo_lieu",
+  "ressources": [
+   "R04"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie « LA RÉPONSE : DES COMMERÇANTS » sur noir."
+ },
+ {
+  "scene": "SC-18",
+  "sequence": "SEQ-05",
+  "type": "reconstitution",
+  "ressources": [
+   "R22"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Illustration au trait : billets → comptoir (mention ILLUSTRATION)."
+ },
+ {
+  "scene": "SC-19",
+  "sequence": "SEQ-05",
+  "type": "animation",
+  "ressources": [
+   "R22"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-20",
+  "sequence": "SEQ-05",
+  "type": "illustration",
+  "ressources": [
+   "R22"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Carton typographique « RETRAIT CHEZ UN COMMERÇANT »."
+ },
+ {
+  "scene": "SC-21",
+  "sequence": "SEQ-05",
+  "type": "photo_lieu",
+  "ressources": [
+   "R04"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "R02."
+ },
+ {
+  "scene": "SC-22",
+  "sequence": "SEQ-06",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-23",
+  "sequence": "SEQ-06",
+  "type": "typographie_animee",
+  "ressources": [
+   "R15"
+  ],
+  "etats": [
+   "inaccessible_substitut_prevu"
+  ],
+  "etat": "substitut prévu",
+  "remplacement": "Capture de l'article d'Agence Ecofin si l'éditeur peut la réaliser dans un navigateur."
+ },
+ {
+  "scene": "SC-24",
+  "sequence": "SEQ-06",
+  "type": "archive_photo",
+  "ressources": [
+   "R06"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "R07 (qualité faible) ou typographie « BANQUE CENTRALE DU KENYA »."
+ },
+ {
+  "scene": "SC-25",
+  "sequence": "SEQ-06",
+  "type": "archive_photo",
+  "ressources": [
+   "R06"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-26",
+  "sequence": "SEQ-06",
+  "type": "infographie",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-27",
+  "sequence": "SEQ-06",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-28",
+  "sequence": "SEQ-07",
+  "type": "graphique",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-29",
+  "sequence": "SEQ-07",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-30",
+  "sequence": "SEQ-07",
+  "type": "document",
+  "ressources": [
+   "R24"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-31",
+  "sequence": "SEQ-08",
+  "type": "graphique",
+  "ressources": [
+   "R21",
+   "R27"
+  ],
+  "etats": [
+   "a_produire_par_lukoji",
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-32",
+  "sequence": "SEQ-08",
+  "type": "graphique",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-33",
+  "sequence": "SEQ-08",
+  "type": "infographie",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-34",
+  "sequence": "SEQ-08",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Référence seule sur noir, sans bandeau."
+ },
+ {
+  "scene": "SC-35",
+  "sequence": "SEQ-08",
+  "type": "graphique",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-36",
+  "sequence": "SEQ-08",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-37",
+  "sequence": "SEQ-08",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-38",
+  "sequence": "SEQ-09",
+  "type": "plan_ambiance",
+  "ressources": [],
+  "etats": [
+   "aucune_ressource (noir)"
+  ],
+  "etat": "prête (ressource obtenue)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-39",
+  "sequence": "SEQ-09",
+  "type": "graphique",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Chiffre seul en typographie."
+ },
+ {
+  "scene": "SC-40",
+  "sequence": "SEQ-09",
+  "type": "photo_lieu",
+  "ressources": [
+   "R06"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "R07 (qualité faible) ou flèche graphique seule."
+ },
+ {
+  "scene": "SC-41",
+  "sequence": "SEQ-09",
+  "type": "graphique",
+  "ressources": [
+   "R21",
+   "R31"
+  ],
+  "etats": [
+   "a_produire_par_lukoji",
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-42",
+  "sequence": "SEQ-09",
+  "type": "document",
+  "ressources": [
+   "R30"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Typographie : titre et date de l'article."
+ },
+ {
+  "scene": "SC-43",
+  "sequence": "SEQ-09",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-44",
+  "sequence": "SEQ-09",
+  "type": "infographie",
+  "ressources": [
+   "R21",
+   "R32"
+  ],
+  "etats": [
+   "a_produire_par_lukoji",
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-45",
+  "sequence": "SEQ-10",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "Capture manuelle de la page par l'éditeur (facultative, R14)."
+ },
+ {
+  "scene": "SC-46",
+  "sequence": "SEQ-10",
+  "type": "typographie_animee",
+  "ressources": [
+   "R21"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-47",
+  "sequence": "SEQ-10",
+  "type": "reconstitution",
+  "ressources": [
+   "R22",
+   "R04"
+  ],
+  "etats": [
+   "a_produire_par_lukoji",
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Les trois mots « TÉLÉPHONE · SMS · BOUTIQUES » en typographie."
+ },
+ {
+  "scene": "SC-48",
+  "sequence": "SEQ-10",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-49",
+  "sequence": "SEQ-10",
+  "type": "carte",
+  "ressources": [
+   "R20"
+  ],
+  "etats": [
+   "a_produire_par_lukoji"
+  ],
+  "etat": "à produire par LUKOJI (ateliers suivants)",
+  "remplacement": "—"
+ },
+ {
+  "scene": "SC-50",
+  "sequence": "SEQ-10",
+  "type": "plan_ambiance",
+  "ressources": [
+   "R11"
+  ],
+  "etats": [
+   "a_collecter"
+  ],
+  "etat": "en attente de ressource",
+  "remplacement": "Plan tourné par LUKOJI à Kinshasa (préférable) ; à défaut, la question sur noir."
+ }
+]
