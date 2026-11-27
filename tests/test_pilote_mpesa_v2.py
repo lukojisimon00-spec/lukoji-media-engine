@@ -170,3 +170,19 @@ def test_storyboard_v2_6_fidele_aux_versions_verrouillees():
         assert set(sc["source_factuelle"]) <= set(next(s for s in script["sequences"] if s["id"] == sc["sequence"])["faits"]), sc["id"]
     for seq in script["sequences"]:
         assert " ".join(v for v in by[seq["id"]] if v).split() == seq["voix_off"].split(), seq["id"]
+
+
+REG261 = ROOT / "research/stories/mpesa/v2_6_1/ressources_visuelles_v2_6_1.json"
+
+
+@pytest.mark.skipif(not REG261.exists(), reason="registre v2.6.1 absent")
+def test_revue_2_6_1_tracabilite_et_storyboard_intact():
+    reg = {r["id"]: r for r in _load(REG261)["ressources"]}
+    for rid in ("R02", "R03"):
+        assert reg[rid]["statut"] != "contenu_inspecte" and "NON inspecté" in reg[rid]["inspection"]
+    for rid in ("R01", "R04", "R06", "R11"):
+        assert reg[rid]["statut"] == "contenu_inspecte"
+    v26 = {r["id"]: r for r in _load(ROOT / "research/stories/mpesa/v2_6/ressources_visuelles_v2_6.json")["ressources"]}
+    assert v26["R04"]["statut"] == "metadonnees_verifiees"  # registre v2.6 conservé tel quel
+    sb = _load(SB26)
+    assert len(sb["scenes"]) == 50 and sb["base_validee"] == {"script": 21, "structure": 6}
