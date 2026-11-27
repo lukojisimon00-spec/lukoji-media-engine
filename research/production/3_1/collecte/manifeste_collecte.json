@@ -1,0 +1,531 @@
+{
+  "projet": "LUKOJI — pilote M-Pesa",
+  "story": "STO-20261127-001",
+  "atelier": "3.1 — collecte documentaire",
+  "date_collecte_utc": "2026-11-27",
+  "avertissement": "Aucun PDF ni texte intégral n'est versé au dépôt : uniquement des captures d'extraits (PNG), des métadonnées et des empreintes SHA-256 des originaux (téléchargés hors dépôt dans /tmp/collecte).",
+  "documents": [
+    {
+      "id": "R26",
+      "titre": "Financial Access in Kenya: Results of the 2006 National Survey",
+      "url_demandee": "https://www.centralbank.go.ke/uploads/financial_inclusion/410963334_FinAccess%20%20Household%202006%20Key%20Results%20Report.pdf",
+      "url_finale": "https://www.centralbank.go.ke/uploads/financial_inclusion/410963334_FinAccess%20%20Household%202006%20Key%20Results%20Report.pdf",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:48:57Z",
+      "taille_octets": 438295,
+      "sha256": "ece71d437d4f5d8f0a295501a64f44d6fcd7260cb76303c8b0a2469da26e2710",
+      "type_mime": "application/pdf",
+      "nombre_pages": 44,
+      "auteurs_organisme": "The Steadman Group Research Division (préparé par) ; FSD Kenya en collaboration avec le Financial Access Partnership (soutien) — p. 1-2",
+      "date_publication": "octobre 2007 (page de titre : « OCTOBER 2007 ») ; enquête 2006",
+      "mention_licence": "aucune mention de licence trouvée ; seule une clause de non-responsabilité (p. 2) : « Every effort has been made to provide accurate and complete information. However, the members of the Financial Access partnership, FSD Kenya, its Trustees and partner development agencies make no claims, promises or guarantees… »",
+      "captures": [
+        {
+          "fichier": "captures/R26_SC-02_tableau-8-5-bus-matatu.png",
+          "page_ou_zone": "PDF p. 29 — Table 8.5 (en-tête + lignes)",
+          "citation_exacte": "Through a bus or matatu company 21.6 6.7 29.4 13.0",
+          "scene": "SC-02",
+          "dimensions_px": [
+            1623,
+            411
+          ]
+        },
+        {
+          "fichier": "captures/R26_ref_page-titre-72dpi.png",
+          "page_ou_zone": "PDF p. 1 — page de titre entière, vignette 72 dpi",
+          "citation_exacte": "FINANCIAL ACCESS IN KENYA RESULTS OF THE 2006 NATIONAL SURVEY OCTOBER 2007",
+          "scene": "référence",
+          "dimensions_px": [
+            596,
+            842
+          ]
+        }
+      ],
+      "statut": "obtenu"
+    },
+    {
+      "id": "R27",
+      "titre": "2019 FinAccess Household Survey (Access | Usage | Quality | Impact)",
+      "url_demandee": "https://www.centralbank.go.ke/uploads/financial_inclusion/1275230559_2019%20FinAcces%20Report%20(web).pdf",
+      "url_finale": "https://www.centralbank.go.ke/uploads/financial_inclusion/1275230559_2019%20FinAcces%20Report%20(web).pdf",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:49:01Z",
+      "taille_octets": 4353831,
+      "sha256": "aebf6c724f0a00ba224dba9fd2ae07bbe09b7551ef92068162bd6ea7a11257fe",
+      "type_mime": "application/pdf",
+      "nombre_pages": 76,
+      "auteurs_organisme": "Central Bank of Kenya (CBK), Kenya National Bureau of Statistics (KNBS), FSD Kenya (p. 2)",
+      "date_publication": "avril 2019 (couverture : « APRIL 2019 »)",
+      "mention_licence": "PDF p. 2 : « © finacess, 2019 » (graphie du document) ; pas de licence d'utilisation explicite. Clause : « CBK, KNBS, FSD Kenya make no claims, promises or guarantees about the accuracy… »",
+      "captures": [
+        {
+          "fichier": "captures/R27_SC-31_couverture-72dpi.png",
+          "page_ou_zone": "PDF p. 1 — couverture entière, vignette 72 dpi",
+          "citation_exacte": "2019 FinAccess Household Survey … APRIL 2019",
+          "scene": "SC-31",
+          "dimensions_px": [
+            596,
+            842
+          ]
+        },
+        {
+          "fichier": "captures/R27_SC-31_inclusion-82-9-pourcent.png",
+          "page_ou_zone": "PDF p. 7 (avant-propos), colonne gauche",
+          "citation_exacte": "Formal financial inclusion has risen to 82.9 percent, up from 26.7 percent in 2006, while complete exclusion has narrowed to 11.0 percent from 41.3 percent in 2006.",
+          "scene": "SC-31",
+          "dimensions_px": [
+            747,
+            247
+          ]
+        },
+        {
+          "fichier": "captures/R27_SC-06_tableau-2-1-mobile-money.png",
+          "page_ou_zone": "PDF p. 17 — Table 2.1 (partie supérieure, catégories Formal)",
+          "citation_exacte": "Table 2.1: Classification of the Access to Finance … Formal (non-prudential) … Mobile Money",
+          "scene": "SC-06",
+          "dimensions_px": [
+            1623,
+            1221
+          ]
+        }
+      ],
+      "note": "Mobile Money classé « Formal (non-prudential) », coché 2009-2019 (non coché 2006). Numéros de page = index PDF.",
+      "statut": "obtenu"
+    },
+    {
+      "id": "R29",
+      "titre": "M-PESA: Mobile Money for the “Unbanked”: Turning Cellphones into 24-Hour Tellers in Kenya",
+      "url_demandee": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf",
+      "url_finale": "https://files.ifi.uzh.ch/hilty/t/Literature_by_RQs/RQ%20304/2007_Hughes_Lonie_M-PESA-%20Mobile%20Money%20for%20the%20Unbanked%20Turning%20Cellphones%20into%2024-Hour%20Tellers%20in%20Kenya.pdf",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:49:04Z",
+      "taille_octets": 889574,
+      "sha256": "e58cba223ca008dede497e67ee44a2d424b1cc84ae204bfc2a26ebac533caec5",
+      "type_mime": "application/pdf",
+      "nombre_pages": 19,
+      "auteurs_organisme": "Nick Hughes et Susie Lonie — revue innovations (MIT Press), vol. 2, n° 1-2, p. 63-81",
+      "date_publication": "winter & spring 2007 (pied de page) ; métadonnées PDF : 25 mai 2007",
+      "mention_licence": "p. 63 (PDF p. 1) : « © 2007 Nick Hughes and Susie Lonie » ; aucune licence d'utilisation trouvée. Copie hébergée par un tiers (Université de Zurich, ifi.uzh.ch), pas par l'éditeur.",
+      "page_editeur": {
+        "doi": "10.1162/itgg.2007.2.1-2.63",
+        "source_doi": "RePEc/IDEAS (lien plein texte mitpressjournals.org) — non vérifié sur le site éditeur",
+        "tentatives": [
+          {
+            "url": "https://doi.org/10.1162/itgg.2007.2.1-2.63",
+            "resultat": "ÉCHEC (403, hôte doi.org non autorisé par le proxy réseau de l'environnement)"
+          },
+          {
+            "url": "https://direct.mit.edu/itgg/article/2/1-2/63/9504",
+            "resultat": "ÉCHEC (403) — URL devinée, non confirmée ; pas d'insistance"
+          }
+        ]
+      },
+      "captures": [
+        {
+          "fichier": "captures/R29_SC-10_page-titre-titre-auteurs.png",
+          "page_ou_zone": "p. 63 (PDF p. 1) — auteurs et titre",
+          "citation_exacte": "Nick Hughes and Susie Lonie M-PESA: Mobile Money for the “Unbanked” Turning Cellphones into 24-Hour Tellers in Kenya",
+          "scene": "SC-10",
+          "dimensions_px": [
+            1125,
+            352
+          ]
+        },
+        {
+          "fichier": "captures/R29_SC-10_page-titre-copyright-revue.png",
+          "page_ou_zone": "p. 63 (PDF p. 1) — pied de page",
+          "citation_exacte": "© 2007 Nick Hughes and Susie Lonie innovations / winter & spring 2007 63",
+          "scene": "SC-10",
+          "dimensions_px": [
+            1369,
+            162
+          ]
+        },
+        {
+          "fichier": "captures/R29_SC-10_FDCF-pres-1-million.png",
+          "page_ou_zone": "p. 67 (PDF p. 5)",
+          "citation_exacte": "but we overcame some initial cynicism and were awarded funding of nearly £1 million, which was matched by Vodafone.",
+          "scene": "SC-10",
+          "dimensions_px": [
+            1125,
+            225
+          ]
+        },
+        {
+          "fichier": "captures/R29_SC-10_Thika.png",
+          "page_ou_zone": "p. 72 (PDF p. 10)",
+          "citation_exacte": "The pleasant market town of Thika, about an hour up country, was confirmed as the third location for the pilot.",
+          "scene": "SC-10",
+          "dimensions_px": [
+            1125,
+            225
+          ]
+        },
+        {
+          "fichier": "captures/R29_SC-10_pilote-11-octobre-2005.png",
+          "page_ou_zone": "p. 74 (PDF p. 12) — intertitre « Lift-off »",
+          "citation_exacte": "On 11 October, 2005, the pilot finally started. Eight agent stores were given their M-PESA phones and repeated training sessions.",
+          "scene": "SC-10",
+          "dimensions_px": [
+            1125,
+            285
+          ]
+        },
+        {
+          "fichier": "captures/R29_SC-10_autres-usages-observes.png",
+          "page_ou_zone": "p. 76 (PDF p. 14)",
+          "citation_exacte": "Aside from the standard loan repayments for which we had designed the system, we observed several other applications:",
+          "scene": "SC-10",
+          "dimensions_px": [
+            1125,
+            464
+          ]
+        }
+      ],
+      "statut": "partiel",
+      "raison_statut": "PDF et passages obtenus ; page éditeur MIT non atteinte (DOI relevé mais non vérifié)."
+    },
+    {
+      "id": "R12",
+      "titre": "M-Pesa: creating the leading mobile money service",
+      "url_demandee": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+      "url_finale": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:54:17Z",
+      "taille_octets": 198260,
+      "sha256": "98b02f63d8f05188976382dda8a5a75f78c8caa2db1f1fcfe5333acf0504aa48",
+      "type_mime": "text/html; charset=utf-8",
+      "note_empreinte": "empreinte du HTML brut servi à curl (page dynamique : l'empreinte peut varier d'une requête à l'autre)",
+      "nombre_pages": null,
+      "auteurs_organisme": "Michael Joseph (Vodafone Group, Director of Mobile Money) — Vodafone Group",
+      "date_publication": "06 MAR 2017 (date affichée) ; rubrique DIGITAL SOCIETY",
+      "mention_licence": "pied de page : « © 2026 Vodafone Group » + lien « Terms and Conditions » ; aucune licence de réutilisation trouvée dans la page.",
+      "bandeau_cookies": "aucun bandeau bloquant détecté lors de la capture (texte « We use cookies to improve your experience on this site. Read our policy » présent dans le DOM, non visible dans les zones capturées)",
+      "particularite": "Le chapeau affiche littéralement « 10<sup>th</sup> » (balise HTML non interprétée sur la page).",
+      "captures": [
+        {
+          "fichier": "captures/R12_SC-11_entete-date-titre.png",
+          "page_ou_zone": "en-tête (span date + rubrique + h1)",
+          "citation_exacte": "06 MAR 2017 DIGITAL SOCIETY M-Pesa: creating the leading mobile money service",
+          "scene": "SC-11",
+          "dimensions_px": [
+            1216,
+            398
+          ]
+        },
+        {
+          "fichier": "captures/R12_SC-11_chapeau-signature-Michael-Joseph.png",
+          "page_ou_zone": "chapeau (texte d'introduction en italique)",
+          "citation_exacte": "On the 10<sup>th</sup> anniversary of M-Pesa, Michael Joseph, Vodafone Group’s Director of Mobile Money, reflects on the technical development",
+          "scene": "SC-11",
+          "dimensions_px": [
+            1560,
+            254
+          ]
+        },
+        {
+          "fichier": "captures/R12_SC-11_note-auteur-Michael-Joseph.png",
+          "page_ou_zone": "note biographique en fin d'article",
+          "citation_exacte": "Michael Joseph is Vodafone Group’s Director of Mobile Money and is responsible for leading the strategic growth and development of M-Pesa.",
+          "scene": "SC-11",
+          "dimensions_px": [
+            1936,
+            192
+          ]
+        },
+        {
+          "fichier": "captures/R12_SC-08_subvention-DFID.png",
+          "page_ou_zone": "article, 2e paragraphe (p)",
+          "citation_exacte": "Vodafone became aware of the opportunity to get a grant from the Department for International Development in the UK – which was looking for companies interested in developing services to help the unbanked.",
+          "scene": "SC-08",
+          "dimensions_px": [
+            1936,
+            248
+          ]
+        },
+        {
+          "fichier": "captures/R12_SC-15_reingenierie-prets.png",
+          "page_ou_zone": "article, paragraphe (p)",
+          "citation_exacte": "So we took a chance, and re-engineered the loans system to focus squarely on transmitting money from one phone to another.",
+          "scene": "SC-15",
+          "dimensions_px": [
+            1936,
+            360
+          ]
+        },
+        {
+          "fichier": "captures/R12_SC-21_mom-and-pop-stores.png",
+          "page_ou_zone": "article, paragraphe (p) « But the biggest challenge… »",
+          "citation_exacte": "worked incredibly hard to train and nurture our network of agents, many of whom were ‘mom and pop’ stores more used to selling goods than receiving and handling cash",
+          "scene": "SC-21",
+          "dimensions_px": [
+            1936,
+            360
+          ]
+        },
+        {
+          "fichier": "captures/R12_SC-01_bus-driver.png",
+          "page_ou_zone": "article, paragraphe (p) « In Kenya, and other parts of Africa… »",
+          "citation_exacte": "In order to send money to their relatives, people would travel for days to get home or give the money to a bus driver.",
+          "scene": "SC-01 (référence)",
+          "dimensions_px": [
+            1936,
+            304
+          ]
+        }
+      ],
+      "statut": "obtenu"
+    },
+    {
+      "id": "R24",
+      "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years of transforming lives",
+      "url_demandee": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+      "url_finale": "https://www.vodafone.com/news/newsroom/people/mpesa-marks-15-years",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:54:18Z",
+      "taille_octets": 196712,
+      "sha256": "fa23300e5b46715d6f2b353fc70413f210e4400c57d43243ea51d58902ea60c9",
+      "type_mime": "text/html; charset=utf-8",
+      "note_empreinte": "empreinte du HTML brut servi à curl (page dynamique : l'empreinte peut varier d'une requête à l'autre)",
+      "nombre_pages": null,
+      "auteurs_organisme": "Vodafone Group (aucun auteur nommé)",
+      "date_publication": "07 MAR 2022 (date affichée) ; rubrique PEOPLE",
+      "redirection": "l'URL demandée redirige vers /news/newsroom/people/mpesa-marks-15-years",
+      "mention_licence": "pied de page : « © 2026 Vodafone Group » + lien « Terms and Conditions » ; aucune licence de réutilisation trouvée.",
+      "bandeau_cookies": "aucun bandeau bloquant détecté dans les zones capturées",
+      "captures": [
+        {
+          "fichier": "captures/R24_SC-30_entete-date.png",
+          "page_ou_zone": "en-tête (date + rubrique + h1)",
+          "citation_exacte": "07 MAR 2022 PEOPLE M-Pesa – Africa’s leading fintech platform – marks 15 years of transforming lives",
+          "scene": "SC-30",
+          "dimensions_px": [
+            1216,
+            502
+          ]
+        },
+        {
+          "fichier": "captures/R24_SC-07_SC-30_DFID-51-millions-7-pays.png",
+          "page_ou_zone": "puce de résumé (li) en tête d'article",
+          "citation_exacte": "originally as an idea part-funded by the UK Department for International Development in partnership with Vodafone, … and now has 51 million customers across seven countries",
+          "scene": "SC-07, SC-30",
+          "dimensions_px": [
+            1888,
+            248
+          ]
+        },
+        {
+          "fichier": "captures/R24_SC-29_600000-agents-pays.png",
+          "page_ou_zone": "article, 1er paragraphe (p)",
+          "citation_exacte": "The service is provided by 600,000 agents across Kenya, Tanzania, Mozambique, the Democratic Republic of Congo, Lesotho, Ghana and Egypt.",
+          "scene": "SC-29",
+          "dimensions_px": [
+            1936,
+            416
+          ]
+        }
+      ],
+      "statut": "obtenu"
+    },
+    {
+      "id": "R30",
+      "titre": "Senators reignite push to split Safaricom",
+      "url_demandee": "https://www.the-star.co.ke/news/2020-11-18-senators-reignite-push-to-split-safaricom",
+      "url_finale": "https://www.the-star.co.ke/opinion/columnists/2020-11-18-senators-reignite-push-to-split-safaricom",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:54:20Z",
+      "taille_octets": 165857,
+      "sha256": "f306c04e2ea30d7cfc507825640a99ad3784a7de79838d4bd7282ebb9b2c9b2f",
+      "type_mime": "text/html; charset=utf-8",
+      "note_empreinte": "empreinte du HTML brut servi à curl (page dynamique : l'empreinte peut varier d'une requête à l'autre)",
+      "nombre_pages": null,
+      "auteurs_organisme": "« By The Star » — The Star (Kenya)",
+      "date_publication": "affichée : « 17 November 2020 · 17:00 EAT » ; datePublished (JSON-LD) 2020-11-17T17:00:28+0300 ; l'URL porte 2020-11-18",
+      "rubrique": "OPINION · COLUMNISTS (fil d'Ariane Home / Opinion / Columnists) — l'URL demandée (/news/) redirige vers /opinion/columnists/",
+      "premiere_phrase": "Safaricom should be declared dominant and split into two firms, senators have said.",
+      "mention_licence": "pied de page : « © 2026 The Star Kenya » + lien « Terms » ; aucune licence de réutilisation trouvée.",
+      "bandeau_cookies": "aucun détecté",
+      "captures": [
+        {
+          "fichier": "captures/R30_SC-42_entete-rubrique-titre-date.png",
+          "page_ou_zone": "en-tête (rubrique, h1, chapeau, signature, time)",
+          "citation_exacte": "OPINION · COLUMNISTS Senators reignite push to split Safaricom … By The Star 17 November 2020 · 17:00 EAT",
+          "scene": "SC-42",
+          "dimensions_px": [
+            1920,
+            642
+          ]
+        },
+        {
+          "fichier": "captures/R30_SC-42_premiere-phrase.png",
+          "page_ou_zone": "1er paragraphe de l'article (p)",
+          "citation_exacte": "Safaricom should be declared dominant and split into two firms, senators have said.",
+          "scene": "SC-42",
+          "dimensions_px": [
+            1480,
+            224
+          ]
+        }
+      ],
+      "statut": "obtenu"
+    },
+    {
+      "id": "R31",
+      "titre": "9/05/2025 - Safaricom’s Revenue Tops 3 Billion Dollars, A First in the Region, as the Transition to Become a Purpose-led Technology Pays Off",
+      "url_demandee": "(à retrouver) communiqué web FY25 sur www.safaricom.co.ke",
+      "url_finale": "https://www.safaricom.co.ke/media-center-landing/press-releases/safaricoms-revenue-tops-3-billion-dollars-a-first-in-the-region-as-the-transition-to-become-a-purpose-led-technology-pays-off",
+      "code_http": 200,
+      "date_heure_utc": null,
+      "taille_octets": 207427,
+      "sha256": "f7715ca5d138bd706144d7fcdecad397f75d24ff096eb7cd73ae3474d873bc0d",
+      "type_mime": "text/html; charset=utf-8",
+      "note_empreinte": "empreinte du HTML brut servi à curl (page dynamique : l'empreinte peut varier d'une requête à l'autre)",
+      "date_heure_utc_bis": "2026-11-27T16:53:22Z",
+      "nombre_pages": null,
+      "auteurs_organisme": "Safaricom PLC (métadonnée CMS : « Written by: Super User »)",
+      "date_publication": "« Published: Friday, 09 May 2025 06:13 » (métadonnées de la page) ; titre préfixé « 9/05/2025 »",
+      "mention_licence": "aucune mention trouvée dans le HTML obtenu",
+      "acces": "URL trouvée par recherche web. Navigateur Playwright : 403 (« ERROR: The request could not be satisfied », CloudFront). Requête curl simple : 200. Les captures sont un rendu Playwright LOCAL du HTML obtenu par curl (JavaScript désactivé, <base> vers safaricom.co.ke) : mise en forme possiblement différente de la page publique. PDF FY25-Press-Release_May-9-2025.pdf : 403, pas d'insistance.",
+      "captures": [
+        {
+          "fichier": "captures/R31_SC-41_titre-date.png",
+          "page_ou_zone": "titre de la page (h1), rendu local",
+          "citation_exacte": "9/05/2025 - Safaricom’s Revenue Tops 3 Billion Dollars, A First in the Region, as the Transition to Become a Purpose-led Technology Pays Off",
+          "scene": "SC-41",
+          "dimensions_px": [
+            1730,
+            205
+          ]
+        },
+        {
+          "fichier": "captures/R31_SC-41_MPESA-44-2-pourcent.png",
+          "page_ou_zone": "corps du communiqué (p), rendu local",
+          "citation_exacte": "M-PESA, which turned 18 last year, grew 15.2% YoY to KES 161.1 billion, contributing 44.2% of Kenya’s service revenue.",
+          "scene": "SC-41",
+          "dimensions_px": [
+            1730,
+            320
+          ]
+        }
+      ],
+      "statut": "partiel",
+      "raison_statut": "texte et URL obtenus ; capture issue d'un rendu local (403 au navigateur), PDF 403."
+    },
+    {
+      "id": "R32",
+      "titre": "Digital credit audit report: Evaluating the conduct and practice of digital lending in Kenya",
+      "url_demandee": "https://www.fsdkenya.org/wp-content/uploads/2019/11/19-09-10-Regulation-Digital-credit-audit.pdf",
+      "url_finale": "https://www.fsdkenya.org/wp-content/uploads/2019/11/19-09-10-Regulation-Digital-credit-audit.pdf",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:49:06Z",
+      "taille_octets": 1451478,
+      "sha256": "08df7d1b93ad6740a46bb50fe86fb48ee6408fd46016db0c516d1d1b2afd65e5",
+      "type_mime": "application/pdf",
+      "nombre_pages": 32,
+      "auteurs_organisme": "Francis Gwer, avec Jack Odero et Edoardo Totolo — FSD Kenya (couverture)",
+      "date_publication": "septembre 2019 (couverture : « September 2019 »)",
+      "mention_licence": "aucune mention trouvée (ni ©, ni licence) dans le texte extrait du PDF",
+      "captures": [
+        {
+          "fichier": "captures/R32_SC-44_couverture-72dpi.png",
+          "page_ou_zone": "PDF p. 1 — couverture entière, vignette 72 dpi",
+          "citation_exacte": "Digital credit audit report Evaluating the conduct and practice of digital lending in Kenya September 2019",
+          "scene": "SC-44",
+          "dimensions_px": [
+            596,
+            842
+          ]
+        },
+        {
+          "fichier": "captures/R32_SC-44_110-applis.png",
+          "page_ou_zone": "PDF p. 13, colonne gauche",
+          "citation_exacte": "In September 2018, the two main app stores had approximately 110 mobile apps provided by 74 unique developers listed as offering digital credit.",
+          "scene": "SC-44",
+          "dimensions_px": [
+            695,
+            180
+          ]
+        }
+      ],
+      "statut": "obtenu"
+    },
+    {
+      "id": "R14",
+      "titre": null,
+      "url_demandee": "https://journals.openedition.org/regulation/15139",
+      "url_finale": "https://journals.openedition.org/regulation/15139",
+      "code_http": 200,
+      "date_heure_utc": "2026-11-27T16:54:21Z",
+      "taille_octets": 5281,
+      "sha256": "78fc2a04a3cf5f507b9e2f600ae33352e0b2e5b35789cb8b9abfa2b3a0ded30f",
+      "type_mime": "text/html; charset=utf-8",
+      "note_empreinte": "empreinte de la page de refus Anubis, pas de l'article",
+      "mention_licence": "non applicable",
+      "captures": [],
+      "statut": "echec",
+      "raison_statut": "ÉCHEC (200, page anti-robots Anubis : « Ce site utilise Anubis, un outil qui filtre les robots nuisibles. Votre accès a été refusé. ») — tentative Playwright unique ; la requête curl d'empreinte a renvoyé la même page de refus. Aucun contournement."
+    },
+    {
+      "id": "R04",
+      "type": "photo (métadonnées seulement, non téléchargée)",
+      "titre_fichier": "File:M-Pesa Kenyan Kiosk.JPG",
+      "requete_api": "https://en.wikipedia.org/w/api.php?action=query&titles=File:M-Pesa Kenyan Kiosk.JPG&prop=imageinfo&iiprop=url|size|sha1|mime|extmetadata&format=json",
+      "date_heure_utc": "2026-11-27T16:54:00Z",
+      "code_http": 200,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/M-Pesa_Kenyan_Kiosk.JPG?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:M-Pesa_Kenyan_Kiosk.JPG",
+      "width": 2272,
+      "height": 1704,
+      "size": 1641482,
+      "sha1": "38e09f6ac5ef7143e24c2b14c9bc1bfb037fa518",
+      "mime": "image/jpeg",
+      "Artist": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Realt0n12&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Realt0n12 (page does not exist)\">Realt0n12</a>",
+      "Credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+      "LicenseShortName": "CC BY-SA 3.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "UsageTerms": "Creative Commons Attribution-Share Alike 3.0",
+      "AttributionRequired": "true",
+      "Copyrighted": "True",
+      "DateTimeOriginal": "2005-01-10",
+      "DateTime": "2012-07-16 13:25:08",
+      "ImageDescription": "Safaricom",
+      "statut": "obtenu"
+    },
+    {
+      "id": "R06",
+      "type": "photo (métadonnées seulement, non téléchargée)",
+      "titre_fichier": "File:Central Bank of Kenya (1743419355).jpg",
+      "requete_api": "https://en.wikipedia.org/w/api.php?action=query&titles=File:Central Bank of Kenya (1743419355).jpg&prop=imageinfo&iiprop=url|size|sha1|mime|extmetadata&format=json",
+      "date_heure_utc": "2026-11-27T16:54:00Z",
+      "code_http": 200,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Central_Bank_of_Kenya_%281743419355%29.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Central_Bank_of_Kenya_(1743419355).jpg",
+      "width": 336,
+      "height": 504,
+      "size": 210784,
+      "sha1": "4681f2eae47053f73a4050d1ce90d4f22c49154f",
+      "mime": "image/jpeg",
+      "Artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/44222307@N00\">DEMOSH</a> from Nairobi, Kenya",
+      "Credit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/44222307@N00/1743419355/\">Central Bank of Kenya</a>",
+      "LicenseShortName": "CC BY 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "UsageTerms": "Creative Commons Attribution 2.0",
+      "AttributionRequired": "true",
+      "Copyrighted": "True",
+      "DateTimeOriginal": "2007-03-07 12:40",
+      "DateTime": "2015-07-18 12:17:10",
+      "ImageDescription": "Building of the Central Bank of Kenya in 2007",
+      "statut": "obtenu"
+    },
+    {
+      "id": "R11",
+      "type": "photo (métadonnées seulement, non téléchargée)",
+      "titre_fichier": "File:2013 Boulevard du 30 Juin Kinshasa 8756682965.jpg",
+      "requete_api": "https://en.wikipedia.org/w/api.php?action=query&titles=File:2013 Boulevard du 30 Juin Kinshasa 8756682965.jpg&prop=imageinfo&iiprop=url|size|sha1|mime|extmetadata&format=json",
+      "date_heure_utc": "2026-11-27T16:55:31Z",
+      "code_http": 429,
+      "statut": "echec",
+      "raison_statut": "ÉCHEC (429, « Wikimedia Error » — limitation de débit de l'API) après plusieurs tentatives espacées"
+    }
+  ]
+}
