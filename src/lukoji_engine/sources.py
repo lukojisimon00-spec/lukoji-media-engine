@@ -98,8 +98,10 @@ def classify(url: str, declared: dict | None = None) -> dict:
         suffix = ".".join(labels[i:])
         if suffix in reg:
             e = reg[suffix]
-            return {"organisation": e["org"], "category": e["cat"], "nature": e.get("nature"),
-                    "category_origin": "registre"}
+            org, nature = e["org"], e.get("nature")
+            if e.get("plateforme") and declared and declared.get("organisation"):
+                org, nature = declared["organisation"], f"{nature} — hébergé par {e['org']}"
+            return {"organisation": org, "category": e["cat"], "nature": nature, "category_origin": "registre"}
     if declared and declared.get("categorie") in ("A", "B", "C") and declared.get("justification_categorie"):
         return {"organisation": declared.get("organisation") or host, "category": declared["categorie"],
                 "nature": declared.get("nature"), "category_origin": "declaree"}

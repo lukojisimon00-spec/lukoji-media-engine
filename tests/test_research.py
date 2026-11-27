@@ -363,6 +363,8 @@ def test_media_center_views(db, online):
     assert uid in mediacenter.render_list(db)
     show = mediacenter.render_show(db, uid)
     assert "https://www.worldbank.org/fr/news/simule-rapport-2026" in show and "Historique des décisions" in show
+    md = mediacenter.render_markdown(db)
+    assert uid in md and "Faits confirmés" in md and "](https://www.worldbank.org/fr/news/simule-rapport-2026)" in md
     html = mediacenter.render_html(db)
     assert uid in html and "<script" not in html.split("</style>")[1]
 
@@ -410,3 +412,10 @@ def test_engine_captures_are_used_and_integrity_checked(db, offline, tmp_path, m
     with pytest.raises(ValueError, match="altérée"):
         import_dossier(db, make_dossier(propositions=[]) | {"propositions": make_dossier()["propositions"]},
                        opener=offline, captures=folder, allow_same_subject=True)
+
+
+def test_platform_sources_are_attributed_to_their_author():
+    """arXiv héberge : l'organisation retenue est l'auteur déclaré (indépendance correcte)."""
+    c = src.classify("https://arxiv.org/abs/2408.17024", {"organisation": "Lelapa AI"})
+    assert c["category"] == "A" and c["organisation"] == "Lelapa AI" and "arXiv" in c["nature"]
+    assert src.classify("https://arxiv.org/abs/2408.17024")["organisation"] == "arXiv"

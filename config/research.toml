@@ -73,6 +73,8 @@ flux = [
 # Un domaine absent du registre est classé C, sauf catégorie DÉCLARÉE et justifiée dans
 # le dossier (signalée « à revoir » dans les propositions).
 # Les suffixes (ex. "gouv.fr") couvrent tous les sous-domaines.
+# plateforme = true : hébergeur de publications d'auteurs tiers (arXiv…). L'organisation retenue est alors
+# l'AUTEUR déclaré (« organisation » du dossier), pour juger correctement l'indépendance des sources.
 # ---------------------------------------------------------------------------
 [sources.domaines]
 "worldbank.org" = { org = "Banque mondiale", cat = "A", nature = "institution internationale" }
@@ -93,7 +95,7 @@ flux = [
 "nobelprize.org" = { org = "Fondation Nobel", cat = "A", nature = "publication originale" }
 "nature.com" = { org = "Nature", cat = "A", nature = "revue scientifique" }
 "science.org" = { org = "Science (AAAS)", cat = "A", nature = "revue scientifique" }
-"arxiv.org" = { org = "arXiv", cat = "A", nature = "prépublication scientifique (non relue)" }
+"arxiv.org" = { org = "arXiv", cat = "A", nature = "prépublication scientifique (non relue)", plateforme = true }
 "rfi.fr" = { org = "RFI", cat = "B", nature = "média" }
 "jeuneafrique.com" = { org = "Jeune Afrique", cat = "B", nature = "média" }
 "agenceecofin.com" = { org = "Agence Ecofin", cat = "B", nature = "média économique" }

@@ -232,6 +232,11 @@ def cmd_sujets(a):
         q = " ".join(a.uid)
         for r in sj.search_subjects(db, q, a.status.split(",") if a.status else None):
             print(f"{r['pertinence']:.3f} {r['uid']} [{r['status']}] {r['title']}")
+    elif act == "markdown":
+        out = Path(a.out or "var/out/propositions.md")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(mc.render_markdown(db, a.status.split(",") if a.status else None), encoding="utf-8")
+        print(out)
     elif act == "html":
         out = a.out or "var/out/media_center.html"
         print(mc.write_html(db, out, a.status.split(",") if a.status else None))
@@ -312,7 +317,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     sj = sub.add_parser("sujets", help="Media Center V0 : consulter et décider")
     sj.add_argument("action", choices=["list", "show", "compare", "valider", "rejeter", "reporter", "reactiver",
-                                       "statut", "note", "history", "search", "html"])
+                                       "statut", "note", "history", "search", "html", "markdown"])
     sj.add_argument("uid", nargs="*", help="UID (ou texte pour « search »)")
     sj.add_argument("--note"); sj.add_argument("--status", help="filtre, ex. propose,reporte")
     sj.add_argument("--to", help="statut cible pour « statut »"); sj.add_argument("--out")

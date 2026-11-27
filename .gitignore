@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 .env
 node_modules/
+# Textes intégraux capturés (œuvres de tiers) : conservés hors Git ; seul captures.json (URL, date, SHA-256) est versionné.
+research/captures/*/*.txt

@@ -243,7 +243,8 @@ def external_corpus() -> list[dict]:
             raw = f.read_text(encoding="utf-8", errors="replace")
             parsed = src.parse_html(raw)
             m = re.search(r'<meta[^>]+name="description"[^>]+content="([^"]*)"', raw)
-            desc = m.group(1) if m else ""
+            import html as _html
+            desc = _html.unescape(m.group(1)) if m else ""
             title = re.sub(r"\s*[|·–-]\s*LUKOJI.*$", "", parsed["title"] or f.stem)
             items.append({"ref": f"{c['nom']}:{f.name}", "title": title, "subject": desc, "angle": desc,
                           "entities": [], "status": c.get("statut", "publie"), "origin": c["nom"]})

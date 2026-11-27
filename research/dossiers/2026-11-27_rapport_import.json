@@ -1,0 +1,244 @@
+{
+  "run_id": 2,
+  "sources": [
+    {
+      "id": "ja_aa4",
+      "url": "https://www.jeuneafrique.com/1131024/economie-entreprises/qui-a-tue-air-afrique-4-6/",
+      "categorie": "B",
+      "organisation": "Jeune Afrique",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "ja_aa_lignes",
+      "url": "https://www.jeuneafrique.com/1147592/economie-entreprises/apres-la-mort-dair-afrique-des-liaisons-aeriennes-orphelines/",
+      "categorie": "B",
+      "organisation": "Jeune Afrique",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "ja_aa_serie",
+      "url": "https://www.jeuneafrique.com/1131032/economie-entreprises/serie-il-etait-une-fois-air-afrique/",
+      "categorie": "B",
+      "organisation": "Jeune Afrique",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "belgeo",
+      "url": "https://journals.openedition.org/belgeo/11279?lang=en",
+      "categorie": "B",
+      "organisation": "OpenEdition",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "wiki_aa_en",
+      "url": "https://en.wikipedia.org/wiki/Air_Afrique",
+      "categorie": "C",
+      "organisation": "Wikipédia",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "vodafone_mpesa",
+      "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+      "categorie": "A",
+      "organisation": "Vodafone",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "mit_mpesa",
+      "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+      "categorie": "B",
+      "organisation": "MIT News (Massachusetts Institute of Technology)",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "wiki_mpesa",
+      "url": "https://en.wikipedia.org/wiki/M-Pesa",
+      "categorie": "C",
+      "organisation": "Wikipédia",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "safaricom_mpesa",
+      "url": "https://newsroom.safaricom.co.ke/innovation/the-m-pesa-wonder-how-it-all-begun",
+      "categorie": "A",
+      "organisation": "Safaricom",
+      "consultation": "resultat_recherche",
+      "disponibilite": "indisponible"
+    },
+    {
+      "id": "dbsa",
+      "url": "https://www.dbsa.org/press-releases/dbsa-supports-financial-close-lobito-railway-project",
+      "categorie": "A",
+      "organisation": "Development Bank of Southern Africa (DBSA)",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "en_lobito_oct",
+      "url": "https://www.engineeringnews.co.za/article/lobito-corridor-railway-project-angolademocratic-republic-of-congo-update-2026-10-02",
+      "categorie": "B",
+      "organisation": "Creamer Media (Engineering News)",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "en_lobito_feb",
+      "url": "https://www.engineeringnews.co.za/article/cobalt-and-copper-sourced-from-drc-artisanal-miners-to-be-transported-on-lobito-corridor-2026-02-09",
+      "categorie": "B",
+      "organisation": "Creamer Media (Engineering News)",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "ab_lobito",
+      "url": "https://african.business/2026/06/resources/lobito-corridor-leads-drc-transport-agenda",
+      "categorie": "B",
+      "organisation": "African Business (IC Publications)",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "wiki_lobito",
+      "url": "https://en.wikipedia.org/wiki/Lobito_Corridor",
+      "categorie": "C",
+      "organisation": "Wikipédia",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "smithsonian",
+      "url": "https://www.smithsonianmag.com/history/there-never-was-real-tulip-fever-180964915/",
+      "categorie": "B",
+      "organisation": "Smithsonian Magazine",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "uchicago",
+      "url": "https://press.uchicago.edu/Misc/Chicago/301259.html",
+      "categorie": "A",
+      "organisation": "University of Chicago Press",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "historytoday",
+      "url": "https://www.historytoday.com/node/54516",
+      "categorie": "C",
+      "organisation": "History Today",
+      "consultation": "resultat_recherche",
+      "disponibilite": "indisponible"
+    },
+    {
+      "id": "wiki_tulip",
+      "url": "https://en.wikipedia.org/wiki/Tulip_mania",
+      "categorie": "C",
+      "organisation": "Wikipédia",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "arxiv_inkuba",
+      "url": "https://arxiv.org/html/2408.17024v2",
+      "categorie": "A",
+      "organisation": "Lelapa AI",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "hf_inkuba",
+      "url": "https://huggingface.co/lelapa/InkubaLM-0.4B",
+      "categorie": "A",
+      "organisation": "Lelapa AI",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "lelapa_blog",
+      "url": "https://lelapa.ai/blog/inkubalm-small-language-model",
+      "categorie": "A",
+      "organisation": "Lelapa AI",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    },
+    {
+      "id": "africanews_inkuba",
+      "url": "https://www.africanews.com/2025/05/31/african-ai-talent-shrinks-continents-first-multilingual-language-model-by-75",
+      "categorie": "B",
+      "organisation": "Africanews (groupe Euronews)",
+      "consultation": "page_verifiee",
+      "disponibilite": "disponible"
+    }
+  ],
+  "propositions": [
+    {
+      "uid": "SUJ-20261127-001",
+      "titre": "Air Afrique : onze pays, une compagnie, et pourquoi le rêve s'est écrasé",
+      "priorite": 22.1,
+      "attrait": 80.0,
+      "solidite": 40.7,
+      "drapeaux": [
+        "insuffisamment_documente",
+        "format_non_soutenu:documentaire"
+      ],
+      "doublons": []
+    },
+    {
+      "uid": "SUJ-20261127-002",
+      "titre": "M-Pesa : le prêt par SMS qui est devenu une révolution de l'argent mobile",
+      "priorite": 54.2,
+      "attrait": 79.5,
+      "solidite": 79.7,
+      "drapeaux": [
+        "format_non_soutenu:documentaire",
+        "categorie_source_declaree_a_revoir"
+      ],
+      "doublons": []
+    },
+    {
+      "uid": "SUJ-20261127-003",
+      "titre": "Corridor de Lobito : pourquoi le cuivre congolais pourrait partir vers l'Atlantique",
+      "priorite": 43.5,
+      "attrait": 79.5,
+      "solidite": 76.0,
+      "drapeaux": [
+        "famille_sensible:recoupement_renforce",
+        "format_non_soutenu:documentaire",
+        "categorie_source_declaree_a_revoir"
+      ],
+      "doublons": []
+    },
+    {
+      "uid": "SUJ-20261127-004",
+      "titre": "Tulipomanie : la plus célèbre bulle de l'histoire a-t-elle vraiment ruiné la Hollande ?",
+      "priorite": 37.0,
+      "attrait": 79.0,
+      "solidite": 61.7,
+      "drapeaux": [
+        "format_non_soutenu:documentaire",
+        "categorie_source_declaree_a_revoir"
+      ],
+      "doublons": []
+    },
+    {
+      "uid": "SUJ-20261127-005",
+      "titre": "InkubaLM : une IA sud-africaine pensée pour le swahili, le yoruba ou le zoulou",
+      "priorite": 41.4,
+      "attrait": 62.5,
+      "solidite": 81.7,
+      "drapeaux": [
+        "categorie_source_declaree_a_revoir"
+      ],
+      "doublons": []
+    }
+  ],
+  "refusees": []
+}

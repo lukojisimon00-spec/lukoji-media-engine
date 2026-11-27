@@ -6,7 +6,8 @@ média entrepreneurial — *INNOVER · CRÉER · IMPACTER*.
 > Périmètre : uniquement les contenus publiés par LUKOJI sur ses propres réseaux.
 > Les commandes clients, devis et livrables relèvent de **CLIENT STUDIO** (espace distinct).
 
-**État : phase 0 validée** (fondations et kit de marque) — 43/43 tests, 2 rendus réels conformes et examinés. Voir [`docs/RAPPORT_PHASE0.md`](docs/RAPPORT_PHASE0.md).
+**État :** phase 0 validée (fondations, kit de marque, filigrane) · **phase 1 livrée** (recherche, sources, score, doublons,
+propositions, Media Center V0) — 86/86 tests. Voir [RAPPORT_PHASE1.md](docs/RAPPORT_PHASE1.md). Voir [`docs/RAPPORT_PHASE0.md`](docs/RAPPORT_PHASE0.md).
 
 ## Prérequis
 
@@ -22,7 +23,7 @@ Aucun service payant, aucune clé API n'est nécessaire pour la phase 0.
 
 ```bash
 ./scripts/run_phase0.sh          # reproduit toute la validation : base, kit, rendus réels, QC, tests
-python3 -m pytest -q             # 43 tests (unitaires + bout en bout, ~3 min)
+python3 -m pytest -q             # 86 tests (unitaires + bout en bout, ~3 min)
 python3 -m pytest -q -m "not e2e"  # tests rapides uniquement
 ```
 
@@ -39,6 +40,11 @@ python3 -m pytest -q -m "not e2e"  # tests rapides uniquement
 | `qc VIDEO [--json rapport.json]` | contrôle qualité complet (code retour 1 si bloquant) |
 | `sheet VIDEO planche.png [--times 1,5,9]` | planche visuelle avec zones sûres et boîte du filigrane |
 | `social` | affiche et valide les comptes sociaux officiels (hors ligne) |
+| `recherche collecter "requête" [--providers wikipedia,gdelt,rss]` | collecte de pistes (jamais des preuves) |
+| `recherche importer dossier.json [--captures dossier]` | contrôle et enregistrement d'une recherche (sources, extraits, score, doublons) |
+| `sources list` · `sources check` | sources enregistrées · disponibilité |
+| `sujets list|show|compare|search|history|html|markdown` | Media Center V0 : consulter |
+| `sujets valider|rejeter|reporter|reactiver|note|statut UID --note "…"` | décider (journalisé) |
 | `content list|add|move|history` | registre des contenus et cycle de vie |
 
 Exemple — vidéo courte destinée aux 4 plateformes, sous-titres réservés entre y=1180 et y=1400 :
@@ -69,5 +75,7 @@ var/               (non versionné) base, journaux, caches, rendus
 - [Règles de marque : filigrane, signature, formats](docs/MARQUE.md)
 - [Zones de sécurité par plateforme](docs/ZONES_SECURITE.md)
 - [Comptes sociaux officiels](docs/COMPTES_SOCIAUX.md)
+- [Moteur de recherche et de propositions](docs/RECHERCHE.md) · [Score éditorial](docs/SCORE_EDITORIAL.md)
+- [Rapport technique phase 1](docs/RAPPORT_PHASE1.md) · [Rapport éditorial du 27/11](docs/propositions/RAPPORT_EDITORIAL_2026-11-27.md)
 - [Rapport de validation phase 0](docs/RAPPORT_PHASE0.md)
 - [Transfert vers le dépôt GitHub](docs/TRANSFERT.md)

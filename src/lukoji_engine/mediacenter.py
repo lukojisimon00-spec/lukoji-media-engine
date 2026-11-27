@@ -194,3 +194,53 @@ def write_html(db: Database, out: str | Path, statuses: list[str] | None = None)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render_html(db, statuses), encoding="utf-8")
     return out
+
+
+def render_markdown(db: Database, statuses: list[str] | None = None) -> str:
+    """Rapport éditorial généré depuis la base (aucune recopie manuelle)."""
+    fam = load_config().research["familles"]
+    out = []
+    for i, r in enumerate(ranked(db, statuses), start=1):
+        s = subject_details(db, r["uid"])
+        sc = s["score"]
+        elig = s["formats"]["eligibilite"]
+        out += [f"## {i}. {s['title']}", "",
+                f"`{s['uid']}` · {STATUS_FR[s['status']]} · {fam[s['family']]['label']} · {s['territory']} · {s['temporality']}", "",
+                f"**Sujet.** {s['subject']}", "", f"**Angle narratif.** {s['angle']}", "",
+                f"**Pourquoi c'est intéressant.** {s['interest']}", "", f"**Accroche potentielle.** « {s['hook']} »", "",
+                f"**Résumé du récit.** {s['summary']}", "", f"**Potentiel visuel.** {s['visual_potential']}", "",
+                "**Formats.** " + ", ".join(f"{f} ({'soutenu' if elig[f]['eligible'] else 'non soutenu — ' + elig[f]['condition']})"
+                                            for f in s["formats"]["recommandes"]), "",
+                f"**Score** (aide au tri, formule v{sc['version_formule']}) : priorité **{sc['priorite']}** · attrait {sc['attrait']} · "
+                f"solidité {sc['solidite']} · faits clés confirmés {sc['faits_cles']['confirmes']}/{sc['faits_cles']['total']} · "
+                f"risque factuel {sc['risque_factuel']}/5 · risque juridique {sc['risque_juridique']}/5 · difficulté {sc['difficulte']}/5"
+                + ("" if sc["prioritaire"] else " · **⚠ non prioritaire**"), ""]
+        out += ["| Critère | Note | Justification |", "|---|---|---|"]
+        out += [f"| {k} | {v['note']}/5 | {v['justification']} |" for k, v in sc["criteres"].items()]
+        out += [f"| difficulté | {sc['difficulte']}/5 | {sc['difficulte_justification']} |",
+                f"| risque juridique | {sc['risque_juridique']}/5 | {sc['risque_juridique_justification']} |", ""]
+        if s["flags"]:
+            out += ["**Signalements :** " + ", ".join(f"`{f}`" for f in s["flags"]), ""]
+        for label, keep in (("Faits confirmés", lambda c: c["status"] in ("confirme", "opinion_attribuee")),
+                            ("Faits restant à vérifier ou à recouper", lambda c: c["status"] not in ("confirme", "opinion_attribuee"))):
+            rows = [c for c in s["claims"] if keep(c)]
+            if not rows:
+                continue
+            out += [f"**{label}**", ""]
+            for c in rows:
+                out.append(f"- *{CLAIM_STATUS_LABELS.get(c['status'], c['status'])}* ({c['kind']}, {c['importance']}) — {c['text']}  ")
+                out.append(f"  motif : {c['status_detail']}")
+                for e in c["evidence"]:
+                    out.append(f"  - {e['stance']} — [{e['organisation']}]({e['url']}) ({e['category']}) : « {e['excerpt']} » "
+                               f"— {CHECK_FR.get(e['excerpt_check'], e['excerpt_check'])}")
+            out.append("")
+        out += ["**Sources**", ""]
+        for so in s["sources"]:
+            out.append(f"- **[{so['category']}]** {so['organisation']} — [{so['title']}]({so['url']}) · publiée {so['published_at'] or 'n.d.'}"
+                       f" · consultée {so['accessed_at']} · {so['consultation']} · {so['availability']}")
+            if so["limitations"]:
+                out.append(f"  - limites : {so['limitations']}")
+        if s["risks"]:
+            out += ["", "**Risques**", ""] + [f"- {x}" for x in s["risks"]]
+        out += ["", "---", ""]
+    return "\n".join(out)
