@@ -145,3 +145,28 @@ def test_fiche_de_validation_correspond_aux_fichiers_versionnes():
     verrou = ROOT / "docs/stories/STO-20261127-001/VERROU_VALIDATION.json"
     if not verrou.exists():
         assert fiche["validations_existantes"] == 0
+
+
+SB26 = ROOT / "research/stories/mpesa/v2_6/storyboard_v2_6.json"
+
+
+@pytest.mark.skipif(not SB26.exists(), reason="storyboard v2.6 absent")
+def test_storyboard_v2_6_fidele_aux_versions_verrouillees():
+    import hashlib
+
+    def sha(o):
+        return hashlib.sha256(json.dumps(o, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+    lock = {v["etape"]: v for v in _load(ROOT / "docs/stories/STO-20261127-001/VERROU_VALIDATION.json")["validations"]}
+    script = _load(V22 / "script_v2_2.json")
+    assert sha(script) == lock["script"]["versions"]["script"]["sha256"]
+    sb = _load(SB26)
+    by: dict[str, list[str]] = {}
+    for sc in sb["scenes"]:
+        by.setdefault(sc["sequence"], []).append(sc["voix_off"])
+        assert sc["authenticite"] != "image_generee", sc["id"]
+        if sc["authenticite"] in ("symbolique", "illustration", "reconstitution"):
+            assert sc.get("mention_ecran"), sc["id"]
+        assert set(sc["source_factuelle"]) <= set(next(s for s in script["sequences"] if s["id"] == sc["sequence"])["faits"]), sc["id"]
+    for seq in script["sequences"]:
+        assert " ".join(v for v in by[seq["id"]] if v).split() == seq["voix_off"].split(), seq["id"]
