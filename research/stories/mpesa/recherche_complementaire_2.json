@@ -1,0 +1,38 @@
+{
+ "session": {
+  "mode": "assistee",
+  "chercheur": "Claude (agent de recherche) + moteur LUKOJI",
+  "requetes": [
+   "relecture de la page Vodafone « M-Pesa: creating the leading mobile money service » (capture phase 1)"
+  ],
+  "notes": "Fait de contexte pour le script M-Pesa ; vérifié contre la capture intégrale locale de la phase 1 (hors Git)."
+ },
+ "sources": [
+  {
+   "id": "voda_created",
+   "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+   "titre": "M-Pesa: creating the leading mobile money service",
+   "date_publication": "2017-03",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "nature": "communication officielle d'entreprise",
+   "justification_categorie": "Communication officielle de l'entreprise co-créatrice du service (source primaire, intéressée).",
+   "limites": "Source intéressée."
+  }
+ ],
+ "faits": [
+  {
+   "texte": "Avant M-Pesa, pour envoyer de l'argent à leurs proches, des Kényans voyageaient des jours ou confiaient l'argent à un chauffeur de bus.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "voda_created",
+     "extrait": "In order to send money to their relatives, people would travel for days to get home or give the money to a bus driver."
+    }
+   ]
+  }
+ ]
+}

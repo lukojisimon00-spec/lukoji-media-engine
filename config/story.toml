@@ -1,0 +1,77 @@
+# LUKOJI MEDIA ENGINE — Story Engine (phase 2) : rythme, hooks, structures, contrôles éditoriaux.
+# Fichier public, sans secret. Toutes les règles sont modifiables ici.
+
+[rythme]
+# Débit de narration documentaire en français (mots par minute). 150 ≈ voix posée et claire.
+mots_par_minute = 150
+pause_entre_sequences_s = 0.6        # respiration entre deux séquences
+tolerance_duree = 0.12               # ±12 % entre durée estimée (mots) et durée déclarée
+phrase_max_mots = 28                 # au-delà : phrase difficile à dire d'une traite
+phrase_alerte_mots = 22
+
+[formats.documentaire_long]
+label = "YouTube long format"
+duree_min_s = 360                    # 6 min
+duree_max_s = 480                    # 8 min
+profil_rendu = "youtube_16x9"
+
+[formats.short]
+label = "Short / Reel"
+duree_min_s = 30
+duree_max_s = 75
+profil_rendu = "vertical_universal"
+
+[hooks]
+minimum = 8
+types = ["paradoxal", "historique", "narratif", "tension", "consequence", "question", "revelation", "cinematographique"]
+duree_min_s = 5
+duree_max_s = 22
+# Critères notés 1–5 (justification obligatoire). Poids de la note éditoriale.
+criteres = { curiosite = 0.18, clarte = 0.14, originalite = 0.12, tension = 0.14, pertinence = 0.12, coherence_preuves = 0.12, potentiel_visuel = 0.08, honnetete_promesse = 0.10 }
+# Vocabulaire de surenchère : signale une promesse potentiellement trompeuse.
+lexique_sensationnel = ["incroyable", "choquant", "personne ne", "vous ne croirez", "secret", "jamais vu", "révolution totale",
+                        "a changé le monde", "le plus grand", "tout le monde", "miracle", "hallucinant", "dingue", "explosif"]
+
+[ecriture]
+# Formules creuses typiques des textes générés : interdites dans la voix off.
+cliches = ["dans un monde où", "plongeons", "il est important de noter", "il convient de", "en conclusion",
+           "en somme", "force est de constater", "à l'ère du numérique", "véritable révolution", "game changer",
+           "n'est pas qu'un", "bien plus qu'un", "au-delà de", "dans cet article", "nous allons voir",
+           "sans plus attendre", "fascinant voyage", "tapisserie", "incontournable", "révolutionnaire"]
+# Marqueurs d'attribution exigés quand un fait n'est pas « confirmé » (source unique, déclaration, opinion).
+attribution = ["selon", "d'après", "affirme", "revendique", "estime", "raconte", "explique", "dit ", "écrit",
+               "assure", "rapporte", "annonce", "avance", "évalue", "estimation", "estiment", "étude", "enquête",
+               "chercheurs", "économistes", "auteurs", "thèse", "publiée dans", "vodafone", "safaricom",
+               "la banque centrale", "sénateurs", "agence ecofin", "l'autorité des communications"]
+# Marqueurs de prudence exigés pour une hypothèse.
+prudence = ["peut-être", "pourrait", "pourraient", "semble", "probablement", "hypothèse", "difficile de dire", "sans doute",
+            "il est possible", "on ne sait pas", "reste à"]
+# Mots à surveiller pour les répétitions (hors mots vides).
+repetition_fenetre_mots = 60
+repetition_seuil = 3
+
+[structures]
+# Catalogue : la structure n'est jamais imposée ; chaque projet choisit et justifie.
+catalogue = ["chronologie", "probleme_solution_consequences", "enquete", "portrait", "decouverte_progressive",
+             "conflit_resolution", "transformation", "comparaison", "rebondissements"]
+
+[storyboard]
+types_visuels = ["archive_video", "archive_photo", "photo_lieu", "carte", "document", "graphique", "infographie",
+                 "typographie_animee", "reconstitution", "plan_ambiance", "illustration", "animation", "comparaison",
+                 "zoom_detail", "image_symbolique", "image_generee"]
+# Authenticité : ce que montre réellement l'image.
+authenticite = ["authentique", "illustration", "reconstitution", "graphique_explicatif", "image_generee", "symbolique"]
+# Doivent porter une mention à l'écran (jamais présentés comme l'événement réel).
+mention_obligatoire = ["reconstitution", "image_generee", "illustration", "symbolique"]
+mouvements_camera = ["fixe", "zoom_avant_lent", "zoom_arriere_lent", "panoramique", "travelling", "parallaxe",
+                     "camera_3d_simulee", "suivi_trace", "plongee", "insert_detail"]
+max_meme_type_consecutif = 2
+part_max_zoom_lent = 0.25
+duree_scene_min_s = 2.0
+duree_scene_max_s = 14.0
+tolerance_synchro = 0.15             # durée des scènes d'une séquence vs durée de sa voix off
+
+[qc]
+# Poids des catégories dans le score global (un score élevé ne masque JAMAIS une erreur bloquante).
+poids = { factuel = 0.30, narratif = 0.20, script = 0.20, visuel = 0.15, duree = 0.15 }
+recherche_min_faits_cles_confirmes = 3

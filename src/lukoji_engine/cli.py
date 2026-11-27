@@ -260,6 +260,123 @@ def cmd_sujets(a):
     return 0
 
 
+
+# ---------------------------------------------------------------------------
+# Phase 2 : Story Engine
+# ---------------------------------------------------------------------------
+def _load_json(path):
+    return json.loads(Path(path).read_text(encoding="utf-8"))
+
+
+def _print_problems(problems, limit=40):
+    for pb in problems[:limit]:
+        print(f"  [{'BLOQUANT' if pb['severite'] == 'bloquant' else 'alerte  '}] {pb['ou']} — {pb['message']}")
+    if len(problems) > limit:
+        print(f"  … {len(problems) - limit} autre(s)")
+
+
+def cmd_story(a):
+    from .story import engine as eng, project as pj, research as rs
+    from .story.export import export_bundle
+    db = _db()
+    act, actor = a.action, a.acteur
+    if act == "list":
+        for p in pj.list_projects(db):
+            print(f"{p['sid']}  {p['status']:20s} {p['format']:18s} {p['subject_uid']}  {p['title']}")
+        return 0
+    if act == "create":
+        p = pj.create_project(db, a.cible, a.format or "documentaire_long", actor)
+        print(f"Projet {p['sid']} créé ({p['status']}) depuis {a.cible}")
+        return 0
+    sid = a.cible
+    project = pj.get_project(db, sid)
+    if act == "show":
+        print(f"{project['sid']} · {project['title']} · {project['format']} · statut {project['status']}")
+        print("Versions courantes :", pj.current_versions(db, project))
+        st = pj.stale(db, project)
+        if st:
+            print("Éléments obsolètes :", st)
+        rep = eng.latest_qc(db, project)
+        if rep:
+            print(f"Dernier QC n° {rep['qc_id']} : {rep['statut']} · score {rep['score_global']} · bloquants {rep['bloquants']} · alertes {rep['alertes']}")
+        print("Historique :")
+        for e in pj.events(db, project):
+            print(f"  {e['at']} {e['from_status'] or '—'} → {e['to_status']} ({e['actor']}) {e['note'] or ''}")
+        for ap in pj.approvals(db, project):
+            print(f"  validation {ap['stage']} par {ap['actor']} le {ap['at']} sur {ap['versions']}")
+        return 0
+    if act == "research":
+        r = rs.verify(db, sid, _load_json(a.file) if a.file else None, actor)
+        print(f"Dossier factuel v{r['version']} · statut {r['statut']} · {r['bilan']}")
+        for m in r["bloquant"]:
+            print(f"  [BLOQUANT] {m}")
+        for m in r["alertes"]:
+            print(f"  [alerte  ] {m}")
+        return 1 if r["bloquant"] else 0
+    if act in ("hooks", "structure", "script", "storyboard", "direction"):
+        kind = {"direction": "visual"}.get(act, act)
+        if act == "hooks" and a.choisir:
+            eng.choose_hook(db, sid, a.choisir, a.note or "", actor)
+        elif act == "hooks" and a.modifier:
+            eng.edit_hook(db, sid, a.modifier, json.loads(a.json), actor)
+        elif act == "script" and a.sequence:
+            changes = json.loads(a.json) if a.json else {"voix_off": a.voix_off}
+            eng.edit_sequence(db, sid, a.sequence, changes, actor)
+        elif a.file:
+            eng.set_element(db, sid, kind, _load_json(a.file), actor, a.note or f"import {a.file}")
+        rep = eng.evaluate_all(db, pj.get_project(db, sid))
+        sec = {"visual": "direction"}.get(kind, kind)
+        det = rep["details"].get(sec)
+        cur = pj.current(db, pj.get_project(db, sid), kind)
+        print(f"{kind} v{cur['version'] if cur else '—'} · projet {pj.get_project(db, sid)['status']}")
+        if act == "hooks" and det:
+            for r in det["resultats"]:
+                print(f"  {r['id']:4s} {r['type']:18s} score {r['score']:5.1f}  {r['duree_s']:4.1f} s" + ("  ÉLIMINÉ" if r["elimine"] else ""))
+            print(f"  choisi : {det['choix']['choisi']} · recommandé : {det['choix']['recommande']}")
+        if act == "script" and det:
+            for c in det["sequences"]:
+                print(f"  {c['id']:7s} {c['mots']:4d} mots {c['duree_s']:5.1f} s  {c['titre']}")
+            print(f"  total : {det['mots']} mots · {det['duree_s']} s ({det['duree_s']/60:.1f} min)")
+        if act == "storyboard" and det:
+            print(f"  {det['nb_scenes']} scènes · {det['duree_s']} s · {det['types_distincts']} types · zoom lent {det['part_zoom_lent']:.0%}")
+        if det:
+            _print_problems(det["problemes"])
+        return 0
+    if act == "qc":
+        rep = eng.run_qc(db, sid, actor)
+        print(f"QC n° {rep['qc_id']} : {rep['statut'].upper()} · score global {rep['score_global']} · bloquants {rep['bloquants']} · alertes {rep['alertes']}")
+        for c, d in rep["categories"].items():
+            print(f"  {c:9s} {d['score']:5.1f}  bloquants {len(d['bloquants'])}  alertes {len(d['alertes'])}")
+        _print_problems([p for d in rep["categories"].values() for p in d["bloquants"] + d["alertes"]], a.limite)
+        print(f"Statut du projet : {pj.get_project(db, sid)['status']}")
+        if a.json_out:
+            Path(a.json_out).write_text(json.dumps(rep, ensure_ascii=False, indent=1))
+        return 1 if rep["bloquants"] else 0
+    if act == "approve":
+        p = eng.approve(db, sid, a.etape, actor, a.note or "")
+        print(f"{sid} → {p['status']}")
+        return 0
+    if act == "finalize":
+        p = eng.finalize(db, sid, actor, a.note or "")
+        print(f"{sid} → {p['status']}")
+        return 0
+    if act == "versions":
+        for v in pj.versions(db, project, a.element):
+            print(f"  {v['kind']:10s} v{v['version']:<3d} {v['created_at']} {v['author']:10s} base {v['based_on']}  {v['note'] or ''}")
+        return 0
+    if act == "diff":
+        print(pj.diff(db, project, a.element, a.v1, a.v2) or "(identiques)")
+        return 0
+    if act == "export":
+        r = export_bundle(db, sid, a.out or f"var/out/story/{sid}")
+        print(f"Export : {r['dossier']} · QC {r['qc']} ({r['score']}) · {', '.join(r['fichiers'])}")
+        return 0
+    if act == "html":
+        from .mediacenter import write_story_html
+        print(write_story_html(db, sid, a.out or f"var/out/story/{sid}/media_center.html"))
+        return 0
+    return 1
+
 def cmd_content(a):
     db = _db()
     if a.action == "add":
@@ -345,6 +462,20 @@ def build_parser() -> argparse.ArgumentParser:
     sj.add_argument("--to", help="statut cible pour « statut »"); sj.add_argument("--out")
     sj.add_argument("--acteur", default="editeur")
     sj.set_defaults(fn=cmd_sujets)
+
+    st = sub.add_parser("story", help="Story Engine : projets narratifs (hooks, structure, script, storyboard)")
+    st.add_argument("action", choices=["list", "create", "show", "research", "hooks", "structure", "script", "storyboard",
+                                       "direction", "qc", "approve", "finalize", "versions", "diff", "export", "html"])
+    st.add_argument("cible", nargs="?", help="SID du projet (ou UID du sujet pour « create »)")
+    st.add_argument("--file", help="document JSON à enregistrer (nouvelle version)")
+    st.add_argument("--format"); st.add_argument("--note"); st.add_argument("--acteur", default="editeur")
+    st.add_argument("--choisir", help="hooks : choisir ce hook"); st.add_argument("--modifier", help="hooks : modifier ce hook")
+    st.add_argument("--sequence", help="script : modifier cette séquence"); st.add_argument("--voix-off")
+    st.add_argument("--json", help="modifications JSON (hook ou séquence)")
+    st.add_argument("--etape", choices=["structure", "script", "storyboard"])
+    st.add_argument("--element"); st.add_argument("v1", nargs="?", type=int); st.add_argument("v2", nargs="?", type=int)
+    st.add_argument("--out"); st.add_argument("--json-out"); st.add_argument("--limite", type=int, default=40)
+    st.set_defaults(fn=cmd_story)
 
     c = sub.add_parser("content", help="registre des contenus")
     c.add_argument("action", choices=["list", "add", "move", "history"])

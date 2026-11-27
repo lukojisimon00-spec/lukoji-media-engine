@@ -1,0 +1,13 @@
+{
+ "angle_provisoire_editeur": "Comment un service conçu pour envoyer de l'argent par téléphone a bouleversé l'accès aux services financiers au Kenya.",
+ "verdict_angle": "corrige",
+ "angle_retenu": "Comment un service pensé pour rembourser des microcrédits a été détourné par ses premiers utilisateurs pour envoyer de l'argent à leurs proches, puis a transformé l'accès aux services financiers au Kenya, au prix d'une domination aujourd'hui contestée.",
+ "justification": "Les sources primaires (Vodafone, F8, F9) établissent que M-Pesa n'a PAS été conçu pour envoyer de l'argent : le prototype testé à Thika servait à verser et rembourser des microcrédits ; l'équipe a réorienté le produit après avoir observé que les bénéficiaires envoyaient l'argent à des proches. L'angle provisoire contient donc une erreur de prémisse. La seconde partie (« bouleversé l'accès aux services financiers ») est soutenue par des sources sérieuses mais non confirmées par deux organisations indépendantes (F38, F51 : source unique ; F11 : estimation d'une étude rapportée par le MIT) : elle doit être attribuée et nuancée (corrélation, extrapolation). Les limites documentées (frais F55, domination F54/F56, paris F57, crédit F58, critique académique F59) font partie de l'angle, pour ne pas produire un récit promotionnel.",
+ "points_a_verifier": [
+  "Lire l'article original de Science (Suri et Jack, 2016) : non consulté, seul le compte rendu du MIT l'a été.",
+  "Recouper par une seconde organisation les chiffres d'Agence Ecofin (frais, part de marché, agents 2012).",
+  "Date exacte et contenu du pilote de 2005 (F13 reste « à vérifier »).",
+  "Effet réel du projet de plafonnement des frais de la Banque centrale (annoncé, non confirmé en vigueur)."
+ ],
+ "faits_interdits_rappel": ["F13"]
+}

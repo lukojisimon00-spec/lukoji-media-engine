@@ -1,0 +1,522 @@
+{
+ "session": {
+  "mode": "assistee",
+  "chercheur": "Claude (agent de recherche) + moteur LUKOJI",
+  "requetes": [
+   "M-Pesa Safaricom Kenya (agenceecofin.com, openedition, africanews)",
+   "mobile money M-Pesa critique monopole frais Kenya",
+   "M-Pesa 10 years anniversary Vodafone",
+   "M-Pesa Kenya mobile money article recherche (openedition)",
+   "M-Pesa Central Bank of Kenya approval banks unbanked"
+  ],
+  "notes": "Recherche complémentaire phase 2 (Story Engine). Pages capturées par le moteur en mode « extraits seulement » (research/captures/2026-11-27-mpesa) : aucun texte intégral conservé."
+ },
+ "sources": [
+  {
+   "id": "eco_15ans",
+   "url": "https://www.agenceecofin.com/telecom/1305-97583-kenya-en-15-ans-m-pesa-s-est-impose-comme-le-moteur-de-la-croissance-de-safaricom",
+   "titre": "Kenya : En 15 ans, M-Pesa s’est imposé comme le moteur de la croissance de Safaricom",
+   "date_publication": "2022-05",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent"
+  },
+  {
+   "id": "eco_lecon",
+   "url": "https://www.agenceecofin.com/banque/0604-10050-paiement-mobile-la-lecon-kenyane-au-monde",
+   "titre": "Paiement mobile : la leçon kenyane au monde",
+   "date_publication": null,
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "limites": "Article ancien (données « début 2012 ») ; date exacte non détectée."
+  },
+  {
+   "id": "eco_frais",
+   "url": "https://www.agenceecofin.com/actualites-numerique/0110-131952-la-banque-centrale-du-kenya-veut-reduire-les-frais-de-transfert-de-m-pesa-et-airtel-money",
+   "titre": "La Banque centrale du Kenya veut réduire les frais de transfert de M-Pesa et Airtel Money",
+   "date_publication": "2025-10",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "limites": "L'article rapporte un projet de la Banque centrale « selon plusieurs médias locaux » ; son entrée en vigueur n'est pas confirmée."
+  },
+  {
+   "id": "eco_senat",
+   "url": "https://www.agenceecofin.com/regulation/1811-82596-kenya-les-senateurs-menacent-a-nouveau-de-separer-les-activites-telecoms-et-m-pesa-chez-safaricom",
+   "titre": "Kenya: les sénateurs menacent à nouveau de séparer les activités télécoms et M-Pesa chez Safaricom",
+   "date_publication": "2018-11",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "limites": "Article de 2018 ; la menace n'a pas été suivie d'effet à notre connaissance (non vérifié)."
+  },
+  {
+   "id": "eco_credit",
+   "url": "https://www.agenceecofin.com/hebdop3/0611-70837-les-kenyans-dans-la-spirale-du-credit-sur-mobile",
+   "titre": "Les Kenyans dans la spirale du crédit sur mobile",
+   "date_publication": "2019-11",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent"
+  },
+  {
+   "id": "eco_jeux",
+   "url": "https://www.agenceecofin.com/finance/2405-97948-kenya-les-jeux-de-hasard-tirent-lactivite-de-mobile-money-vers-le-haut-et-les-familles-vers-le-bas",
+   "titre": "Kenya : les jeux de hasard tirent l'activité de Mobile Money vers le haut et les familles vers le bas",
+   "date_publication": "2022-05",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent"
+  },
+  {
+   "id": "eco_holdings",
+   "url": "https://www.agenceecofin.com/fusions-acquisitions/1910-112889-kenya-safaricom-finalise-l-acquisition-de-m-pesa-holdings-aupres-de-vodafone",
+   "titre": "Kenya : Safaricom finalise l’acquisition de M-Pesa Holdings auprès de Vodafone",
+   "date_publication": "2023-10",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent"
+  },
+  {
+   "id": "eco_modernise",
+   "url": "https://www.agenceecofin.com/actualites-numerique/2309-131709-kenya-safaricom-modernise-m-pesa-et-se-positionne-pour-un-marche-de-plus-de-14-5-milliards-usd",
+   "titre": "Kenya : Safaricom modernise M-Pesa et se positionne pour un marché de plus de 14,5 milliards USD",
+   "date_publication": "2025-09",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent"
+  },
+  {
+   "id": "voda_created",
+   "url": "https://www.vodafone.com/news/newsroom/digital-society/m-pesa-created",
+   "titre": "M-Pesa: creating the leading mobile money service",
+   "date_publication": "2017-03",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "nature": "communication officielle d'entreprise",
+   "justification_categorie": "Communication officielle de l'entreprise co-créatrice du service (source primaire, intéressée).",
+   "limites": "Source intéressée : chiffres de l'entreprise, non audités."
+  },
+  {
+   "id": "voda_10",
+   "url": "https://www.vodafone.com/news/digital-society/m-pesa-10",
+   "titre": "M-Pesa marks 10 year anniversary in Africa",
+   "date_publication": "2017-03",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "nature": "communication officielle d'entreprise",
+   "justification_categorie": "Communication officielle de l'entreprise co-créatrice du service (source primaire, intéressée).",
+   "limites": "Source intéressée : chiffres de l'entreprise, non audités."
+  },
+  {
+   "id": "voda_15",
+   "url": "https://www.vodafone.com/news/empowering-people/mpesa-marks-15-years",
+   "titre": "M-Pesa – Africa’s leading fintech platform – marks 15 years",
+   "date_publication": "2022-03",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "Vodafone",
+   "categorie": "A",
+   "nature": "communication officielle d'entreprise",
+   "justification_categorie": "Communication officielle de l'entreprise co-créatrice du service (source primaire, intéressée).",
+   "limites": "Source intéressée : chiffres de l'entreprise, non audités."
+  },
+  {
+   "id": "mit_2010",
+   "url": "https://news.mit.edu/2010/mobile-money-0223",
+   "titre": "Banking on mobile money",
+   "date_publication": "2010-02-23",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "MIT News (Massachusetts Institute of Technology)",
+   "categorie": "B",
+   "nature": "service de presse universitaire",
+   "justification_categorie": "Compte rendu par l'université des chercheurs (Suri) de leurs travaux.",
+   "limites": "Compte rendu de presse universitaire ; les articles scientifiques originaux n'ont pas été consultés."
+  },
+  {
+   "id": "mit_2016",
+   "url": "https://news.mit.edu/2016/mobile-money-kenyans-out-poverty-1208",
+   "titre": "Study: Mobile-money services lift Kenyans out of poverty",
+   "date_publication": "2016-12-08",
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "organisation": "MIT News (Massachusetts Institute of Technology)",
+   "categorie": "B",
+   "nature": "service de presse universitaire",
+   "justification_categorie": "Compte rendu par l'université des chercheurs (Suri) de leurs travaux.",
+   "limites": "Compte rendu de presse universitaire ; les articles scientifiques originaux n'ont pas été consultés."
+  },
+  {
+   "id": "regulation",
+   "url": "https://journals.openedition.org/regulation/15139?lang=en",
+   "titre": "Socioéconomie de la monnaie mobile et des monnaies locales au Kenya : quelles innovations monétaires pour quel développement ? (Revue de la régulation)",
+   "date_publication": null,
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "limites": "Résumé de thèse publié dans une revue académique ; analyse critique (point de vue théorique)."
+  },
+  {
+   "id": "wiki_mpesa",
+   "url": "https://en.wikipedia.org/wiki/M-Pesa",
+   "titre": "M-PESA — Wikipedia (EN)",
+   "date_publication": null,
+   "date_consultation": "2026-11-27",
+   "consultation": "page_lue_agent",
+   "limites": "Encyclopédie collaborative (C) : jamais suffisante seule."
+  }
+ ],
+ "faits": [
+  {
+   "texte": "Avant M-Pesa, les chercheurs du MIT relevaient que seuls 22 % des adultes kényans avaient un compte bancaire, alors que 38 % des ménages comptaient déjà au moins un utilisateur de M-Pesa.",
+   "type": "chiffre",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "mit_2010",
+     "extrait": "Since its introduction in 2007, the researchers found, 38 percent of Kenyan households have at least one M-PESA user in them; by contrast, only 22 percent of adults have bank accounts.",
+     "position": "soutient"
+    }
+   ],
+   "notes": "Mesure de 2008-2010 (enquête Suri et Jack)."
+  },
+  {
+   "texte": "Selon les chercheurs, 77 % des Kényans disaient garder leur argent « sous le matelas ».",
+   "type": "chiffre",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "mit_2010",
+     "extrait": "Suri and Jack note that 77 percent of Kenyans say they keep money \"under the mattress\" at home, so to speak.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "41 % des transferts M-Pesa étudiés allaient vers des parents, contre 8 % vers des enfants.",
+   "type": "chiffre",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "mit_2010",
+     "extrait": "The researchers' data also shows that 41 percent of M-PESA money transfers are sent to parents, and only 8 percent to children",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Le projet a été financé en partie par le ministère britannique du Développement international (DFID), qui cherchait des services pour les non-bancarisés.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "voda_created",
+     "extrait": "Vodafone became aware of the opportunity to get a grant from the Department for International Development in the UK – which was looking for companies interested in developing services to help the unbanked.",
+     "position": "soutient"
+    },
+    {
+     "source": "voda_15",
+     "extrait": "originally as an idea part-funded by the UK Department for International Development in partnership with Vodafone",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "M-Pesa a été lancé le 6 mars 2007 au Kenya par Safaricom et Vodafone.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "voda_15",
+     "extrait": "Launched on 6 March 2007",
+     "position": "soutient"
+    },
+    {
+     "source": "eco_holdings",
+     "extrait": "M-Pesa a été lancé au Kenya en 2007 par Safaricom et Vodafone.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Le service fonctionne avec des agents : le client dépose des espèces, les convertit par SMS en argent électronique sur sa carte SIM, puis l'envoie ; le destinataire le retire chez un agent.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "voda_created",
+     "extrait": "Our aim was that customers would visit those agents with cash, then, through a series of SMS messages, convert that money into electronic funds that securely sat on their SIM cards.",
+     "position": "soutient"
+    },
+    {
+     "source": "voda_created",
+     "extrait": "Then, via SMS, they could transfer that money to anyone else, who would then visit their local agent and withdraw that cash again.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Beaucoup d'agents étaient de petites boutiques plus habituées à vendre des marchandises qu'à manipuler l'argent des clients.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "voda_created",
+     "extrait": "many of whom were ‘mom and pop’ stores more used to selling goods than receiving and handling cash from their customers.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Avant le lancement, la Banque centrale du Kenya a exigé des garanties : plafond de dépôt contre le blanchiment, protection des consommateurs, sécurité des produits et des agents ; chaque client devait être enregistré.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_lecon",
+     "extrait": "Avant de donner son OK au lancement du service M-Pesa, la BCK a néanmoins demandé que des garanties soient mises en place afin d’éviter le blanchiment d’argent (définition d’un montant maximal de dépôt), de protéger les consommateurs et de sécuriser les produits et les agents.",
+     "position": "soutient"
+    },
+    {
+     "source": "voda_created",
+     "extrait": "In addition, the Kenyan Central Bank required every customer to be registered before they could use the system.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Des banques ont vu dans M-Pesa une incursion dans leur domaine, estimant qu'un opérateur mobile ne pouvait pas exercer une activité bancaire sans licence.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_lecon",
+     "extrait": "Ce qui n’était pas du goût des banques, qui y voyaient une incursion dans leur champ de compétence en estimant qu’un opérateur mobile ne pouvait exercer une activité bancaire sans licence de la Banque centrale kenyane (BCK).",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Début 2012, Safaricom comptait environ 30 000 agents de transfert, contre seulement 400 agences bancaires.",
+   "type": "chiffre",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_lecon",
+     "extrait": "Ils peuvent s’appuyer sur le vaste réseau de Safaricom qui, début 2012, comptait environ 30 000 agents de transferts dans le pays, contre seulement 400 agences bancaires.",
+     "position": "soutient"
+    }
+   ],
+   "notes": "Chiffre d'agences bancaires à recouper (source unique)."
+  },
+  {
+   "texte": "Selon Vodafone, fin 2016, M-Pesa servait près de 29,5 millions de clients actifs via plus de 287 400 agents, dans 10 pays dont la RDC.",
+   "type": "declaration",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "voda_10",
+     "extrait": "As of the end of December 2016, M-Pesa served almost 29.5 million active customers through a network of more than 287,400 agents.",
+     "position": "soutient"
+    },
+    {
+     "source": "voda_10",
+     "extrait": "Vodafone now offers M-Pesa services in 10 countries: Albania, the Democratic Republic of Congo, Egypt, Ghana, India, Kenya, Lesotho, Mozambique, Romania and Tanzania.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Selon Vodafone, en 2022, M-Pesa comptait plus de 51 millions de clients et 600 000 agents dans sept pays, dont la RDC.",
+   "type": "declaration",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "voda_15",
+     "extrait": "From its beginning in Kenya, M-Pesa has grown to serve more than 51 million customers and 465,000 businesses.",
+     "position": "soutient"
+    },
+    {
+     "source": "voda_15",
+     "extrait": "The service is provided by 600,000 agents across Kenya, Tanzania, Mozambique, the Democratic Republic of Congo, Lesotho, Ghana and Egypt.",
+     "position": "soutient"
+    }
+   ],
+   "notes": "De 10 pays (2016) à 7 pays (2022) : les sources n'expliquent pas les retraits."
+  },
+  {
+   "texte": "En 2016, M-Pesa a traité environ 6 milliards de transactions, avec un pic de 529 par seconde.",
+   "type": "declaration",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "voda_10",
+     "extrait": "During 2016, the service processed around 6 billion transactions, peaking in December 2016 at 529 transactions every second.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Selon une enquête de FSD Kenya et de la Banque centrale, l'inclusion financière est passée de 27 % des Kényans en 2006 à 83 % en 2019.",
+   "type": "chiffre",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_credit",
+     "extrait": "Une enquête conjointe de FSD Kenya et de la Banque centrale, publiée en avril 2019, a montré que l'inclusion financière (l'accès aux produits et services financiers) est passée de 27 % de Kenyans en 2006 à 83 % en 2019",
+     "position": "soutient"
+    }
+   ],
+   "notes": "Corrélation dans le temps : n'établit pas à elle seule la part due à M-Pesa."
+  },
+  {
+   "texte": "L'étude de Suri et Jack mesure l'accès à M-Pesa par la densité d'agents autour des ménages, puis extrapole à l'échelle nationale.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "mit_2016",
+     "extrait": "Instead of looking at the number of individuals using M-PESA, the researchers measured the rise in the number of service agents within 1 kilometer around each household — or “agent density” — during early rollout of the mobile-money services.",
+     "position": "soutient"
+    },
+    {
+     "source": "mit_2016",
+     "extrait": "Using extrapolation methods on their data, the researchers estimate that the spread of mobile-money services has helped raise 194,000 Kenyan households out of extreme poverty",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Pour l'exercice 2025, M-Pesa représentait environ 44,2 % des revenus de Safaricom.",
+   "type": "chiffre",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_frais",
+     "extrait": "M-Pesa a représenté environ 44,2% des 364,28 milliards KES générés par les services de l’opérateur au cours de l’exercice 2025 (1er avril 2024 - 31 mars 2025).",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Au 31 mars 2025, M-Pesa détenait 90,8 % des parts de marché, selon l'Autorité des communications.",
+   "type": "chiffre",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_modernise",
+     "extrait": "De plus, M-Pesa détenait 90,8 % de parts de marché au 31 mars 2025, selon les données de l’Autorité des communications (CA).",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Certains transferts coûtent près de 7 % du montant envoyé ; la Banque centrale veut ramener le coût moyen d'environ 23 à 10 shillings par transaction d'ici 2028.",
+   "type": "chiffre",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_frais",
+     "extrait": "Les frais facturés sur certains transferts peuvent en effet atteindre près de 7% du montant envoyé.",
+     "position": "soutient"
+    },
+    {
+     "source": "eco_frais",
+     "extrait": "La CBK souhaite ramener ce coût à environ 10 KES d’ici 2028.",
+     "position": "soutient"
+    },
+    {
+     "source": "wiki_mpesa",
+     "extrait": "However, the near-monopolistic providers of the M-PESA service are sometimes criticized for the high cost that the service imposes on its often poor users.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "En 2018, des sénateurs kényans ont menacé de séparer M-Pesa des activités télécoms de Safaricom, jugée trop dominante.",
+   "type": "fait",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "eco_senat",
+     "extrait": "Le Comité sénatorial kenyan des technologies de l’information et de la communication menace à nouveau de séparer les activités télécoms et de mobile money (M-Pesa) de l’opérateur de téléphonie mobile Safaricom.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Les paris en ligne sont devenus la deuxième source de revenus des activités M-Pesa.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "eco_jeux",
+     "extrait": "Le résultat est que les jeux de paris sont devenus la deuxième source des revenus des activités du M-Pesa.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Le crédit sur mobile, apparu avec M-Pesa en 2012, a démocratisé l'emprunt mais soulève des questions de protection des plus pauvres.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "eco_credit",
+     "extrait": "L’accès au crédit a été démocratisé par ces services numériques, mais des questions se posent quant à la protection des pauvres dans leur fonctionnement.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "Pour une thèse publiée dans la Revue de la régulation, la monnaie mobile ne s'attaque pas aux causes systémiques de la pauvreté et ses effets ne concernent que très indirectement les plus pauvres.",
+   "type": "opinion",
+   "importance": "cle",
+   "preuves": [
+    {
+     "source": "regulation",
+     "extrait": "Si la monnaie mobile peut avoir des effets macroéconomiques positifs, ceux-ci ne sont pas distribués de manière uniforme et concernent très indirectement les plus pauvres.",
+     "position": "soutient"
+    },
+    {
+     "source": "regulation",
+     "extrait": "Les monnaies locales visent les causes systémiques de la pauvreté, ce que les systèmes de monnaie mobile ne font pas.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  },
+  {
+   "texte": "En 2020, Safaricom et Vodacom ont racheté M-Pesa à Vodafone ; Safaricom a ensuite repris M-Pesa Holdings, la société qui détient les fonds des clients.",
+   "type": "fait",
+   "importance": "secondaire",
+   "preuves": [
+    {
+     "source": "eco_holdings",
+     "extrait": "En mars 2020, Safaricom et le groupe sud-africain Vodacom Group Limited se sont associés pour racheter M-Pesa à Vodafone.",
+     "position": "soutient"
+    },
+    {
+     "source": "eco_holdings",
+     "extrait": "La société télécoms kényane Safaricom PLC a finalisé l’acquisition de la totalité du capital social émis de M-Pesa Holdings, la société fiduciaire responsable de la détention des fonds des clients du service d’argent mobile M-Pesa, auprès de Vodafone International Holdings BV.",
+     "position": "soutient"
+    }
+   ],
+   "notes": null
+  }
+ ]
+}

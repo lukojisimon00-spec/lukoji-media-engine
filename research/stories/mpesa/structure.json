@@ -1,0 +1,144 @@
+{
+ "type": "transformation",
+ "justification": "Le cœur du récit est un objet qui change de nature : un outil de remboursement de microcrédits devient un moyen d'envoyer de l'argent, puis une infrastructure financière dont dépend une large part du pays, et enfin un acteur dominant contesté. La structure « transformation » place le tournant (le détournement d'usage) au centre et permet d'intégrer la phase critique comme une étape de la transformation, pas comme un post-scriptum.",
+ "alternatives_ecartees": [
+  {
+   "type": "probleme_solution_consequences",
+   "raison": "Risque de récit promotionnel (« la solution miracle ») et de minimiser les limites."
+  },
+  {
+   "type": "chronologie",
+   "raison": "Les dates sont peu nombreuses et sûres ; une chronologie deviendrait une liste."
+  },
+  {
+   "type": "portrait",
+   "raison": "Un portrait de Safaricom ou de Vodafone donnerait trop de poids à des sources intéressées."
+  }
+ ],
+ "angle": "Comment un service pensé pour rembourser des microcrédits a été détourné par ses premiers utilisateurs pour envoyer de l'argent à leurs proches, puis a transformé l'accès aux services financiers au Kenya, au prix d'une domination aujourd'hui contestée.",
+ "promesse": "Le spectateur comprend d'où vient M-Pesa, comment il fonctionne, ce qu'il a réellement changé selon les sources, et pourquoi il fait débat.",
+ "etapes": [
+  {
+   "id": "E1",
+   "role": "hook",
+   "titre": "Le paradoxe d'origine",
+   "objectif": "Accrocher par la contradiction intention / usage.",
+   "faits": [
+    "F8",
+    "F9"
+   ],
+   "duree_cible_s": 25
+  },
+  {
+   "id": "E2",
+   "role": "contexte",
+   "titre": "L'argent sous le matelas",
+   "objectif": "Faire sentir le problème : envoyer de l'argent loin, sans banque.",
+   "faits": [
+    "F61",
+    "F38",
+    "F39"
+   ],
+   "duree_cible_s": 45
+  },
+  {
+   "id": "E3",
+   "role": "origine",
+   "titre": "Une subvention et un prototype",
+   "objectif": "Montrer l'intention initiale : microcrédit, financement public britannique.",
+   "faits": [
+    "F41",
+    "F42",
+    "F8"
+   ],
+   "duree_cible_s": 40
+  },
+  {
+   "id": "E4",
+   "role": "tournant",
+   "titre": "Le détournement",
+   "objectif": "Le cœur du récit : l'équipe suit ses utilisateurs.",
+   "faits": [
+    "F8",
+    "F9",
+    "F40"
+   ],
+   "duree_cible_s": 45
+  },
+  {
+   "id": "E5",
+   "role": "developpement",
+   "titre": "Une banque sans agences",
+   "objectif": "Expliquer le mécanisme : agents, SMS, carte SIM.",
+   "faits": [
+    "F43",
+    "F44",
+    "F47"
+   ],
+   "duree_cible_s": 50
+  },
+  {
+   "id": "E6",
+   "role": "obstacles",
+   "titre": "Banques inquiètes, régulateur exigeant",
+   "objectif": "Montrer les résistances et les conditions posées.",
+   "faits": [
+    "F46",
+    "F45"
+   ],
+   "duree_cible_s": 40
+  },
+  {
+   "id": "E7",
+   "role": "developpement",
+   "titre": "La croissance, selon l'entreprise",
+   "objectif": "Donner l'échelle, en signalant qu'il s'agit de chiffres de l'entreprise.",
+   "faits": [
+    "F42",
+    "F10",
+    "F48",
+    "F49"
+   ],
+   "duree_cible_s": 45
+  },
+  {
+   "id": "E8",
+   "role": "consequences",
+   "titre": "Ce que mesurent les chercheurs",
+   "objectif": "Présenter les effets documentés et leurs limites méthodologiques.",
+   "faits": [
+    "F51",
+    "F11",
+    "F12",
+    "F52"
+   ],
+   "duree_cible_s": 60
+  },
+  {
+   "id": "E9",
+   "role": "limites",
+   "titre": "Le revers du succès",
+   "objectif": "Frais, domination, paris, crédit, critique académique.",
+   "faits": [
+    "F55",
+    "F54",
+    "F53",
+    "F56",
+    "F57",
+    "F58",
+    "F59"
+   ],
+   "duree_cible_s": 65
+  },
+  {
+   "id": "E10",
+   "role": "conclusion",
+   "titre": "Suivre l'usage, encadrer la puissance",
+   "objectif": "Ouvrir une réflexion sur l'innovation et le pouvoir des infrastructures privées.",
+   "faits": [
+    "F49"
+   ],
+   "duree_cible_s": 35
+  }
+ ]
+}

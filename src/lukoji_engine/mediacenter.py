@@ -244,3 +244,113 @@ def render_markdown(db: Database, statuses: list[str] | None = None) -> str:
             out += ["", "**Risques**", ""] + [f"- {x}" for x in s["risks"]]
         out += ["", "---", ""]
     return "\n".join(out)
+
+
+# ---------------------------------------------------------------------------
+# Page projet narratif (phase 2) : navigation par ancres, lecture seule
+# ---------------------------------------------------------------------------
+_STORY_CSS = """
+nav.toc{position:sticky;top:0;z-index:2;background:var(--noir);padding:8px 12px;overflow-x:auto;white-space:nowrap}
+nav.toc a{color:var(--blanc);text-decoration:none;font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-right:14px}
+.vo{font-family:Georgia,serif;font-size:17px;line-height:1.6;background:var(--clair);border-left:3px solid var(--or);padding:10px 14px}
+.scene{border-top:1px solid #E6E6E0;padding:10px 0}.scene h4{margin:0 0 4px;font-size:14px}
+.tag{display:inline-block;font-size:11px;border-radius:4px;padding:0 6px;margin-right:4px;background:var(--clair)}
+.bad{color:var(--rouge);font-weight:600}.ok2{color:#2E7D32;font-weight:600}
+.wrap{overflow-x:auto}
+section.card,.scene{scroll-margin-top:52px}
+"""
+
+
+def render_story_html(db: Database, sid: str) -> str:
+    from .story import engine as eng, project as pj
+    from .story.hooks import evaluate as hk_eval
+    from .story.factcheck import facts_index
+    e = html.escape
+    p = pj.get_project(db, sid)
+    ctx = eng._ctx(db, p)
+    rep = eng.evaluate_all(db, p)
+    last = eng.latest_qc(db, p)
+    subj = db.conn.execute("SELECT uid, title FROM subjects WHERE id = ?", (p["subject_id"],)).fetchone()
+    research, facts = ctx["research"] or {}, facts_index(ctx["research"] or {})
+    parts = []
+    # Angle
+    an = research.get("analyse", {})
+    parts.append(f"""<section class="card" id="angle"><div class="meta">sujet {e(subj['uid'])} · statut du projet : <b>{e(p['status'])}</b></div>
+<h2>Angle</h2><p><b>Angle provisoire.</b> {e(an.get('angle_provisoire_editeur') or research.get('angle_initial', ''))}</p>
+<p><b>Verdict :</b> {e(an.get('verdict_angle', '—'))}</p><p><b>Angle retenu.</b> {e(an.get('angle_retenu', '—'))}</p>
+<p>{e(an.get('justification', ''))}</p><p><b>Points à vérifier :</b></p><ul>{''.join(f'<li>{e(x)}</li>' for x in an.get('points_a_verifier', []))}</ul></section>""")
+    # Preuves
+    rows = "".join(f"<tr><td>{e(f['ref'])}</td><td>{e(f['statut'])}<br><span class='meta'>{e(f['usage'])}</span></td><td>{e(f['texte'])}</td><td>"
+                   + "<br>".join(f"{e(x['source'])} {e(x['organisation'])} ({e(x['categorie'])}, {e(x['verification'])})" for x in f["preuves"])
+                   + "</td></tr>" for f in research.get("faits", []))
+    srcs = "".join(f"<tr><td>{e(s['ref'])}</td><td>{e(s['category'])}</td><td><a href='{e(s['url'])}'>{e(s['title'])}</a><br>"
+                   f"<span class='meta'>{e(s['organisation'])} · {e(s['published_at'] or 'n.d.')} · {e(s['consultation'])}</span></td></tr>"
+                   for s in research.get("sources", []))
+    b = research.get("bilan", {})
+    parts.append(f"""<section class="card" id="preuves"><h2>Preuves</h2><p class="meta">{b.get('faits', 0)} faits · {b.get('faits_cles_confirmes', 0)} faits clés confirmés ·
+{b.get('sources_verifiees', 0)}/{b.get('sources', 0)} sources vérifiées</p><div class="wrap"><table><tr><th>Réf.</th><th>Statut / usage</th><th>Fait</th><th>Preuves</th></tr>{rows}</table></div>
+<h3>Sources</h3><div class="wrap"><table>{srcs}</table></div></section>""")
+    # Hooks
+    if ctx["hooks"]:
+        ev = hk_eval(ctx["hooks"], facts)
+        res = {r["id"]: r for r in ev["resultats"]}
+        hk = "".join(f"""<div class="scene"><h4>{e(h['id'])} · {e(h['type'])} · score {res[h['id']]['score']} · {res[h['id']]['duree_s']} s
+{'<span class="bad"> · éliminé</span>' if res[h['id']]['elimine'] else ''}{'<span class="ok2"> · CHOISI</span>' if h['id'] == ev['choix']['choisi'] else ''}</h4>
+<div class="vo">{e(h['voix_off'])}</div><p class="meta">Visuel : {e(h['concept_visuel'])} · Mouvement : {e(h['mouvement'])} · Son : {e(h['son'])}</p>
+<p class="meta">Tension : {e(h['tension'])} · Risques : {e(h['risques'])}</p>
+{''.join(f'<p class="bad">{e(x["message"])}</p>' for x in res[h['id']]['problemes'])}</div>""" for h in ctx["hooks"]["hooks"])
+        parts.append(f"""<section class="card" id="hooks"><h2>Hooks</h2><p>Choisi : <b>{e(str(ev['choix']['choisi']))}</b> · recommandé : <b>{e(str(ev['choix']['recommande']))}</b><br>{e(ev['choix']['justification'] or '')}</p>{hk}</section>""")
+    # Structure
+    if ctx["structure"]:
+        st = ctx["structure"]
+        steps = "".join(f"<tr><td>{e(s['id'])}</td><td>{e(s['role'])}</td><td>{e(s['titre'])}</td><td>{e(s['objectif'])}</td><td>{e(', '.join(s.get('faits') or []))}</td><td>{s.get('duree_cible_s', '')}</td></tr>" for s in st["etapes"])
+        parts.append(f"""<section class="card" id="structure"><h2>Structure : {e(st['type'])}</h2><p>{e(st['justification'])}</p>
+<p class="meta">Écartées : {e('; '.join(a['type'] + ' — ' + a['raison'] for a in st.get('alternatives_ecartees', [])))}</p><div class="wrap"><table>{steps}</table></div></section>""")
+    # Script
+    if ctx["script"]:
+        det = {c["id"]: c for c in rep["details"]["script"]["sequences"]} if rep["details"].get("script") else {}
+        seqs = "".join(f"""<div class="scene" id="{e(s['id'])}"><h4>{e(s['id'])} — {e(s['titre'])} · {det.get(s['id'], {}).get('duree_s', '?')} s</h4>
+<div class="vo">{e(s['voix_off'])}</div><p class="meta">Objectif : {e(s['objectif'])} · émotion : {e(s['emotion'])} · faits : {e(', '.join(s.get('faits') or []))}
+· sources : {e(', '.join(det.get(s['id'], {}).get('sources', [])))}</p><p class="meta">Transition : {e(s.get('transition') or '—')}</p></div>""" for s in ctx["script"]["sequences"])
+        tot = rep["details"].get("script", {})
+        parts.append(f"""<section class="card" id="script"><h2>Script</h2><p class="meta">{tot.get('mots', '?')} mots · {tot.get('duree_s', '?')} s</p>{seqs}</section>""")
+    # Storyboard
+    if ctx["storyboard"]:
+        sc = "".join(f"""<div class="scene"><h4>{e(x['id'])} · {e(x['sequence'])} <span class="tag">{e(x['type_visuel'])}</span><span class="tag">{e(x['authenticite'])}</span>
+{('<span class="tag">' + e(x['mention_ecran']) + '</span>') if x.get('mention_ecran') else ''}</h4>
+<p><i>{e(x.get('voix_off') or '(sans voix off)')}</i></p><p>{e(x['description'])}</p>
+<p class="meta">Caméra : {e(x['mouvement_camera'])} · graphique : {e(x['mouvement_graphique'])} · transition : {e(x['transition'])} · son : {e(x['ambiance'])}</p>
+<p class="meta">Pourquoi : {e(x['raison_narrative'])} · Risque : {e(x['risques_representation'])}</p></div>""" for x in ctx["storyboard"]["scenes"])
+        d = rep["details"].get("storyboard", {})
+        parts.append(f"""<section class="card" id="storyboard"><h2>Storyboard</h2><p class="meta">{d.get('nb_scenes', '?')} scènes · {d.get('duree_s', '?')} s ·
+{d.get('types_distincts', '?')} types · authenticité : {e(str(d.get('repartition_authenticite', {})))}</p>{sc}</section>""")
+    # Direction
+    if ctx["visual"]:
+        v = ctx["visual"]
+        items = "".join(f"<p><b>{e(k)}.</b> {e(json.dumps(val, ensure_ascii=False) if isinstance(val, (dict, list)) else str(val))}</p>" for k, val in v.items())
+        parts.append(f'<section class="card" id="direction"><h2>Direction artistique</h2>{items}</section>')
+    # QC
+    cats = "".join(f"<tr><td>{e(c)}</td><td>{dd['score']:.0f}</td><td>{len(dd['bloquants'])}</td><td>{len(dd['alertes'])}</td></tr>" for c, dd in rep["categories"].items())
+    probs = "".join(f"<li class='{'bad' if pb['severite'] == 'bloquant' else ''}'>[{e(pb['ou'])}] {e(pb['message'])}</li>"
+                    for dd in rep["categories"].values() for pb in dd["bloquants"] + dd["alertes"])
+    parts.append(f"""<section class="card" id="qc"><h2>Contrôle qualité</h2><p><b>{e(rep['statut'])}</b> · score {rep['score_global']} · bloquants {rep['bloquants']} · alertes {rep['alertes']}
+{('· dernier QC enregistré n° ' + str(last['qc_id'])) if last else ''}</p><table><tr><th>Catégorie</th><th>Score</th><th>Bloquants</th><th>Alertes</th></tr>{cats}</table><ul>{probs}</ul></section>""")
+    # Versions & historique
+    vers = "".join(f"<tr><td>{e(x['kind'])}</td><td>v{x['version']}</td><td>{e(x['created_at'])}</td><td>{e(x['author'])}</td><td>{e(str(x['based_on']))}</td><td>{e(x['note'] or '')}</td></tr>" for x in pj.versions(db, p))
+    evs = "".join(f"<li>{e(x['at'])} {e(x['from_status'] or '—')} → {e(x['to_status'])} ({e(x['actor'])}) {e(x['note'] or '')}</li>" for x in pj.events(db, p))
+    apv = "".join(f"<li>{e(x['stage'])} validé par {e(x['actor'])} le {e(x['at'])}</li>" for x in pj.approvals(db, p)) or "<li>aucune validation enregistrée</li>"
+    parts.append(f"""<section class="card" id="versions"><h2>Versions et historique</h2><div class="wrap"><table>{vers}</table></div><h3>Validations</h3><ul>{apv}</ul>
+<h3>Statuts</h3><ul>{evs}</ul><p class="meta">Commandes : ./bin/lukoji story approve {e(sid)} --etape structure|script|storyboard · story finalize · story diff</p></section>""")
+    toc = "".join(f'<a href="#{a}">{l}</a>' for a, l in (("angle", "Angle"), ("preuves", "Preuves"), ("hooks", "Hooks"), ("structure", "Structure"),
+                                                         ("script", "Script"), ("storyboard", "Storyboard"), ("direction", "Direction"), ("qc", "QC"), ("versions", "Versions")))
+    return f"""<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{e(p['title'])}</title><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>{_CSS}{_STORY_CSS}</style></head><body><header><h1>{e(p['title'])}</h1><p>{e(sid)} · STORY ENGINE · généré le {e(now())} · lecture seule</p></header>
+<nav class="toc">{toc}</nav><main>{''.join(parts)}</main></body></html>"""
+
+
+def write_story_html(db: Database, sid: str, out: str | Path) -> Path:
+    out = Path(out)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(render_story_html(db, sid), encoding="utf-8")
+    return out

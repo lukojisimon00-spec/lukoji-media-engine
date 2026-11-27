@@ -208,6 +208,55 @@ MIGRATIONS: list[str] = [
     CREATE INDEX idx_claims_subject ON claims(subject_id);
     CREATE INDEX idx_hits_run ON search_hits(run_id)
     """,
+    # 3 — phase 2 : Story Engine (projets narratifs versionnés)
+    """
+CREATE TABLE story_projects (
+    id INTEGER PRIMARY KEY,
+    sid TEXT NOT NULL UNIQUE,
+    subject_id INTEGER NOT NULL REFERENCES subjects(id),
+    title TEXT NOT NULL,
+    format TEXT NOT NULL,
+    status TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+CREATE TABLE story_artifacts (
+    id INTEGER PRIMARY KEY,
+    project_id INTEGER NOT NULL REFERENCES story_projects(id),
+    kind TEXT NOT NULL,
+    version INTEGER NOT NULL,
+    content_json TEXT NOT NULL,
+    sha256 TEXT NOT NULL,
+    based_on_json TEXT NOT NULL DEFAULT '{}',
+    author TEXT NOT NULL,
+    note TEXT,
+    created_at TEXT NOT NULL,
+    UNIQUE (project_id, kind, version)
+);
+CREATE TABLE story_events (
+    id INTEGER PRIMARY KEY,
+    project_id INTEGER NOT NULL REFERENCES story_projects(id),
+    from_status TEXT, to_status TEXT NOT NULL, note TEXT, actor TEXT NOT NULL, at TEXT NOT NULL
+);
+CREATE TABLE story_approvals (
+    id INTEGER PRIMARY KEY,
+    project_id INTEGER NOT NULL REFERENCES story_projects(id),
+    stage TEXT NOT NULL,
+    versions_json TEXT NOT NULL,
+    qc_id INTEGER,
+    actor TEXT NOT NULL, note TEXT, at TEXT NOT NULL
+);
+CREATE TABLE story_qc (
+    id INTEGER PRIMARY KEY,
+    project_id INTEGER NOT NULL REFERENCES story_projects(id),
+    versions_json TEXT NOT NULL,
+    report_json TEXT NOT NULL,
+    status TEXT NOT NULL,
+    score REAL NOT NULL,
+    run_at TEXT NOT NULL
+);
+CREATE INDEX idx_story_artifacts ON story_artifacts(project_id, kind)
+""",
 ]
 
 

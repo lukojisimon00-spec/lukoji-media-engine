@@ -1,0 +1,147 @@
+{
+ "titre": "M-Pesa : le détournement qui a changé l'argent au Kenya",
+ "sequences": [
+  {
+   "id": "SEQ-01",
+   "etape": "E1",
+   "titre": "Le paradoxe d'origine",
+   "voix_off": "Au Kenya, envoyer de l'argent par téléphone est devenu un geste du quotidien. Pourtant, M-Pesa n'a pas été conçu pour ça. Il devait servir à rembourser des microcrédits. Ce sont ses premiers utilisateurs qui en ont décidé autrement. Cette histoire raconte comment un détournement d'usage a changé la façon dont un pays garde, envoie et emprunte de l'argent. Et pourquoi, près de vingt ans plus tard, ce succès fait aussi débat.",
+   "objectif": "Accrocher par la contradiction entre l'intention et l'usage, puis annoncer la promesse du film, y compris sa part critique.",
+   "faits": [
+    "F8",
+    "F9"
+   ],
+   "emotion": "curiosité, étonnement",
+   "transition": "La promesse appelle un retour en arrière : à quoi ressemblait le problème avant M-Pesa ?"
+  },
+  {
+   "id": "SEQ-02",
+   "etape": "E2",
+   "titre": "L'argent sous le matelas",
+   "voix_off": "Pour comprendre, il faut revenir au Kenya du milieu des années deux mille. Beaucoup de familles vivent séparées. On part travailler en ville, les proches restent loin. Et l'argent doit circuler entre les deux. Le problème, c'est le chemin. Selon Vodafone, pour envoyer de l'argent à sa famille, on voyageait parfois des jours, ou on confiait ses billets à un chauffeur de bus. Les banques, elles, restent hors de portée pour beaucoup. Selon les économistes Tavneet Suri et William Jack, seuls 22 % des adultes ont alors un compte bancaire. Les mêmes chercheurs relèvent que 77 % des Kényans disent garder leur argent sous le matelas.",
+   "objectif": "Faire sentir un problème concret et quotidien, chiffres attribués à l'appui.",
+   "faits": [
+    "F61",
+    "F38",
+    "F39"
+   ],
+   "emotion": "empathie, frustration",
+   "transition": "Face à ce vide, un acteur inattendu cherche justement des idées."
+  },
+  {
+   "id": "SEQ-03",
+   "etape": "E3",
+   "titre": "Une subvention et un prototype",
+   "voix_off": "C'est là qu'intervient un acteur inattendu : le ministère britannique du Développement international. Il cherche des entreprises capables d'inventer des services pour les personnes sans compte bancaire. Vodafone saisit l'occasion et obtient une subvention. Au Kenya, le projet se fera avec l'opérateur Safaricom. Mais au départ, l'idée n'a rien à voir avec les transferts d'argent. L'équipe veut faciliter le microcrédit : verser de petits prêts et les faire rembourser par téléphone. Le prototype est testé à Thika, au nord de Nairobi.",
+   "objectif": "Établir l'intention initiale, documentée par des sources primaires.",
+   "faits": [
+    "F41",
+    "F42",
+    "F8"
+   ],
+   "emotion": "intérêt, attente",
+   "transition": "Le test commence, et le terrain ne se comporte pas comme prévu."
+  },
+  {
+   "id": "SEQ-04",
+   "etape": "E4",
+   "titre": "Le détournement",
+   "voix_off": "Et sur le terrain, quelque chose ne colle pas avec le plan. Les bénéficiaires ne se contentent pas de rembourser. Ils envoient l'argent ailleurs, à des proches qui vivent parfois à des centaines de kilomètres. Le portable devient un coursier. Plutôt que de corriger ce comportement, l'équipe décide de le suivre. Elle transforme son système de prêts en un outil simple : envoyer de l'argent d'un téléphone à un autre. Plus tard, les chercheurs Suri et Jack observeront que 41 % des transferts étudiés partent vers des parents, contre 8 % vers des enfants. L'argent remonte vers la maison familiale.",
+   "objectif": "Montrer le tournant : l'équipe suit ses usagers au lieu de les corriger.",
+   "faits": [
+    "F8",
+    "F9",
+    "F40"
+   ],
+   "emotion": "surprise, déclic",
+   "transition": "Encore faut-il que l'argent puisse entrer et sortir du téléphone, sans banque."
+  },
+  {
+   "id": "SEQ-05",
+   "etape": "E5",
+   "titre": "Une banque sans agences",
+   "voix_off": "Reste un défi : faire entrer et sortir l'argent sans agence bancaire. La réponse, ce sont les agents. Le client se rend chez un commerçant avec des espèces. Quelques SMS plus tard, cet argent devient de la monnaie électronique, stockée sur sa carte SIM. Il peut l'envoyer à qui il veut. À l'autre bout, le destinataire retire les billets dans une boutique de son quartier. Beaucoup de ces relais sont de petites boutiques, plus habituées à vendre des marchandises qu'à manipuler l'argent de leurs clients. Selon Agence Ecofin, début 2012, Safaricom compte environ 30 000 points de ce type, contre seulement 400 agences bancaires.",
+   "objectif": "Expliquer clairement le mécanisme et la force du réseau d'agents.",
+   "faits": [
+    "F43",
+    "F44",
+    "F47"
+   ],
+   "emotion": "compréhension, simplicité",
+   "transition": "Un opérateur de téléphonie qui fait circuler de l'argent : cela ne plaît pas à tout le monde."
+  },
+  {
+   "id": "SEQ-06",
+   "etape": "E6",
+   "titre": "Banques inquiètes, régulateur exigeant",
+   "voix_off": "Un opérateur de téléphonie qui fait circuler de l'argent, cela dérange. Selon Agence Ecofin, des banques y voient une incursion dans leur métier : pour elles, un opérateur ne peut pas exercer une activité bancaire sans licence. La Banque centrale du Kenya donne pourtant son feu vert, mais pas sans conditions. Elle exige un plafond de dépôt pour limiter le blanchiment, la protection des consommateurs et la sécurité des points de retrait. Et chaque client doit être enregistré avant d'utiliser le service.",
+   "objectif": "Présenter les résistances et le rôle du régulateur, sans caricature.",
+   "faits": [
+    "F46",
+    "F45"
+   ],
+   "emotion": "tension, suspense",
+   "transition": "Les conditions posées, le service peut enfin être lancé."
+  },
+  {
+   "id": "SEQ-07",
+   "etape": "E7",
+   "titre": "La croissance, selon l'entreprise",
+   "voix_off": "M-Pesa est lancé le 6 mars 2007. Selon Vodafone, il réunit 1,2 million d'utilisateurs à la fin de sa première année. Dix ans plus tard, l'entreprise annonce près de 29,5 millions de clients actifs, servis par plus de 287 400 agents, dans 10 pays. Parmi eux, la République démocratique du Congo. En 2022, Vodafone revendique plus de 51 millions de clients et 600 000 agents, dans sept pays. Ce sont les chiffres de l'entreprise elle-même. Ils mesurent un succès commercial. Ils ne disent pas encore ce qui a changé dans la vie des gens.",
+   "objectif": "Donner l'échelle de la croissance en signalant clairement la source intéressée.",
+   "faits": [
+    "F42",
+    "F10",
+    "F48",
+    "F49"
+   ],
+   "emotion": "ampleur, recul critique",
+   "transition": "Pour savoir ce qui a vraiment changé, il faut quitter les communiqués et regarder les études."
+  },
+  {
+   "id": "SEQ-08",
+   "etape": "E8",
+   "titre": "Ce que mesurent les chercheurs",
+   "voix_off": "Alors, qu'a vraiment changé M-Pesa ? Une enquête de FSD Kenya et de la Banque centrale donne une première réponse. L'accès aux services financiers passe de 27 % des Kényans en 2006 à 83 % en 2019. Mais cette courbe ne dit pas quelle part revient à M-Pesa. Pour le mesurer, Suri et Jack ont suivi l'ouverture de points M-Pesa autour de chaque ménage. Leur étude a été publiée dans la revue Science. Elle estime que l'accès à l'argent mobile a sorti quelque 194 000 ménages de l'extrême pauvreté. Cela représente à peu près 2 % des ménages kényans. Selon les auteurs, l'effet est plus fort pour les foyers dirigés par des femmes. Environ 185 000 femmes auraient quitté l'agriculture pour le commerce. Ce sont des estimations, obtenues par extrapolation. Pas un décompte.",
+   "objectif": "Présenter les effets documentés avec leurs limites méthodologiques.",
+   "faits": [
+    "F51",
+    "F11",
+    "F12",
+    "F52"
+   ],
+   "emotion": "satisfaction nuancée, rigueur",
+   "transition": "Mais un service devenu aussi central attire aussi les critiques."
+  },
+  {
+   "id": "SEQ-09",
+   "etape": "E9",
+   "titre": "Le revers du succès",
+   "voix_off": "Ce succès a un revers. Selon Agence Ecofin, certains transferts coûtent près de 7 % du montant envoyé. La Banque centrale veut faire baisser le coût moyen de quelque 23 shillings à 10 shillings par transaction d'ici 2028. Le service est aussi devenu un poids lourd. Au 31 mars 2025, M-Pesa détient 90,8 % des parts de marché, d'après l'Autorité des communications. Sur l'exercice 2025, il pèse pour 44,2 % des revenus de Safaricom. Dès 2018, des sénateurs kényans menaçaient de séparer M-Pesa des activités télécoms de l'opérateur, jugé trop dominant. D'autres usages inquiètent. Les paris en ligne sont devenus la deuxième source de revenus de M-Pesa. Le crédit sur mobile, lui, pose la question de la protection des plus pauvres. Et pour une thèse publiée dans la Revue de la régulation, l'argent mobile ne s'attaque pas aux causes profondes de la pauvreté.",
+   "objectif": "Exposer les limites documentées : coût, domination, paris, crédit, critique académique.",
+   "faits": [
+    "F55",
+    "F54",
+    "F53",
+    "F56",
+    "F57",
+    "F58",
+    "F59"
+   ],
+   "emotion": "lucidité, inquiétude",
+   "transition": "Que retenir, alors, de cette histoire ?"
+  },
+  {
+   "id": "SEQ-10",
+   "etape": "E10",
+   "titre": "Suivre l'usage, encadrer la puissance",
+   "voix_off": "Au fond, l'histoire de M-Pesa n'est pas celle d'une technologie géniale. Le téléphone, le SMS et les petites boutiques existaient déjà. C'est l'histoire d'une équipe qui a regardé ce que les gens faisaient vraiment de son produit, et qui a accepté de les suivre. Mais elle montre aussi ce qui arrive quand un service privé devient une infrastructure dont dépend une grande partie d'un pays. Il faut alors des règles, des contre-pouvoirs, des prix surveillés. Selon Vodafone, M-Pesa est aussi présent en République démocratique du Congo. Là comme ailleurs, la question n'est plus de savoir si l'argent mobile va s'imposer. Elle est de savoir à quelles conditions, et au profit de qui.",
+   "objectif": "Conclure par une réflexion ouverte sur l'innovation et le pouvoir des infrastructures privées, avec un lien vers la RDC.",
+   "faits": [
+    "F49"
+   ],
+   "emotion": "réflexion, ouverture",
+   "transition": ""
+  }
+ ]
+}
