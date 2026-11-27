@@ -36,7 +36,7 @@
    "licence": "CC BY-SA 2.0",
    "attribution_requise": true,
    "conditions": "Crédit + licence ; une version recadrée ou modifiée reste sous CC BY-SA 2.0.",
-   "usage": "SC-14, SC-41",
+   "usage": "SC-14, SC-42",
    "limites": "Photo de 2016 (neuf ans après le lancement) : datée à l'écran ; enseignes de marques visibles (contexte documentaire, pas de mise en valeur)."
   },
   {
@@ -51,7 +51,7 @@
    "licence": "CC BY 4.0",
    "attribution_requise": true,
    "conditions": "Crédit + licence.",
-   "usage": "SC-16, SC-41",
+   "usage": "SC-16, SC-42",
    "limites": "Photo de 2026 : datée à l'écran."
   },
   {
@@ -66,7 +66,7 @@
    "licence": "CC BY-SA 3.0",
    "attribution_requise": true,
    "conditions": "Crédit + licence ; partage à l'identique si modifiée.",
-   "usage": "SC-17, SC-41",
+   "usage": "SC-17, SC-42",
    "limites": "Légende « KENYA — DATE INCONNUE » ; ne pas afficher 2005."
   },
   {
@@ -96,7 +96,7 @@
    "licence": "CC BY 2.0",
    "attribution_requise": true,
    "conditions": "Crédit + licence.",
-   "usage": "SC-18",
+   "usage": "SC-18, SC-19",
    "limites": "Photo prise la semaine du lancement (mars 2007) : coïncidence de date, aucun lien avec M-Pesa à suggérer."
   },
   {
@@ -111,7 +111,7 @@
    "licence": "CC BY-SA 4.0",
    "attribution_requise": true,
    "conditions": "Crédit + licence.",
-   "usage": "SEQ-09 (projet de baisse des frais)",
+   "usage": "SC-35 (projet de baisse des frais)",
    "limites": ""
   },
   {
@@ -171,7 +171,7 @@
    "licence": "CC BY 2.0",
    "attribution_requise": true,
    "conditions": "Crédit + licence.",
-   "usage": "SC-43 (symbolique)",
+   "usage": "SC-44 (symbolique)",
    "limites": "Aucun argent mobile visible d'après la description : « IMAGE D'ILLUSTRATION — KINSHASA, 2013 ». Un plan tourné par LUKOJI à Kinshasa serait préférable."
   },
   {
@@ -184,7 +184,7 @@
    "licence": "droits réservés — citation courte (droit de citation), légendée",
    "attribution_requise": true,
    "conditions": "Citation courte, source et date de consultation à l'écran.",
-   "usage": "SEQ-02, SEQ-03, SEQ-04"
+   "usage": "SC-08, SC-12"
   },
   {
    "id": "R13",
@@ -208,7 +208,7 @@
    "licence": "à vérifier sur la page (OpenEdition publie souvent sous licence ouverte ; non vérifié)",
    "attribution_requise": true,
    "conditions": "Citation courte.",
-   "usage": "SC-40"
+   "usage": "SC-41"
   },
   {
    "id": "R24",
@@ -220,7 +220,7 @@
    "licence": "droits réservés — citation courte",
    "attribution_requise": true,
    "conditions": "Citation courte, source et date de consultation à l'écran.",
-   "usage": "SEQ-02 (DFID), SEQ-07 (chiffres de l'entreprise)"
+   "usage": "SC-07, SC-25"
   },
   {
    "id": "R25",
@@ -232,7 +232,7 @@
    "licence": "droits réservés — citation courte",
    "attribution_requise": true,
    "conditions": "Citation courte.",
-   "usage": "SEQ-08"
+   "usage": "SC-27"
   },
   {
    "id": "R15",
@@ -265,7 +265,7 @@
    "id": "R18",
    "statut": "non_obtenue",
    "description": "Communiqué original de la Banque centrale du Kenya (27 janvier 2009)",
-   "usage": "SC-21 : substitut typographique",
+   "usage": "SC-21 : frise typographique (aucun faux document)",
    "limites": "Site centralbank.go.ke hors réseau autorisé ; communiqué non recherché directement."
   },
   {
@@ -283,7 +283,7 @@
    "auteur": "Natural Earth",
    "licence": "domaine public",
    "attribution_requise": false,
-   "usage": "SC-04, SC-10, SC-11, SC-24, SC-42",
+   "usage": "SC-04, SC-10, SC-11, SC-24, SC-43",
    "limites": "Site non consulté depuis l'agent ; licence domaine public de Natural Earth connue mais à confirmer au téléchargement."
   },
   {
