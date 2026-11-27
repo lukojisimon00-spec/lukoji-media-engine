@@ -43,7 +43,8 @@ def test_placement_avoids_text_and_colour_adapts(rendered):
     assert top_left["rejected"] and "masquerait" in top_left["rejected"]
     colours = [s["color"] for s in wm["segments"]]
     assert colours == ["white", "black"]                   # fond noir puis fond clair
-    assert abs(wm["segments"][1]["start"] - 6.0) <= 0.5
+    # Bascule recalée à l'image près sur la coupe (t = 6,000 s dans la vidéo synthétique).
+    assert wm["segments"][1]["start"] == pytest.approx(6.0, abs=1e-3)
 
 
 def test_render_registered_in_db(rendered):
@@ -92,3 +93,22 @@ def test_short_content_gets_no_signature(synthetic_vertical, tmp_path):
     sc = apply(synthetic_vertical, out, profile_name="tiktok", kind="short", source_out=8.0)
     assert "skipped" in sc["signature"] and sc["total_duration"] == pytest.approx(8.0, abs=0.01)
     assert qc.run_qc(out)["status"] == "conforme"
+
+
+def test_logo_visible_on_every_frame(rendered):
+    out, _, _ = rendered
+    check = _status(qc.run_qc(out), "filigrane_visible_chaque_image")
+    assert check["passed"] and check["value"]["invisibles"] == 0, check
+
+
+def test_visible_footprint_inside_every_platform_safe_zone(rendered):
+    """Zones de sécurité appliquées au pixel : logo + ombre dans la zone sûre de chaque plateforme,
+    et aucune modification mesurée hors de cette empreinte."""
+    from lukoji_engine.geometry import Rect, get_profile
+    out, sc, _ = rendered
+    report = qc.run_qc(out)
+    fp = Rect(*sc["watermark"]["footprint"])
+    for member in get_profile("vertical_universal").members:
+        assert get_profile(member).safe.contains(fp), member
+        assert _status(report, f"zone_securite_{member}")["passed"]
+    assert _status(report, "aucune_modification_hors_empreinte")["passed"]

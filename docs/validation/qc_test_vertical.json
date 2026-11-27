@@ -161,7 +161,7 @@
       "name": "debit",
       "passed": true,
       "severity": "info",
-      "value": "3144 kb/s",
+      "value": "3143 kb/s",
       "expected": "variable (CRF)",
       "detail": null
     },
@@ -312,8 +312,8 @@
       "severity": "bloquant",
       "value": [
         0.9998,
-        0.9997,
         0.9998,
+        0.9999,
         0.9999,
         0.9999,
         0.9999,
@@ -381,17 +381,29 @@
         0.793,
         0.793,
         0.793,
-        0.788,
-        0.788
+        0.789,
+        0.789
       ],
       "expected": "écart de luminance ≥ 0.25",
       "detail": null
     },
     {
+      "name": "filigrane_visible_chaque_image",
+      "passed": true,
+      "severity": "bloquant",
+      "value": {
+        "images": 581,
+        "invisibles": 0,
+        "exemples": []
+      },
+      "expected": "contraste logo/fond ≥ 0.25 sur chaque image",
+      "detail": "(temps s, couleur du logo, luminance du fond)"
+    },
+    {
       "name": "contenu_non_altere",
       "passed": true,
       "severity": "bloquant",
-      "value": 0.0018,
+      "value": 0.0019,
       "expected": "dérive de luminance < 0.01",
       "detail": null
     },

@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw
 from .assets import original_path, sha256_file, verify_manifest
 from .config import load_config
 from .geometry import Rect, get_profile
-from .media import luminance, moov_before_mdat, probe, read_frame, run_ffmpeg
+from .media import luminance, moov_before_mdat, probe, read_frame, read_region_series, run_ffmpeg
 from .paths import resolve
 
 BLOQUANT, AVERT, INFO = "bloquant", "avertissement", "info"
@@ -128,20 +128,67 @@ def sample_times(sc: dict, n: int = 6) -> list[float]:
     return sorted(times)
 
 
+LOGO_LUMA = {"white": 1.0, "black": 0.0434}  # #FFFFFF, #0B0B0B
+MIN_FRAME_CONTRAST = 0.25
+
+
+def frame_visibility_check(src: Path, sc: dict, box: Rect, logos: dict) -> dict:
+    """Visibilité IMAGE PAR IMAGE : pour chaque image du contenu principal, écart entre la couleur
+    du logo prévue à cet instant et la luminance du fond sous ses tracés. Détecte un changement
+    de couleur décalé par rapport à une coupe (logo blanc sur blanc, noir sur noir)."""
+    wm = sc["watermark"]
+    fps = wm.get("fps") or get_profile(sc["profile"]).fps
+    series = read_region_series(src, (box.x, box.y, box.w, box.h), 1 / fps, sc["main_duration"],
+                                vf=sc["normalize_filter"], start=sc["source_in"])
+    bad = []
+    for i, frame in enumerate(series):
+        t = i / fps
+        if t < wm["fade_in"]:
+            continue
+        # Même convention que le rendu : bornes décalées d'une demi-image.
+        seg = _seg_at(wm["segments"], t + 0.5 / fps)
+        if not seg:
+            continue
+        rgba, pad = logos[seg["color"]]
+        core = rgba[pad:pad + box.h, pad:pad + box.w, 3] > 0.6
+        bg = float(luminance(frame)[core].mean())
+        contrast = abs(LOGO_LUMA[seg["color"]] - bg)
+        if contrast < MIN_FRAME_CONTRAST:
+            bad.append((round(t, 3), seg["color"], round(bg, 2)))
+    return _r("filigrane_visible_chaque_image", not bad,
+              value={"images": len(series), "invisibles": len(bad), "exemples": bad[:6]},
+              expected=f"contraste logo/fond ≥ {MIN_FRAME_CONTRAST} sur chaque image",
+              detail="(temps s, couleur du logo, luminance du fond)")
+
+
 def watermark_checks(video: Path, sc: dict) -> list[dict]:
     res: list[dict] = []
     wm = sc["watermark"]
     box = Rect(*wm["box"])
     prof = get_profile(sc["profile"])
-    # Zones de sécurité : le logo doit être dans la zone sûre de CHAQUE plateforme ciblée.
+    # Zones de sécurité, au PIXEL : l'empreinte visible réelle (logo + ombre, alpha × opacité > 2 %)
+    # de chaque version du logo doit tenir dans la zone sûre de CHAQUE plateforme ciblée.
+    fps_union = None
+    for color, lg in wm["logos"].items():
+        with Image.open(resolve(lg["path"])) as im:
+            a = np.asarray(im.getchannel("A"), np.float32) / 255.0 * wm["opacity"]
+        ys, xs = np.where(a > 0.02)
+        p = lg["pad"]
+        fp = Rect(box.x - p + int(xs.min()), box.y - p + int(ys.min()), int(xs.max() - xs.min()) + 1, int(ys.max() - ys.min()) + 1)
+        fps_union = fp if fps_union is None else Rect(min(fp.x, fps_union.x), min(fp.y, fps_union.y),
+                                                      max(fp.right, fps_union.right) - min(fp.x, fps_union.x),
+                                                      max(fp.bottom, fps_union.bottom) - min(fp.y, fps_union.y))
     for member in prof.members:
         mp = get_profile(member)
-        res.append(_r(f"zone_securite_{member}", mp.safe.contains(box), value=box.as_list(),
+        margins = {"gauche": fps_union.x - mp.safe.x, "haut": fps_union.y - mp.safe.y,
+                   "droite": mp.safe.right - fps_union.right, "bas": mp.safe.bottom - fps_union.bottom}
+        res.append(_r(f"zone_securite_{member}", mp.safe.contains(fps_union),
+                      value={"empreinte_visible": fps_union.as_list(), "marges_restantes_px": margins},
                       expected=f"dans {mp.safe.as_list()}"))
     for r in prof.reserved:
-        res.append(_r("hors_zone_reservee_plateforme", not box.intersects(r), value=box.as_list(), expected=f"hors {r.as_list()}"))
+        res.append(_r("hors_zone_reservee_plateforme", not fps_union.intersects(r), value=fps_union.as_list(), expected=f"hors {r.as_list()}"))
     for a in wm["avoid"]:
-        res.append(_r("hors_zone_reservee_contenu", not box.intersects(Rect(*a)), value=box.as_list(), expected=f"hors {a}"))
+        res.append(_r("hors_zone_reservee_contenu", not fps_union.intersects(Rect(*a)), value=fps_union.as_list(), expected=f"hors {a}"))
     # Intégrité des logos utilisés : empreinte + ratio identique à la source officielle.
     for color, lg in wm["logos"].items():
         path = resolve(lg["path"])
@@ -212,6 +259,7 @@ def watermark_checks(video: Path, sc: dict) -> list[dict]:
                   detail="rendu réel comparé à la composition attendue (forme, opacité, position)"))
     res.append(_r("filigrane_position_exacte", shifts and all(s == (0, 0) for s in shifts), value=shifts, expected="décalage (0, 0)"))
     res.append(_r("filigrane_visible", contrasts and min(contrasts) >= 0.25, AVERT, contrasts, "écart de luminance ≥ 0.25"))
+    res.append(frame_visibility_check(src, sc, box, logos))
     # Le contenu hors filigrane ne doit pas être altéré (dérive de couleurs / plage).
     t = sample_times(sc)[len(sample_times(sc)) // 2]
     srcf = read_frame(src, sc["source_in"] + t, vf=sc["normalize_filter"], size=(W, H)).astype(np.float32)
@@ -219,6 +267,19 @@ def watermark_checks(video: Path, sc: dict) -> list[dict]:
     maskout = np.ones((H, W), bool); maskout[max(0, box.y - 40):box.bottom + 40, max(0, box.x - 40):box.right + 40] = False
     drift = float(abs(luminance(outf.astype(np.uint8))[maskout].mean() - luminance(srcf.astype(np.uint8))[maskout].mean()))
     res.append(_r("contenu_non_altere", drift < 0.01, value=round(drift, 4), expected="dérive de luminance < 0.01"))
+    # Mesure réelle : hors de l'empreinte (+2 px), les écarts > 0.15 doivent rester du bruit d'encodage
+    # (pixels isolés, < 0.005 % de l'image). Un logo, une ombre ou un décalage hors zone échouerait.
+    outside = []
+    for t in sample_times(sc)[:5]:
+        sf = read_frame(src, sc["source_in"] + t, vf=sc["normalize_filter"], size=(W, H))
+        of = read_frame(video, t, size=(W, H))
+        d = np.abs(luminance(of) - luminance(sf)) > 0.15
+        f = fps_union.expand(2)
+        d[max(0, f.y):f.bottom, max(0, f.x):f.right] = False
+        outside.append(int(d.sum()))
+    limit = int(W * H * 0.00005)
+    res.append(_r("aucune_modification_hors_empreinte", max(outside) <= limit, value=outside,
+                  expected=f"≤ {limit} pixels isolés par image (bruit d'encodage)"))
     return res
 
 

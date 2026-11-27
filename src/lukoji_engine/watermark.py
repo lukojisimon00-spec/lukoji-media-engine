@@ -67,6 +67,8 @@ class WatermarkPlan:
     candidates: list[Candidate]
     avoid: list[list[int]]
     clear: bool = True                          # False = aucune position dégagée -> validation humaine
+    fps: int = 30
+    footprint: list[int] = field(default_factory=list)   # empreinte visible (logo + ombre)
     logos: dict = field(default_factory=dict)   # couleur -> {path, sha256, box_w, box_h, pad, source_aspect}
 
 
@@ -120,23 +122,48 @@ def occlusion_profile(src: Path, vf: str, box: Rect, canvas: Rect, duration: flo
             "occluded_spans": spans, "threshold": thr}
 
 
+VISIBLE_ALPHA = 0.02  # au-delà, un pixel du logo (ou de son ombre) est considéré visible
+
+
+def visible_overflow(logo: LogoImage, opacity: float) -> tuple[int, int, int, int]:
+    """Débord visible (gauche, haut, droite, bas) de l'image du logo — ombre comprise — au-delà
+    de la boîte du logo. Les marges de sécurité s'appliquent à cette empreinte VISIBLE."""
+    with Image.open(logo.path) as im:
+        a = np.asarray(im.getchannel("A"), np.float32) / 255.0 * opacity
+    ys, xs = np.where(a > VISIBLE_ALPHA)
+    p = logo.pad
+    return (max(0, p - int(xs.min())), max(0, p - int(ys.min())),
+            max(0, int(xs.max()) + 1 - (p + logo.box_w)), max(0, int(ys.max()) + 1 - (p + logo.box_h)))
+
+
+def footprint(box: Rect, overflow: tuple[int, int, int, int]) -> Rect:
+    l, t, r, b = overflow
+    return Rect(box.x - l, box.y - t, box.w + l + r, box.h + t + b)
+
+
 def choose_placement(src: Path, vf: str, profile: Profile, logo_w: int, logo_h: int, duration: float,
                      avoid: list[Rect], anchors: list[str] | None = None,
-                     start: float = 0.0) -> tuple[Rect, str, list[Candidate], bool]:
-    """Choisit le coin dégagé préféré. Retourne (boîte, ancre, candidats, dégagée?)."""
+                     start: float = 0.0, overflow: tuple[int, int, int, int] = (0, 0, 0, 0),
+                     ) -> tuple[Rect, str, list[Candidate], bool]:
+    """Choisit le coin dégagé préféré. Retourne (boîte du logo, ancre, candidats, dégagée?).
+
+    Le coin est calculé pour que l'EMPREINTE VISIBLE (logo + ombre) touche le bord de la zone sûre.
+    """
     w = _wcfg()
     anchors = anchors or w["layouts"][profile.orientation]["anchors"]
     pad = w["avoid_padding"]
     forbidden = [r.expand(pad) for r in avoid] + list(profile.reserved)
+    l, t, r, b = overflow
     cands: list[Candidate] = []
     for rank, anchor in enumerate(anchors):
-        box = anchor_box(anchor, profile.safe, logo_w, logo_h)
+        fp = anchor_box(anchor, profile.safe, logo_w + l + r, logo_h + t + b)
+        box = Rect(fp.x + l, fp.y + t, logo_w, logo_h)
         c = Candidate(anchor, box.as_list())
         cands.append(c)
-        if not profile.safe.contains(box):
+        if not profile.safe.contains(fp):
             c.rejected = "hors zone sûre"
             continue
-        hit = next((f for f in forbidden if box.intersects(f)), None)
+        hit = next((f for f in forbidden if fp.intersects(f)), None)
         if hit:
             c.rejected = f"chevauche une zone réservée {hit.as_list()}"
             continue
@@ -162,7 +189,7 @@ def choose_placement(src: Path, vf: str, profile: Profile, logo_w: int, logo_h: 
 
 
 def color_segments(src: Path, vf: str, box: Rect, mask: np.ndarray, duration: float, mode: str,
-                   start: float = 0.0) -> list[Segment]:
+                   start: float = 0.0, fps: int | None = None) -> list[Segment]:
     """Segmente la durée selon la luminance du fond SOUS les tracés du logo."""
     w = _wcfg()
     step = w["analysis_step"]
@@ -212,17 +239,39 @@ def color_segments(src: Path, vf: str, box: Rect, mask: np.ndarray, duration: fl
                 k += 1
     segs[0][0] = 0.0
     segs[-1][1] = duration
+    # Affinage à l'image près : chaque bascule est recalée sur la première image du nouveau fond.
+    if fps and len(segs) > 1:
+        mid = (w["light_threshold"] + w["dark_threshold"]) / 2
+        for k in range(1, len(segs)):
+            b = segs[k][0]
+            ws = max(0.0, np.floor((b - step - 0.1) * fps) / fps)
+            we = min(duration, b + step + 0.1)
+            win = read_region_series(src, (box.x, box.y, box.w, box.h), 1 / fps, we - ws, vf=vf, start=start + ws)
+            wl = np.array([(luminance(f) * weights).sum() for f in win])
+            to_black = segs[k][2] == "black"
+            hits = np.where(wl > mid)[0] if to_black else np.where(wl < mid)[0]
+            # première image du nouveau fond APRÈS la dernière image de l'ancien fond dans la fenêtre
+            olds = np.where(wl <= mid)[0] if to_black else np.where(wl >= mid)[0]
+            if len(hits) and len(olds):
+                after = hits[hits > olds.min()]
+                if len(after):
+                    nb = round(ws + after[0] / fps, 4)
+                    if segs[k - 1][0] < nb < segs[k][1]:
+                        segs[k - 1][1] = nb
+                        segs[k][0] = nb
     out = []
     for s0, s1, color, _ in segs:
         i0, i1 = int(s0 / step), max(int(s0 / step) + 1, int(round(s1 / step)))
         bg = float(lum[i0:i1].mean()) if len(lum[i0:i1]) else float(lum.mean())
         logo_l = 1.0 if color == "white" else 0.0434  # #0B0B0B
-        out.append(Segment(round(s0, 3), round(s1, 3), color, round(bg, 3), round(abs(logo_l - bg), 3)))
+        out.append(Segment(round(s0, 4), round(s1, 4), color, round(bg, 3), round(abs(logo_l - bg), 3)))
     return out
 
 
-def _enable_expr(segments: list[Segment], color: str) -> str | None:
-    parts = [f"gte(t,{s.start:.3f})*lt(t,{s.end:.3f})" for s in segments if s.color == color]
+def _enable_expr(segments: list[Segment], color: str, fps: int) -> str | None:
+    """Expression d'activation : bornes décalées d'une demi-image (aucune ambiguïté d'arrondi)."""
+    h = 0.5 / fps
+    parts = [f"gte(t,{max(0.0, s.start - h):.4f})*lt(t,{s.end - h:.4f})" for s in segments if s.color == color]
     return "+".join(parts) if parts else None
 
 
@@ -257,14 +306,15 @@ def apply(input_path: str | Path, output_path: str | Path, *, profile_name: str,
     # 1) taille du logo (blanc de référence pour la géométrie)
     ref = _make_logo(variant, "white", profile, db)
     # 2) placement
+    overflow = visible_overflow(ref, opacity)
     box, anchor, cands, clear = choose_placement(src, vf, profile, ref.box_w, ref.box_h, main_dur, avoid,
-                                                 anchors, start=source_in)
+                                                 anchors, start=source_in, overflow=overflow)
     # 3) couleur par segment, mesurée sous les tracés du logo
     with Image.open(ref.path) as im:
         a = np.asarray(im.getchannel("A"), np.float32) / 255.0
     mask = a[ref.pad: ref.pad + ref.box_h, ref.pad: ref.pad + ref.box_w]
     mask = np.where(mask > 0.5, 1.0, 0.0)
-    segments = color_segments(src, vf, box, mask, main_dur, color_mode, start=source_in)
+    segments = color_segments(src, vf, box, mask, main_dur, color_mode, start=source_in, fps=profile.fps)
     logos = {"white": ref} if any(s.color == "white" for s in segments) else {}
     if any(s.color == "black" for s in segments):
         logos["black"] = _make_logo(variant, "black", profile, db)
@@ -289,7 +339,7 @@ def apply(input_path: str | Path, output_path: str | Path, *, profile_name: str,
         if segments[0].color == color and fade > 0:
             chain += f",fade=t=in:st=0:d={fade}:alpha=1"
         filters.append(chain + f"[lg{idx}]")
-        expr = _enable_expr(segments, color)
+        expr = _enable_expr(segments, color, profile.fps)
         filters.append(f"[{last}][lg{idx}]overlay=x={box.x - logo.pad}:y={box.y - logo.pad}:format=yuv444"
                        f":eof_action=pass:enable='{expr}'[ov{idx}]")
         last = f"ov{idx}"
@@ -328,7 +378,8 @@ def apply(input_path: str | Path, output_path: str | Path, *, profile_name: str,
     plan = WatermarkPlan(
         profile=profile.name, canvas=[profile.width, profile.height], variant=variant, box=box.as_list(),
         anchor=anchor, opacity=opacity, fade_in=fade, segments=segments, candidates=cands,
-        avoid=[r.as_list() for r in avoid], clear=clear,
+        avoid=[r.as_list() for r in avoid], clear=clear, fps=profile.fps,
+        footprint=footprint(box, overflow).as_list(),
         logos={c: {"path": rel(l.path), "sha256": l.sha256, "box_w": l.box_w, "box_h": l.box_h, "pad": l.pad,
                    "source_key": l.source_key, "source_aspect": l.source_aspect} for c, l in logos.items()},
     )
