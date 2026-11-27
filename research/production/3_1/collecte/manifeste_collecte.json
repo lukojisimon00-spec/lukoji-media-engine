@@ -522,10 +522,26 @@
       "type": "photo (métadonnées seulement, non téléchargée)",
       "titre_fichier": "File:2013 Boulevard du 30 Juin Kinshasa 8756682965.jpg",
       "requete_api": "https://en.wikipedia.org/w/api.php?action=query&titles=File:2013 Boulevard du 30 Juin Kinshasa 8756682965.jpg&prop=imageinfo&iiprop=url|size|sha1|mime|extmetadata&format=json",
-      "date_heure_utc": "2026-11-27T16:55:31Z",
-      "code_http": 429,
-      "statut": "echec",
-      "raison_statut": "ÉCHEC (429, « Wikimedia Error » — limitation de débit de l'API) après plusieurs tentatives espacées"
+      "date_heure_utc": "2026-11-27T16:58:06Z",
+      "code_http": 200,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/2013_Boulevard_du_30_Juin_Kinshasa_8756682965.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "descriptionurl": "https://commons.wikimedia.org/wiki/File:2013_Boulevard_du_30_Juin_Kinshasa_8756682965.jpg",
+      "width": 3872,
+      "height": 2592,
+      "size": 2987506,
+      "sha1": "85eb7308737a36f2e6ec40cb48660360f11076f1",
+      "mime": "image/jpeg",
+      "Artist": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/25870226@N02\">Antoine Moens de Hase</a>",
+      "Credit": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/25870226@N02/8756682965/\">DSC_0304_Kinshasa</a>",
+      "LicenseShortName": "CC BY 2.0",
+      "LicenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "UsageTerms": "Creative Commons Attribution 2.0",
+      "AttributionRequired": "true",
+      "Copyrighted": "True",
+      "DateTimeOriginal": "2013-02-03 15:31",
+      "DateTime": "2014-09-07 20:09:37",
+      "ImageDescription": "Boulevard du 30 Juin, Kinshasa - République Démocratique du Congo - 2013",
+      "statut": "obtenu"
     }
   ]
 }
