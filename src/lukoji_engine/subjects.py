@@ -39,6 +39,10 @@ SUBJECT_TRANSITIONS: dict[str, set[str]] = {
 FORMATS = ("short", "affiche", "documentaire", "serie")
 
 
+# Séparateur entre phrases capturées : empêche qu'une citation « enjambe » deux phrases non contiguës.
+EXCERPT_SEP = "\n§§\n"
+
+
 class DossierError(ValueError):
     def __init__(self, problems: list[str]):
         super().__init__("dossier invalide :\n- " + "\n- ".join(problems))
@@ -57,26 +61,7 @@ def validate_dossier(d: dict) -> list[str]:
         for k in ("mode", "chercheur", "requetes"):
             if not d["session"].get(k):
                 p.append(f"session.{k} manquant")
-    srcs = d.get("sources") or []
-    if not srcs:
-        p.append("aucune source")
-    ids = set()
-    for i, s in enumerate(srcs):
-        tag = f"sources[{i}] ({s.get('id', '?')})"
-        for k in ("id", "url", "titre", "date_consultation", "consultation"):
-            if not s.get(k):
-                p.append(f"{tag} : champ « {k} » manquant")
-        if s.get("id") in ids:
-            p.append(f"{tag} : identifiant en double")
-        ids.add(s.get("id"))
-        for prob in src.validate_url(s.get("url", "")):
-            p.append(f"{tag} : URL refusée — {prob}")
-        if s.get("consultation") and s["consultation"] not in src.CONSULTATION_LEVELS:
-            p.append(f"{tag} : niveau de consultation inconnu {s['consultation']!r}")
-        if s.get("date_publication") and not re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", str(s["date_publication"])):
-            p.append(f"{tag} : date de publication non ISO ({s['date_publication']!r})")
-        if s.get("date_consultation") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(s["date_consultation"])):
-            p.append(f"{tag} : date de consultation non ISO")
+    ids = _validate_sources(d.get("sources") or [], p)
     props = d.get("propositions") or []
     if not props:
         p.append("aucune proposition")
@@ -108,25 +93,51 @@ def validate_dossier(d: dict) -> list[str]:
             e = pr.get(k)
             if not isinstance(e, dict) or not isinstance(e.get("note"), int) or not 1 <= e["note"] <= 5:
                 p.append(f"{tag} : « {k} » doit être {{note 1–5, justification}}")
-        faits = pr.get("faits") or []
-        if not faits:
+        if not (pr.get("faits") or []):
             p.append(f"{tag} : aucun fait")
-        for k, f in enumerate(faits):
-            ft = f"{tag} faits[{k}]"
-            if not str(f.get("texte") or "").strip():
-                p.append(f"{ft} : texte manquant")
-            if f.get("type") not in CLAIM_KINDS:
-                p.append(f"{ft} : type invalide {f.get('type')!r} ({', '.join(CLAIM_KINDS)})")
-            if f.get("importance") not in ("cle", "secondaire"):
-                p.append(f"{ft} : importance « cle » ou « secondaire » requise")
-            for m, ev in enumerate(f.get("preuves") or []):
-                if ev.get("source") not in ids:
-                    p.append(f"{ft} preuves[{m}] : source inconnue {ev.get('source')!r}")
-                if len(str(ev.get("extrait") or "").strip()) < 12:
-                    p.append(f"{ft} preuves[{m}] : extrait manquant ou trop court (citation exacte requise)")
-                if ev.get("position", "soutient") not in ("soutient", "contredit", "nuance"):
-                    p.append(f"{ft} preuves[{m}] : position invalide")
+        _validate_facts(pr.get("faits") or [], ids, tag, p)
     return p
+
+
+def _validate_sources(srcs: list, p: list[str]) -> set:
+    if not srcs:
+        p.append("aucune source")
+    ids: set = set()
+    for i, s in enumerate(srcs):
+        tag = f"sources[{i}] ({s.get('id', '?')})"
+        for k in ("id", "url", "titre", "date_consultation", "consultation"):
+            if not s.get(k):
+                p.append(f"{tag} : champ « {k} » manquant")
+        if s.get("id") in ids:
+            p.append(f"{tag} : identifiant en double")
+        ids.add(s.get("id"))
+        for prob in src.validate_url(s.get("url", "")):
+            p.append(f"{tag} : URL refusée — {prob}")
+        if s.get("consultation") and s["consultation"] not in src.CONSULTATION_LEVELS:
+            p.append(f"{tag} : niveau de consultation inconnu {s['consultation']!r}")
+        if s.get("date_publication") and not re.fullmatch(r"\d{4}(-\d{2}(-\d{2})?)?", str(s["date_publication"])):
+            p.append(f"{tag} : date de publication non ISO ({s['date_publication']!r})")
+        if s.get("date_consultation") and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(s["date_consultation"])):
+            p.append(f"{tag} : date de consultation non ISO")
+    return ids
+
+
+def _validate_facts(faits: list, ids: set, tag: str, p: list[str]) -> None:
+    for k, f in enumerate(faits):
+        ft = f"{tag} faits[{k}]"
+        if not str(f.get("texte") or "").strip():
+            p.append(f"{ft} : texte manquant")
+        if f.get("type") not in CLAIM_KINDS:
+            p.append(f"{ft} : type invalide {f.get('type')!r} ({', '.join(CLAIM_KINDS)})")
+        if f.get("importance") not in ("cle", "secondaire"):
+            p.append(f"{ft} : importance « cle » ou « secondaire » requise")
+        for m, ev in enumerate(f.get("preuves") or []):
+            if ev.get("source") not in ids:
+                p.append(f"{ft} preuves[{m}] : source inconnue {ev.get('source')!r}")
+            if len(str(ev.get("extrait") or "").strip()) < 12:
+                p.append(f"{ft} preuves[{m}] : extrait manquant ou trop court (citation exacte requise)")
+            if ev.get("position", "soutient") not in ("soutient", "contredit", "nuance"):
+                p.append(f"{ft} preuves[{m}] : position invalide")
 
 
 # ---------------------------------------------------------------------------
@@ -192,6 +203,15 @@ def register_source(db: Database, s: dict, *, fetch: bool, opener=None, captures
             final_url, sha, tpath, text = cap.get("final_url"), cap["text_sha256"], _rel(tfile), cap["text"]
             published = published or (cap.get("published_at") or "")[:10] or None
             s = dict(s, notes=((s.get("notes") or "") + f" | capturée par le moteur le {cap['captured_at']}").strip(" |"))
+        elif cap.get("extraits") is not None and cap.get("text_sha256"):
+            # Capture « extraits seulement » : le moteur a lu la page complète (empreinte conservée) et n'a
+            # gardé que des phrases exactes ; les citations sont vérifiées contre ces phrases.
+            availability, consultation, http_status = "disponible", "page_verifiee", cap.get("http_status")
+            final_url, sha = cap.get("final_url"), cap["text_sha256"]
+            text = EXCERPT_SEP.join(cap["extraits"])
+            published = published or (cap.get("published_at") or "")[:10] or None
+            s = dict(s, notes=((s.get("notes") or "") + f" | capturée par le moteur le {cap['captured_at']}"
+                               f" (texte intégral non conservé, {len(cap['extraits'])} phrases exactes)").strip(" |"))
         else:
             availability, http_status = cap.get("availability", availability), cap.get("http_status", http_status)
     limitations = (s.get("limites") or "").strip()
@@ -357,20 +377,7 @@ def _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_
                 log.warning("proposition refusée : doublon", extra={"titre": pr["titre"], "doublon": best["ref"]})
                 continue
             sensitive = cfg["familles"][pr["famille"]].get("sensible", False)
-            claims_out, used_sources = [], {}
-            for f in pr["faits"]:
-                ev_objs, ev_rows = [], []
-                for ev in f.get("preuves") or []:
-                    r = recs[ev["source"]]
-                    check = src.excerpt_status(ev["extrait"], r.consultation, r.text)
-                    probative = src.is_probative(r.consultation, check)
-                    ev_objs.append(Evidence(r.category, r.organisation, probative, ev.get("position", "soutient")))
-                    ev_rows.append((r.id, ev.get("position", "soutient"), ev["extrait"].strip(), check))
-                    used_sources[r.id] = {"category": r.category, "organisation": r.organisation,
-                                          "probative": used_sources.get(r.id, {}).get("probative", False) or probative}
-                status, detail = claim_status(f["type"], ev_objs, sensitive)
-                claims_out.append({"text": f["texte"].strip(), "kind": f["type"], "importance": f["importance"],
-                                   "status": status, "detail": detail, "notes": f.get("notes"), "evidence": ev_rows})
+            claims_out, used_sources = evaluate_facts(pr["faits"], recs, sensitive)
             src_list = list(used_sources.values())
             score = compute_score(ratings=pr["notes_editoriales"], claims=claims_out, sources=src_list,
                                   family=pr["famille"], difficulty=pr["difficulte"], legal_risk=pr["risque_juridique"])
@@ -399,13 +406,7 @@ def _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_
                              "risque_juridique": pr["risque_juridique"]}, ensure_ascii=False),
                  json.dumps(score, ensure_ascii=False), score["priorite"], json.dumps(flags, ensure_ascii=False),
                  json.dumps(dups, ensure_ascii=False), "recherche", run_id, ts, ts)).lastrowid
-            for c in claims_out:
-                cid = db.conn.execute("INSERT INTO claims (subject_id, text, kind, importance, status, status_detail, notes)"
-                                      " VALUES (?,?,?,?,?,?,?)",
-                                      (sid, c["text"], c["kind"], c["importance"], c["status"], c["detail"], c["notes"])).lastrowid
-                for (source_id, stance, excerpt, check) in c["evidence"]:
-                    db.conn.execute("INSERT INTO claim_evidence (claim_id, source_id, stance, excerpt, excerpt_check)"
-                                    " VALUES (?,?,?,?,?)", (cid, source_id, stance, excerpt, check))
+            _insert_claims(db, sid, claims_out)
             roles = pr.get("sources_roles") or {}
             for key, r in recs.items():
                 if r.id in used_sources or key in roles:
@@ -423,6 +424,113 @@ def _import_body(db, dossier, cfg, run_id, report, errors, fetch, opener, allow_
                                                        "solidite": score["solidite"], "drapeaux": flags})
         finish_run(db, run_id, "termine" if not errors else "termine_avec_limites", errors,
                    f"{len(report['propositions'])} proposition(s), {len(report['refusees'])} refusée(s)")
+
+
+def evaluate_facts(faits: list, recs: dict, sensitive: bool) -> tuple[list, dict]:
+    """Statut calculé de chaque fait + sources utilisées (avec leur caractère probant)."""
+    claims_out, used_sources = [], {}
+    for f in faits:
+        ev_objs, ev_rows = [], []
+        for ev in f.get("preuves") or []:
+            r = recs[ev["source"]]
+            check = src.excerpt_status(ev["extrait"], r.consultation, r.text)
+            probative = src.is_probative(r.consultation, check)
+            ev_objs.append(Evidence(r.category, r.organisation, probative, ev.get("position", "soutient")))
+            ev_rows.append((r.id, ev.get("position", "soutient"), ev["extrait"].strip(), check))
+            used_sources[r.id] = {"category": r.category, "organisation": r.organisation,
+                                  "probative": used_sources.get(r.id, {}).get("probative", False) or probative}
+        status, detail = claim_status(f["type"], ev_objs, sensitive)
+        claims_out.append({"text": f["texte"].strip(), "kind": f["type"], "importance": f["importance"],
+                           "status": status, "detail": detail, "notes": f.get("notes"), "evidence": ev_rows})
+    return claims_out, used_sources
+
+
+def _insert_claims(db: Database, subject_id: int, claims_out: list) -> list[int]:
+    ids = []
+    for c in claims_out:
+        cid = db.conn.execute("INSERT INTO claims (subject_id, text, kind, importance, status, status_detail, notes)"
+                              " VALUES (?,?,?,?,?,?,?)",
+                              (subject_id, c["text"], c["kind"], c["importance"], c["status"], c["detail"], c["notes"])).lastrowid
+        for (source_id, stance, excerpt, check) in c["evidence"]:
+            db.conn.execute("INSERT INTO claim_evidence (claim_id, source_id, stance, excerpt, excerpt_check)"
+                            " VALUES (?,?,?,?,?)", (cid, source_id, stance, excerpt, check))
+        ids.append(cid)
+    return ids
+
+
+def rescore_subject(db: Database, subject_id: int) -> dict:
+    """Recalcule score, formats et signalements d'un sujet à partir de TOUS ses faits et preuves en base."""
+    s = dict(db.conn.execute("SELECT * FROM subjects WHERE id = ?", (subject_id,)).fetchone())
+    claims = [dict(r) for r in db.conn.execute("SELECT importance, kind, status FROM claims WHERE subject_id = ?", (subject_id,))]
+    srcs: dict = {}
+    for r in db.conn.execute("SELECT so.id, so.category, so.organisation, so.consultation, ce.excerpt_check FROM claim_evidence ce"
+                             " JOIN claims cl ON cl.id = ce.claim_id JOIN sources so ON so.id = ce.source_id"
+                             " WHERE cl.subject_id = ?", (subject_id,)):
+        prob = src.is_probative(r["consultation"], r["excerpt_check"])
+        srcs[r["id"]] = {"category": r["category"], "organisation": r["organisation"],
+                         "probative": srcs.get(r["id"], {}).get("probative", False) or prob}
+    ratings = json.loads(s["ratings_json"])
+    score = compute_score(ratings=ratings["notes_editoriales"], claims=claims, sources=list(srcs.values()),
+                          family=s["family"], difficulty=ratings["difficulte"], legal_risk=ratings["risque_juridique"])
+    formats = json.loads(s["formats_json"])
+    elig = eligible_formats(claims, list(srcs.values()), s["hook"], s["episodes"])
+    flags = list(score["drapeaux"]) + [f"format_non_soutenu:{f}" for f in formats["recommandes"] if not elig[f]["eligible"]]
+    old_flags = json.loads(s["flags_json"])
+    flags += [f for f in old_flags if f in ("angle_similaire_a_un_contenu_existant", "categorie_source_declaree_a_revoir")]
+    db.conn.execute("UPDATE subjects SET score_json = ?, priority = ?, flags_json = ?, formats_json = ?, updated_at = ? WHERE id = ?",
+                    (json.dumps(score, ensure_ascii=False), score["priorite"], json.dumps(sorted(set(flags)), ensure_ascii=False),
+                     json.dumps(dict(formats, eligibilite=elig), ensure_ascii=False), now(), subject_id))
+    return score
+
+
+def complete_subject(db: Database, uid: str, dossier: dict | str | Path, *, fetch: bool = True, opener=None,
+                     captures: str | Path | None = None) -> dict:
+    """Recherche COMPLÉMENTAIRE sur un sujet existant : nouvelles sources et nouveaux faits, mêmes contrôles
+    que l'import ; le score est recalculé sur l'ensemble des faits. Le statut du sujet ne change pas."""
+    if not isinstance(dossier, dict):
+        dossier = json.loads(Path(dossier).read_text(encoding="utf-8"))
+    subj = get_subject(db, uid)
+    if not subj:
+        raise KeyError(f"sujet inconnu : {uid}")
+    p: list[str] = []
+    if not isinstance(dossier.get("session"), dict) or not all(dossier["session"].get(k) for k in ("mode", "chercheur", "requetes")):
+        p.append("bloc « session » incomplet (mode, chercheur, requêtes)")
+    ids = _validate_sources(dossier.get("sources") or [], p)
+    if not dossier.get("faits"):
+        p.append("aucun fait")
+    _validate_facts(dossier.get("faits") or [], ids, "complément", p)
+    if p:
+        raise DossierError(p)
+    cfg = load_config().research
+    sess = dossier["session"]
+    run_id = start_run(db, sess["mode"], {"chercheur": sess["chercheur"], "requetes": sess["requetes"],
+                                          "notes": sess.get("notes"), "complement_de": uid})
+    caps = load_captures(captures)
+    try:
+        with db.tx():
+            recs, errors = {}, []
+            for s in dossier["sources"]:
+                r = register_source(db, s, fetch=fetch, opener=opener, captures=caps)
+                recs[s["id"]] = r
+                if r.availability == "inaccessible_environnement":
+                    errors.append({"source": r.url, "type": "inaccessible_environnement"})
+            sensitive = cfg["familles"][subj["family"]].get("sensible", False)
+            claims_out, used = evaluate_facts(dossier["faits"], recs, sensitive)
+            new_ids = _insert_claims(db, subj["id"], claims_out)
+            for key, r in recs.items():
+                db.conn.execute("INSERT OR IGNORE INTO subject_sources (subject_id, source_id, role) VALUES (?,?,?)",
+                                (subj["id"], r.id, (dossier.get("sources_roles") or {}).get(key)))
+            score = rescore_subject(db, subj["id"])
+            _event(db, subj["id"], subj["status"], subj["status"],
+                   f"recherche complémentaire (session {run_id}) : {len(new_ids)} fait(s), {len(recs)} source(s)", "moteur")
+            finish_run(db, run_id, "termine" if not errors else "termine_avec_limites", errors,
+                       f"complément de {uid} : {len(new_ids)} fait(s)")
+    except Exception as exc:
+        finish_run(db, run_id, "echec", [{"type": "exception", "detail": str(exc)}])
+        raise
+    log.info("recherche complémentaire", extra={"uid": uid, "faits": len(new_ids), "solidite": score["solidite"]})
+    return {"run_id": run_id, "uid": uid, "faits_ajoutes": new_ids, "score": score,
+            "statuts": [(c["text"][:70], c["status"]) for c in claims_out]}
 
 
 # ---------------------------------------------------------------------------

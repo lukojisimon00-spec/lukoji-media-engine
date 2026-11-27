@@ -180,6 +180,23 @@ def cmd_research_import(a):
     return 0
 
 
+def cmd_research_complete(a):
+    from .subjects import DossierError, complete_subject
+    db = _db()
+    try:
+        rep = complete_subject(db, a.uid, a.dossier, fetch=not a.no_fetch, captures=a.captures)
+    except DossierError as e:
+        print(str(e))
+        return 1
+    print(f"Complément de {a.uid} (session {rep['run_id']}) : {len(rep['faits_ajoutes'])} fait(s) ajouté(s)")
+    for t, st in rep["statuts"]:
+        print(f"  {st:15s} {t}")
+    sc = rep["score"]
+    print(f"Score recalculé : priorité {sc['priorite']} · solidité {sc['solidite']} · faits clés confirmés "
+          f"{sc['faits_cles']['confirmes']}/{sc['faits_cles']['total']}")
+    return 0
+
+
 def cmd_sources(a):
     db = _db()
     if a.action == "list":
@@ -311,6 +328,11 @@ def build_parser() -> argparse.ArgumentParser:
     ri.add_argument("--allow-same-subject", action="store_true"); ri.add_argument("--json")
     ri.add_argument("--captures", help="dossier de captures du moteur (scripts/capture_sources.py)")
     ri.set_defaults(fn=cmd_research_import)
+
+    rc = rs.add_parser("completer", help="recherche complémentaire sur un sujet existant")
+    rc.add_argument("uid"); rc.add_argument("dossier"); rc.add_argument("--captures")
+    rc.add_argument("--no-fetch", action="store_true")
+    rc.set_defaults(fn=cmd_research_complete)
 
     so = sub.add_parser("sources", help="sources enregistrées : list | check (disponibilité)")
     so.add_argument("action", choices=["list", "check"]); so.set_defaults(fn=cmd_sources)

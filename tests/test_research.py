@@ -419,3 +419,35 @@ def test_platform_sources_are_attributed_to_their_author():
     c = src.classify("https://arxiv.org/abs/2408.17024", {"organisation": "Lelapa AI"})
     assert c["category"] == "A" and c["organisation"] == "Lelapa AI" and "arXiv" in c["nature"]
     assert src.classify("https://arxiv.org/abs/2408.17024")["organisation"] == "arXiv"
+
+
+def test_excerpt_only_captures_and_subject_completion(db, offline, tmp_path):
+    """Captures SANS texte intégral : citations vérifiées contre les phrases exactes du moteur ;
+    une citation qui enjambe deux phrases non contiguës est refusée. Puis complément d'un sujet."""
+    import hashlib
+    from lukoji_engine.subjects import complete_subject
+    uid = import_dossier(db, make_dossier(), opener=offline)["propositions"][0]["uid"]
+    before = subject_details(db, uid)["score"]["solidite"]
+    folder = tmp_path / "caps"; folder.mkdir()
+    url = "https://www.agenceecofin.com/simule-mpesa"
+    manifest = {url: {"url": url, "captured_at": "2026-11-27T12:00:00Z", "availability": "disponible", "http_status": 200,
+                      "text_sha256": hashlib.sha256(b"x").hexdigest(),
+                      "extraits": ["Le projet fictif Alpha compte 300 producteurs en 2026.", "Il exporte vers 4 pays."]}}
+    (folder / "captures.json").write_text(json.dumps(manifest))
+    comp = {"session": {"mode": "test_simule", "chercheur": "tests", "requetes": ["simulé"]},
+            "sources": [{"id": "e", "url": url, "titre": "Article simulé Ecofin", "date_consultation": "2026-11-27",
+                         "consultation": "page_lue_agent"}],
+            "faits": [{"texte": "Alpha compte 300 producteurs.", "type": "chiffre", "importance": "cle",
+                       "preuves": [{"source": "e", "extrait": "Le projet fictif Alpha compte 300 producteurs en 2026."}]},
+                      {"texte": "Citation reconstituée.", "type": "fait", "importance": "secondaire",
+                       "preuves": [{"source": "e", "extrait": "producteurs en 2026. Il exporte vers 4 pays."}]}]}
+    rep = complete_subject(db, uid, comp, opener=offline, captures=folder)
+    st = dict(rep["statuts"])
+    assert st["Alpha compte 300 producteurs."] == "source_unique"        # 1 source B (Ecofin), extrait vérifié
+    assert st["Citation reconstituée."] == "a_verifier"                    # enjambe deux phrases : refusée
+    s = subject_details(db, uid)
+    checks = [e["excerpt_check"] for c in s["claims"] for e in c["evidence"] if "Ecofin" in e["organisation"]]
+    assert checks == ["verifie", "absent_de_la_page"]
+    assert s["status"] == "propose" and "recherche complémentaire" in s["events"][-1]["note"]
+    assert s["score"]["faits_cles"]["total"] == 3          # score recalculé sur l'ensemble des faits
+    assert s["score"]["solidite"] <= before                  # un fait clé non confirmé ne peut pas l'augmenter
